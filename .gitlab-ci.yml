@@ -26,17 +26,17 @@ build master:
   only:
   - master
 
-pages:
-  stage: deploy
-  tags:
-    - Node
-  script:
-  - hugo
-  artifacts:
-    paths:
-    - public
-  only:
-  - develop
+# pages:
+#   stage: deploy
+#   tags:
+#     - Node
+#   script:
+#   - hugo
+#   artifacts:
+#     paths:
+#     - public
+#   only:
+#   - develop
 
 deploy to production:
   stage: deploy
@@ -48,4 +48,4 @@ deploy to production:
   - pip install awscli
   - aws s3 cp public s3://flutter.de/ --recursive --acl public-read
   only:
-  - master
+  - develop
