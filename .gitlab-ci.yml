@@ -16,6 +16,7 @@ build:
   - hugo
   except:
   - master
+  - develop
 
 build master:
   stage: build
@@ -25,6 +26,7 @@ build master:
   - hugo --baseURL=http://flutter.de.s3-website.eu-central-1.amazonaws.com
   only:
   - master
+  - develop
 
 # pages:
 #   stage: deploy
@@ -40,12 +42,14 @@ build master:
 
 deploy to production:
   stage: deploy
+  dependencies: 
+    - build master
   tags:
     - Node
   environment: production
-  image: python:latest
+  image: mikesir87/aws-cli
   script:
-  - pip install awscli
   - aws s3 cp public s3://flutter.de/ --recursive --acl public-read
   only:
+  - master
   - develop
