@@ -1,0 +1,25 @@
+.pagination {
+  margin: 3rem 0;
+  justify-content: center;
+  li {
+    display: inline-block;
+    margin-right: .375rem;
+    margin-bottom: 2.5em;
+  }
+  li a {
+    padding: .5rem .625rem;
+    background-color: white;
+    color: #333;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  li.disabled {
+    display: none;
+  }
+  li.active a:link,
+  li.active a:active,
+  li.active a:visited {
+    background-color: #ddd;
+    font-weight: 700;
+  }
+}

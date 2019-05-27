@@ -1,0 +1,23 @@
+<div class="container">
+    <a href="/artikel" class="btn btn-link">🔙</a>
+    <article class="blog-post">
+        <h1 class="blog-post-title">{{ .Title }}</h1>
+        <span class="blog-post-date mb-0">{{ dateFormat "2. January 2006" .Date }}</span>
+        <span class="blog-post-date mb-0">{{ .ReadingTime}} Minute Lesezeit, {{ .WordCount}} Wörter</span>
+        <div class="blog-post-content m-5">{{ .Content }}</div>
+        <div class="blog-post-author bg-light">
+            <div class="row">
+                <div class="col-8">
+                    <img class="float-left img-fluid circle">
+                    <strong>{{ .Author }}</strong>
+                    <small class="text-muted">Blogging about stuff</small>
+                </div>
+
+                <div class="col-4 text-right">
+                    <a href="#" class="btn btn-primary">Tweet</a>
+                    <a href="#" class="btn btn-secondary ml-3">Share</a>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
