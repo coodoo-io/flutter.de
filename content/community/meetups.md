@@ -1,4 +1,5 @@
 +++
+date = "2014-03-10"
 slug = "meetups"
 title = "Werde Teil der Community"
 +++
