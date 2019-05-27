@@ -1,0 +1,25 @@
+{{ define "content" }}
+<div class="container page">
+    <h1 class="ml-4 pl-1">{{ .Title }}</h1>
+    <div class="blog-list">
+        {{ range .Paginator.Pages }}
+        <article class="blog-list-item">
+            <a href="{{ .Params.ExternalLink | default .RelPermalink }}">
+                <div class="blog-list-item-date">
+                    {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</div>
+                <div class="blog-list-item-title">
+                    {{ .Title }}
+                </div>
+                <div class="blog-list-item-desc">
+                    {{ .Summary }}
+                </div>
+            </a>
+        </article>
+        {{ end }}
+    </div>
+</div>
+
+<!-- Pagination -->
+{{ partial "pagination.html" . }}
+
+{{ end }}

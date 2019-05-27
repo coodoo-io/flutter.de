@@ -1,0 +1,9 @@
+{{ define "content" }}
+<section class="container centered">
+    <div class="error">
+      <h1>404</h1>
+      <h2>Seite nicht vorhanden</h2>
+      <p>Zurück zur Startseite<br />{{ .Site.BaseURL | safeHTML }}</p>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,23 @@
+{{ define "title" }}
+    {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+    {{ partial "artikel.html" . }}
+    
+    <!-- Disqus Kommentare -->
+    {{- $.Scratch.Set "isDisqus" true -}}
+
+    {{- if and (isset .Params "type") (in (.Site.Params.disableDisqusTypes | default (slice "page")) .Params.type) -}}
+        {{- $.Scratch.Set "isDisqus" false -}}
+    {{- end -}}
+
+    {{- if and (isset .Params "disqus") (eq .Params.disqus false) -}}
+        {{- $.Scratch.Set "isDisqus" false -}}
+    {{- else if and (isset .Params "disqus") (eq .Params.disqus true) -}}
+        {{- $.Scratch.Set "isDisqus" true -}}
+    {{- end -}}
+
+    {{- if eq ($.Scratch.Get "isDisqus") true -}}
+        {{- partial "disqus.html" . -}}
+    {{- end -}}
+{{ end }}

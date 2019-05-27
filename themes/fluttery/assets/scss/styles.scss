@@ -1,0 +1,147 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+@import 'fontello.scss';
+@import 'blog-list.scss';
+@import 'blog.scss';
+@import 'pagination.scss';
+// @import '../node_modules/bootstrap/scss/bootstrap';
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+
+* { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Source Sans Pro', 'Sans-serif'; -webkit-font-smoothing: antialiased; }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    word-break: keep-all;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    color: #343a40;
+    line-height: 1.3em;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+/* Page Styles */
+.page-container {
+    position: relative;
+    min-height: 100%;
+}
+
+.page {
+    padding: 2rem 0;
+}
+
+.page-spacer {
+    padding-bottom: 54px;
+}
+
+header {
+    // background-image: url('https://media.istockphoto.com/photos/germany-flag-picture-id1006237762');
+    background-size: contain;
+    background-position: 50%;
+    min-height: 450px;
+    border-radius: 0 !important;
+
+    &.jumbotron {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+    h1 {
+        display: inline-block;
+        // background-color: white;
+        padding: 1rem 2.6rem;
+        border-radius: 2px;
+        margin-top: 5rem;
+    }
+    .lead {
+        // text-shadow: 1px 1px 1px black;
+        font-size: 2rem;
+        // color: white !important;
+        font-size: 1.8rem;
+        margin-top: -20px;
+        // font-weight: 700;
+    }
+}
+
+.btn {
+    border-radius: 0;
+    border: 0;
+}
+
+.card {
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: 4px;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding-bottom: 0;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 18px;
+}
+
+footer {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #e1e4e6;
+    font-size: 12px;
+    color: #878d91;
+    line-height: 1.8;
+    
+    p {
+        font-size: 12px;
+        color: #878d91;
+        line-height: 1.8;
+        margin-bottom: 0;
+    }
+}
+
+.join-slack {
+    display: inline-block;
+    padding: 2rem;
+    padding-top: 0;
+    color: #868686;
+    text-align: center;
+    border: 1px solid transparent;
+    
+    &:hover {
+        background-color: #f8f9fa;
+        border-radius: 30px;
+        cursor: pointer;
+        border-color: #ddd;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    img {
+        width: 240px;
+    }
+    strong {
+        letter-spacing: 2.4px;
+        margin-top: -24px;
+    }
+}
+
+.emoji {
+    font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+}

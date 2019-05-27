@@ -1,0 +1,73 @@
+baseURL = "https://flutter.de/"
+languageCode = "de-DE"
+title = "Flutter Germany"
+theme = "Fluttery"
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "de"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+enableEmoji = true
+disqusShortname = "localhost"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# navigation
+[menu]
+  [[menu.main]]
+  name = "Start"
+  URL = "/"
+  weight = 1
+  
+  [[menu.main]]
+  name = "Artikel"
+  URL = "artikel"
+  weight = 2
+  
+  [[menu.main]]
+  name = "Community"
+  URL = "community"
+  weight = 3
+  
+    [[menu.main]]
+    parent = "Community"
+    name = "Meetup's Deutschland"
+    URL = "community/meetups"
+    weight = 1
+    
+    [[menu.main]]
+    parent = "Community"
+    name = "Experten Netzwerk"
+    URL = "community/experten-netzwerk-deutschland"
+    weight = 2
+    
+    [[menu.main]]
+    parent = "Community"
+    name = "CTO Guide"
+    URL = "community/cto-guide"
+    weight = 3
+
+  [[menu.main]]
+  name = "Literatur"
+  URL = "literatur"
+  weight = 4
+  
+  [[menu.main]]
+  name = "Schulung"
+  URL = "schulung"
+  weight = 5
+    
+    [[menu.main]]
+    parent = "Schulung"
+    name = "Grundlagen Training"
+    URL = "schulung/grundlagen-training"
+    weight = 1
+    
+    [[menu.main]]
+    parent = "Schulung"
+    name = "Projekt Kickoff"
+    URL = "schulung/projekt-kickoff"
+    weight = 2
