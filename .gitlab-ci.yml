@@ -10,6 +10,8 @@ stages:
 
 build:
   stage: build
+  tags:
+    - Node
   script:
   - hugo
   except:
@@ -17,6 +19,8 @@ build:
 
 build master:
   stage: build
+  tags:
+    - Node
   script:
   - hugo --baseURL=http://flutter.de.s3-website.eu-central-1.amazonaws.com
   only:
@@ -24,6 +28,8 @@ build master:
 
 deploy to stage:
   stage: deploy
+  tags:
+    - Node
   script:
   - hugo
   artifacts:
@@ -34,6 +40,8 @@ deploy to stage:
 
 deploy to production:
   stage: deploy
+  tags:
+    - Node
   environment: production
   image: python:latest
   script:
