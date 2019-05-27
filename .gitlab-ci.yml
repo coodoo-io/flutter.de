@@ -4,9 +4,9 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
   S3_BUCKET_NAME: "flutter.de"
 
-stage:
-  build
-  deploy
+stages:
+  - build
+  - deploy
 
 build:
   stage: build
@@ -23,7 +23,7 @@ build master:
   - master
 
 deploy to stage:
-  stage: Deploy
+  stage: deploy
   script:
   - hugo
   artifacts:
@@ -33,6 +33,7 @@ deploy to stage:
   - develop
 
 deploy to production:
+  stage: deploy
   environment: production
   image: python:latest
   script:
