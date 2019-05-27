@@ -1,6 +1,17 @@
-<header class="jumbotron text-center">
-    <h1 class="blog-post-title">{{ .Title }}</h1>
-</header>
+<!-- Header with/without background image -->
+{{ $header_image := .Param "header_image"}}
+{{ if $header_image }}
+    {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+    {{ $header_image := (trim $header_image "/") | absURL }}
+    <header class="jumbotron text-center" style="background-image: url('{{ $header_image }}');">
+        <h1 class="blog-post-title">{{ .Title }}</h1>
+    </header>
+{{ else }}
+    <header class="jumbotron text-center" style="background-image: url('{{ $header_image }}');">
+        <h1 class="blog-post-title">{{ .Title }}</h1>
+    </header>
+{{ end }}
+
 <div class="container">
     <div class="page">
         <div>{{ .Content }}</div>

@@ -28,8 +28,10 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 3rem;
 }
 
-.nav {
-    background-color: transparent !important;
+nav {
+    &.bg-light {
+        background-color: transparent !important;
+    }
 }
 
 /* Page Styles */
@@ -48,11 +50,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 header {
-    // background-image: url('https://media.istockphoto.com/photos/germany-flag-picture-id1006237762');
     background-size: contain;
     background-position: 50%;
     min-height: 340px;
     border-radius: 0 !important;
+    margin-top: -65px;
 
     &.jumbotron {
         display: flex;
@@ -66,7 +68,6 @@ header {
     h1 {
         display: inline-block;
         // background-color: white;
-        margin-top: -1rem;
         padding: 1rem 2.6rem;
         border-radius: 2px;
     }
