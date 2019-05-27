@@ -47,7 +47,7 @@ disqusShortname = "localhost"
     [[menu.main]]
     parent = "Community"
     name = "CTO Guide"
-    URL = "community/cto-guide"
+    URL = "community/cto-handbuch"
     weight = 3
 
   [[menu.main]]

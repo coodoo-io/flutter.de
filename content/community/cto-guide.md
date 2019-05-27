@@ -1,6 +1,9 @@
 +++
 title = "CTO Handbuch zu Flutter"
 slug = "cto-handbuch"
+aliases = [
+    "cto-guide"
+]
 +++
 
 ### CTO's Guide to Flutter
