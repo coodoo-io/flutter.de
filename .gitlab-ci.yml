@@ -1,0 +1,42 @@
+image: registry.gitlab.com/pages/hugo:latest
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  S3_BUCKET_NAME: "flutter.de"
+
+stage:
+  build
+  deploy
+
+build:
+  stage: build
+  script:
+  - hugo
+  except:
+  - master
+
+build master:
+  stage: build
+  script:
+  - hugo --baseURL=http://flutter.de.s3-website.eu-central-1.amazonaws.com
+  except:
+  - master
+
+deploy to stage:
+  stage: Deploy
+  script:
+  - hugo
+  artifacts:
+    paths:
+    - public
+  only:
+  - develop
+
+deploy to production:
+  environment: production
+  image: python:latest
+  script:
+  - pip install awscli
+  - aws s3 cp public s3://flutter.de/ --recursive --acl public-read
+  only:
+  - master
