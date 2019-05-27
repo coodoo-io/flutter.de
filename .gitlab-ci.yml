@@ -27,6 +27,10 @@ build master:
   only:
   - master
   - develop
+  artifacts:
+    paths:
+    - public
+    expire_in: 1 hour
 
 # pages:
 #   stage: deploy
@@ -39,6 +43,12 @@ build master:
 #     - public
 #   only:
 #   - develop
+#   variables:
+#     GIT_STRATEGY: none
+#   artifacts:
+#     paths:
+#     - public
+#     expire_in: 24 hour
 
 deploy to production:
   stage: deploy
@@ -49,8 +59,13 @@ deploy to production:
   environment: production
   image: mikesir87/aws-cli
   script:
-  - ls -lisa
-  # - aws s3 cp public s3://flutter.de/ --recursive --acl public-read
+  - aws s3 cp public s3://flutter.de/ --recursive --acl public-read
   only:
   - master
   - develop
+  variables:
+    GIT_STRATEGY: none
+  artifacts:
+    paths:
+    - public
+    expire_in: 24 hour
