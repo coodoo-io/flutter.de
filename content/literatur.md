@@ -3,26 +3,17 @@ title = "Literatur"
 slug = "literatur"
 +++
 
-Hugo is a static site engine written in Go.
+## Bücher
 
-It makes use of a variety of open source projects including:
+**In Englisch**
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+* Flutter in Action | by Barry Burd | Dec 17, 2019
+* Beginning Flutter: A Hands On Guide To App Development | by Marco L. Napoli | Aug 20, 2019
+* Google Flutter Mobile Development Quick Start Guide | by Prajyot Mainkar and Salvatore Giordano
+* Learn Google Flutter Fast: 65 Example Apps | by Mark Clow | Mar 31, 2019
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
+**In Deutsch**
 
-## Setup
+## Videos
 
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+## Links
