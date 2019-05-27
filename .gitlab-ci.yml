@@ -26,7 +26,7 @@ build master:
   only:
   - master
 
-deploy to stage:
+pages:
   stage: deploy
   tags:
     - Node
