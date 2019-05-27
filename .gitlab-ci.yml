@@ -30,7 +30,7 @@ build master:
   artifacts:
     paths:
     - public
-    expire_in: 1 hour
+    expire_in: 8 hour
 
 # pages:
 #   stage: deploy
@@ -45,10 +45,6 @@ build master:
 #   - develop
 #   variables:
 #     GIT_STRATEGY: none
-#   artifacts:
-#     paths:
-#     - public
-#     expire_in: 24 hour
 
 deploy to production:
   stage: deploy
@@ -65,7 +61,3 @@ deploy to production:
   - develop
   variables:
     GIT_STRATEGY: none
-  artifacts:
-    paths:
-    - public
-    expire_in: 24 hour
