@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'variables';
+// @import 'variables';
 @import 'fontello.scss';
 @import 'blog-list.scss';
 @import 'blog.scss';
@@ -28,6 +28,10 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 3rem;
 }
 
+.nav {
+    background-color: transparent !important;
+}
+
 /* Page Styles */
 .page-container {
     position: relative;
@@ -47,10 +51,14 @@ header {
     // background-image: url('https://media.istockphoto.com/photos/germany-flag-picture-id1006237762');
     background-size: contain;
     background-position: 50%;
-    min-height: 450px;
+    min-height: 340px;
     border-radius: 0 !important;
 
     &.jumbotron {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #f8f9fa;
         border-bottom: 1px solid #f1f1f1;
     }
@@ -58,9 +66,9 @@ header {
     h1 {
         display: inline-block;
         // background-color: white;
+        margin-top: -1rem;
         padding: 1rem 2.6rem;
         border-radius: 2px;
-        margin-top: 5rem;
     }
     .lead {
         // text-shadow: 1px 1px 1px black;
@@ -115,6 +123,31 @@ footer {
         line-height: 1.8;
         margin-bottom: 0;
     }
+
+    .social-link {
+        display: inline-block;
+        color: #90bbf3;
+
+        &:hover {
+            color: #007bff;
+        }
+
+        .icon {
+            font-size: 1rem;
+            line-height: 0;
+            vertical-align: middle;
+        }
+    }
+
+    .coodoo-link {
+        color: #6c757d;
+        &:hover {
+            text-decoration: none;
+            .icon {
+                color: #ff8158;
+            }
+        }
+    }
 }
 
 .join-slack {
@@ -140,6 +173,10 @@ footer {
     strong {
         letter-spacing: 2.4px;
         margin-top: -24px;
+    }
+
+    .join-slack-word {
+        margin-right: .7rem;
     }
 }
 

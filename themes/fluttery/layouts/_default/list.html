@@ -1,6 +1,8 @@
 {{ define "content" }}
+<header class="jumbotron text-center">
+    <h1 class="blog-post-title">{{ .Title | singularize }}</h1>
+</header>
 <div class="container page">
-    <h1 class="ml-4 pl-1">{{ .Title }}</h1>
     <div class="blog-list">
         {{ range .Paginator.Pages }}
         <article class="blog-list-item">
