@@ -2,7 +2,13 @@
   "name": "fluttery",
   "version": "0.0.1",
   "description": "Hugo theme",
+  "hugo-bin": {
+    "buildTags": "extended"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {
+    "hugo-bin": "^0.43.6"
   }
 }
