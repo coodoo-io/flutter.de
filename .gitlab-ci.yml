@@ -1,5 +1,5 @@
 # image: registry.gitlab.com/pages/hugo/hugo_extended:latest
-image: marcacohen/hugo-image
+image: hugo:0.55.6-ext-nodejs
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
