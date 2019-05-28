@@ -1,5 +1,5 @@
 # image: registry.gitlab.com/pages/hugo/hugo_extended:latest
-image: node:8-alpine
+image: node:6-alpine
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
