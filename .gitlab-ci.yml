@@ -36,6 +36,7 @@ build master:
     - Node
   script:
   - hugo --baseURL=http://flutter.de.s3-website.eu-central-1.amazonaws.com --debug
+  - ls -lisa  /builds/flutter/flutter.de/public/
   only:
   - master
   - develop
