@@ -45,7 +45,7 @@ Lid est laborum et dolorum fuga, This is [an example](http://example.com/ "Title
 
 This is blockquote, Will make it better now
 
-> 'I want to do with you what spring does with the cherry trees.' <cite>cited ~Pablo Neruda</cite>*
+> **Zitat:** 'I want to do with you what spring does with the cherry trees.' <cite>cited ~Pablo Neruda</cite>*
 
 Unordered list
 
@@ -124,3 +124,10 @@ main() {
 
 ## Emoji
 :see_no_evil: :smile:
+
+## Buttons
+{{< button href="/handbook/toc/" class="btn btn-primary" >}}Read more{{< /button >}}
+
+## HTML Alerts
+
+<div class="alert alert-info">Hinweis: Das Tutorial orientiert sich stark am <a href="https://angular.io/docs/ts/latest/guide/style-guide.html" target="_blank">Style-Guide</a> für Angular Anwendungen.</div>
