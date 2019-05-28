@@ -29,6 +29,7 @@ build master:
   before_script:
     - npm install
     - npm --prefix ./themes/Fluttery install ./themes/Fluttery
+    - $(npm bin)/hugo version
   tags:
     - Node
   script:
