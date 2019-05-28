@@ -36,7 +36,7 @@ build master:
     - Node
   script:
   - npm run build:prod
-  - ls -lisa
+  - cd public && ls -lisa
   only:
   - master
   - develop
