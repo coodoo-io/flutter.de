@@ -13,7 +13,7 @@ build:
   before_script:
     - apk add --update nodejs nodejs-npm
     - npm install
-    - npm --prefix ./themes/Fluttery install ./themes/Fluttery
+    - npm --prefix ./themes/fluttery install ./themes/fluttery
     - PATH=$(npm bin):$PATH
     - hugo version
   tags:
@@ -30,7 +30,7 @@ build master:
     - apk add --update nodejs nodejs-npm
     - npm install
     - PATH=$(npm bin):$PATH
-    - npm --prefix ./themes/Fluttery install ./themes/Fluttery
+    - npm --prefix ./themes/fluttery install ./themes/fluttery
     - hugo version
   tags:
     - Node
