@@ -1,5 +1,4 @@
-# image: registry.gitlab.com/pages/hugo/hugo_extended:latest
-image: hugo:0.55.6-ext-nodejs
+image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -12,6 +11,7 @@ stages:
 build:
   stage: build
   before_script:
+    - apk add --update nodejs nodejs-npm
     - npm install
     - npm --prefix ./themes/Fluttery install ./themes/Fluttery
     - PATH=$(npm bin):$PATH
@@ -27,6 +27,7 @@ build:
 build master:
   stage: build
   before_script:
+    - apk add --update nodejs nodejs-npm
     - npm install
     - PATH=$(npm bin):$PATH
     - npm --prefix ./themes/Fluttery install ./themes/Fluttery
