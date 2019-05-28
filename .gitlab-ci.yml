@@ -1,5 +1,5 @@
 # image: registry.gitlab.com/pages/hugo/hugo_extended:latest
-image: node:6-alpine
+image: marcacohen/hugo-image
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -27,11 +27,10 @@ build:
 build master:
   stage: build
   before_script:
-    - apk update && apk add openssl ca-certificates
     - npm install
     - PATH=$(npm bin):$PATH
-    # - npm --prefix ./themes/Fluttery install ./themes/Fluttery
-    - $(npm bin)/hugo version
+    - npm --prefix ./themes/Fluttery install ./themes/Fluttery
+    - hugo version
   tags:
     - Node
   script:
