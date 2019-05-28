@@ -2,6 +2,7 @@
 title = "Literatur"
 slug = "literatur"
 header_image = "/images/bg01.png"
+light_mode = true
 +++
 
 ## Bücher

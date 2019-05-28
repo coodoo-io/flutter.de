@@ -1,0 +1,8 @@
+{
+  "name": "fluttery",
+  "version": "0.0.1",
+  "description": "Hugo theme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

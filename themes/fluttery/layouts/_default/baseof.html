@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}de-DE{{ end }}">
-    {{- partial "head.html" . -}}
-    <body>
-        <div class="page-container">
-            {{- partial "header.html" . -}}
-            {{- block "content" . }}{{- end }}
-            {{- partial "footer.html" . -}}
-        </div>
-    </body>
+{{- partial "head.html" . -}}
+
+{{ $bootstrapDarkTheme := .Param "light_mode" }}
+<body {{ with $bootstrapDarkTheme }} class="theme-light" {{end}}>
+    <div class="page-container">
+        {{- partial "header.html" . -}}
+        {{- block "content" . }}{{- end }}
+        {{- partial "footer.html" . -}}
+    </div>
+</body>
+
 </html>
