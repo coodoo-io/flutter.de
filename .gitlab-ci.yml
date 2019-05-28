@@ -13,6 +13,7 @@ build:
   stage: build
   before_script:
     - npm install
+    - npm --prefix ./themes/Fluttery install ./themes/Fluttery
     - PATH=$(npm bin):$PATH
     - hugo version
   tags:
@@ -27,6 +28,7 @@ build master:
   stage: build
   before_script:
     - npm install
+    - npm --prefix ./themes/Fluttery install ./themes/Fluttery
     - PATH=$(npm bin):$PATH
     - hugo version
   tags:

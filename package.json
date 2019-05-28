@@ -8,5 +8,11 @@
         "serve": "http-server public",
         "deploy:s3": "aws s3 cp public s3://flutter.de/ --recursive --acl public-read"
     },
-    "private": true
+    "private": true,
+    "hugo-bin": {
+        "buildTags": "extended"
+    },
+    "devDependencies": {
+        "hugo-bin": "^0.43.6"
+    }
 }
