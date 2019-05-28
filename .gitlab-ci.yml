@@ -35,8 +35,8 @@ build master:
   tags:
     - Node
   script:
-  - ls -lisa
   - npm run build:prod
+  - ls -lisa
   only:
   - master
   - develop
