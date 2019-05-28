@@ -35,7 +35,8 @@ build master:
   tags:
     - Node
   script:
-  - hugo --baseURL=http://flutter.de.s3-website.eu-central-1.amazonaws.com
+  - ls -lisa
+  - npm run build:prod
   only:
   - master
   - develop
