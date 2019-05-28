@@ -1,10 +1,10 @@
 <div class="container page-spacer">
-    <a href="/artikel" class="btn btn-link">🔙</a>
+    <a href="/artikel" class="btn btn-link mt-3">< Zurück</a>
     <article class="blog-post">
         <h1 class="blog-post-title">{{ .Title }}</h1>
         <span class="blog-post-date mb-0">{{ dateFormat "2. January 2006" .Date }}</span>
         <span class="blog-post-date mb-0">{{ .ReadingTime}} Minute Lesezeit, {{ .WordCount}} Wörter</span>
-        <div class="blog-post-content m-5">{{ .Content }}</div>
+        <div class="blog-post-content mt-5 mb-5">{{ .Content }}</div>
         <div class="blog-post-author bg-light">
             <div class="row">
                 <div class="col-8">
