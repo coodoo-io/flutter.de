@@ -12,7 +12,7 @@
                     <strong>{{ .Params.Author }}</strong>
                     <small class="text-muted">Blogging about stuff</small>
                     <div>
-                        {{- if .Params.Author -}}
+                        {{- if isset .Params "Author" -}}
                             <a href="https://github.com/{{ . }}" class="btn btn-sm btn-outline-primary" target="_blank">Github</a>
                         {{- end -}}
                         {{- if .Params.Author -}}
