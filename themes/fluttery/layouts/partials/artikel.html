@@ -9,8 +9,16 @@
             <div class="row">
                 <div class="col-8">
                     <img class="float-left img-fluid circle">
-                    <strong>{{ .Author }}</strong>
+                    <strong>{{ .Params.Author }}</strong>
                     <small class="text-muted">Blogging about stuff</small>
+                    <div>
+                        {{- if .Params.Author -}}
+                            <a href="https://github.com/{{ . }}" class="btn btn-sm btn-outline-primary" target="_blank">Github</a>
+                        {{- end -}}
+                        {{- if .Params.Author -}}
+                            <a href="https://twitter.com/{{ .Params.Author }}" class="btn btn-sm btn-outline-secondary" target="_blank">Twitter</a>
+                        {{- end -}}
+                    </div>
                 </div>
 
                 <div class="col-4 text-right">
@@ -20,4 +28,22 @@
             </div>
         </div>
     </article>
+    <div class="kommentare">
+        <!-- Disqus Kommentare -->
+        {{- $.Scratch.Set "isDisqus" true -}}
+
+        {{- if and (isset .Params "type") (in (.Site.Params.disableDisqusTypes | default (slice "page")) .Params.type) -}}
+        {{- $.Scratch.Set "isDisqus" false -}}
+        {{- end -}}
+
+        {{- if and (isset .Params "disqus") (eq .Params.disqus false) -}}
+        {{- $.Scratch.Set "isDisqus" false -}}
+        {{- else if and (isset .Params "disqus") (eq .Params.disqus true) -}}
+        {{- $.Scratch.Set "isDisqus" true -}}
+        {{- end -}}
+
+        {{- if eq ($.Scratch.Get "isDisqus") true -}}
+        {{- partial "disqus.html" . -}}
+        {{- end -}}
+    </div>
 </div>
