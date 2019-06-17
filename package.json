@@ -2,7 +2,7 @@
     "name": "flutter.de",
     "version": "0.0.1",
     "scripts": {
-        "start": "hugo server -D",
+        "start": "$(npm bin)/hugo server -D",
         "build:local": "hugo --baseURL=http://localhost:8080",
         "build:prod": "hugo --baseURL=http://flutter.de.s3-website.eu-central-1.amazonaws.com",
         "serve": "http-server public",
