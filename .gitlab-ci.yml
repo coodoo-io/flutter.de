@@ -19,7 +19,7 @@ build:
   tags:
     - Node
   script:
-  - npm run build
+  - npm run build:local
   except:
   - master
   - develop
