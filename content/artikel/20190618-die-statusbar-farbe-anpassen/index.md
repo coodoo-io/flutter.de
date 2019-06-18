@@ -9,7 +9,7 @@ categories: []
 author: Jan Marsh
 ---
 
-Jedes mal, egal ob im native Code mit Java und Objective C oder mit Hybrid-Frameworks wie Nativescript oder Reactive Native probier ich die Statusbar Farbe zu ändern und es klappt nicht auf anhieb wie gewünscht. Leider ist auch Flutter hier keine Ausnahme :(. Erst nach längerem google bin ich auf folgende Lösungen gestoßen:
+Jedes mal, egal ob im native Code mit Java und Objective C oder mit Hybrid-Frameworks wie Nativescript oder React Native probier ich die Statusbar Farbe zu ändern und es klappt nicht auf anhieb wie gewünscht. Leider ist auch Flutter hier keine Ausnahme :(. Erst nach längerem google bin ich auf folgende Lösungen gestoßen:
 
 {{< highlight dart >}}
 SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -19,7 +19,7 @@ SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
 {{< /highlight >}}
 
 Leider wirkt auch diese Lösung wieder einmal relative kompliziert. Glücklicherweise gibt es aber bereits ein pub-Module dass, das ganze extrem einfach aussehen lässt:
-https://pub.dev/packages/flutter_statusbar_manager
+https://pub.dev/packages/flutter_statusbarcolor
 
 {{< highlight dart >}}
 import 'package:flutter_statusbar_manager/flutter_statusbar_manager.dart';
