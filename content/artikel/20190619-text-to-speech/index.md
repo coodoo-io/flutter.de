@@ -16,27 +16,26 @@ Original Google Doc Post: https://docs.google.com/document/d/1OjxAZMuLMjv2BL6us0
 
 Mein fünfjähriger Sohn kommt hin und wieder mit einem Zettel auf dem er ein paar Buchstaben gemalt hat und bittet mich ihm sein Werk vorzulesen. Daraufhin lacht er sich kaputt, verschwindet mit dem Zettel wieder und kommt erneut mit noch mehr Buchstaben. Das Ganze kann sich schon mal ne Stunde lang wiederholen.
 
-Da das auch schon Mal nerven kann, dachte ich mir, ich schreibe dem Sohnemann eine App, damit ich in Zukunft ungestört auf der Couch liegen bleiben kann! Eine Gute gelegenheit Flutter auszuprobieren. Die [Entwicklungsumgebung einrichten](https://flutter.de/artikel/flutter-entwicklungsumgebung-einrichten/ "Entwicklungsumgebung einrichten") war kein Problem und das Zusammenstellen der Widgets konnte starten.
+Da das auch nerven kann, dachte ich mir, ich schreibe dem Sohnemann eine App, damit ich in Zukunft ungestört auf der Couch liegen bleiben kann! Eine gute Gelegenheit Flutter auszuprobieren. Die [Entwicklungsumgebung einrichten](https://flutter.de/artikel/flutter-entwicklungsumgebung-einrichten/ "Entwicklungsumgebung einrichten") war kein Problem und das Zusammenstellen der Widgets konnte starten.
 
-Mit dem Fokus auf Vorschulkinder hatte ich versucht die App so einfach wie möglich zu gestalten. Die Basis bildet eine Tastatur mit allen Buchstaben, samt Umlauten in Großbuchstaben. Glücklicherweise ergeben diese zusammen mit dem Leerzeichen (hier ein Pfeilchen nach rechts) 30 Buttons, was sich gleichmäßig in Portrait- und Landscape-Ansicht Aufteilen lässt. Darüber befindet sich eine Card, in der das eingegebene Wort zu sehen ist. Schließlich habe ich noch ein paar Buttons darüber gesetzt, mit denen die Eingabe entfernt werden kann. Der prominente FloatingActionButton soll schließlich die Eingabe vorlesen.
+Mit dem Fokus auf Vorschulkinder hatte ich versucht die App so einfach wie möglich zu gestalten. Die Basis bildet eine Tastatur mit allen Buchstaben, samt Umlauten in Großbuchstaben. Glücklicherweise ergeben diese zusammen mit dem Leerzeichen (hier ein Pfeilchen nach rechts) 30 Buttons, was sich gleichmäßig in Portrait- und Landscape-Ansicht aufteilen lässt. Darüber befindet sich eine Card, in der das eingegebene Wort zu sehen ist. Schließlich habe ich noch ein paar Buttons darüber gesetzt, mit denen die Eingaben entfernt werden können. Der prominente FloatingActionButton soll schließlich die Eingabe vorlesen.
 
 {{< figure src="images/abc.png" height="300" >}}
 
-Wie bringe ich die App nun dazu zu sprechen? Text to Speech (TTS) ist das Schlüsselwort! Jeder kennt ja die Stimme seines Navigationssystems. Diese ist wird vom darunter liegenden Betriebssystem zur verfügung gestellt und das wollte ich für diese App nutzen. Für fast alles gibt es bereits Implementierungen für Flutter, somit musste ich auch nicht lange suchen um auf dieses 
+Wie bringe ich die App nun dazu zu sprechen? Text to Speech (TTS) ist das Schlüsselwort! Jeder kennt ja die Stimme seines Navigationssystems. Diese ist wird vom darunter liegenden Betriebssystem zur Verfügung gestellt und das wollte ich für meine App nutzen. Für fast alles gibt es bereits Implementierungen in Flutter, somit musste ich auch nicht lange suchen um auf dieses 
 [Flutter Text to Speech Package](https://github.com/dlutton/flutter_tts "Flutter Text to Speech Package") zu stoßen.
-Die Einbindung war denkbar einfach dank einer [Beispielimplementierung](https://github.com/dlutton/flutter_tts/blob/master/example/lib/main.dart "Beispielimplementierung") im gleichen GitHub Repository. Man erstellt eine Instanz und gibt etwas zum sprechen. 
+Die Einbindung war denkbar einfach dank einer [Beispielimplementierung](https://github.com/dlutton/flutter_tts/blob/master/example/lib/main.dart "Beispielimplementierung") im gleichen GitHub Repository. Man erstellt eine Instanz und gibt ihr etwas zum sprechen. 
 {{< highlight dart >}}
 flutterTts = FlutterTts();
 await flutterTts.speak('Hallo Welt');
 {{< /highlight >}}
-Doch zwei kleine Hürden galt es noch zu nehmen, bevor ich meine App sprechen hören konnte:
+Doch zwei kleine Hürden galt es doch zu nehmen, bevor ich meine App sprechen hören konnte:
 
 *   iOS muss erst um den Zugriff auf Audio gebeten werden. Mir hat dabei eine [Stack Overflow-Antwort](https://stackoverflow.com/questions/50458556/flutter-swift-version-must-be-set-to-a-supported-value/52194702#52194702 "Stack Overflow-Antwort") geholfen. Allerding klappte es dann auch erst nach einer Rasur in der Projektstruktur: 
 `rm -rf ios android && flutter create -i swift .`
-*   Android hingegen verlangte nur die Festlegung auf die Mindest SDK Version 21
-build.gradle: `minSdkVersion 21`
+*   Android hingegen verlangte nur die Festlegung auf mindestens Version 21: `minSdkVersion 21`
 
-Alles was ich nun noch tun musste war mittels dem FloatingActionButton den eingegebenen Text der `speak` Methode zu übergeben.
+Alles was ich nun noch tun musste war mittels des FloatingActionButton den eingegebenen Text der `speak` Methode zu übergeben.
 
 {{< figure src="images/itsalive.gif" height="400" >}}
 
@@ -85,11 +84,11 @@ Es lassen sich über die `flutterTts` Instanz alle auf dem Gerät zur Verfügung
 languages = await flutterTts.getLanguages;
 voices = await flutterTts.getVoices;
 {{< /highlight >}}
-Die Sprachen sind in bekannten Locale-Strings angegeben, aus denen sich Sprache und Land ableiten lassen. Aus der Liste von Sprachen habe ich dann noch ein Drawer zur Auswahl in der App ergänzt.
+Die Sprachen sind in bekannten Locale-Strings angegeben, aus denen sich Sprache und Land ableiten lassen. Aus der Liste von Sprachen habe ich dann noch einen Drawer zur Auswahl in der App ergänzt.
 
 {{< figure src="images/sprachen.png" height="300" >}}
 
-Das ginge auch mit den Verschiedenen Stimmen, doch als ich die App baute, waren diese nur für Android verfügbar. Mittlerweile unterstützt die Bibliothek auch iOS.
+Das ginge auch mit verschiedenen Stimmen, doch als ich die App baute, waren diese nur für Android verfügbar. Mittlerweile unterstützt die Bibliothek auch iOS.
 
 Fazit - es war viel zu leicht! Ich hatte nicht angenommen so schnell zu einem brauchbaren Ergebnis zu kommen. Allein für das Einbinden der TTS-Funktionalität hatte ich mit einem Tag gerechnet und vielleicht 30 Minuten gebraucht. Auch das Erstellen einer UI mit Flutter ging besser von der Hand als erwartet. Wobei ich die GridView nicht als Komponente innerhalb einer Page empfehlen kann, denn diese bricht sämtliche um ihr liegenden Layout-Anweisungen.
 
