@@ -22,11 +22,9 @@ Leider wirkt auch diese Lösung wieder einmal relative kompliziert. Glücklicher
 https://pub.dev/packages/flutter_statusbarcolor
 
 {{< highlight dart >}}
-import 'package:flutter_statusbar_manager/flutter_statusbar_manager.dart';
-
-await FlutterStatusbarManager.setStyle(StatusBarStyle.DARK_CONTENT);
-await FlutterStatusbarManager.setNavigationBarColor(Colors.green, animated:true);
-await FlutterStatusbarManager.setColor(Colors.green, animated:true);
+import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
+await FlutterStatusbarcolor.setStatusBarColor(Colors.green);
+await FlutterStatusbarcolor.setNavigationBarColor(Colors.orange);
 {{< /highlight >}}
 
 Toll was die Flutter-Community so alles schon gezaubert hat! Schade nur, das dieses Widget nicht teil des Core-Widget Systems ist.
