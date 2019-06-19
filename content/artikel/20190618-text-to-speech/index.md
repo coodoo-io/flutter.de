@@ -42,7 +42,7 @@ Alles was ich nun noch tun musste war mittels dem FloatingActionButton den einge
 
 **Erste Erkenntnis:** Meine App ist ein Amerikaner!
 
-Kein Problem, denn das Flutter Text to Speech package lässt mit sich reden. Beim Initialisieren kann man neben Geschwindigkeit, Lautstärke und Tonhöhe auch eine Sprache direkt setzen. Diese lassen sich auch zurn Laufzeit ändern.
+Kein Problem, denn das Flutter Text to Speech package lässt mit sich reden. Beim Initialisieren kann man neben Geschwindigkeit, Lautstärke und Tonhöhe auch eine Sprache direkt setzen. Diese Einstellungen lassen sich auch zur Laufzeit ändern.
 {{< highlight dart >}}
 flutterTts = FlutterTts();
 flutterTts.setLanguage('de-DE');
@@ -85,7 +85,7 @@ Es lassen sich über die `flutterTts` Instanz alle auf dem Gerät zur Verfügung
 languages = await flutterTts.getLanguages;
 voices = await flutterTts.getVoices;
 {{< /highlight >}}
-Die Sprachen in bekannten Locale-Strings angegeben, aus denen sich Sprache und Land ableiten lassen. Aus der Liste von Sprachen habe ich dann noch ein Drawer zur Auswahl in der App ergänzt.
+Die Sprachen sind in bekannten Locale-Strings angegeben, aus denen sich Sprache und Land ableiten lassen. Aus der Liste von Sprachen habe ich dann noch ein Drawer zur Auswahl in der App ergänzt.
 
 {{< figure src="images/sprachen.png" height="300" >}}
 
