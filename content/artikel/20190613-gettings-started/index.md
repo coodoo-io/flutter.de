@@ -13,7 +13,7 @@ author: Markus Kühle
 Original Google Doc Post: https://docs.google.com/a/coodoo.de/open?id=1ONgwh0uRQ2V3Qu3dN68YP9BcefY8IzslslxsVLMqjYw
 ----->
 
-Um mit Flutter zu starten benötigst du eine Entwicklungsumgebung. Dazu müssen für Android und iOS unterschiedliche Tools installiert werden. 
+Um mit Flutter zu starten, benötigst du zuersteinmal eine Entwicklungsumgebung. Dazu müssen für Android und iOS unterschiedliche Tools installiert werden. 
 Ziel ist es, dass du nach dieser Anleitung dein Flutter Hello World Programm in einem Simulator bzw. Emulator ansehen kannst.
 <!--more-->
 
@@ -33,7 +33,7 @@ Ablauf der Installationsanleitung:
 sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 ```
 
-3. on-device testing ermöglichen und cocoapods installieren um Libraries für iOS Anwendung nutzen zu können
+3. on-device testing ermöglichen und cocoapods installieren, um Libraries für iOS Anwendung nutzen zu können
 
 ```
 brew update
@@ -55,7 +55,7 @@ open -a Simulator
 # 
 
 
-# Entwicklungsumgebung für Android installieren
+## Entwicklungsumgebung für Android installieren
 
 
 
@@ -107,7 +107,7 @@ open -a Simulator
 ![alt_text](images/Flutter-Getting6.png "image_tooltip")
 
 
-    Beliebige Hardware auswählen “Next” klicken um das Image auszuwählen. Für den Start einfach das aktuellste Image auswählen (ganz oben in der Liste) und wieder “Next” klicken. Im letzten Dialog “Verify Configuration” die Installation des Virtuellen Devices mit “Finish” starten. Das Herunterladen der Imagedatei kann eine Weile dauern. Anschließend wird das Device aufgelistet: \
+    Beliebige Hardware auswählen, “Next” klicken um das Image auszuwählen. Für den Start einfach das aktuellste Image auswählen (ganz oben in der Liste) und wieder “Next” klicken. Im letzten Dialog “Verify Configuration” die Installation des Virtuellen Devices mit “Finish” starten. Das Herunterladen der Imagedatei kann eine Weile dauern. Anschließend wird das Device aufgelistet: \
 
 
 <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Flutter-Getting7.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
@@ -144,25 +144,25 @@ Aktuellstes Flutter SDK herunterladen: [https://flutter.dev/docs/development/too
 
  Flutter Zip entpacken und $PATH Variable auf den entpackten Ordner /bin setzen.
 
-Um den Pfad permanent zu setzen muss in der .bash_profile der volle Pfad angeben werden. Bei mir ist es folgender Eintrag:
+Um den Pfad permanent zu setzen, muss in der .bash_profile der volle Pfad angegeben werden. Bei mir ist es folgender Eintrag:
 
 export PATH="$PATH:/Users/markus/Projekte/Flutter/SDK/bin"
 
-Den Befehl flutter doctor ausführen um zu sehen welche Abhängigkeiten fehlen.
+Den Befehl flutter doctor ausführen, um zu sehen welche Abhängigkeiten fehlen.
 
 
 # Erstes Demo Projekt erstellen
 
 
 
-*   In einen Ordner wechseln in dem das erste Flutter Projekt erstellt werden soll
+*   In einen Ordner wechseln, in dem das erste Flutter Projekt erstellt werden soll
 *   Flutter Demo Projekt erstellen: `flutter create mein_erstes_projekt` \
 Wichtig ist, dass der Name der Dart Package Konvention entspricht (lowercase und underscore \
 Es werden eine ganze Menge Dateien generiert.
 *   Demoprojekt starten:  \
 	`cd mein_erstes_projekt` \
 	`flutter run`
-*   Wenn noch kein Emulator gestartet wurde erscheint die Meldung “`No connected devices.`” \
+*   Wenn noch kein Emulator gestartet wurde, erscheint die Meldung “`No connected devices.`” \
 
 
 <p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Flutter-Getting10.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
@@ -206,11 +206,11 @@ Um sich alle “avd” anzeigen zu lassen kann man den Befehl
 
 	avdmanager list avd 
 
-alle anzeigen. Die Emulatoren können sowohl über die Konsole als auch über Android Studio erstellt werden.
+alle anzeigen. Die Emulatoren können sowohl über die Konsole, als auch über Android Studio erstellt werden.
 
-Nach dem auschcekn
+Nach dem Auschecken
 
 flutter packages get
 
-
+Und schon habt ihr euer erste Flutter-Projekt zum Laufen gebracht!
 <!-- Docs to Markdown version 1.0β17 -->
