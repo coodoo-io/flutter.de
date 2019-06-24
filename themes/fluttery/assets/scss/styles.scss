@@ -9,10 +9,9 @@
 // @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 // @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 * {
-    // font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Source Sans Pro', 'Sans-serif';
-    // font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -21,8 +20,9 @@ html, body {
 }
 
 body {
-    word-break: keep-all;
-    font-size: 18px;
+    font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
+    // word-break: keep-all;
+    // font-size: 18px;
     line-height: 1.6;
 }
 
@@ -126,9 +126,15 @@ header {
 
 .section-title {
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 3.5rem;
     padding-bottom: 0;
     font-size: 36px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    margin-top: 0;
+    padding-bottom: 0;
     font-weight: 400;
 }
 
@@ -186,7 +192,7 @@ footer {
     display: inline-block;
     padding: 2rem;
     padding-top: 0;
-    color: #868686;
+    color: #333333;
     text-align: center;
     border: 1px solid transparent;
     
@@ -244,6 +250,12 @@ footer {
 @include media-breakpoint-up(xl) {
     header {
         min-height: 450px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1280px;
     }
 }
 

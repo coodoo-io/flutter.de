@@ -18,13 +18,38 @@ header_image = "/images/maps.png"
 399 Mitglieder
 https://www.meetup.com/de-DE/flutter-berlin/
 
-
-### Flutter Augsburg
-35 Mitglieder
-https://www.meetup.com/de-DE/Flutter-Augsburg
+<div class="row">
+    <!-- Berlin -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Berlin (399 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/flutter-berlin" target="_blank" class="card-link">https://www.meetup.com/de-DE/flutter-berlin</a>
+            </div>
+        </div>
+    </div>
+    <!-- Augsburg -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Augsburg (35 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/Flutter-Augsburg" target="_blank" class="card-link">https://www.meetup.com/de-DE/Flutter-Augsburg</a>
+            </div>
+        </div>
+    </div>
+    <!-- Düsseldorf -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Düsseldorf (319 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/flutter-school" target="_blank" class="card-link">https://www.meetup.com/de-DE/flutter-school</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 ### Flutter Düsseldorf
-319 Mitglieder
+
 https://www.meetup.com/de-DE/flutter-school
 
 ### Flutter Frankfurt
