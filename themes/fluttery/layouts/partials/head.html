@@ -6,12 +6,12 @@
 <meta name="description" content="">
 <meta name="author" content="">
 {{ if .Site.IsServer }}
-    {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
-    {{ $styles := resources.Get "scss/styles.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-    {{ else }}
-    {{ $cssOpts := (dict "targetPath" "css/styles.css" ) }}
-    {{ $styles := resources.Get "scss/styles.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"
-        crossorigin="anonymous" media="screen" />
+{{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
+{{ $styles := resources.Get "scss/styles.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+{{ else }}
+{{ $cssOpts := (dict "targetPath" "css/styles.css" ) }}
+{{ $styles := resources.Get "scss/styles.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"
+    crossorigin="anonymous" media="screen" />
 {{ end }}
