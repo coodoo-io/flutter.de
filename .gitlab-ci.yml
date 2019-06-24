@@ -68,7 +68,7 @@ deploy to production:
   image: mikesir87/aws-cli
   script:
   - ls -lisa  /builds/flutter/flutter.de/public/
-  - aws s3 cp public s3://flutter.de/ --recursive --acl public-read
+  - aws s3 sync public s3://flutter.de/ --recursive --delete --acl public-read
   only:
   - master
   - develop
