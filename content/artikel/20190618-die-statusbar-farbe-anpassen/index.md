@@ -27,4 +27,24 @@ await FlutterStatusbarcolor.setStatusBarColor(Colors.green);
 await FlutterStatusbarcolor.setNavigationBarColor(Colors.orange);
 {{< /highlight >}}
 
+Dazu kannst du dir auch sagen lassen ob das dark oder light theme für die statusbar leserlicher wäre indem du dieser Funktion die Farbe deiner Statusbar übergibst.
+
+{{< highlight dart >}}
+useWhiteForeground(Colors.white);
+{{< /highlight >}}
+
+Die Funktion returnt true wenn die Statusbar weiße Icons verwenden soll, was du auch gleich mit der Funktion um den Stil der Statusbar zu ändern kombinieren kannst.
+
+{{< highlight dart >}}
+await FlutterStatusbarcolor.setStatusBarWhiteForeground(useWhiteForeground(Colors.white));
+{{< /highlight >}}
+
+Hier sieht man den Unterschied:
+
+{{< figure src="images/difference.png" height="26" width="730" >}}
+
+Ein Beispielprojekt zu dem ganzen Thema lässt sich außerdem nochmal hier finden:
+
+https://github.com/coodoo-io
+
 Toll was die Flutter-Community so alles schon gezaubert hat! Schade nur, das dieses Widget nicht teil des Core-Widget Systems ist.
