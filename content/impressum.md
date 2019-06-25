@@ -6,7 +6,7 @@ slug = "impressum"
 ## Impressum
 
 coodoo GmbH  
-Wilhelm-Theodor-Römheld-Str. 28  
+Wilhelm-Theodor-Römheld-Str. 20  
 55130 Mainz
 
 Telefon: 061314640270  

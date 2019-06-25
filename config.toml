@@ -42,7 +42,7 @@ disqusShortname = "localhost"
   
     [[menu.main]]
     parent = "Community"
-    name = "Meetup's Deutschland"
+    name = "Meetups Deutschland"
     URL = "community/meetups"
     weight = 1
     
