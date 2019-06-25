@@ -2,7 +2,8 @@
 date = "2014-03-10"
 slug = "meetups"
 title = "Werde Teil der Community"
-header_image = "/images/maps.png"
+header_image = "/images/community.jpg"
+
 +++
 
 # Städte
@@ -14,11 +15,11 @@ header_image = "/images/maps.png"
 * [München](#flutter-münchen)
 * [Stuttgart](#flutter-stuttgart)
 
-### Flutter Berlin
-399 Mitglieder
-https://www.meetup.com/de-DE/flutter-berlin/
+### Meetup Gruppen in Deutschland
 
-<div class="row">
+Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutter Meetup Gruppe in deiner Nähe.
+
+<div class="row pt-2">
     <!-- Berlin -->
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-3">
@@ -46,28 +47,50 @@ https://www.meetup.com/de-DE/flutter-berlin/
             </div>
         </div>
     </div>
+    <!-- Frankfurt -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Frankfurt (109 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/Frankfurt-Flutterers-Meetup" target="_blank" class="card-link">https://www.meetup.com/de-DE/Frankfurt-Flutterers-Meetup</a>
+            </div>
+        </div>
+    </div>
+ <!-- Hamburg -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Hamburg (149 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/Flutter-Hamburg" target="_blank" class="card-link">https://www.meetup.com/de-DE/Flutter-Hamburg</a>
+            </div>
+        </div>
+    </div>
+<!-- Karlsruhe -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Karlsruhe (153 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/Karlsruhe-Flutter-Meetup" target="_blank" class="card-link">https://www.meetup.com/de-DE/Karlsruhe-Flutter-Meetup</a>
+            </div>
+        </div>
+    </div>
+<!-- München -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter München (250 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/Flutter-Munich" target="_blank" class="card-link">https://www.meetup.com/de-DE/Flutter-Munich</a>
+            </div>
+        </div>
+    </div>
+<!-- Stuttagrt -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Stuttgart (143 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/Flutter-Stuttgart" target="_blank" class="card-link">https://www.meetup.com/de-DE/Flutter-Stuttgart</a>
+            </div>
+        </div>
+    </div>
+
 </div>
-
-### Flutter Düsseldorf
-
-https://www.meetup.com/de-DE/flutter-school
-
-### Flutter Frankfurt
-109 Mitglieder
-https://www.meetup.com/de-DE/Frankfurt-Flutterers-Meetup
-
-### Flutter Hamburg
-149 Mitglieder
-https://www.meetup.com/de-DE/Flutter-Hamburg
-
-### Flutter Karlsruhe
-153 Mitglieder
-https://www.meetup.com/de-DE/Karlsruhe-Flutter-Meetup
-
-### Flutter München
-250 Mitglieder
-https://www.meetup.com/de-DE/Flutter-Munich
-
-### Flutter Stuttgart
-143 Mitglieder
-https://www.meetup.com/de-DE/Flutter-Stuttgart
