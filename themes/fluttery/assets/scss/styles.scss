@@ -122,11 +122,22 @@ header {
     border: 0;
 }
 
+.articles {
+    .card-text {
+        font-size: 15px;
+        line-height: 1.5rem;
+    }
+}
+
 .card {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,0.125);
     border-radius: 4px;
+
+    .card-title {
+        margin-top: .5rem;
+    }
 }
 
 .section-title {

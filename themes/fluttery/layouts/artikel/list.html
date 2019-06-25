@@ -2,26 +2,26 @@
 <header class="jumbotron text-center" style="background: url('/images/articles.png')">
     <h1 class="blog-post-title">{{ .Title | singularize }}</h1>
 </header>
-<div class="container page">
-    <div class="blog-list">
+<div class="container page articles">
+    <div class="row">
         {{ range .Paginator.Pages }}
-        <article class="blog-list-item">
-            <a href="{{ .Params.ExternalLink | default .RelPermalink }}">
-                <div class="blog-list-item-date">
-                    {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</div>
-                <div class="blog-list-item-title">
-                    {{ .Title }}
+        <div class="col-4">
+            <div class="card bg-light mb-5">
+                {{/*  <p>{{ $.Site.BaseURL }}{{ .Params.header_image }}</p> */}}
+                <img src="{{ $.Site.BaseURL }}{{ .Params.header_image }}" class="card-img-top" alt="{{ .Title }}" />
+                <div class="card-body">
+                    <h5 class="card-title">{{ .Title }}</h5>
+                    <p class="card-text">{{ slicestr .Summary 0 200 }}... <a class='btn-link' href='{{ .Permalink }}'
+                            title='{{ .Title }}'>Weiterlesen</a></p>
+                    <p class="card-text"><small
+                            class="text-muted">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</small>
+                    </p>
                 </div>
-                <div class="blog-list-item-desc">
-                    {{ .Summary }}
-                </div>
-            </a>
-        </article>
+            </div>
+        </div>
         {{ end }}
     </div>
     <!-- Pagination -->
     {{ partial "pagination.html" . }}
 </div>
-
-
 {{ end }}
