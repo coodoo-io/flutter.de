@@ -1,8 +1,8 @@
 ---
-title: "Hello World, I bims! Flutter!"
+title: "Hello World, I bims! Flutter.de!"
 date: 2019-05-29T14:15:59+02:00
 draft: false
-header_image: "/artikel/20190529-hello-world/community.jpg"
+header_image: "/artikel/20190529-hello-world/helloworld_header.png"
 author: Markus Kühle
 description: "Deutschlands Nummer 1 Flutter-Community stellt sich vor"
 tags: ["flutter, community, getting started, deutschland"]
