@@ -48,6 +48,11 @@ nav {
     z-index: 100;
 }
 
+.navbar-brand {
+    border-right: 1px solid #efefef;
+    padding: .75rem 1rem;
+}
+
 .navbar-light .navbar-toggler {
     color: white;
     border: 0;
@@ -78,7 +83,7 @@ header {
     background-position: 50%;
     min-height: 340px;
     border-radius: 0 !important;
-    margin-top: -65px;
+    // margin-top: -65px;
 
     &.jumbotron {
         display: flex;

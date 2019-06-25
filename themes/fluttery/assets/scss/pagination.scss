@@ -1,25 +1,57 @@
+@import 'variables';
+// .pagination {
+//   margin: 3rem 0;
+//   justify-content: center;
+//   li {
+//     display: inline-block;
+//     margin-right: .375rem;
+//     margin-bottom: 2.5em;
+//   }
+//   li a {
+//     padding: .5rem .625rem;
+//     background-color: white;
+//     color: #333;
+//     border-radius: 3px;
+//     text-decoration: none;
+//   }
+//   li.disabled {
+//     display: none;
+//   }
+//   li.active a:link,
+//   li.active a:active,
+//   li.active a:visited {
+//     background-color: #ddd;
+//     font-weight: 700;
+//   }
+// }
+
 .pagination {
-  margin: 3rem 0;
   justify-content: center;
-  li {
-    display: inline-block;
-    margin-right: .375rem;
-    margin-bottom: 2.5em;
-  }
-  li a {
-    padding: .5rem .625rem;
-    background-color: white;
-    color: #333;
-    border-radius: 3px;
-    text-decoration: none;
-  }
-  li.disabled {
-    display: none;
-  }
-  li.active a:link,
-  li.active a:active,
-  li.active a:visited {
+  align-content: center;
+  margin: 30px auto 0 auto;
+  .page-item {
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    display: inline-flex;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: #ddd;
-    font-weight: 700;
+    color: white;
+    border-radius: 50%;
+    margin-bottom: 30px;
+
+    .page-link {
+      color: #333333;
+      font-weight: 700;
+    }
+
+    &:hover {
+      opacity: .5;
+    }
+    &.active{
+      opacity: .5;
+    }
   }
 }
