@@ -19,7 +19,7 @@ SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
 ));
 {{< /highlight >}}
 
-Leider wirkt auch diese Lösung wieder einmal relativ kompliziert. Glücklicherweise gibt es aber bereits ein pub-Module, dass das Ganze extrem einfach aussehen lässt:
+Leider wirkt auch diese Lösung wieder einmal relativ kompliziert. Glücklicherweise gibt es aber bereits ein pub-Module, das das Ganze extrem einfach aussehen lässt:
 https://pub.dev/packages/flutter_statusbarcolor
 
 {{< highlight dart >}}
@@ -28,16 +28,16 @@ await FlutterStatusbarcolor.setStatusBarColor(Colors.pink);
 await FlutterStatusbarcolor.setNavigationBarColor(Colors.orange);
 {{< /highlight >}}
 
+Dazu kannst du dir auch sagen lassen, ob das dark oder light theme für die statusbar leserlicher wäre, indem du dieser Funktion die Farbe deiner Statusbar übergibst.
+
 {{< figure src="/artikel/20190618-die-statusbar-farbe-anpassen/images/statusbar-color-change.png" height="250"  >}}
 {{< figure src="/artikel/20190618-die-statusbar-farbe-anpassen/images/navigationbar-color-change.png" height="250"  >}}
-
-Dazu kannst du dir auch sagen lassen ob das dark oder light theme für die statusbar leserlicher wäre indem du dieser Funktion die Farbe deiner Statusbar übergibst.
 
 {{< highlight dart >}}
 useWhiteForeground(Colors.white);
 {{< /highlight >}}
 
-Die Funktion returnt true wenn die Statusbar weiße Icons verwenden soll, was du auch gleich mit der Funktion um den Stil der Statusbar zu ändern kombinieren kannst.
+Die Funktion returnt true, wenn die Statusbar weiße Icons verwenden soll. Dies kannst du auch gleich mit der Funktion kombinieren, um den Stil der Statusbar zu ändern.
 
 {{< highlight dart >}}
 await FlutterStatusbarcolor.setStatusBarWhiteForeground(useWhiteForeground(Colors.white));
@@ -47,8 +47,8 @@ Hier sieht man den Unterschied:
 
 {{< figure src="/artikel/20190618-die-statusbar-farbe-anpassen/images/statusbar-foreground-change.png" height="100" >}}
 
-Ein Beispielprojekt zu dem ganzen Thema lässt sich außerdem nochmal hier finden:
+Ein Beispielprojekt zum Thema findet ihr hier:
 
 https://github.com/coodoo-io
 
-Toll was die Flutter-Community so alles schon gezaubert hat! Schade nur, das dieses Widget nicht teil des Core-Widget Systems ist.
+Toll, was die Flutter-Community so alles schon gezaubert hat! Schade nur, dass dieses Widget nicht Teil des Core-Widget Systems ist.
