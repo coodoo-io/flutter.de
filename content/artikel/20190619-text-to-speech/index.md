@@ -3,6 +3,7 @@ title: "Sprich mit mir! Text-to-speech in Flutter"
 slug: "text-to-speech" 
 date: 2019-06-19T15:23:45+02:00
 draft: true
+header_image: "/artikel/20190619-text-to-speech/text-to-speech.jpg"
 description: "Erste Schritte in Flutter: Text to Speech"
 tags: ["flutter","Text to Speech","Locales"]
 categories: []

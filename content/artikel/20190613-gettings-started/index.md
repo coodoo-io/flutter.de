@@ -3,7 +3,7 @@ title: "Entwicklungsumgebung einrichten"
 slug: "flutter-entwicklungsumgebung-einrichten" 
 date: 2019-06-13T22:28:22+02:00
 draft: false
-header_image: "/artikel/20190529-hello-world/community.jpg"
+header_image: "artikel/20190613-gettings-started/getting-started.jpg"
 description: "Flutter installieren und was du sonst noch dazu benötigst um das Flutter Hello World zu sehen."
 tags: ["flutter-setup"]
 categories: []
