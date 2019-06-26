@@ -46,6 +46,7 @@ blockquote {
 
 nav {
     z-index: 100;
+    border-bottom: 1px solid #efefef;
 }
 
 .navbar-brand {
@@ -192,7 +193,8 @@ footer {
 
     .social-link {
         display: inline-block;
-        color: #90bbf3;
+        color: #6d6d6d;
+        // color: #90bbf3;
 
         &:hover {
             color: #007bff;
@@ -207,6 +209,7 @@ footer {
 
     .coodoo-link {
         color: #6c757d;
+        pointer: cursor;
         &:hover {
             text-decoration: none;
             .icon {
@@ -278,6 +281,10 @@ footer {
 @include media-breakpoint-up(xl) {
     header {
         min-height: 450px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 }
 

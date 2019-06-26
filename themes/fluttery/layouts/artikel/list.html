@@ -1,7 +1,6 @@
 {{ define "content" }}
-<header class="jumbotron text-center" style="background: url('/images/artikel_header.jpg');background-size:contain;">
-    <h1 class="blog-post-title">{{ .Title | singularize }}</h1>
-</header>
+<h1 class="blog-post-title text-center mb-2">Artikel</h1>
+<p class="text-center mb-5">Wissenwertes zu Flutter auf Deutsch!</p>
 <div class="container page articles">
     <div class="row">
         {{ range .Paginator.Pages }}

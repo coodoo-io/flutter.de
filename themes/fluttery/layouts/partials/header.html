@@ -8,12 +8,10 @@
 
   <div class="collapse navbar-collapse" id="menu">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
-      </li>
+      {{- $currentPage := . -}}
       {{ range .Site.Menus.main }}
       {{ if .HasChildren }}
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown {{ if $currentPage }}active{{ end }}">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
           {{ .Name }}
@@ -25,7 +23,7 @@
         </div>
       </li>
       {{ else }}
-      <li class="nav-item">
+      <li class="nav-item {{ if $currentPage }}active{{ end }}">
         <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
       </li>
       {{ end }}

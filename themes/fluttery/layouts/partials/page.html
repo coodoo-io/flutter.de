@@ -7,7 +7,7 @@
         <h1 class="blog-post-title">{{ .Title }}</h1>
     </header>
 {{ else }}
-    <header class="jumbotron text-center" style="background-image: url('{{ $header_image }}');">
+    <header class="jumbotron text-center">
         <h1 class="blog-post-title">{{ .Title }}</h1>
     </header>
 {{ end }}
@@ -15,5 +15,4 @@
 <div class="container">
     <div class="page">
         <div>{{ .Content }}</div>
-        </article>
     </div>

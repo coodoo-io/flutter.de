@@ -2,8 +2,7 @@
 date = "2014-03-10"
 slug = "meetups"
 title = "Werde Teil der Community"
-header_image = "/images/community.jpg"
-
+header_image = "https://www.toptal.com/designers/subtlepatterns/patterns/positive.png"
 +++
 
 <!-- # Städte
