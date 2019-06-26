@@ -23,7 +23,7 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
         <div class="card bg-light mb-4">
             <div class="card-body">
                 <h4 class="card-title mt-0">Flutter Rhein-Main (31 Mitglieder)</h4>
-                <a href="https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup/" target="_blank" class="card-link">https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup/</a>
+                <a href="https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup/" target="_blank" class="card-link">https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup</a>
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
         <div class="card bg-light mb-4">
             <div class="card-body">
                 <h4 class="card-title mt-0">Flutter Solingen (182 Mitglieder)</h4>
-                <a href="https://www.meetup.com/de-DE/tech-and-talk/" target="_blank" class="card-link">https://www.meetup.com/de-DE/tech-and-talk/</a>
+                <a href="https://www.meetup.com/de-DE/tech-and-talk/" target="_blank" class="card-link">https://www.meetup.com/de-DE/tech-and-talk</a>
             </div>
         </div>
     </div>

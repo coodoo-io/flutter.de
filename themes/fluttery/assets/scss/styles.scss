@@ -49,6 +49,13 @@ nav {
     border-bottom: 1px solid #efefef;
 }
 
+.navbar-collapse {
+    text-align: center;
+    form {
+        justify-content: center;
+    }
+}
+
 .navbar-brand {
     border-right: 1px solid #efefef;
     padding: .75rem 1rem;
@@ -266,6 +273,11 @@ footer {
 }
 
 @include media-breakpoint-up(md) {
+    .navbar-collapse {
+        form {
+            justify-content: right;
+        }
+    }
     header {
         h1 {
             font-size: 2.5rem;

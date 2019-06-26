@@ -2,7 +2,7 @@
 title: "Assets (Bilder und Sound) verwenden"
 slug: "flutter-assets-bilder-sound-verwenden" 
 date: 2019-06-17T10:48:22+02:00
-draft: false
+draft: true
 description: "Wie du schnell und einfach dein erstes Bild in deiner Anwendung anzeigst und deinen ersten Sound abspielst."
 tags: ["flutter, sound, bild, image, assets"]
 categories: []
