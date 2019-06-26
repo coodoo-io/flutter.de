@@ -53,6 +53,19 @@ nav {
     padding: .75rem 1rem;
 }
 
+.navbar-light .navbar-nav .nav-item {
+    .nav-link {
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: 700;
+    }
+    &.active {
+        color: black;
+        .nav-link {
+            color: black;
+        }
+    }
+}
+
 .navbar-light .navbar-toggler {
     border: 0;
 }
@@ -211,14 +224,14 @@ footer {
     text-align: center;
     border: 1px solid transparent;
     
-    &:hover {
-        background-color: #f8f9fa;
-        border-radius: 30px;
-        cursor: pointer;
-        border-color: #ddd;
-        text-decoration: none;
-        color: black;
-    }
+    // &:hover {
+    //     background-color: #f8f9fa;
+    //     border-radius: 30px;
+    //     cursor: pointer;
+    //     border-color: #ddd;
+    //     text-decoration: none;
+    //     color: black;
+    // }
 
     img {
         width: 240px;

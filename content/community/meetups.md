@@ -112,21 +112,16 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
  <div class="container">
     <div class="row pt-5 pb-5">
       <div class="col-12 text-center">
-        <a href="https://join.slack.com/t/flutter-de/shared_invite/enQtNjYyODAzNDQ5MjUxLWNlOGUwNTUwMDA1ZTc2YmFlODhmMGZmMmVhOGJmYWIyYjBhYjY4Yjc5MDQ0MGJiY2ZjYTdhMzdhMDhlMTA4YjI"
-          target="_blank" class="join-slack mb-2">
+      <h5 class="mb-2">Du kannst nicht vor Ort dabei sein, möchtest dich aber mit Gleichgesinnten zu Flutter austauschen?</h5>
+      <p class="d-block mb-3">Dann tritt deim deutschen Flutter Slack Channel bei und diskutiere mit anderen Flutteraner<br/> zu aktuellen Themen, stelle Fragen und lerne neue Leute kennen.</p>
+        <div class="join-slack mb-2">
           <img src="/images/slack-mark.png">
-          <h3 class="mt-1 mb-5" >Tritt dem Flutter.de Slack Channel bei!</h3>
-          <p class="d-block mb-3">Du kannst nicht vor Ort dabei sein, möchtest dich aber mit Gleichgesinnten zu Flutter austauschen? Dann tritt deim deutschen Flutter Slack Channel bei und diskutiere mit anderen Flutteraner zu aktuellen Themen, stelle Fragen und lerne neue Leute kennen.</p>
+          <h3 class="mt-0" >Tritt dem Flutter.de Slack Channel bei!</h3>
           <span class="join-slack-word">CHATTEN 😃</span><span class="join-slack-word">NETZWERKEN 👋</span><span
             class="join-slack-word">WACHSEN 🚀</span>
-        </a>
-      <form class="text-center">
-      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+        </div>
       <a href="https://join.slack.com/t/flutter-de/shared_invite/enQtNjYyODAzNDQ5MjUxLWNlOGUwNTUwMDA1ZTc2YmFlODhmMGZmMmVhOGJmYWIyYjBhYjY4Yjc5MDQ0MGJiY2ZjYTdhMzdhMDhlMTA4YjI"
-        target="_blank" class="btn btn-link"><img src="/images/slack-btn.png" style="width:120px;"></a>
-      <!-- https://www.addthis.com/register?next=/dashboard#tool-config/pco/shin/socialnetworks?services=slack -->
-      <!-- <button class="btn btn-primary my-2 my-sm-0" type="submit">Nimm teil!</button> -->
-    </form>
+        target="_blank" class="btn btn-link d-block"><img src="/images/slack-btn.png" style="width:120px;"></a>
     </div>
     </div>
        </div>
