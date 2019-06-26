@@ -24,9 +24,12 @@ https://pub.dev/packages/flutter_statusbarcolor
 
 {{< highlight dart >}}
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
-await FlutterStatusbarcolor.setStatusBarColor(Colors.green);
+await FlutterStatusbarcolor.setStatusBarColor(Colors.pink);
 await FlutterStatusbarcolor.setNavigationBarColor(Colors.orange);
 {{< /highlight >}}
+
+{{< figure src="images/statusbar-color-change.png" height="250"  >}}
+{{< figure src="images/navigationbar-color-change.png" height="250"  >}}
 
 Dazu kannst du dir auch sagen lassen ob das dark oder light theme für die statusbar leserlicher wäre indem du dieser Funktion die Farbe deiner Statusbar übergibst.
 
@@ -42,7 +45,7 @@ await FlutterStatusbarcolor.setStatusBarWhiteForeground(useWhiteForeground(Color
 
 Hier sieht man den Unterschied:
 
-{{< figure src="images/difference.png" height="26" width="730" >}}
+{{< figure src="images/statusbar-foreground-change.png" height="100" >}}
 
 Ein Beispielprojekt zu dem ganzen Thema lässt sich außerdem nochmal hier finden:
 
