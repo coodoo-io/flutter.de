@@ -71,7 +71,7 @@ deploy to production:
   script:
   - ls -lisa  /builds/flutter/flutter.de/public/
   - BUCKET_NAME="s3://flutter.de/$CI_COMMIT_TAG/"
-  - aws sync public s3://flutter.de/0.0.1/ --acl public-read
+  - aws s3 sync public $BUCKET_NAME --acl public-read
   only:
   - tags
   variables:
