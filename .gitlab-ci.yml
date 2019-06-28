@@ -23,6 +23,7 @@ build:
   except:
   - master
   - develop
+  - tags
 
 build master:
   stage: build
@@ -69,7 +70,8 @@ deploy to production:
   image: mikesir87/aws-cli
   script:
   - ls -lisa  /builds/flutter/flutter.de/public/
-  - aws cp public "s3://flutter.de/$CI_COMMIT_TAG/" --recursive --acl public-read
+  - echo "s3://flutter.de/$CI_COMMIT_TAG/"
+  - aws sync public "s3://flutter.de/$CI_COMMIT_TAG/" --acl public-read
   only:
   - tags
   variables:
