@@ -3,8 +3,6 @@ title = "Impressum"
 slug = "impressum"
 +++
 
-## Impressum
-
 coodoo GmbH  
 Wilhelm-Theodor-Römheld-Str. 20  
 55130 Mainz

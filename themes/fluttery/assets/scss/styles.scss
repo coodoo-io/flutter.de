@@ -292,7 +292,7 @@ footer {
 
 @include media-breakpoint-up(xl) {
     header {
-        min-height: 450px;
+        min-height: 400px;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
@@ -303,6 +303,12 @@ footer {
 @media (min-width: 1440px) {
     .container {
         max-width: 1280px;
+    }
+}
+
+@media (min-width: 16ßßpx) {
+    header {
+        min-height: 450px;
     }
 }
 

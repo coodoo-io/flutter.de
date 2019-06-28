@@ -7,9 +7,9 @@
         <h1 class="blog-post-title">{{ .Title }}</h1>
     </header>
 {{ else }}
-    <header class="jumbotron text-center">
-        <h1 class="blog-post-title">{{ .Title }}</h1>
-    </header>
+    <div class="container">
+        <h1 class="blog-post-title mb-2">{{ .Title }}</h1>
+    </div>
 {{ end }}
 
 <div class="container">

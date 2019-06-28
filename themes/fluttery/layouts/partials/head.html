@@ -3,8 +3,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/x-icon" href="{{ "images/favicon.ico" | absURL }}" />
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="author" content="coodoo GmbH">
+
+{{ template "_internal/opengraph.html" . }}
+
 {{ if .Site.IsServer }}
 {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
 {{ $styles := resources.Get "scss/styles.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
@@ -12,6 +14,7 @@
 {{ else }}
 {{ $cssOpts := (dict "targetPath" "css/styles.css" ) }}
 {{ $styles := resources.Get "scss/styles.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"
-    crossorigin="anonymous" media="screen" />
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 {{ end }}
+
+{{ template "_internal/google_analytics_async.html" . }}
