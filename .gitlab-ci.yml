@@ -69,7 +69,7 @@ deploy to production:
   image: mikesir87/aws-cli
   script:
   - ls -lisa  /builds/flutter/flutter.de/public/
-  - aws cp public s3://flutter.de/$CI_COMMIT_TAG/ --recursive --acl public-read
+  - aws cp public "s3://flutter.de/$CI_COMMIT_TAG/" --recursive --acl public-read
   only:
   - tags
   variables:
