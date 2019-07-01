@@ -2,7 +2,7 @@
 date = "2014-03-10"
 slug = "meetups"
 title = "Werde Teil der Community"
-header_image = "https://www.toptal.com/designers/subtlepatterns/patterns/positive.png"
+header_image = "/images/community_header.png"
 +++
 
 <!-- # Städte
@@ -18,39 +18,21 @@ header_image = "https://www.toptal.com/designers/subtlepatterns/patterns/positiv
 Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutter Meetup Gruppe in deiner Nähe.
 
 <div class="row mt-5">
-<!-- Rhein-Main -->
-    <div class="col-12 col-md-6">
-        <div class="card bg-light mb-4">
-            <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Rhein-Main (31 Mitglieder)</h4>
-                <a href="https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup/" target="_blank" class="card-link">https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup</a>
-            </div>
-        </div>
-    </div>
-    <!-- Solingen -->
-    <div class="col-12 col-md-6">
-        <div class="card bg-light mb-4">
-            <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Solingen (182 Mitglieder)</h4>
-                <a href="https://www.meetup.com/de-DE/tech-and-talk/" target="_blank" class="card-link">https://www.meetup.com/de-DE/tech-and-talk</a>
-            </div>
-        </div>
-    </div>
-    <!-- Berlin -->
-    <div class="col-12 col-md-6">
-        <div class="card bg-light mb-4">
-            <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Berlin (399 Mitglieder)</h4>
-                <a href="https://www.meetup.com/de-DE/flutter-berlin" target="_blank" class="card-link">https://www.meetup.com/de-DE/flutter-berlin</a>
-            </div>
-        </div>
-    </div>
     <!-- Augsburg -->
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
                 <h4 class="card-title mt-0">Flutter Augsburg (35 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Flutter-Augsburg" target="_blank" class="card-link">https://www.meetup.com/de-DE/Flutter-Augsburg</a>
+            </div>
+        </div>
+    </div>
+        <!-- Berlin -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-4">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Berlin (399 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/flutter-berlin" target="_blank" class="card-link">https://www.meetup.com/de-DE/flutter-berlin</a>
             </div>
         </div>
     </div>
@@ -96,6 +78,24 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
             <div class="card-body">
                 <h4 class="card-title mt-0">Flutter München (250 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Flutter-Munich" target="_blank" class="card-link">https://www.meetup.com/de-DE/Flutter-Munich</a>
+            </div>
+        </div>
+    </div>
+    <!-- Rhein-Main -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-4">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Rhein-Main (31 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup/" target="_blank" class="card-link">https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup</a>
+            </div>
+        </div>
+    </div>
+        <!-- Solingen -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-4">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Solingen (182 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/tech-and-talk/" target="_blank" class="card-link">https://www.meetup.com/de-DE/tech-and-talk</a>
             </div>
         </div>
     </div>

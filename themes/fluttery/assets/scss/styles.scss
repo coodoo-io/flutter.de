@@ -272,6 +272,12 @@ footer {
 
 }
 
+.deutschland {
+    max-width: 250px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
 @include media-breakpoint-up(md) {
     .navbar-collapse {
         form {
@@ -300,13 +306,25 @@ footer {
     }
 }
 
+@media (min-width: 500px) {
+    .deutschland {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .deutschland {
+        max-width: 600px;
+    }
+}
+
 @media (min-width: 1440px) {
     .container {
         max-width: 1280px;
     }
 }
 
-@media (min-width: 16ßßpx) {
+@media (min-width: 1600px) {
     header {
         min-height: 450px;
     }
