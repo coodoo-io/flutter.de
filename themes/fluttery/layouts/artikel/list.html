@@ -7,9 +7,13 @@
         <div class="col-4">
             <div class="card bg-light mb-5">
                 {{/*  <p>{{ $.Site.BaseURL }}{{ .Params.header_image }}</p> */}}
-                <img src="{{ $.Site.BaseURL }}{{ .Params.header_image }}" class="card-img-top" alt="{{ .Title }}" />
+                <a href='{{ .Permalink }}' title='{{ .Title }}'>
+                    <img src="{{ $.Site.BaseURL }}{{ .Params.header_image }}" class="card-img-top" alt="{{ .Title }}" />
+                </a>
                 <div class="card-body">
-                    <h5 class="card-title">{{ .Title }}</h5>
+                    <a href='{{ .Permalink }}' title='{{ .Title }}'>
+                        <h5 class="card-title">{{ .Title }}</h5>
+                    </a>
                     <p class="card-text">{{ slicestr .Summary 0 200 }}... <a class='btn-link' href='{{ .Permalink }}'
                             title='{{ .Title }}'>Weiterlesen</a></p>
                     <p class="card-text"><small
