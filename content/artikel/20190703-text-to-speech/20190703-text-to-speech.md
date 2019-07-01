@@ -1,7 +1,7 @@
 ---
 title: "Text-to-speech in Flutter"
 slug: "text-to-speech" 
-date: 2019-07-03T15:23:45+02:00
+date: 2019-03-07T15:23:45+02:00
 draft: true
 header_image: "artikel/20190703-text-to-speech/images/text-to-speech.jpg"
 description: "Erste Schritte in Flutter: Text to Speech"

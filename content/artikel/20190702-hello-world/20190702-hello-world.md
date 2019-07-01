@@ -1,15 +1,15 @@
 ---
 title: "Hello World, I bims! Flutter.de!"
-date: 2019-07-02T14:15:59+02:00
+date: 2019-02-07T14:15:59+02:00
 draft: false
-header_image: "/artikel/20190529-hello-world/helloworld_header.png"
-author: Markus Kühle
+header_image: "/artikel/20190702-hello-world/images/helloworld_header.png"
+author: "Markus Kühle"
 description: "Deutschlands Nummer 1 Flutter-Community stellt sich vor"
 tags: ["flutter, community, getting started, deutschland"]
 ---
  Es war ein heißer Nachmittag im Juni, als wir nach einem intensiven [Flutter-Workshop] (https://blog.coodoo.io/schnall-die-flügel-an-wir-lernen-flutter-50aa2749b778) bei coodoo die Früchte unserer Arbeit ansahen und merkten, dass es in Deutschland 
  keine echte Community für Flutter gab, mit der wir uns über unser neu erlerntes Wissen austauschen konnten. Flutter ist zwar ein junges Framework, aber im englischsprachigen Raum gibt es schon einige Seiten, die sich der Kultivierung von Flutter widmen. Warum nicht auch in Deutschland?
- Die Idee für Flutter.de war geboren. 
+ Die Idee für Flutter.de war geboren.
 
  **Was kann Flutter.de?**
 
