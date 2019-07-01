@@ -1,5 +1,5 @@
 ---
-title: "Sprich mit mir! Text-to-speech in Flutter"
+title: "Text-to-speech in Flutter"
 slug: "text-to-speech" 
 date: 2019-06-19T15:23:45+02:00
 draft: true
