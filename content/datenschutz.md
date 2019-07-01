@@ -9,7 +9,7 @@ Wir informieren Sie nachfolgend gemäß den gesetzlichen Vorgaben des Datenschut
 Unser/e Verantwortliche/r (nachfolgend „Verantwortlicher“) i.S.d. Art. 4 Zif. 7 DS-GVO ist:  
 
 coodoo GmbH  
-Wilhelm-Theodor-Römheld-Str. 28  
+Wilhelm-Theodor-Römheld-Str. 20  
 Mainz  
 Geschäftsführer Markus Kühle  
 Handelsregister/Nr.: 44076  
@@ -192,7 +192,7 @@ Wir setzen keine automatische Entscheidungsfindung oder ein Profiling ein.
     Sie können der Verarbeitung Ihrer personenbezogenen Daten für Zwecke der Werbung und Datenanalyse jederzeit widersprechen. Das Widerspruchsrecht können Sie kostenfrei ausüben. Über Ihren Werbewiderspruch können Sie uns unter folgenden Kontaktdaten informieren:  
 
     coodoo GmbH  
-    Wilhelm-Theodor-Römheld-Str. 28  
+    Wilhelm-Theodor-Römheld-Str. 20  
     Mainz  
     Geschäftsführer Markus Kühle  
     Handelsregister/Nr.: 44076  

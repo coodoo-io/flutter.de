@@ -1,9 +1,9 @@
 ---
 title: "Die Statusbar Farbe ändern"
 slug: "flutter-statusbar-farbe-ändern"
-date: 2019-06-18T22:29:00+02:00
+date: 2019-07-04T22:29:00+02:00
 draft: false
-header_image: "artikel/20190618-die-statusbar-farbe-anpassen/images/farbe_anpassen.jpg"
+header_image: "artikel/20190704-die-statusbar-farbe-anpassen/images/farbe_anpassen.jpg"
 description: "Wie kann ich die Statusbar Farbe in Flutter anpassen?"
 tags: ["byte-size", "ui/ux", "statusbar"]
 categories: []
@@ -30,8 +30,8 @@ await FlutterStatusbarcolor.setNavigationBarColor(Colors.orange);
 
 Dazu kannst du dir auch sagen lassen, ob das dark oder light theme für die statusbar leserlicher wäre, indem du dieser Funktion die Farbe deiner Statusbar übergibst.
 
-{{< figure src="/artikel/20190618-die-statusbar-farbe-anpassen/images/statusbar-color-change.png" height="250"  >}}
-{{< figure src="/artikel/20190618-die-statusbar-farbe-anpassen/images/navigationbar-color-change.png" height="250"  >}}
+{{< figure src="/artikel/20190704-die-statusbar-farbe-anpassen/images/statusbar-color-change.png" height="250"  >}}
+{{< figure src="/artikel/20190704-die-statusbar-farbe-anpassen/images/navigationbar-color-change.png" height="250"  >}}
 
 {{< highlight dart >}}
 useWhiteForeground(Colors.white);
@@ -45,7 +45,7 @@ await FlutterStatusbarcolor.setStatusBarWhiteForeground(useWhiteForeground(Color
 
 Hier sieht man den Unterschied:
 
-{{< figure src="/artikel/20190618-die-statusbar-farbe-anpassen/images/statusbar-foreground-change.png" height="100" >}}
+{{< figure src="/artikel/20190704-die-statusbar-farbe-anpassen/images/statusbar-foreground-change.png" height="100" >}}
 
 Ein Beispielprojekt zum Thema findet ihr hier:
 
