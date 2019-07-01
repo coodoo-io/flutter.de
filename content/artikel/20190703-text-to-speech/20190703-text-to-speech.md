@@ -1,9 +1,9 @@
 ---
 title: "Text-to-speech in Flutter"
 slug: "text-to-speech" 
-date: 2019-06-19T15:23:45+02:00
+date: 2019-07-03T15:23:45+02:00
 draft: true
-header_image: "artikel/20190619-text-to-speech/images/text-to-speech.jpg"
+header_image: "artikel/20190703-text-to-speech/images/text-to-speech.jpg"
 description: "Erste Schritte in Flutter: Text to Speech"
 tags: ["flutter","Text to Speech","Locales"]
 categories: []
@@ -29,7 +29,7 @@ Die [Entwicklungsumgebung einrichten](https://flutter.de/artikel/flutter-entwick
 
 Mit dem Fokus auf Vorschulkinder, habe ich versucht, die App so einfach wie möglich zu gestalten. Die Basis bildet eine Tastatur mit allen Buchstaben, samt Umlauten in Großbuchstaben. Glücklicherweise ergeben diese zusammen mit dem Leerzeichen (hier ein Pfeilchen nach rechts) 30 Buttons, die sich gleichmäßig in Portrait- und Landscape-Ansicht aufteilen lassen. Darüber befindet sich eine Card, in der das eingegebene Wort zu sehen ist. Schließlich habe ich noch ein paar Buttons darüber gesetzt, mit denen die Eingabe entfernt werden kann. Der prominente FloatingActionBotton soll schließlich die Eingabe vorlesen.
 
-{{< figure src="images/abc.png" height="300" >}}
+{{< figure src="/artikel/20190703-text-to-speech/images/abc.png" height="300" >}}
 
 **Schritt 3: Text-to-speech**
 
@@ -48,7 +48,7 @@ Doch zwei kleine Hürden galt es doch zu nehmen, bevor ich meine App sprechen h�
 
 Alles, was ich nun noch tun musste, war mittels des FloatingActionButton den eingegebenen Text der `speak` Methode zu übergeben.
 
-{{< figure src="images/itsalive.gif" height="400" >}}
+{{< figure src="/artikel/20190703-text-to-speech/images/itsalive.gif" height="400" >}}
 
 **Schritt 4: Sprache ändern** 
 
@@ -102,7 +102,7 @@ voices = await flutterTts.getVoices;
 {{< /highlight >}}
 Die Sprachen sind in bekannten Locale-Strings angegeben, aus denen sich Sprache und Land ableiten lassen. Aus der Liste von Sprachen habe ich dann noch einen Drawer zur Auswahl in der App ergänzt.
 
-{{< figure src="images/sprachen.png" height="300" >}}
+{{< figure src="/artikel/20190703-text-to-speech/images/sprachen.png" height="300" >}}
 
 Das ginge auch mit verschiedenen Stimmen, doch als ich die App baute, waren diese nur für Android verfügbar. Mittlerweile unterstützt die Bibliothek auch iOS.
 

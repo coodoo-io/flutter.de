@@ -112,7 +112,7 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
     <div class="row pt-5 pb-5">
       <div class="col-12 text-center">
       <h5 class="mb-2">Du kannst nicht vor Ort dabei sein, möchtest dich aber mit Gleichgesinnten zu Flutter austauschen?</h5>
-      <p class="d-block mb-3">Dann tritt deim deutschen Flutter Slack Channel bei und diskutiere mit anderen Flutteraner<br/> zu aktuellen Themen, stelle Fragen und lerne neue Leute kennen.</p>
+      <p class="d-block mb-3">Dann tritt dem deutschen Flutter Slack Channel bei und diskutiere mit anderen Flutteranern<br/> zu aktuellen Themen, stelle Fragen und lerne neue Leute kennen.</p>
         <div class="join-slack mb-2">
           <img src="/images/slack-mark.png">
           <h3 class="mt-0" >Tritt dem Flutter.de Slack Channel bei!</h3>
