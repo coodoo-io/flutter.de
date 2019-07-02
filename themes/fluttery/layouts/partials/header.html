@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
+  <a class="navbar-brand" href="/"><img src="/images/flutter_de-logo_klein.png" height="40" /></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      {{- $currentPage := . -}}
+      {{ range .Site.Menus.main }}
+      {{ if .HasChildren }}
+      <li class="nav-item dropdown {{ if $currentPage }}active{{ end }}">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          {{ .Name }}
+        </a>
+        <div class="dropdown-menu">
+          {{ range .Children }}
+          <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+          {{ end }}
+        </div>
+      </li>
+      {{ else }}
+      <li class="nav-item {{ if $currentPage }}active{{ end }}">
+        <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+      <a href="https://join.slack.com/t/flutter-de/shared_invite/enQtNjYyODAzNDQ5MjUxLWNlOGUwNTUwMDA1ZTc2YmFlODhmMGZmMmVhOGJmYWIyYjBhYjY4Yjc5MDQ0MGJiY2ZjYTdhMzdhMDhlMTA4YjI"
+        target="_blank" class="btn btn-link"><img src="/images/slack-btn.png" style="width:120px;"></a>
+      <!-- https://www.addthis.com/register?next=/dashboard#tool-config/pco/shin/socialnetworks?services=slack -->
+      <!-- <button class="btn btn-primary my-2 my-sm-0" type="submit">Nimm teil!</button> -->
+    </form>
+  </div>
+</nav>

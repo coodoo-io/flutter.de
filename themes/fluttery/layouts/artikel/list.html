@@ -1,0 +1,30 @@
+{{ define "content" }}
+<h1 class="blog-post-title text-center mb-2">Artikel</h1>
+<p class="text-center mb-5">Wissenwertes zu Flutter auf Deutsch!</p>
+<div class="container page articles">
+    <div class="row">
+        {{ range .Paginator.Pages }}
+        <div class="col-4">
+            <div class="card bg-light mb-5">
+                {{/*  <p>{{ $.Site.BaseURL }}{{ .Params.header_image }}</p> */}}
+                <a href='{{ .Permalink }}' title='{{ .Title }}'>
+                    <img src="{{ $.Site.BaseURL }}{{ .Params.header_image }}" class="card-img-top" alt="{{ .Title }}" />
+                </a>
+                <div class="card-body">
+                    <a href='{{ .Permalink }}' title='{{ .Title }}'>
+                        <h5 class="card-title">{{ .Title }}</h5>
+                    </a>
+                    <p class="card-text">{{ slicestr .Summary 0 200 }}... <a class='btn-link' href='{{ .Permalink }}'
+                            title='{{ .Title }}'>Weiterlesen</a></p>
+                    <p class="card-text"><small
+                            class="text-muted">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    <!-- Pagination -->
+    {{ partial "pagination.html" . }}
+</div>
+{{ end }}
