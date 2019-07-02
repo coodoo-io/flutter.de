@@ -1,0 +1,29 @@
+.blog-list {
+    .blog-list-item {
+        padding: 2rem;
+        &:hover, a:hover {
+            background-color: #efefef;
+            cursor: pointer;
+            border-radius: 15px;
+            text-decoration: none;
+        }
+
+        .blog-list-item-date {
+            color: #868e96;
+            font-size: .8rem;
+            text-transform: uppercase;
+        }
+
+        .blog-list-item-title {
+            margin-bottom: .3rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .blog-list-item-desc {
+            color: #343a40;
+            margin-bottom: .25rem;
+            font-size: 1rem;
+        }
+    }
+}

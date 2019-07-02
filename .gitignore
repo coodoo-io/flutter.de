@@ -1,0 +1,22 @@
+## OS Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Hugo default output directory
+/public
+/node_modules/*
+npm-debug.log
+/resources/_gen
+
+# IDEs
+.buildpath
+.project
+.settings/
+.build/
+.idea/
+public/
+nbproject/
+themes/fluttery/node_modules

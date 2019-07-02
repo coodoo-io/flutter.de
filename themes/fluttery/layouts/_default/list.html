@@ -1,0 +1,27 @@
+{{ define "content" }}
+<header class="jumbotron text-center">
+    <h1 class="blog-post-title">{{ .Title | singularize }}</h1>
+</header>
+<div class="container page">
+    <div class="blog-list">
+        {{ range .Paginator.Pages }}
+        <article class="blog-list-item">
+            <a href="{{ .Params.ExternalLink | default .RelPermalink }}">
+                <div class="blog-list-item-date">
+                    {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</div>
+                <div class="blog-list-item-title">
+                    {{ .Title }}
+                </div>
+                <div class="blog-list-item-desc">
+                    {{ .Summary }}
+                </div>
+            </a>
+        </article>
+        {{ end }}
+    </div>
+    <!-- Pagination -->
+    {{ partial "pagination.html" . }}
+</div>
+
+
+{{ end }}

@@ -1,0 +1,78 @@
+image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  S3_BUCKET_NAME: "flutter.de"
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  before_script:
+    - apk add --update nodejs nodejs-npm
+    - npm install
+    - npm --prefix ./themes/fluttery install ./themes/fluttery
+    - PATH=$(npm bin):$PATH
+    - hugo version
+  tags:
+    - Node
+  script:
+  - npm run build:local
+  except:
+  - master
+  - develop
+  - tags
+
+build master:
+  stage: build
+  before_script:
+    - apk add --update nodejs nodejs-npm
+    - npm install
+    - PATH=$(npm bin):$PATH
+    - npm --prefix ./themes/fluttery install ./themes/fluttery
+    - hugo version
+  tags:
+    - Node
+  script:
+    - npm run build:prod
+  only:
+  - master
+  - develop
+  - tags
+  artifacts:
+    paths:
+    - public
+    expire_in: 8 hour
+
+# pages:
+#   stage: deploy
+#   tags:
+#     - Node
+#   script:
+#   - hugo
+#   artifacts:
+#     paths:
+#     - public
+#   only:
+#   - develop
+#   variables:
+#     GIT_STRATEGY: none
+
+deploy to production:
+  stage: deploy
+  dependencies: 
+    - build master
+  tags:
+    - Node
+  environment: production
+  image: mikesir87/aws-cli
+  script:
+  - ls -lisa  /builds/flutter/flutter.de/public/
+  - BUCKET_NAME="s3://flutter.de/$CI_COMMIT_TAG/"
+  - aws s3 sync public $BUCKET_NAME --acl public-read
+  only:
+  - tags
+  variables:
+    GIT_STRATEGY: none

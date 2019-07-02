@@ -1,0 +1,40 @@
+@import 'variables';
+
+.pagination {
+  justify-content: center;
+  align-content: center;
+  margin: 30px auto 0 auto;
+  .page-item {
+    &:first-child {
+      .page-link {
+        border-radius: 50%;
+      }
+    }
+    &:last-child {
+      .page-link {
+        border-radius: 50%;
+      }
+    }
+    .page-link {
+      justify-content: center;
+      align-items: center;
+      height: 36px;
+      width: 36px;
+      display: inline-flex;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: #ddd;
+      color: #333;
+      border-radius: 50%;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    &:hover {
+      opacity: .6;
+    }
+    &.active{
+      opacity: .8;
+    }
+  }
+}
