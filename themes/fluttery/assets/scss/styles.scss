@@ -272,7 +272,7 @@ footer {
 
 }
 
-.deutschland {
+.flutter_logo {
     max-width: 250px;
     border-radius: 3px;
     margin-bottom: 25px;
@@ -306,15 +306,15 @@ footer {
     }
 }
 
-@media (min-width: 500px) {
-    .deutschland {
+@media (min-width: 768px) {
+    .flutter_logo {
         max-width: 400px;
     }
 }
 
-@media (min-width: 1000px) {
-    .deutschland {
-        max-width: 600px;
+@media (min-width: 992px) {
+    .flutter_logo {
+        max-width: 450px;
     }
 }
 
