@@ -120,7 +120,7 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
             class="join-slack-word">WACHSEN 🚀</span>
         </div>
       <a href="https://join.slack.com/t/flutter-de/shared_invite/enQtNjYyODAzNDQ5MjUxLWNlOGUwNTUwMDA1ZTc2YmFlODhmMGZmMmVhOGJmYWIyYjBhYjY4Yjc5MDQ0MGJiY2ZjYTdhMzdhMDhlMTA4YjI"
-        target="_blank" rel="noopener" class="btn btn-link d-block"><img src="/images/slack-btn.png" style="width:120px;"></a>
+        target="_blank" class="btn btn-link d-block"><img src="/images/btn-add-to-slack.png" style="width:140px;" rel="noopener"></a>
     </div>
     </div>
        </div>

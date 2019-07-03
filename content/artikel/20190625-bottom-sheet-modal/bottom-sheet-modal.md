@@ -3,7 +3,7 @@ title: "Bottomsheet Modals verwenden"
 slug: "bottom-sheet-modal" 
 date: 2019-06-25T13:35:45+02:00
 draft: true
-description: "abgerundetes Bottom Sheet Modal implementieren"
+description: "Abgerundetes Bottom Sheet Modal implementieren."
 header_image: "/artikel/20190625-bottom-sheet-modal/bottom-sheet-modal.jpg"
 tags: ["modal", "sheet", "bottom", "abgerundet"]
 categories: []
