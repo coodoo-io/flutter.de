@@ -72,8 +72,8 @@ deploy to production:
   - ls -lisa  /builds/flutter/flutter.de/public/
   # - BUCKET_NAME="s3://flutter.de/$CI_COMMIT_TAG/"
   # - aws s3 sync public $BUCKET_NAME --acl public-read
-  - npm run deploy:s3
-  - npm run cloudfront:invalidate
+  - aws s3 sync public s3://flutter.de --delete
+  - aws cloudfront create-invalidation --distribution-id E2QMB3HIWWOL4R --paths '/*'
   only:
   - tags
   variables:
