@@ -234,14 +234,14 @@ footer {
     text-align: center;
     border: 1px solid transparent;
     
-    // &:hover {
-    //     background-color: #f8f9fa;
-    //     border-radius: 30px;
-    //     cursor: pointer;
-    //     border-color: #ddd;
-    //     text-decoration: none;
-    //     color: black;
-    // }
+    &:hover {
+        // background-color: #f8f9fa;
+        // border-radius: 30px;
+        cursor: pointer;
+        // border-color: #ddd;
+        text-decoration: none;
+        color: black;
+    }
 
     img {
         width: 240px;
