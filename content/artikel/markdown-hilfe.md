@@ -140,4 +140,4 @@ main() {
 
 ## HTML Alerts
 
-<div class="alert alert-info">Hinweis: Das Tutorial orientiert sich stark am <a href="https://angular.io/docs/ts/latest/guide/style-guide.html" target="_blank">Style-Guide</a> für Angular Anwendungen.</div>
+<div class="alert alert-info">Hinweis: Das Tutorial orientiert sich stark am <a href="https://angular.io/docs/ts/latest/guide/style-guide.html" target="_blank" rel="noopener">Style-Guide</a> für Angular Anwendungen.</div>
