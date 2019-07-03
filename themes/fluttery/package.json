@@ -3,6 +3,6 @@
   "version": "0.0.1",
   "description": "Hugo theme",
   "dependencies": {
-    "bootstrap": "4.1.3"
+    "bootstrap": "4.3.1"
   }
 }
