@@ -4,7 +4,7 @@ slug: "seiten-navigation-mit-flutter"
 date: 2019-06-26T13:35:45+02:00
 draft: true
 header_image: "/artikel/seiten-navigation-mit-flutter/images/head.jpg"
-description: ""
+description: "Seiten Navigation in Flutter einfügen."
 tags: ["navigation", "routes", "transition"]
 categories: []
 author: Marcel Ploch
