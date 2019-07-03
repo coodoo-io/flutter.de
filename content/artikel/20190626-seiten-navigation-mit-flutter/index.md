@@ -3,7 +3,7 @@ title: "Seiten Navigation mit Flutter"
 slug: "seiten-navigation-mit-flutter" 
 date: 2019-06-26T13:35:45+02:00
 draft: true
-header_image: "artikel/seiten-navigation-mit-flutter/images/head.jpg"
+header_image: "/artikel/seiten-navigation-mit-flutter/images/head.jpg"
 description: ""
 tags: ["navigation", "routes", "transition"]
 categories: []

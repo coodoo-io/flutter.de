@@ -1,4 +1,4 @@
-+++
+<!-- +++
 title = "CTO Handbuch zu Flutter"
 slug = "cto-handbuch"
 aliases = [
@@ -18,4 +18,4 @@ Flutter ist die richtige Wahl für die plattformübergreifende Entwicklung mobil
 
 ## Schnelles Onboarding für Entwickler
 
-## 100% gemeinsamer Code für alle Geräteplattformen
+## 100% gemeinsamer Code für alle Geräteplattformen -->

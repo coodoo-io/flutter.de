@@ -9,6 +9,7 @@ googleAnalytics = "UA-140814434-1"
 enableRobotsTXT = true
 enableEmoji = true
 disqusShortname = "localhost"
+uglyurls = true
 
 [privacy]
   [privacy.googleAnalytics]
@@ -32,7 +33,7 @@ disqusShortname = "localhost"
   
   [[menu.main]]
   name = "Artikel"
-  URL = "artikel"
+  URL = "artikel.html"
   weight = 2
   
   [[menu.main]]
@@ -43,7 +44,7 @@ disqusShortname = "localhost"
     [[menu.main]]
     parent = "Community"
     name = "Meetups Deutschland"
-    URL = "community/meetups"
+    URL = "community/meetups.html"
     weight = 1
     
     # [[menu.main]]

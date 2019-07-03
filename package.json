@@ -1,12 +1,13 @@
 {
     "name": "flutter.de",
-    "version": "0.0.1",
+    "version": "0.2.4",
     "scripts": {
         "start": "$(npm bin)/hugo server -D",
-        "build:local": "hugo --baseURL=http://localhost:8080",
-        "build:prod": "hugo --baseURL=http://flutter.de.s3-website.eu-central-1.amazonaws.com",
+        "build:local": "hugo -b=http://localhost:8080 -e production && npm run serve",
+        "build:prod": "hugo -b https://flutter.de/ -e production",
         "serve": "http-server public",
-        "deploy:s3": "aws s3 cp public s3://flutter.de/ --recursive --acl public-read"
+        "deploy:s3": "aws s3 sync public s3://flutter.de --delete",
+        "cloudfront:invalidate": "aws cloudfront create-invalidation --distribution-id E2QMB3HIWWOL4R --paths '/*'"
     },
     "private": true,
     "hugo-bin": {
