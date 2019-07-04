@@ -1,6 +1,7 @@
 <!-- +++
 title = "CTO Handbuch zu Flutter"
 slug = "cto-handbuch"
+description = "CTO Guide für die deutsche Flutter-Community"
 aliases = [
     "cto-guide"
 ]

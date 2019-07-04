@@ -2,6 +2,7 @@
 date = "2014-03-10"
 slug = "meetups"
 title = "Werde Teil der Community"
+description = "Meetups, Treffen und Events für die deutsche Flutter Community"
 header_image = "/images/community_header.png"
 +++
 
@@ -113,15 +114,20 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
       <div class="col-12 text-center">
       <h5 class="mb-2">Du kannst nicht vor Ort dabei sein, möchtest dich aber mit Gleichgesinnten zu Flutter austauschen?</h5>
       <p class="d-block mb-3">Dann tritt dem deutschen Flutter Slack Channel bei und diskutiere mit anderen Flutteranern<br/> zu aktuellen Themen, stelle Fragen und lerne neue Leute kennen.</p>
-        <div class="join-slack mb-2">
-          <img src="/images/slack-mark.png">
-          <h3 class="mt-0" >Tritt dem Flutter.de Slack Channel bei!</h3>
-          <span class="join-slack-word">CHATTEN 😃</span><span class="join-slack-word">NETZWERKEN 👋</span><span
-            class="join-slack-word">WACHSEN 🚀</span>
+      <div class="join-slack p-0">
+        <a href="https://join.slack.com/t/flutter-de/shared_invite/enQtNjYyODAzNDQ5MjUxLWNlOGUwNTUwMDA1ZTc2YmFlODhmMGZmMmVhOGJmYWIyYjBhYjY4Yjc5MDQ0MGJiY2ZjYTdhMzdhMDhlMTA4YjI"
+        target="_blank" rel="noopener" class="btn btn-link d-block">
+          <img src="/images/slack-mark.png" alt="Slack Logo">
+        </a>
         </div>
+        <h3 class="mt-0" >Tritt dem Flutter.de Slack Channel bei!</h3>
+        <span class="join-slack-word">CHATTEN 😃</span><span class="join-slack-word">NETZWERKEN 👋</span><span
+        class="join-slack-word">WACHSEN 🚀</span>
       <a href="https://join.slack.com/t/flutter-de/shared_invite/enQtNjYyODAzNDQ5MjUxLWNlOGUwNTUwMDA1ZTc2YmFlODhmMGZmMmVhOGJmYWIyYjBhYjY4Yjc5MDQ0MGJiY2ZjYTdhMzdhMDhlMTA4YjI"
-        target="_blank" class="btn btn-link d-block"><img src="/images/btn-add-to-slack.png" style="width:140px;" rel="noopener"></a>
+        target="_blank" rel="noopener" class="btn btn-link d-block pt-4">
+        <img src="/images/btn-add-to-slack.png" alt="Slack Logo" style="width:140px;">
+      </a>
     </div>
     </div>
-       </div>
+</div>
 </div>

@@ -40,7 +40,7 @@ showModalBottomSheet(
 
 Das dadurch erzeugte Modal sieht so aus:
 
-{{< figure src="images/example-1.png" height="600" >}}
+{{< figure src="20190625-bottom-sheet-modal/images/example-1.png" height="600" >}}
 
 Dabei lässt sich der Inhalt im Modal mehr oder weniger komplett frei gestalten, indem du was du willst im Wrap widget als child hinzufügst: 
 
@@ -102,7 +102,7 @@ showModalBottomSheet(
     );
 {{< /highlight >}}
 
-{{< figure src="images/example-2.png" height="600" >}}
+{{< figure src="20190625-bottom-sheet-modal/images/example-2.png" height="600" >}}
 
 Und zu guter letzt kannst du dir ab Flutter Version 1.3.6 das Ganze auch noch ein wenig schöner gestalten, indem du die Form mit angibst. Das geht so:
 
@@ -170,6 +170,6 @@ Und zu guter letzt kannst du dir ab Flutter Version 1.3.6 das Ganze auch noch ei
 
 Und damit hast du ein gut aussehendes Bottom Sheet Modal, das du gestalten kannst, wie du möchtest!
 
-{{< figure src="images/example-3.png" height="600" >}}
+{{< figure src="20190625-bottom-sheet-modal/images/example-3.png" height="600" >}}
 
-Wie immer kannst du in unserem GitHub Konto [hier](https://github.com/coodoo-io "Coodoo-IO Github") eine Demo hierzu finden.
+Wie immer findest du in unserem GitHub Konto [hier](https://github.com/coodoo-io "Coodoo-IO Github") eine Demo hierzu.
