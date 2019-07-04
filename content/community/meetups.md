@@ -6,14 +6,7 @@ description = "Meetups, Treffen und Events für die deutsche Flutter Community"
 header_image = "/images/community_header.png"
 +++
 
-<!-- # Städte
-* [Berlin](#flutter-berlin)
-* [Düsseldorf](#flutter-düsseldorf)
-* [Frankfurt](#flutter-frankfurt)
-* [Hamburg](#flutter-hamburg)
-* [Karlsruhe](#flutter-karlsruhe)
-* [München](#flutter-münchen)
-* [Stuttgart](#flutter-stuttgart) -->
+
 
 ### Meetup Gruppen in Deutschland
 Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutter Meetup Gruppe in deiner Nähe.
