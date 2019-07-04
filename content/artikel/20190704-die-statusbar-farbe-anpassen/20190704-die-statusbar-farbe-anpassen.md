@@ -4,6 +4,7 @@ slug: "flutter-statusbar-farbe-ändern"
 date: 2019-07-07T09:29:00+02:00
 draft: true
 header_image: "/artikel/20190704-die-statusbar-farbe-anpassen/images/farbe_anpassen.jpg"
+images: ["artikel/20190704-die-statusbar-farbe-anpassen/images/farbe_anpassen.jpg"]
 description: "Statusbar Farbe in Flutter anpassen."
 tags: ["byte-size", "ui/ux", "statusbar"]
 categories: []
