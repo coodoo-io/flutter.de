@@ -1,15 +1,14 @@
 ---
 title: "Text-to-speech in Flutter"
 slug: "text-to-speech" 
-date: 2019-07-05T09:00:00+02:00
-draft: true
+date: 2019-07-04T09:00:00+02:00
+draft: false
 header_image: "/artikel/20190705-text-to-speech/images/text-to-speech.jpg"
 description: "Text to Speech in Flutter einfügen und benutzen."
 tags: ["flutter","Text to Speech","Locales"]
 categories: []
 author: Arend Kühle
 ---
-
 
 <!-----
 Original Google Doc Post: https://docs.google.com/document/d/1OjxAZMuLMjv2BL6us0d3f1Agw74eFTCfloPtgQ-010Y/edit?usp=sharing

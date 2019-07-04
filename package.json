@@ -3,7 +3,7 @@
     "version": "0.2.4",
     "scripts": {
         "start": "$(npm bin)/hugo server -D",
-        "build:local": "hugo -b=http://localhost:8080 -e production && npm run serve",
+        "build:local": "hugo -b=http://localhost:8081 -e production && npm run serve",
         "build:prod": "hugo -b https://flutter.de/ -e production",
         "serve": "http-server public",
         "deploy:s3": "aws s3 sync public s3://flutter.de --delete",
