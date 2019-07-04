@@ -1,6 +1,6 @@
 baseURL = "https://flutter.de/"
 languageCode = "de-DE"
-title = "Flutter Germany"
+title = "Flutter Deutschland"
 theme = "fluttery"
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "de"
