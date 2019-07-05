@@ -11,9 +11,9 @@ npm i && npm --prefix ./themes/fluttery install ./themes/fluttery
 npm run start
 ```
 
-3. Anschließen http://localhost:1313 aufrufen.
+3. Anschließend http://localhost:1313 aufrufen.
 
-4. Ein neuen Artikel anlegen
+4. Einen neuen Artikel anlegen
 
 Jeder Artikel wird in einem neuen Ordner abgelegt nach dem Muster (Datum + Artikelname). Bilder sind dieses Artikelordner's abzulegen. Zum Beispiel so:
 **"artikel/20190617-group-work/index.md"**
