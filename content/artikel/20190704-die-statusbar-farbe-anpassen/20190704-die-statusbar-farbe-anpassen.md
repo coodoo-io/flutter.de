@@ -1,13 +1,14 @@
 ---
 title: "Die Statusbar Farbe ändern"
 slug: "flutter-statusbar-farbe-ändern"
-date: 2019-07-07T22:29:00+02:00
+date: 2019-07-07T09:29:00+02:00
 draft: true
 header_image: "/artikel/20190704-die-statusbar-farbe-anpassen/images/farbe_anpassen.jpg"
+images: ["artikel/20190704-die-statusbar-farbe-anpassen/images/farbe_anpassen.jpg"]
 description: "Statusbar Farbe in Flutter anpassen."
 tags: ["byte-size", "ui/ux", "statusbar"]
 categories: []
-author: Jan Marsh
+author: Tobias Mautes
 ---
 
 Jedes mal, egal ob im native Code mit Java und Objective C oder mit Hybrid-Frameworks wie Nativescript oder React Native, probier ich die Statusbar Farbe zu ändern und es klappt nicht auf Anhieb wie gewünscht. Leider bildet auch Flutter hier keine Ausnahme. :( Erst nach längerem Googlen bin ich auf folgende Lösungen gestoßen:
@@ -19,7 +20,7 @@ SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
 ));
 {{< /highlight >}}
 
-Leider wirkt auch diese Lösung wieder einmal relativ kompliziert. Glücklicherweise gibt es aber bereits ein pub-Module, das das Ganze extrem einfach aussehen lässt:
+Leider wirkt auch diese Lösung wieder einmal relativ kompliziert. Glücklicherweise gibt es aber bereits ein pub-Module, das das Ganze extrem einfach macht:
 https://pub.dev/packages/flutter_statusbarcolor
 
 {{< highlight dart >}}

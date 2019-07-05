@@ -2,17 +2,11 @@
 date = "2014-03-10"
 slug = "meetups"
 title = "Werde Teil der Community"
+description = "Meetups, Treffen und Events für die deutsche Flutter Community"
 header_image = "/images/community_header.png"
 +++
 
-<!-- # Städte
-* [Berlin](#flutter-berlin)
-* [Düsseldorf](#flutter-düsseldorf)
-* [Frankfurt](#flutter-frankfurt)
-* [Hamburg](#flutter-hamburg)
-* [Karlsruhe](#flutter-karlsruhe)
-* [München](#flutter-münchen)
-* [Stuttgart](#flutter-stuttgart) -->
+
 
 ### Meetup Gruppen in Deutschland
 Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutter Meetup Gruppe in deiner Nähe.
@@ -85,7 +79,7 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Rhein-Main (31 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Rhein-Main (33 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup/" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup</a>
             </div>
         </div>
@@ -113,15 +107,20 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
       <div class="col-12 text-center">
       <h5 class="mb-2">Du kannst nicht vor Ort dabei sein, möchtest dich aber mit Gleichgesinnten zu Flutter austauschen?</h5>
       <p class="d-block mb-3">Dann tritt dem deutschen Flutter Slack Channel bei und diskutiere mit anderen Flutteranern<br/> zu aktuellen Themen, stelle Fragen und lerne neue Leute kennen.</p>
-        <div class="join-slack mb-2">
-          <img src="/images/slack-mark.png">
-          <h3 class="mt-0" >Tritt dem Flutter.de Slack Channel bei!</h3>
-          <span class="join-slack-word">CHATTEN 😃</span><span class="join-slack-word">NETZWERKEN 👋</span><span
-            class="join-slack-word">WACHSEN 🚀</span>
+      <div class="join-slack p-0">
+        <a href="https://join.slack.com/t/flutter-de/shared_invite/enQtNjYyODAzNDQ5MjUxLWNlOGUwNTUwMDA1ZTc2YmFlODhmMGZmMmVhOGJmYWIyYjBhYjY4Yjc5MDQ0MGJiY2ZjYTdhMzdhMDhlMTA4YjI"
+        target="_blank" rel="noopener" class="btn btn-link d-block">
+          <img src="/images/slack-mark.png" alt="Slack Logo">
+        </a>
         </div>
+        <h3 class="mt-0" >Tritt dem Flutter.de Slack Channel bei!</h3>
+        <span class="join-slack-word">CHATTEN 😃</span><span class="join-slack-word">NETZWERKEN 👋</span><span
+        class="join-slack-word">WACHSEN 🚀</span>
       <a href="https://join.slack.com/t/flutter-de/shared_invite/enQtNjYyODAzNDQ5MjUxLWNlOGUwNTUwMDA1ZTc2YmFlODhmMGZmMmVhOGJmYWIyYjBhYjY4Yjc5MDQ0MGJiY2ZjYTdhMzdhMDhlMTA4YjI"
-        target="_blank" class="btn btn-link d-block"><img src="/images/btn-add-to-slack.png" style="width:140px;" rel="noopener"></a>
+        target="_blank" rel="noopener" class="btn btn-link d-block pt-4">
+        <img src="/images/btn-add-to-slack.png" alt="Slack Logo" style="width:140px;">
+      </a>
     </div>
     </div>
-       </div>
+</div>
 </div>

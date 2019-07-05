@@ -1,6 +1,7 @@
 +++
 title = "Impressum"
 slug = "impressum"
+description = "flutter.de Impressum"
 +++
 
 coodoo GmbH  
