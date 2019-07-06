@@ -1,18 +1,14 @@
 ---
 title: "Entwicklungsumgebung einrichten"
 slug: "flutter-entwicklungsumgebung-einrichten" 
-date: 2019-07-05T22:28:22+02:00
-draft: true
+date: 2019-07-01T22:28:22+02:00
+draft: false
 header_image: "/artikel/20190613-gettings-started/images/getting-started.jpg"
 description: "Flutter installieren und was du sonst noch dazu benötigst um das Flutter Hello World zu sehen."
 tags: ["flutter-setup","flutter","entwicklungsumgebung","setup"]
 categories: []
 author: Markus Kühle
 ---
-
-<!-----
-Original Google Doc Post: https://docs.google.com/a/coodoo.de/open?id=1ONgwh0uRQ2V3Qu3dN68YP9BcefY8IzslslxsVLMqjYw
------>
 
 Um mit Flutter zu starten, benötigst du zuersteinmal eine Entwicklungsumgebung. Dazu müssen für Android und iOS unterschiedliche Tools installiert werden. 
 Ziel ist es, dass du nach dieser Anleitung dein Flutter Hello World Programm in einem Simulator bzw. Emulator ansehen kannst.
