@@ -29,10 +29,10 @@ await FlutterStatusbarcolor.setStatusBarColor(Colors.pink);
 await FlutterStatusbarcolor.setNavigationBarColor(Colors.orange);
 {{< /highlight >}}
 
-Dazu kannst du dir auch sagen lassen, ob das dark oder light theme für die statusbar leserlicher wäre, indem du dieser Funktion die Farbe deiner Statusbar übergibst.
-
 {{< figure src="/artikel/20190704-die-statusbar-farbe-anpassen/images/statusbar-color-change.png" height="250"  >}}
 {{< figure src="/artikel/20190704-die-statusbar-farbe-anpassen/images/navigationbar-color-change.png" height="250"  >}}
+
+Dazu kannst du dir auch sagen lassen, ob das dark oder light theme für die statusbar leserlicher wäre, indem du dieser Funktion die Farbe deiner Statusbar übergibst.
 
 {{< highlight dart >}}
 useWhiteForeground(Colors.white);
