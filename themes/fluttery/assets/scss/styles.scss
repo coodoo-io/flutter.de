@@ -34,6 +34,11 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 3rem;
 }
 
+.btn-primary {
+    border-radius: 3px !important;
+    font-weight: 600;
+}
+
 blockquote {
     margin: 22px 22px;
     padding: 0 20px;
@@ -216,7 +221,7 @@ footer {
 
     .coodoo-link {
         color: #6c757d;
-        pointer: cursor;
+        pointer-events: cursor;
         &:hover {
             text-decoration: none;
             .icon {
