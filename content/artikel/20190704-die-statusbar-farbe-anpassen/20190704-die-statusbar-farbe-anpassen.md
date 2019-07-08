@@ -7,7 +7,7 @@ header_image: "/artikel/20190704-die-statusbar-farbe-anpassen/images/farbe_anpas
 images: ["artikel/20190704-die-statusbar-farbe-anpassen/images/farbe_anpassen.jpg"]
 description: "Statusbar Farbe in Flutter anpassen."
 tags: ["byte-size", "ui/ux", "statusbar"]
-categories: []
+categories: Anfänger * getting started * design
 author: Tobias Mautes
 ---
 
@@ -50,6 +50,6 @@ Hier sieht man den Unterschied:
 
 Ein Beispielprojekt zum Thema findet ihr hier:
 
-https://github.com/coodoo-io
+https://github.com/coodoo-io/flutter-statusbar
 
 Toll, was die Flutter-Community so alles schon gezaubert hat! Schade nur, dass dieses Widget nicht Teil des Core-Widget Systems ist.

@@ -4,6 +4,7 @@
         <h1 class="blog-post-title">{{ .Title }}</h1>
         <span class="blog-post-date mb-0">{{ dateFormat "2. January 2006" .Date }}</span>
         <span class="blog-post-date mb-0">{{ .ReadingTime}} Minute Lesezeit, {{ .WordCount}} Wörter</span>
+        <span class="blog-post-date mb-0">{{ .Params.Categories }}</span>
         <img src="{{ .Params.header_image }}" class="blog-post-title-image mt-5" alt="{{ .Title }}" />
         <div class="blog-post-content mt-5 mb-5">{{ .Content }}</div>
         <div class="blog-post-author bg-light">
@@ -15,11 +16,13 @@
                     {{/*  <small class="text-muted">Blogging about stuff</small>  */}}
                     <div>
                         {{- if isset .Params "Author" -}}
-                            <a href="https://github.com/{{ . }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Github</a>
+                        <a href="https://github.com/{{ . }}" class="btn btn-sm btn-outline-primary" target="_blank"
+                            rel="noopener">Github</a>
                         {{- end -}}
                         {{/*  {{- if .Params.Author -}}
-                            <a href="https://twitter.com/{{ .Params.Author }}" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Twitter</a>
-                        {{- end -}}  */}}
+                        <a href="https://twitter.com/{{ .Params.Author }}" class="btn btn-sm btn-outline-secondary"
+                            target="_blank" rel="noopener">Twitter</a>
+                        {{- end -}} */}}
                     </div>
                 </div>
 
@@ -34,18 +37,18 @@
         <!-- Disqus Kommentare -->
         {{- $.Scratch.Set "isDisqus" true -}}
 
-        {{- if and (isset .Params "type") (in (.Site.Params.disableDisqusTypes | default (slice "page")) .Params.type) -}}
-        {{- $.Scratch.Set "isDisqus" false -}}
-        {{- end -}}
+    {{- if and (isset .Params "type") (in (.Site.Params.disableDisqusTypes | default (slice "page")) .Params.type) -}}
+    {{- $.Scratch.Set "isDisqus" false -}}
+    {{- end -}}
 
-        {{- if and (isset .Params "disqus") (eq .Params.disqus false) -}}
-        {{- $.Scratch.Set "isDisqus" false -}}
-        {{- else if and (isset .Params "disqus") (eq .Params.disqus true) -}}
-        {{- $.Scratch.Set "isDisqus" true -}}
-        {{- end -}}
+    {{- if and (isset .Params "disqus") (eq .Params.disqus false) -}}
+    {{- $.Scratch.Set "isDisqus" false -}}
+    {{- else if and (isset .Params "disqus") (eq .Params.disqus true) -}}
+    {{- $.Scratch.Set "isDisqus" true -}}
+    {{- end -}}
 
-        {{- if eq ($.Scratch.Get "isDisqus") true -}}
-        {{- partial "disqus.html" . -}}
-        {{- end -}}
-    </div>  */}}
+    {{- if eq ($.Scratch.Get "isDisqus") true -}}
+    {{- partial "disqus.html" . -}}
+    {{- end -}}
+</div> */}}
 </div>

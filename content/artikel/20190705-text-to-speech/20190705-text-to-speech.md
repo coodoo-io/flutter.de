@@ -7,7 +7,7 @@ header_image: "/artikel/20190705-text-to-speech/images/text-to-speech.jpg"
 images: ["/artikel/20190705-text-to-speech/images/text-to-speech.jpg"]
 description: "Text to Speech in Flutter einfügen und benutzen."
 tags: ["flutter","Text to Speech","Locales"]
-categories: []
+categories: Fortgeschrittene * Widgets * Sprache
 author: Arend Kühle
 ---
 
