@@ -15,8 +15,9 @@ npm run start
 
 4. Einen neuen Artikel anlegen
 
-Jeder Artikel wird in einem neuen Ordner abgelegt nach dem Muster (Datum + Artikelname). Bilder sind dieses Artikelordner's abzulegen. Zum Beispiel so:
+Jeder Artikel wird in einem neuen Ordner abgelegt nach dem Muster (Datum + Artikelname). Bilder werden im gleichen Artikelordner abgelegt. Die .md muss den gleichen Namen haben wie der Ordner. Zum Beispiel so:
 **"artikel/20190617-group-work/index.md"**
 ```
 $(npm bin)/hugo new artikel/20190617-{{deinArtikelName}}/index.md
 ```
+5. Jeder Artikel braucht einen Titel, Autorenname, einen Beschreibungstext (description), ein Bild, Tags, Categories usw. Einfach bei den anderen Artikeln abschauen. Wenn der Artikel fertig ist, einfach auf "draft: false" setzen.
