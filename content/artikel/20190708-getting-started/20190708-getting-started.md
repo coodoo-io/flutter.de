@@ -9,6 +9,7 @@ description: "Flutter installieren und was du sonst noch dazu benötigst um das 
 tags: ["flutter-setup","flutter","entwicklungsumgebung","setup"]
 categories: Anfänger * getting started * Entwicklungsumgebung * Setup
 author: Markus Kühle
+link: 20190613-gettings-started/20190613-gettings-started.md
 ---
 
 Flutter ist ein sehr schönes Framework, das dir den schnellen Einstieg in die Appentwicklung ermöglicht. In diesem Artikel lernst du, wie du die Entwicklungsumgebung schnell einrichten kannst, um direkt mit dem Programmieren loslegen zu können. Dazu müssen für Android und iOS unterschiedliche Tools installiert werden. 

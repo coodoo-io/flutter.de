@@ -8,6 +8,7 @@ author: "Markus Kühle"
 description: "Deutschlands Nummer 1 Flutter-Community stellt sich vor"
 tags: ["flutter", "community", "getting started", "deutschland"]
 categories: Anfänger * getting started * Flutter
+link: 20190702-hello-world/20190702-hello-world.md
 ---
  Es war ein heißer Nachmittag im Juni, als wir uns bei coodoo nach einem intensiven [Flutter Coding Camp] (https://blog.coodoo.io/schnall-die-flügel-an-wir-lernen-flutter-50aa2749b778) zurücklehnten und die Früchte unserer Arbeit betrachteten. Vier Tage lang hatten unsere Flutter Experten den Frischlingen das Google Framework nahe gebracht und sie bei dem Aufbau ihrer eigenen Projekte unterstützt. Was uns in diesen vier Tagen am meisten auffiel, war, dass es in Deutschland noch
  keine echte Community für Flutter gab, mit der wir uns über unser neu erlerntes Wissen hätten austauschen können. Flutter ist zwar ein junges Framework, aber im englischsprachigen Raum gibt es schon einige Seiten, die sich der Kultivierung von Flutter widmen. Warum nicht auch in Deutschland?

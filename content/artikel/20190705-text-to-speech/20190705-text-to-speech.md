@@ -9,6 +9,7 @@ description: "Text to Speech in Flutter einfügen und benutzen."
 tags: ["flutter","Text to Speech","Locales"]
 categories: Fortgeschrittene * Widgets * Sprache
 author: Arend Kühle
+link: 20190705-text-to-speech/20190705-text-to-speech.md
 ---
 
 <!-----
