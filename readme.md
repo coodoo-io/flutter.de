@@ -20,4 +20,4 @@ Jeder Artikel wird in einem neuen Ordner abgelegt nach dem Muster (Datum + Artik
 ```
 $(npm bin)/hugo new artikel/20190617-{{deinArtikelName}}/index.md
 ```
-5. Jeder Artikel braucht einen Titel, Autorenname, einen Beschreibungstext (description), ein Bild, Tags, Categories usw. Einfach bei den anderen Artikeln abschauen. Wenn der Artikel fertig ist, einfach auf "draft: false" setzen.
+5. Jeder Artikel braucht einen Titel, Autorenname, einen Beschreibungstext (description), ein Bild, Tags, Categories, Link-Pfad usw. Einfach bei den anderen Artikeln abschauen. Wenn der Artikel fertig ist, einfach auf "draft: false" setzen.
