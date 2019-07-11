@@ -1,40 +1,38 @@
 ---
-title: "Assets (Bilder und Sound) verwenden"
+title: "Assets (Bilder und Sound) in Flutter einfügen und verwenden"
 slug: "flutter-assets-bilder-sound-verwenden" 
-date: 2019-06-17T10:48:22+02:00
+date: 2019-06-25T07:48:22+02:00
 draft: true
 description: "Bild und Sound in Flutter anzeigen und abspielen."
+images: ["/artikel/20190725-using-assets/images/using-assets.png"]
+header_image: "/artikel/20190725-using-assets/images/using-assets.png"
 tags: ["flutter, sound, bild, image, assets"]
-categories: []
+categories: Anfänger * Assets * Sound * Bilder
 author: Tobias Mautes
+link: 20190725-using-assets/20190725-using-assets.md
 ---
 
-<!-----
-Original: https://drive.google.com/open?id=1xGw86C4VOeZPd70DW9UqkMi60UNKMC_1obeFYQityC0
------>
-
-Einfach einen Ordner anlegen, die Dateien rein legen und gut ist oder? Nunja nicht ganz, in flutter gibt es da ein-zwei Dinge zu beachten. Hier zeige ich dir welche.
-<!--more-->
+Assets in Flutter hinzufügen könnte so einfach sein. Ordner anlegen, die Dateien rein legen und gut ist, oder? Nun ja. Nicht ganz. In Flutter muss man beim Hinzufügen von Assets einige Dinge beachten. Hier zeige ich dir welche.
 
 ### Ordnerstruktur anlegen
 
-Wie du vielleicht schon von anderen Frameworks gewohnt bist möchte Flutter Dinge wie Bilder und andere verwendete Dateien in einem "assets" folder im Stammverzeichnis des Projektes (Also auf derselben Ebene wie die `pubspec.yaml`) haben. 
+Wie du es vielleicht schon von anderen Frameworks gewohnt bist, möchte Flutter Dinge wie Bilder und andere verwendete Dateien in einem "assets" Folder im Stammverzeichnis des Projektes (also auf derselben Ebene wie die `pubspec.yaml`) haben. 
 
-Zwingend notwenig ist das nicht aber manche IDEs (Entwicklungsumgebungen) stellen, wenn das der Fall ist weitere Features zur Verfügung und es ist der allgemein bekannte Stil. 
+Zwingend notwenig ist das nicht, aber manche IDEs (Entwicklungsumgebungen) stellen, wenn das der Fall ist, weitere Features zur Verfügung und es ist der allgemein bekannte Stil. 
 
-Desweiteren erwarten manche Packages wie z.B. [Flame](https://pub.dev/packages/flame) eben genau diese Struktur: 
+Des weiteren erwarten manche Packages wie z.B. [Flame](https://pub.dev/packages/flame) eben genau diese Struktur: 
 
 `/assets/images` und `/assets/audio` für jeweils die `Flame.image()` and `Flame.audio()` Methode. 
 
 Das sieht in etwa so aus:
 
-{{< figure src="images/file-tree.png" height="150" >}}
+{{< figure src="/artikel/20190725-using-assets/images/file-tree.png" height="150" >}}
 
 ### Dateien deklarieren
 
 Jetzt musst du nur noch die abgelegten Dateien als Assets deklarieren, da du sie sonst nicht nutzen kannst. 
 
-Dazu gehst du einfach in die `pubspec.yaml` und fügst unter `assets:` so deinen Dateipfad hinzu: 
+Dazu gehst du einfach in die `pubspec.yaml` und fügst unter `assets:` deinen Dateipfad hinzu: 
 
 {{< highlight yaml >}}
 flutter:
@@ -83,7 +81,7 @@ class MyApp extends StatelessWidget {
        appBar: AppBar(
          title: Text("Ein Bild"),
        ),
-       body: Image.asset('assets/images/dart_bird.png'),
+       body: Image.asset('/artikel/20190725-using-assets/assets/images/dart_bird.png'),
      ),
    );
  }
@@ -92,14 +90,14 @@ class MyApp extends StatelessWidget {
 
 Dies sieht dann so aus:
 
-{{< figure src="images/picture-example.png" height="500" >}}
+{{< figure src="/artikel/20190725-using-assets/images/picture-example.png" height="500" >}}
 
 
 
 
-### Sound verwenden?
+### Sound verwenden
 
-Das abspielen von Sounddateien ist momentan noch nicht von Haus aus unterstützt. Dafür gibt es aber ein leicht zu verwendendes Plugin. Dafür fügst du einfach so in der `pubspec.yaml` das audioplayers Plugin hinzu:
+Das Abspielen von Sounddateien wird momentan noch nicht von Haus aus unterstützt. Dafür gibt es aber ein leicht zu verwendendes Plugin. Dafür fügst du einfach in der `pubspec.yaml` das `audioplayers` Plugin hinzu:
 
 {{< highlight yaml >}}
 dependencies:
@@ -110,17 +108,18 @@ dependencies:
  audioplayers: ^0.12.1
 {{< /highlight >}}
 
-    (Es ist ein gute Angewohnheit zu kommentieren wofür die imports genutzt werden)
+    (Es ist ein gute Angewohnheit zu kommentieren, wofür die imports genutzt werden.)
 
 Du kannst es nun abspielen, indem du innerhalb deines Widgets ein neues AudioCache Objekt deklarierst:
 
 `static AudioCache player = AudioCache();`
 
-Und dann das Abspielen innerhalb des Widgets so auslöst:
+Und dann das Abspielen innerhalb des Widgets auslöst:
 
 `player.play("audio/explosion.mp3")`
 
-Hier eine weitere kleine Beispielapp. Diese setzt natürlich vorraus, dass du eine audio Datei mit dem entsprechenden namen im asset Ordner und und in der `pubspec.yaml` deklariert hast:
+## Beispiel-App
+Hier eine weitere kleine Beispiel-App. Diese setzt natürlich voraus, dass du eine audio Datei mit dem entsprechenden Namen im asset Ordner und in der `pubspec.yaml` deklariert hast:
 
 {{< highlight dart >}}
 import 'package:flutter/material.dart';
@@ -149,6 +148,6 @@ class MyApp extends StatelessWidget {
 }
 {{< /highlight >}}
 
-Die Beispielapp sieht so aus:
+Die Beispiel-App sieht so aus:
 
-{{< figure src="images/sound-example.png" height="500" >}}
+{{< figure src="/artikel/20190725-using-assets/images/sound-example.png" height="500" >}}
