@@ -1,8 +1,8 @@
 ---
 title: "Seitennavigation mit Flutter"
 slug: "seiten-navigation-mit-flutter" 
-date: 2019-06-15T08:15:45+02:00
-draft: true
+date: 2019-07-15T08:15:45+02:00
+draft: false
 images: ["/artikel/20190715-seiten-navigation-mit-flutter/images/head.jpg"]
 header_image: "/artikel/20190715-seiten-navigation-mit-flutter/images/head.jpg"
 description: "Seitennavigation in Flutter einfügen."
