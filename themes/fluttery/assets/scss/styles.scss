@@ -37,6 +37,7 @@ h1,h2,h3,h4,h5,h6 {
 .btn-primary {
     border-radius: 3px !important;
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 blockquote {
@@ -457,4 +458,15 @@ footer {
         opacity: 0;
         border-radius: 50%;
     }
+}
+
+.iframe {
+    width: 600px;
+}
+
+@media(max-width: 600px) {
+    .iframe {
+        width: 310px;
+        height: 800px;
+}
 }
