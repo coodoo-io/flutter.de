@@ -9,7 +9,7 @@ description: "Flame in Flutter einbinden und mobile Spiele entwickeln."
 tags: ["flutter","flame","game"]
 categories: Fortgeschrittene * Flame * Mobile Game * Framework
 authors: ["leon-adam"]
-link: 20190717-flutter-and-flame/220190717-flutter-and-flame.md
+link: 20190717-flutter-and-flame/20190717-flutter-and-flame.md
 ---
 
 Wer Mobile-Games in Flutter umzusetzen möchte, kann sich der `Flame` Bibliothek bedienen, die sehr einfach zu nutzen ist und schnelle Ergebnisse liefert. Dieser Artikel zeigt euch, wie ihr Flame zu Flutter hinzufügt und eine kleine Anwendung baut. Vorher solltet ihr natürlich Flutter installieren. Eine Anleitung findet ihr [hier] (https://flutter.de/artikel/flutter-entwicklungsumgebung-einrichten.html). Dieses Beispiel wurde in VisualStudioCode umgesetzt.
