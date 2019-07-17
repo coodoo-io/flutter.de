@@ -8,7 +8,7 @@ images: ["/artikel/20190722-bottom-sheet-modal/images/bottom-sheet-modal.jpg"]
 header_image: "/artikel/20190722-bottom-sheet-modal/images/bottom-sheet-modal.jpg"
 tags: ["modal", "sheet", "bottom", "abgerundet"]
 categories: Anfänger * Design * Styling
-author: Tobias Mautes
+authors: ["tobias-mautes"]
 link: 20190722-bottom-sheet-modal/20190722-bottom-sheet-modal.md
 ---
 

@@ -10,27 +10,43 @@
         <div class="blog-post-author bg-light">
             <div class="row">
                 <div class="col-8">
-                    <img class="float-left img-fluid circle">
-                    <strong>Autor:</strong>
-                    <small>{{ .Params.Author }}</small>
-                    {{/*  <small class="text-muted">Blogging about stuff</small>  */}}
-                    <div>
-                        {{- if isset .Params "Author" -}}
-                        <a href="https://github.com/{{ . }}" class="btn btn-sm btn-outline-primary" target="_blank"
-                            rel="noopener">Github</a>
-                        {{- end -}}
-                        {{/*  {{- if .Params.Author -}}
-                        <a href="https://twitter.com/{{ .Params.Author }}" class="btn btn-sm btn-outline-secondary"
-                            target="_blank" rel="noopener">Twitter</a>
-                        {{- end -}} */}}
-                    </div>
+                    <img class="float-left img-fluid">
+                    {{- range .Params.authors }}
+                    {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                    <figure>
+                        <div>
+                            <img class="float-left img-fluid autor mr-3" src="{{ .Params.image }}" width="100px"
+                                alt="{{ .Params.name }}" />
+                        </div>
+                        <div>
+                            <strong>{{ .Params.name }} <br></strong>
+                            <!-- <small>{{ .Params.bio }}</small> -->
+                            <div class="pt-2">
+                                <a href="https://twitter.com/{{ .Params.twitter }}"
+                                    class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Twitter</a>
+                                <a href="https://github.com/{{ .Params.github }}" class="btn btn-sm btn-outline-primary"
+                                    target="_blank" rel="noopener">Github</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <!--Link zur Authors Page-->
+                    <!-- <figcaption>
+                            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+                          </figcaption> -->
+                    {{ end }}
+                    {{ end }}
+
                 </div>
+
                 <!-- Button -->
-                <div class="col-4 text-right">
+                <div class="col-md-4 text-right">
                     <a href="https://github.com/coodoo-io/flutter.de/blob/master/content/artikel/{{ .Params.Link }}"
                         target="_blank" rel="noopener" class="btn btn-primary">Artikel auf Github
                         verbessern</a>
                 </div>
+
+
+
                 <!-- Social Media -->
                 <div class="col-4 text-right">
                     {{/*  <a href="#" class="btn btn-primary">Tweet</a>

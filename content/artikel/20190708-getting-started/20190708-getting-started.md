@@ -8,7 +8,7 @@ images: ["/artikel/20190708-getting-started/images/getting-started.jpg"]
 description: "Flutter installieren und was du sonst noch dazu benötigst um das Flutter Hello World zu sehen."
 tags: ["flutter-setup","flutter","entwicklungsumgebung","setup"]
 categories: Anfänger * getting started * Entwicklungsumgebung * Setup
-author: Markus Kühle
+authors: ["markus-kuehle"]
 link: 20190613-gettings-started/20190613-gettings-started.md
 ---
 
