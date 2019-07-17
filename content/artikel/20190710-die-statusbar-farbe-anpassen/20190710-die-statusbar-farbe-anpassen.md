@@ -8,7 +8,7 @@ images: ["artikel/20190710-die-statusbar-farbe-anpassen/images/farbe_anpassen.jp
 description: "Die Farbe der Statusbar in Flutter anpassen."
 tags: ["byte-size", "ui/ux", "statusbar"]
 categories: Anfänger * getting started * design
-author: Tobias Mautes
+authors: ["tobias-mautes"]
 link: 20190704-die-statusbar-farbe-anpassen/20190704-die-statusbar-farbe-anpassen.md
 ---
 Die Farbe der Statusbar zu ändern sollte eigentlich so einfach sein. Aber jedes mal wenn ich dies, egal ob im native Code mit Java und Objective C oder mit Hybrid-Frameworks wie Nativescript oder React Native, versuche, klappt es nicht auf Anhieb wie gewünscht. Leider bildet auch Flutter hier keine Ausnahme. :( Erst nach längerem Googlen bin ich auf folgende Lösungen gestoßen:

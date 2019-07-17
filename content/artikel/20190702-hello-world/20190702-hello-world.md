@@ -4,7 +4,7 @@ date: 2019-07-03T14:15:59+02:00
 draft: false
 header_image: "/artikel/20190702-hello-world/images/helloworld_header.png"
 images: ["/artikel/20190702-hello-world/images/helloworld_header.png"]
-author: "Markus Kühle"
+authors: ["markus-kuehle"]
 description: "Deutschlands Nummer 1 Flutter-Community stellt sich vor"
 tags: ["flutter", "community", "getting started", "deutschland"]
 categories: Anfänger * getting started * Flutter

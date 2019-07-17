@@ -1,14 +1,14 @@
 ---
 title: "Flame in Flutter anwenden"
 slug: "flame-in-flutter-mobile-game" 
-date: 2019-06-17T07:56:45+02:00
-draft: true
+date: 2019-07-17T07:56:45+02:00
+draft: false
 header_image: "/artikel/20190717-flutter-and-flame/images/flutter_flame.png"
 images: ["/artikel/20190717-flutter-and-flame/images/flutter_flame.png"]
 description: "Flame in Flutter einbinden und mobile Spiele entwickeln."
 tags: ["flutter","flame","game"]
 categories: Fortgeschrittene * Flame * Mobile Game * Framework
-author: Leon Adam
+authors: ["leon-adam"]
 link: 20190717-flutter-and-flame/220190717-flutter-and-flame.md
 ---
 

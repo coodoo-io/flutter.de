@@ -143,10 +143,21 @@ header {
     }
 }
 
-.btn {
-    border-radius: 0;
-    border: 0;
+.btn-outline-secondary {
+    border-color: #333333;
 }
+
+.btn-outline-primary {
+
+    border-color: #187cc9;
+}
+// .btn {
+//     border-radius: 0;
+//     border: 0;
+// }
+
+
+
 
 .articles {
     .card-text {
@@ -460,6 +471,9 @@ footer {
     }
 }
 
+.autor {
+    border-radius: 15px;
+}
 .iframe {
     width: 600px;
 }

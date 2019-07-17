@@ -8,7 +8,7 @@ header_image: "/artikel/20190715-seiten-navigation-mit-flutter/images/head.jpg"
 description: "Seitennavigation in Flutter einfügen."
 tags: ["navigation", "routes", "transition"]
 categories: Anfänger * Navigation * Architektur
-author: Marcel Ploch
+authors: ["marcel-ploch"]
 link: 20190715-seiten-navigation-mit-flutter/20190715-seiten-navigation-mit-flutter.md
 ---
 
@@ -56,4 +56,4 @@ return PageTransition(child: PlanPage(), type: PageTransitionType.leftToRight)`;
 
 Nun können wir uns einfach zwischen Seiten unserer App hin und her bewegen und dies auch noch mit schönen Animationen begleiten.
 
-{{< figure src="/artikel/20190715-seiten-navigation-mit-flutter/images/app_transitions.gif" height="400" >}}
+{{< figure src="/artikel/20190715-seiten-navigation-mit-flutter/images/app_transitions.gif" height="400" maxwidth="320">}}

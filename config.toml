@@ -80,3 +80,8 @@ uglyurls = true
     # name = "Projekt Kickoff"
     # URL = "schulung/projekt-kickoff"
     # weight = 2
+
+[taxonomies]
+  author = "authors"
+
+# disableKinds = ["taxonomyTerm"]

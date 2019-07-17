@@ -8,7 +8,7 @@ images: ["/artikel/20190725-using-assets/images/using-assets.png"]
 header_image: "/artikel/20190725-using-assets/images/using-assets.png"
 tags: ["flutter, sound, bild, image, assets"]
 categories: Anfänger * Assets * Sound * Bilder
-author: Tobias Mautes
+authors: ["tobias-mautes"]
 link: 20190725-using-assets/20190725-using-assets.md
 ---
 
