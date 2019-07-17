@@ -4,25 +4,50 @@
         <h1 class="blog-post-title">{{ .Title }}</h1>
         <span class="blog-post-date mb-0">{{ dateFormat "2. January 2006" .Date }}</span>
         <span class="blog-post-date mb-0">{{ .ReadingTime}} Minute Lesezeit, {{ .WordCount}} Wörter</span>
+        <span class="blog-post-date mb-0">{{ .Params.Categories }}</span>
         <img src="{{ .Params.header_image }}" class="blog-post-title-image mt-5" alt="{{ .Title }}" />
         <div class="blog-post-content mt-5 mb-5">{{ .Content }}</div>
         <div class="blog-post-author bg-light">
             <div class="row">
                 <div class="col-8">
-                    <img class="float-left img-fluid circle">
-                    <strong>Author:</strong>
-                    <small>{{ .Params.Author }}</small>
-                    {{/*  <small class="text-muted">Blogging about stuff</small>  */}}
-                    <div>
-                        {{- if isset .Params "Author" -}}
-                            <a href="https://github.com/{{ . }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Github</a>
-                        {{- end -}}
-                        {{/*  {{- if .Params.Author -}}
-                            <a href="https://twitter.com/{{ .Params.Author }}" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Twitter</a>
-                        {{- end -}}  */}}
-                    </div>
+                    <img class="float-left img-fluid">
+                    {{- range .Params.authors }}
+                    {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                    <figure>
+                        <div>
+                            <img class="float-left img-fluid autor mr-3" src="{{ .Params.image }}" width="100px"
+                                alt="{{ .Params.name }}" />
+                        </div>
+                        <div>
+                            <strong>{{ .Params.name }} <br></strong>
+                            <!-- <small>{{ .Params.bio }}</small> -->
+                            <div class="pt-2">
+                                <a href="https://twitter.com/{{ .Params.twitter }}"
+                                    class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Twitter</a>
+                                <a href="https://github.com/{{ .Params.github }}" class="btn btn-sm btn-outline-primary"
+                                    target="_blank" rel="noopener">Github</a>
+                            </div>
+                        </div>
+                    </figure>
+                    <!--Link zur Authors Page-->
+                    <!-- <figcaption>
+                            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+                          </figcaption> -->
+                    {{ end }}
+                    {{ end }}
+
                 </div>
 
+                <!-- Button -->
+                <div class="col-md-4 text-right">
+                    <a href="https://github.com/coodoo-io/flutter.de/blob/master/content/artikel/{{ .Params.Link }}"
+                        target="_blank" rel="noopener" class="btn btn-primary">Artikel auf Github
+                        verbessern</a>
+                </div>
+
+
+
+                <!-- Social Media -->
                 <div class="col-4 text-right">
                     {{/*  <a href="#" class="btn btn-primary">Tweet</a>
                     <a href="#" class="btn btn-secondary ml-3">Share</a>  */}}
@@ -34,18 +59,18 @@
         <!-- Disqus Kommentare -->
         {{- $.Scratch.Set "isDisqus" true -}}
 
-        {{- if and (isset .Params "type") (in (.Site.Params.disableDisqusTypes | default (slice "page")) .Params.type) -}}
-        {{- $.Scratch.Set "isDisqus" false -}}
-        {{- end -}}
+    {{- if and (isset .Params "type") (in (.Site.Params.disableDisqusTypes | default (slice "page")) .Params.type) -}}
+    {{- $.Scratch.Set "isDisqus" false -}}
+    {{- end -}}
 
-        {{- if and (isset .Params "disqus") (eq .Params.disqus false) -}}
-        {{- $.Scratch.Set "isDisqus" false -}}
-        {{- else if and (isset .Params "disqus") (eq .Params.disqus true) -}}
-        {{- $.Scratch.Set "isDisqus" true -}}
-        {{- end -}}
+    {{- if and (isset .Params "disqus") (eq .Params.disqus false) -}}
+    {{- $.Scratch.Set "isDisqus" false -}}
+    {{- else if and (isset .Params "disqus") (eq .Params.disqus true) -}}
+    {{- $.Scratch.Set "isDisqus" true -}}
+    {{- end -}}
 
-        {{- if eq ($.Scratch.Get "isDisqus") true -}}
-        {{- partial "disqus.html" . -}}
-        {{- end -}}
-    </div>  */}}
+    {{- if eq ($.Scratch.Get "isDisqus") true -}}
+    {{- partial "disqus.html" . -}}
+    {{- end -}}
+</div> */}}
 </div>

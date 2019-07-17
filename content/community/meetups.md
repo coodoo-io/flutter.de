@@ -102,6 +102,11 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
             </div>
         </div>
     </div>
+    </div>
+    <div class="text-center pt-4">
+        <a href="https://forms.gle/FrFC81nwYmW7iscf7" target="_blank" rel="noopener" class="btn btn-primary">Eigene
+          Flutter Gruppe eintragen</a>
+      </div>
  <div class="container">
     <div class="row pt-5 pb-5">
       <div class="col-12 text-center">
@@ -122,5 +127,4 @@ Flutter ist bereits in vielen Städten Deutschlands vertreten. Finde eine Flutte
       </a>
     </div>
     </div>
-</div>
 </div>

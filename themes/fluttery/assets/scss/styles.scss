@@ -34,6 +34,12 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 3rem;
 }
 
+.btn-primary {
+    border-radius: 3px !important;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
 blockquote {
     margin: 22px 22px;
     padding: 0 20px;
@@ -137,10 +143,21 @@ header {
     }
 }
 
-.btn {
-    border-radius: 0;
-    border: 0;
+.btn-outline-secondary {
+    border-color: #333333;
 }
+
+.btn-outline-primary {
+
+    border-color: #187cc9;
+}
+// .btn {
+//     border-radius: 0;
+//     border: 0;
+// }
+
+
+
 
 .articles {
     .card-text {
@@ -216,7 +233,7 @@ footer {
 
     .coodoo-link {
         color: #6c757d;
-        pointer: cursor;
+        pointer-events: cursor;
         &:hover {
             text-decoration: none;
             .icon {
@@ -452,4 +469,18 @@ footer {
         opacity: 0;
         border-radius: 50%;
     }
+}
+
+.autor {
+    border-radius: 15px;
+}
+.iframe {
+    width: 600px;
+}
+
+@media(max-width: 600px) {
+    .iframe {
+        width: 310px;
+        height: 800px;
+}
 }

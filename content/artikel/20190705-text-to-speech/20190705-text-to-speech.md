@@ -7,13 +7,10 @@ header_image: "/artikel/20190705-text-to-speech/images/text-to-speech.jpg"
 images: ["/artikel/20190705-text-to-speech/images/text-to-speech.jpg"]
 description: "Text to Speech in Flutter einfügen und benutzen."
 tags: ["flutter","Text to Speech","Locales"]
-categories: []
-author: Arend Kühle
+categories: Fortgeschrittene * Widgets * Sprache
+authors: ["arend-kuehle"]
+link: 20190705-text-to-speech/20190705-text-to-speech.md
 ---
-
-<!-----
-Original Google Doc Post: https://docs.google.com/document/d/1OjxAZMuLMjv2BL6us0d3f1Agw74eFTCfloPtgQ-010Y/edit?usp=sharing
------>
 
 Mein fünfjähriger Sohn kommt hin und wieder mit einem Zettel, auf dem er ein paar Buchstaben gemalt hat und bittet mich ihm sein Werk vorzulesen. Daraufhin lacht er sich kaputt, verschwindet mit dem Zettel wieder und kommt erneut mit noch mehr Buchstaben. Das Ganze kann sich schon mal ne Stunde lang wiederholen.
 
@@ -23,7 +20,7 @@ Da das nach dem x-ten Mal nerven kann, dachte ich mir, ich schreibe dem Sohneman
 
 **Schritt 1: Entwicklungsumgebung**
 
-Die [Entwicklungsumgebung einrichten](https://flutter.de/artikel/flutter-entwicklungsumgebung-einrichten/ "Entwicklungsumgebung einrichten") war kein Problem und das Zusammenstellen der Widgets konnte starten.
+Die [Entwicklungsumgebung einrichten](https://flutter.de/artikel/flutter-entwicklungsumgebung-einrichten.html "Entwicklungsumgebung einrichten") war kein Problem und das Zusammenstellen der Widgets konnte starten.
 
 **Schritt 2: Gestaltung**
 
