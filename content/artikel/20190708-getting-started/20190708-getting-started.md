@@ -10,6 +10,7 @@ tags: ["flutter-setup","flutter","entwicklungsumgebung","setup"]
 categories: Anfänger * getting started * Entwicklungsumgebung * Setup
 authors: ["markus-kuehle"]
 link: 20190613-gettings-started/20190613-gettings-started.md
+author: Markus Kühle
 ---
 
 Flutter ist ein sehr schönes Framework, das dir den schnellen Einstieg in die Appentwicklung ermöglicht. In diesem Artikel lernst du, wie du die Entwicklungsumgebung schnell einrichten kannst, um direkt mit dem Programmieren loslegen zu können. Dazu müssen für Android und iOS unterschiedliche Tools installiert werden. 
