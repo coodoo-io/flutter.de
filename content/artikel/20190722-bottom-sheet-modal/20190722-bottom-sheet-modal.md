@@ -1,20 +1,22 @@
 ---
-title: "Bottomsheet Modals in Flutter verwenden"
-slug: "bottom-sheet-modal-in-flutter" 
+title: "Bottom sheet modals in Flutter verwenden"
+slug: "bottom-sheet-modals-in-flutter" 
 date: 2019-06-22T07:35:45+02:00
 draft: true
-description: "Wie man in Flutter ein abgerundetes Bottom Sheet Modal implementiert."
+description: "Wie man in Flutter ein abgerundetes bottom sheet modal implementiert."
 images: ["/artikel/20190722-bottom-sheet-modal/images/bottom-sheet-modal.jpg"]
 header_image: "/artikel/20190722-bottom-sheet-modal/images/bottom-sheet-modal.jpg"
-tags: ["modal", "sheet", "bottom", "abgerundet"]
+tags: ["modal", "sheet", "bottom", "abgerundet", "round"]
 categories: Anfänger * Design * Styling
 authors: ["tobias-mautes"]
 link: 20190722-bottom-sheet-modal/20190722-bottom-sheet-modal.md
 ---
 
-Bottomsheet Modals sind ein immer weiter verbreitetes Element, da sie dem User eine Auswahl an Dingen geben, die leicht mit dem Daumen zu erreichen sind. Das ist besonders wichtig im Zeitalter von immer größer werdenden Smartphones und sieht auch noch um einiges besser aus! Hier zeige ich dir, wie du dir ein Bottom Sheet Modal in Flutter selbst bauen kannst. 
+Bottom sheet modals sind ein immer weiter verbreitetes Element, da sie dem User eine Auswahl an Dingen geben, die leicht mit dem Daumen zu erreichen sind. Das ist besonders wichtig im Zeitalter von immer größer werdenden Smartphones und sieht auch noch um einiges besser aus! Hier zeige ich dir, wie du dir ein bottom sheet modal in Flutter selbst bauen kannst. 
 
-An sich ist das ganz einfach. Du musst einfach nur diese Funktion ausführen und schon hast du ein simples Bottomsheet Modal:
+### Wie funktioniert es
+
+An sich ist das ganz einfach. Du musst einfach nur diese Funktion ausführen und schon hast du ein simples bottom sheet modal:
 
 {{< highlight dart >}}
 showModalBottomSheet(
@@ -35,11 +37,13 @@ showModalBottomSheet(
     );
 {{< /highlight >}}
 
-Das dadurch erzeugte Modal sieht so aus:
+Das dadurch erzeugte modal sieht so aus:
 
-{{< figure src="20190625-bottom-sheet-modal/images/example-1.png" height="600" >}}
+{{< figure src="/artikel/20190722-bottom-sheet-modal/images/example-1.png" height="600"  >}}
 
-Dabei lässt sich der Inhalt im Modal frei gestalten, indem du was du willst, im Wrap Widget als `child` hinzufügst: 
+### Elemente einfügen
+
+Dabei lässt sich der Inhalt im modal frei gestalten, indem du was du willst, im Wrap Widget als `child` hinzufügst: 
 
 {{< highlight dart >}}
 showModalBottomSheet(
@@ -99,7 +103,9 @@ showModalBottomSheet(
     );
 {{< /highlight >}}
 
-{{< figure src="20190625-bottom-sheet-modal/images/example-2.png" height="600" >}}
+{{< figure src="/artikel/20190722-bottom-sheet-modal/images/example-2.png" height="600" >}}
+
+### Form ändern
 
 Zu guter Letzt kannst du ab Flutter Version 1.3.6 das Ganze ein wenig schöner gestalten, indem du die Form mit angibst. Das geht so:
 
@@ -165,8 +171,10 @@ Zu guter Letzt kannst du ab Flutter Version 1.3.6 das Ganze ein wenig schöner g
     );
 {{< /highlight >}}
 
-Damit hast du ein gut aussehendes Bottom Sheet Modal in Flutter, das du gestalten kannst, wie du möchtest!
+Damit hast du ein gut aussehendes bottom sheet modal in Flutter, das du gestalten kannst, wie du möchtest!
 
-{{< figure src="20190625-bottom-sheet-modal/images/example-3.png" height="600" >}}
+{{< figure src="/artikel/20190722-bottom-sheet-modal/images/example-3.png" height="600" >}}
 
-Wie immer findest du im coodoo GitHub Konto [hier](https://github.com/coodoo-io "Coodoo-IO Github") eine Demo hierzu.
+### Beispiel-app
+
+Wie immer findest du im coodoo [GitHub-Profil](https://github.com/coodoo-io/flutter-bottom-sheet "Coodoo Github") eine Demo hierzu.

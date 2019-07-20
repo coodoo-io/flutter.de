@@ -34,10 +34,16 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 3rem;
 }
 
+// Buttons
 .btn-primary {
     border-radius: 3px !important;
     font-weight: 600;
     font-size: 1.2rem;
+}
+
+.btn-secondary {
+    border-radius: 3px !important;
+    background-color: #859099;
 }
 
 blockquote {
@@ -142,6 +148,7 @@ header {
         margin-top: 0;
     }
 }
+
 
 .btn-outline-secondary {
     border-color: #333333;
