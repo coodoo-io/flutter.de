@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
        appBar: AppBar(
          title: Text("Ein Bild"),
        ),
-       body: Image.asset('/artikel/20190725-using-assets/assets/images/dart_bird.png'),
+       body: Image.asset('assets/images/dart_bird.png'),
      ),
    );
  }
