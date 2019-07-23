@@ -148,6 +148,7 @@ Klar kann man auch in den normalen Floating-Action-Button einen Text integrieren
 
 {{< figure src="/artikel/20190801-floating-action-button/images/5.1-extended.png" height="600" >}}  {{< figure src="/artikel/20190801-floating-action-button/images/5.2-extended.png" height="600" >}}
 
+
 Ein Beispiel für einen schönen Floating Action Button findet ihr hier: 
 
   
