@@ -2,7 +2,7 @@
 title: "Assets (Bilder und Sound) in Flutter einfügen und verwenden"
 slug: "flutter-assets-bilder-sound-verwenden" 
 date: 2019-06-25T07:48:22+02:00
-draft: true
+draft: false
 description: "Bild und Sound in Flutter anzeigen und abspielen."
 images: ["/artikel/20190725-using-assets/images/using-assets.png"]
 header_image: "/artikel/20190725-using-assets/images/using-assets.png"
