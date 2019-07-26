@@ -491,3 +491,15 @@ footer {
         height: 800px;
 }
 }
+
+// special rule for meetup map
+
+#meetupmap {
+    height: 300px;
+}
+
+@media(min-width: 720px) {
+    #meetupmap {
+        height: 52em;
+    }
+}
