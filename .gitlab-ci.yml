@@ -28,7 +28,7 @@ Live Deploy:
     - build
   tags:
     - Node
-  image: chybie/node-aws-cli
+  image: carimus/node-alpine-aws:node10
   stage: release
   script:
     - npm run deploy:s3
