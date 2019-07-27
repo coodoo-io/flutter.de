@@ -1,8 +1,8 @@
 ---
 title: "Assets (Bilder und Sound) in Flutter einfügen und verwenden"
 slug: "flutter-assets-bilder-sound-verwenden" 
-date: 2019-06-25T07:48:22+02:00
-draft: true
+date: 2019-07-25T07:48:22+02:00
+draft: false
 description: "Bild und Sound in Flutter anzeigen und abspielen."
 images: ["/artikel/20190725-using-assets/images/using-assets.png"]
 header_image: "/artikel/20190725-using-assets/images/using-assets.png"
@@ -62,7 +62,7 @@ flutter:
 Hierbei ist es allerdings wichtig, dass der angehängte forward slash (`/`) nicht vergessen wird.
 
 
-##### Die `pubspec.yaml` ist übrigens indentation-sensitive, was bedeutet dass das ordentliche Einrücken des Geschriebenen wichtig ist!
+##### Die `pubspec.yaml` ist übrigens indentation-sensitive, was bedeutet, dass das ordentliche Einrücken des Geschriebenen wichtig ist!
 
 ### Bild verwenden
 
@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
        appBar: AppBar(
          title: Text("Ein Bild"),
        ),
-       body: Image.asset('/artikel/20190725-using-assets/assets/images/dart_bird.png'),
+       body: Image.asset('assets/images/dart_bird.png'),
      ),
    );
  }
@@ -90,7 +90,7 @@ class MyApp extends StatelessWidget {
 
 Dies sieht dann so aus:
 
-{{< figure src="/artikel/20190725-using-assets/images/picture-example.png" height="500" >}}
+{{< figure src="/artikel/20190725-using-assets/images/picture-example.png" height="400" width="300" >}}
 
 
 
@@ -150,4 +150,4 @@ class MyApp extends StatelessWidget {
 
 Die Beispiel-App sieht so aus:
 
-{{< figure src="/artikel/20190725-using-assets/images/sound-example.png" height="500" >}}
+{{< figure src="/artikel/20190725-using-assets/images/sound-example.png" height="400" width="300" >}}

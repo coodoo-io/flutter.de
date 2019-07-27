@@ -61,10 +61,21 @@ nav {
     border-bottom: 1px solid #efefef;
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    z-index: 401;
+}
+
+.leaflet-pane {
+    z-index: 1 !important;
+}
+
 .navbar-collapse {
     text-align: center;
     form {
         justify-content: center;
+    }
+    .dropdown-menu {
+        text-align: center;
     }
 }
 
@@ -101,7 +112,6 @@ nav {
 }
 
 .page {
-    padding: 2rem 0;
     padding-bottom: 84px;
 }
 
@@ -302,56 +312,14 @@ footer {
     margin-bottom: 25px;
 }
 
-@include media-breakpoint-up(md) {
-    .navbar-collapse {
-        form {
-            justify-content: right;
-        }
-    }
-    header {
-        h1 {
-            font-size: 2.5rem;
-            padding: 1rem 2.6rem;
-        }
-
-        .lead {
-            font-size: 1.8rem;
-        }
-    }
+.autor {
+    border-radius: 15px;
 }
 
-@include media-breakpoint-up(xl) {
-    header {
-        min-height: 400px;
-    }
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-}
+// special rule for meetup map
 
-@media (min-width: 768px) {
-    .flutter_logo {
-        max-width: 400px;
-    }
-}
-
-@media (min-width: 992px) {
-    .flutter_logo {
-        max-width: 450px;
-    }
-}
-
-@media (min-width: 1440px) {
-    .container {
-        max-width: 1280px;
-    }
-}
-
-@media (min-width: 1600px) {
-    header {
-        min-height: 450px;
-    }
+.meetupmap {
+    height: 360px;
 }
 
 .circles{
@@ -461,8 +429,6 @@ footer {
     animation-duration: 20s;
 }
 
-
-
 @keyframes animate {
 
     0%{
@@ -478,16 +444,61 @@ footer {
     }
 }
 
-.autor {
-    border-radius: 15px;
-}
-.iframe {
-    width: 600px;
+@include media-breakpoint-up(md) {
+    .navbar-collapse {
+        form {
+            justify-content: right;
+        }
+    }
+    header {
+        h1 {
+            font-size: 2.5rem;
+            padding: 1rem 2.6rem;
+        }
+
+        .lead {
+            font-size: 1.8rem;
+        }
+    }
+    .page {
+        padding: 2rem 0;
+    }
+    
+    .meetupmap {
+        height: 550px;
+    }
 }
 
-@media(max-width: 600px) {
-    .iframe {
-        width: 310px;
-        height: 800px;
+@include media-breakpoint-up(xl) {
+    header {
+        min-height: 400px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 }
+
+@media (min-width: 768px) {
+    .flutter_logo {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .flutter_logo {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1600px) {
+    header {
+        min-height: 450px;
+    }
 }

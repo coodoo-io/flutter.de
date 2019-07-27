@@ -3,8 +3,8 @@
     "version": "0.2.4",
     "scripts": {
         "start": "$(npm bin)/hugo server -D",
-        "build:local": "hugo -b=http://localhost:8081 -e production && npm run serve",
-        "build:prod": "hugo -b https://flutter.de/ -e production",
+        "build:local": "rm -rf public && hugo -b=http://localhost:8081 -e production && npm run serve",
+        "build:prod": "rm -rf public && hugo -b https://flutter.de/ -e production",
         "serve": "http-server public",
         "deploy:s3": "aws s3 sync public s3://flutter.de --delete",
         "cloudfront:invalidate": "aws cloudfront create-invalidation --distribution-id E2QMB3HIWWOL4R --paths '/*'"
