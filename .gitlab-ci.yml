@@ -1,13 +1,10 @@
 image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive
-  S3_BUCKET_NAME: "flutter.de"
-
 stages:
   - build
-  - deploy
+  - release
 
+# Build
 build:
   stage: build
   before_script:
@@ -19,62 +16,25 @@ build:
   tags:
     - Node
   script:
-  - npm run build:prod
-  except:
-  - master
-  - develop
-  - tags
-
-build master:
-  stage: build
-  before_script:
-    - apk add --update nodejs nodejs-npm
-    - npm install
-    - PATH=$(npm bin):$PATH
-    - npm --prefix ./themes/fluttery install ./themes/fluttery
-    - hugo version
-  tags:
-    - Node
-  script:
     - npm run build:prod
-  only:
-  - master
-  - develop
-  - tags
   artifacts:
     paths:
     - public
-    expire_in: 8 hour
+    expire_in: 1 hour
 
-# pages:
-#   stage: deploy
-#   tags:
-#     - Node
-#   script:
-#   - hugo
-#   artifacts:
-#     paths:
-#     - public
-#   only:
-#   - develop
-#   variables:
-#     GIT_STRATEGY: none
-
-deploy to production:
-  stage: deploy
+# Static live deploy
+Live Deploy:
   dependencies: 
-    - build master
+    - build
   tags:
     - Node
-  environment: production
-  image: mikesir87/aws-cli
+  image: carimus/node-alpine-aws:node10
+  stage: release
   script:
-  - ls -lisa  /builds/flutter/flutter.de/public/
-  # - BUCKET_NAME="s3://flutter.de/$CI_COMMIT_TAG/"
-  # - aws s3 sync public $BUCKET_NAME --acl public-read
-  - aws s3 sync public s3://flutter.de --delete
-  - aws cloudfront create-invalidation --distribution-id E2QMB3HIWWOL4R --paths '/*'
+    - npm run deploy:s3
+    - npm run cloudfront:invalidate
   only:
-  - tags
-  variables:
-    GIT_STRATEGY: none
+    - tags
+  environment:
+    name: Live
+    url: https://www.flutter.de
