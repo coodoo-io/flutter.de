@@ -1,40 +1,40 @@
 ---
-title: "AlertDialog in Flutter"
+title: "AlertDialog in Flutter erstellen und gestalten"
 slug: "alert-dialog-flutter" 
-date: 2019-07-23T13:45:30+02:00
+date: 2019-07-23T07:45:30+02:00
 draft: true
 header_image: "/artikel/20190723-alertDialog/images/alertDialog.png"
 images: ["/artikel/20190723-alertDialog/images/alertDialog.png"]
-description: "AlertDialogs in Flutter"
+description: "Flutter auf deutsch: Wie du AlertDialogs in Flutter erstellen und gestalten kannst."
 tags: ["flutter","alertDialog","Dialog"]
-categories: Anfänger * Widgets * Dialoge
+categories: Anfänger * Widgets * Dialog
 authors: ["simon-stevens"]
-link: 20190723-alertDialog/220190723-alertDialog.md
+link: 20190723-alertDialog/20190723-alertDialog.md
 ---
 
-## Achtung!!
+## Achtung!!!
 
-Du stehst kurz davor etwas unwiederrufliches zu tun! Bist du dir sicher, dass du das wirklich löschen willst? Hast du dir das gut überlegt?
+Du stehst kurz davor etwas Unwiederrufliches zu tun! Bist du dir sicher, dass du das wirklich löschen willst? Hast du dir das gut überlegt?
 
-Wäre ich eine App würde ich dich jetzt zubombadieren mit **AlertDialogs**.
+Wäre ich eine App würde ich dich jetzt mit **AlertDialogs** bombadieren.
 
-Bin ich aber nicht, also zeige ich dir, wie du dir deine eigenen AlertDialogs in einer Flutter-App einbauen kannst.
+Bin ich aber nicht. Also wenn du Flutter lernen möchtest, zeige ich dir, wie du AlertDialogs in einer Flutter-App einbauen kannst.
 
 
 ### Was sind AlertDialogs?
 
-Zunächst einmal müssen wir ein paar Sachen definieren. Ein AlertDialog ist eine Unterklasse von Dialog. <br>
-Dialog hat die Unterklassen SimpleDialog und AlertDialog.
+Zunächst einmal müssen wir ein paar Sachen definieren. Ein AlertDialog ist eine Unterklasse von `Dialog`. <br>
+Dialog hat die Unterklassen `SimpleDialog` und `AlertDialog`.
 
-Hier ist ein SimpleDialog. In einem SimpleDialog hat man meist verschiedene Optionen in Form einer Auswahl zur Verfügung.<br>
+In einem SimpleDialog hat man meist verschiedene Optionen in Form einer Auswahl zur Verfügung.<br>
 {{< figure src="/artikel/20190723-alertDialog/images/simpleDialogExample.png" height="230" >}}
 
-Hier im gegensatz dazu ein AlertDialog. Dieser braucht eine Bestätigung, dass eine bestimmte Aktion durchgeführt werden soll, oder eben nicht.<br>
+Im Gegensatz dazu steht ein AlertDialog. Dieser braucht eine Bestätigung, dass eine bestimmte Aktion durchgeführt werden soll, oder nicht.<br>
 {{< figure src="/artikel/20190723-alertDialog/images/alertDialogExample.png" height="180" >}}
 
 In diesem Artikel gehen wir genauer auf AlertDialogs ein.<br>
-Um ein AlertDialog aufzurufen, müssen wir zunächst die `showDialog()`Methode aufrufen. <br>
-Diese benötigt zum einen den context und zum anderen einen itemBuilder, der als Rückgabewert einen Typ von Dialog zurückgibt. In unserem Falle einen AlertDialog.
+Um einen AlertDialog aufzurufen, müssen wir zunächst die `showDialog()`Methode aufrufen. <br>
+Diese benötigt zum einen den `context` und zum anderen einen `itemBuilder`, der als Rückgabewert einen Typ von Dialog zurückgibt. In unserem Fall einen AlertDialog.
 
 
 {{< highlight dart >}}
@@ -64,8 +64,8 @@ Wir müssen dem Dialog also mindestens einen `title` geben.<br>
 
 ### Bestandteile von AlertDialogs
 
-Damit der Dialog schön aussieht und dem Nutzer auch etwas bringt, sollten wir ihn allerdings mit mehr Atributen füllen, als nur einem Titel.
-Über den `content` Parameter können wir den Nutzer besser darüber informieren, was tatsächlich gerade passiert. 
+Damit der Dialog schön aussieht und dem Nutzer auch etwas bringt, sollten wir ihn mit mehr Attributen füllen und den Nutzer nicht mit dem Titel allein lassen.
+Über den `content` Parameter können wir den Nutzer darüber informieren, was tatsächlich gerade passiert. 
 Der `actions` Parameter erwartet eine Liste von Widgets, also theoretisch so viele wie du Lust hast. Allerdings sollte man sich, im Sinne der Benutzerfreundlichkeit, auf maximal zwei Buttons beschränken.
 
 {{< highlight dart >}}
@@ -88,13 +88,13 @@ return AlertDialog(
 {{< /highlight >}}
 {{< figure src="/artikel/20190723-alertDialog/images/alertDialogFilled.png" height="600" >}}
 
-### Where's the beauty?
+### Where's the beauty? alertDialog stylen
 
-So der AlertDialog ist zu sehen und die Funktionalität ist gegeben. Aber geht da noch mehr?<br>
-Ganz kurz..  Klar!
+Nun ist der AlertDialog zu sehen und die Funktionalität ist gegeben. Aber geht da noch mehr?<br>
+Klar!
 
-Natürlich können wir bei jedem Text auch den `style` nach belieben verändern. Außerdem können wir über den Parameter `elevation` bestimmen wie stark der Dialog hervorgehoben sein soll und wie viel Schatten er werfen soll.
-Natürlich dürfen bei einer schönen Dialogbox auch keine scharfen Ecken ein. Auch eine Dialogbox darf Kurven haben über `shape`.
+Natürlich können wir bei jedem Text auch den `style` nach Belieben verändern. Außerdem können wir über den Parameter `elevation` bestimmen, wie stark der Dialog hervorgehoben wird und wie viel Schatten er werfen soll.
+Natürlich dürfen bei einer schönen Dialogbox auch keine scharfen Ecken rein. Mit `shape` bekommt auch eine Dialogbox schöne Kurven.
 
 {{< highlight dart >}}
 return AlertDialog(
