@@ -3,16 +3,16 @@ title: "AlertDialog in Flutter"
 slug: "alert-dialog-flutter" 
 date: 2019-07-23T13:45:30+02:00
 draft: true
-header_image: "/artikel/20190723-alertDialog/images/alertDialog.jpg"
-images: ["/artikel/20190723-alertDialog/images/alertDialog.jpg"]
-description: "AlertDialogs in Flutter richtig verwenden"
+header_image: "/artikel/20190723-alertDialog/images/alertDialog.png"
+images: ["/artikel/20190723-alertDialog/images/alertDialog.png"]
+description: "AlertDialogs in Flutter"
 tags: ["flutter","alertDialog","Dialog"]
 categories: Anfänger * Widgets * Dialoge
 authors: ["simon-stevens"]
 link: 20190723-alertDialog/220190723-alertDialog.md
 ---
 
-## Achtung
+## Achtung!!
 
 Du stehst kurz davor etwas unwiederrufliches zu tun! Bist du dir sicher, dass du das wirklich löschen willst? Hast du dir das gut überlegt?
 
@@ -66,7 +66,7 @@ Wir müssen dem Dialog also mindestens einen `title` geben.<br>
 
 Damit der Dialog schön aussieht und dem Nutzer auch etwas bringt, sollten wir ihn allerdings mit mehr Atributen füllen, als nur einem Titel.
 Über den `content` Parameter können wir den Nutzer besser darüber informieren, was tatsächlich gerade passiert. 
-Der `actions` Parameter erwartet eine Liste von Widgets, also theoretisch so viele wie du Lust hast. Allerdings sollte sich, im Sinne der Benutzerfreundlichkeit, auf maximal zwei Buttons beschränken.
+Der `actions` Parameter erwartet eine Liste von Widgets, also theoretisch so viele wie du Lust hast. Allerdings sollte man sich, im Sinne der Benutzerfreundlichkeit, auf maximal zwei Buttons beschränken.
 
 {{< highlight dart >}}
 return AlertDialog(
@@ -101,9 +101,11 @@ return AlertDialog(
           title: Text('Alert!', style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, 
             fontStyle: FontStyle.italic, color: Colors.green[900])),
           content: Text('Bitte Aktion bestätigen.', style: TextStyle(color: Colors.purple),),
+          backgroundColor: Colors.yellow,
           actions: <Widget>[
             FlatButton(
               child: Text('Abbrechen'),
+              color: Colors.blue[100],
               onPressed: (){
                 _counterZero();
                 Navigator.of(context).pop();
@@ -123,5 +125,4 @@ return AlertDialog(
 
 {{< figure src="/artikel/20190723-alertDialog/images/alertDialogBeauty.png" height="600" >}}
 
-<br><br><br><br>
-Hier findest du eine Beispielanwendung mit einem AlertDialog:
+Okay zugegeben, wirklich schön ist er nicht, aber er zeigt was so alles möglich ist. :smile:
