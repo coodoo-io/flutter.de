@@ -14,8 +14,8 @@ link: 20190801-hero-widget/20190801-hero-widget.md
 
 # Das Hero Widget in Flutter
 
-Wenn wir eine App entwickeln, haben wir im Idealfall ein einheitliches Appdesign. Dazu zählt natürlich auch die verwendung von einheitlichen Symbolen oder Bildern. Will man jetzt eine besondere Userexperience kreieren, oder die Aufmerksamkeit des Nutzers auf etwas bestimmtes richten, kann sich der einsatz von animierten Widgets beim Seitenwechsel lohnen. Und genau das macht das Hero Widget.
-Das Hero Widget lässt sich super einfach verwenden. Man muss es einfach um das zu animierende Objekt herum packen, also wird unser Objekt zum `child` des Heros. Das Objekt muss auf beiden Seiten in einem Hero eingepackt ist, außerdem ist es ganz wichtig auf beiden Seiten dem Hero den gleichen `tag` zu geben, damit die App weiß, welche zwei Objekte zusammen gehören. Was wiederum auch heißt, dass wir beliebig viele Hero Widgets auf einer Seite haben können.
+Wenn wir eine App entwickeln, haben wir im Idealfall ein einheitliches Appdesign. Dazu zählt natürlich auch die verwendung von einheitlichen Symbolen oder Bildern. Will man jetzt eine besondere Userexperience kreieren, oder die Aufmerksamkeit des Nutzers auf etwas bestimmtes richten, kann sich der Einsatz von animierten Widgets beim Seitenwechsel lohnen. Und genau das macht das **Hero Widget**.
+Das Hero Widget lässt sich super einfach verwenden. Man muss es einfach um das zu animierende Objekt herum packen, also wird unser Objekt zum `child` des Heros. Das Objekt muss auf beiden Seiten in einem Hero eingepackt sein, außerdem ist es ganz wichtig auf beiden Seiten dem Hero den gleichen `tag` zu geben, damit die App weiß, welche zwei Objekte zusammen gehören. Was wiederum auch heißt, dass wir beliebig viele Hero Widgets auf einer Seite haben können.
 
 {{< highlight dart >}}
 Hero(
@@ -32,7 +32,7 @@ Hero(
 
 ### Das erste Hero Widget 
 
-In diesem Artikel lasse ich einen Floating Action Button auf die nächste Seite fliegen. Besonders hierbei ist, dass der Floating Actions Button selbst schon ein Hero Widget ist, das heißt er muss nicht in einem Hero eingepackt sein, sondern kann direkt den `heroTag` als Parameter nehmen.<br>
+In diesem Artikel lasse ich einen Floating Action Button auf die nächste Seite fliegen. Besonders hierbei ist, dass der Floating Action Button selbst schon ein Hero Widget ist, das heißt er muss nicht in einem Hero eingepackt sein, sondern kann direkt den `heroTag` als Parameter nehmen.<br>
 Hier einmal der Code dazu,  die `transitionDuration` habe ich hochgesetzt, damit man die Animation besser sieht. 
 
 {{< highlight dart >}}
