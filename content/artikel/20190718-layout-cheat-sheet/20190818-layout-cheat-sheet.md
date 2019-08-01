@@ -1,7 +1,7 @@
 ---
 title: "Layout Cheat Sheet für Flutter auf deutsch"
 slug: "layout-cheat-sheet-flutter-deutsch" 
-date: 2019-07-18T07:23:32+02:00
+date: 2019-08-18T07:23:32+02:00
 draft: true
 header_image: "/artikel/20190718-layout-cheat-sheet/images/layout.png"
 images: ["/artikel/20190718-layout-cheat-sheet/images/layout.png"]
