@@ -130,7 +130,7 @@ geoMap = true
     <a href="https://forms.gle/FrFC81nwYmW7iscf7" target="_blank" rel="noopener" class="btn btn-primary">Eigene
         Flutter Gruppe eintragen</a>
 </div>
-<div class="container">
+<div class="container pb-5">
     <div class="row pt-5 pb-5">
         <div class="col-12 text-center">
             <h5 class="mb-2">Du kannst nicht vor Ort dabei sein, möchtest aber Flutter lernen und dich mit Gleichgesinnten zu Flutter austauschen?</h5>
