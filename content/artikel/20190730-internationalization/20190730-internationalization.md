@@ -1,5 +1,5 @@
 ---
-title: "Leichte Internationalization in Flutter"
+title: "Internationalization in Flutter"
 slug: "leichte-internationalization-in-flutter" 
 date: 2019-07-30T07:25:24+02:00
 draft: false

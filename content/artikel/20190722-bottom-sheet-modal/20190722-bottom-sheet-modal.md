@@ -1,5 +1,5 @@
 ---
-title: "Bottom sheet modals in Flutter verwenden"
+title: "Bottom sheet modals in Flutter"
 slug: "bottom-sheet-modals-in-flutter" 
 date: 2019-07-22T07:35:45+02:00
 draft: false
