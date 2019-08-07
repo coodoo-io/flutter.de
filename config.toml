@@ -4,7 +4,7 @@ title = "Flutter Deutschland"
 theme = "fluttery"
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "de"
-Paginate = 10 # this is set low for demonstrating with dummy content. Set to a higher number
+Paginate = 9 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = "UA-140814434-1"
 enableRobotsTXT = true
 enableEmoji = true
@@ -17,7 +17,7 @@ uglyurls = true
     respectDoNotTrack = true
 
 [permalinks]
-  artikel = "/artikel/:slug/"
+  artikel = "artikel/:slug/"
 
 [sitemap]
   changefreq = "monthly"
