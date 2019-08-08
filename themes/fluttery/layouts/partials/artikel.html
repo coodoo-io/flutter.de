@@ -5,6 +5,11 @@
         <span class="blog-post-date mb-0">{{ dateFormat "2. January 2006" .Date }}</span>
         <span class="blog-post-date mb-0">{{ .ReadingTime}} Minute Lesezeit, {{ .WordCount}} Wörter</span>
         <span class="blog-post-date mb-0">{{ .Params.Categories }}</span>
+        {{- range .Params.authors }}
+        {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+        <span class="blog-post-date mb-0 mt-3">{{ .Params.name }}</span>
+        {{ end }}
+        {{ end }}
         <img src="{{ .Params.header_image }}" class="blog-post-title-image mt-5" alt="{{ .Title }}" />
         <div class="blog-post-content mt-5 mb-5">{{ .Content }}</div>
         <div class="blog-post-author bg-light">
@@ -19,7 +24,7 @@
                                 alt="{{ .Params.name }}" />
                         </div>
                         <div>
-                            <strong>{{ .Params.name }} <br></strong>
+                            <strong>{{ .Params.name }}<br></strong>
                             <!-- <small>{{ .Params.bio }}</small> -->
                             <div class="pt-2">
                                 <a href="https://twitter.com/{{ .Params.twitter }}"

@@ -21,8 +21,18 @@
                     </a>
                     <p class="card-text">{{ slicestr .Summary 0 200 }}... <a class='btn-link' href='{{ .Permalink }}'
                             title='{{ .Title }}'>Weiterlesen</a></p>
-                    <p class="card-text"><small
-                            class="text-muted">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</small>
+
+                    <p class="card-text">
+
+                        <small
+                            class="text-muted">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+                        </small>
+
+                        {{- range .Params.authors }}
+                        {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                        <small class="text-muted"> | {{ .Params.name }}
+                        </small> {{ end }} {{ end }}
+
                     </p>
                 </div>
             </div>
