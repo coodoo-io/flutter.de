@@ -9,17 +9,23 @@ categories: Beginner * UI * Stack Element
 authors: ["Tobias Mautes"]
 header_image: "/artikel/20190808-stack-element/images/stack-element.png"
 images: ["/artikel/20190808-stack-element/images/stack-element.png"]
+link: 20190808-stack-element/20190808-stack-element.md
 ---
 
-Wolltest du schonmal mehrere Elemente kombinieren, um kompliziertere Elemente, wie einen Profilheader zu bauen? Dann ist `Stack Element` für alle, die Flutter lernen, das Widget ihrer Wahl.
+<div class="links">Wolltest du schon einmal mehrere Elemente kombinieren, um kompliziertere Elemente, wie einen Profilheader zu bauen? Dann ist <a href="https://api.flutter.dev/flutter/widgets/Stack-class.html" target="_blank" rel="noopener">Stack Element</a> für alle, die Flutter lernen, das Widget ihrer Wahl. Flutter hat den großen Vorteil zu anderen Frameworks wie NativeScript, dass es sehr viel schneller und unkomplizierter ist, Elemente in einer App zu stapeln.</div>
+
 
 ### Was ist ein Stack Element?
 
-In einem Stack Element kannst du so viele Elemente, wie du willst stapeln oder überlappen. Dies hilft dir dabei komplexere Widgets darzustellen, ohne andere Widgets nachbauen zu müssen, wenn du deren Aussehen oder Funktionalität übernehmen willst.
+In einem Stack Element kannst du so viele Elemente, wie du willst stapeln oder überlappen. Dies hilft dir dabei komplexere Widgets in deiner App darzustellen, wenn du deren Aussehen oder Funktionalität übernehmen willst, ohne andere Widgets nachbauen zu müssen. So kann das zum Beispiel aussehen:
+
+{{< figure src="/artikel/20190808-stack-element/images/profile-example.png" width="300" >}}
+
+{{< figure src="/artikel/20190808-stack-element/images/card-example.png" width="300" >}}
 
 ### Wie funktioniert es?
 
-Ein `Stack()` Element hat ein `children: <Widget> []` Attribut, dem du so viele Widgets wie du willst geben kannst. Diese überlagern sich gegenseitig, je nachdem an welcher Stelle die Widgets stehen.
+Ein `Stack` Element hat ein `children: <Widget> []` Attribut, dem du so viele Widgets wie du willst geben kannst. Diese überlagern sich gegenseitig, je nachdem an welcher Stelle die Widgets stehen.
 
 {{< highlight dart >}}
 Stack(
@@ -31,11 +37,11 @@ Stack(
 ),
 {{< /highlight >}}
 
-In visueller Form:
+Die Reihenfolge der verwendeten Flutter Widgets, die gestackt werden sollen, ist wichtig, denn das erste angegebene Widget liegt visuell auf der untersten Ebene, wie in der folgenden Grafik zu sehen ist:
 
 {{< figure src="/artikel/20190808-stack-element/images/layers.png" width="300" >}}
 
-Ein `Stack()` Element ist immer so groß wie das größte Widget im Stack und nach oben links ausgerichtet, wenn das `Alignment:` Attribut nicht gesetzt wird.
+Ein `Stack` Element ist immer so groß wie das größte Widget im Stack und nach oben links ausgerichtet, wenn keine weiteren Angaben gemacht werden.
 
 Ein gutes Beispiel dafür:
 
@@ -61,11 +67,11 @@ Stack(
 
 {{< figure src="/artikel/20190808-stack-element/images/stack-example.png" width="300" >}}
 
-Wie man hier sehen kann, berücksichtigt das `Stack()` Element sogar Transparenz, da `Colors.white24` ein von Flutter vorgegebenes Weiß mit 12% Transparenz ist.
+Wie man hier sehen kann, berücksichtigt das `Stack` Element sogar Transparenz, da `Colors.white24` ein von Flutter vorgegebenes Weiß mit 12% Transparenz ist.
 
 ### Ausrichtung
 
-Wie schon erwähnt und im oberen Beispiel zu sehen ist, werden <b>alle</b> Elemente standardmäßig oben links ausgerichtet. Diese Richtung kannst du z.B. so ändern:
+Wie schon erwähnt und im oberen Beispiel zu sehen ist, werden <b>alle</b> Elemente standardmäßig oben links ausgerichtet. Diese Richtung kannst du über das  `alignment` Attribut konfigurieren:
 
 {{< highlight dart >}}
 Stack(
@@ -74,7 +80,7 @@ Stack(
 ),
 {{< /highlight >}}
 
-Wenn du aber nur gewisse Elemente anders ausrichten oder verschiedene Ausrichtungen nutzen möchtest, kannst du hier ein nützliches `Align()` Widget nutzen, welches nur innerhalb von `Stack()`s verwendet werden kann:
+Wenn du aber nur gewisse Elemente anders ausrichten oder verschiedene Ausrichtungen nutzen möchtest, kannst du hier das `Align` Widget nutzen, welches nur innerhalb von `Stack`s verwendet werden kann:
 
 {{< highlight dart >}}
 Stack(
@@ -101,13 +107,13 @@ Stack(
 
 {{< figure src="/artikel/20190808-stack-element/images/alignment-example.png" width="300" >}}
 
-Hier kannst du auch wieder sehen, wie gut sich Transparenz mit `Stack()` Elementen kombinieren lässt.
+Hier kannst du auch wieder sehen, wie gut sich Transparenz mit `Stack` Elementen kombinieren lässt.
 
 ### Positionierung
 
-Ähnlich wie das `Align()` Element gibt es ein `Positioned()` Element, mit dem du die Elemente innerhalb eines `Stack()`s genau so positionieren kannst, wie du willst. Es hat die Attribute `top:`, `left:`, `right:` und `bottom:`, die angeben, wie weit das Element von besagter Seite entfernt ist.
+Ähnlich wie das `Align` Element gibt es ein `Positioned` Element, mit dem du die Elemente innerhalb eines Stacks genau so positionieren kannst, wie du willst. Es hat die Attribute `top`, `left`, `right` und `bottom`. Diese geben an wie weit das Element von besagter Seite entfernt ist.
 
-So kannst du also durch das Angeben von zwei der Attribute ein Element sehr genau platzieren:
+So kannst du also, durch das Angeben von zwei der Attribute, ein Element sehr genau platzieren:
 
 {{< highlight dart >}}
 Positioned(
@@ -123,11 +129,11 @@ Positioned(
 
 {{< figure src="/artikel/20190808-stack-element/images/positioned-example.png" width="300" >}}
 
-Wie du im Beispiel sehen kannst, kommt das `Positioned()` Element sogar mit `width:` und `height:` Attributen. Diese kannst du setzen, um die Größe des `child` Elements zu bestimmen, sollte dieses nicht von sich aus Größen bestimmende Attribute haben.
+Wie du im Beispiel sehen kannst, kommt das `Positioned` Element mit `width` und `height` Attributen. Diese kannst du setzen, um die Größe des `child` Elements zu bestimmen, sollte dieses nicht von sich aus Größen bestimmende Attribute haben.
 
 ### Indexed Stack?
 
-Das Stack Element hat auch noch einen Bruder und zwar den `IndexedStack()`. Ein `Indexedstack()` ist wie ein normaler `Stack()`, allerdings zeigt er immer nur ein Element an, das anhand eines Indexes gesteuert wird. Dieser Index ist ganz einfach das `index:` Attribut, mit dem die angezeigte Schicht zur Laufzeit auch geändert werden kann. Dies kann insbesondere bei Animationen in Flutter sehr hilfreich sein.
+Das `Stack` Element hat auch noch einen Bruder und zwar den `IndexedStack`. Ein `Indexedstack` ist wie ein normaler `Stack`, allerdings zeigt er immer nur ein Element an, das anhand eines Indexes gesteuert wird. Dieser Index ist ganz einfach das `index` Attribut, mit dem die angezeigte Schicht zur Laufzeit auch geändert werden kann. Dies kann insbesondere bei Animationen in Flutter sehr hilfreich sein.
 
 Um das Ganze zu verdeutlichen hier ein kleines Beispiel eines normalen Stacks:
 
@@ -154,7 +160,7 @@ Stack(
 
 {{< figure src="/artikel/20190808-stack-element/images/indexed-stack-example.png" width="300" >}}
 
-Nun können wir das Ganze zu einem `IndexedStack()` machen und dem `FloatingActionButton()` eine Funktion geben, die dem `index:` eine neue zufällige Nummer zuweist:
+Nun können wir das Ganze zu einem `IndexedStack` machen und dem `FloatingActionButton` eine Funktion geben, die dem `index` Attribut des  `IndexedStack` eine neue zufällige Nummer zuweist:
 
 {{< highlight dart >}}
 import 'dart:math';
@@ -218,16 +224,12 @@ class _IndexedStackPageState extends State<IndexedStackPage> {
 }
 {{< /highlight >}}
 
-Und Ta-Da! Wie man sieht, kann man den `FloatingActionButton()` drücken und es wird immer eine andere der drei Schichten angezeigt:
+Und Ta-Da! Wie man sieht, kann man den `FloatingActionButton` drücken und es wird immer eine andere der drei Schichten angezeigt:
 
 {{< figure src="/artikel/20190808-stack-element/images/indexed-stack-example-2.png" width="300" >}}
 
 ### Fazit
 
-Und so einfach ist es, mit diesen zwei Flutter Widgets komplexe Widgets zu erstellen, ohne alles selbst zu designen müssen. Hier nochmal zwei kleine Beispiele:
+Und so einfach ist es, mit diesen zwei Flutter Widgets komplexe Widgets zu erstellen, ohne alles selbst designen zu müssen. 
 
-{{< figure src="/artikel/20190808-stack-element/images/profile-example.png" width="300" >}}
-
-{{< figure src="/artikel/20190808-stack-element/images/card-example.png" width="300" >}}
-
-Der ganze Code und die Beispiele sind in unserem GitHub [hier](https://github.com/coodoo-io/flutter-stack) zu finden.
+Der ganze Code und die Beispiele sind in unserem GitHub [hier](https://github.com/coodoo-io/flutter-stack) zu finden. Einfach auschecken, ausprobieren und ganz einfach nachbauen.
