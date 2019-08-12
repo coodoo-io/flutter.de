@@ -14,7 +14,7 @@ link: 20190801-hero-widget/20190801-hero-widget.md
 
 # Das Hero Widget in Flutter
 
-Wenn wir eine App entwickeln, haben wir im Idealfall ein einheitliches Appdesign. Dazu zählt natürlich auch die verwendung von einheitlichen Symbolen oder Bildern. Will man jetzt eine besondere Userexperience kreieren, oder die Aufmerksamkeit des Nutzers auf etwas bestimmtes richten, kann sich der Einsatz von animierten Widgets beim Seitenwechsel lohnen. Und genau das macht das **Hero Widget**.
+Wenn wir eine App entwickeln, haben wir im Idealfall ein einheitliches Appdesign. Dazu zählt natürlich auch die verwendung von einheitlichen Symbolen oder Bildern. Will man jetzt eine besondere Userexperience kreieren, oder die Aufmerksamkeit des Nutzers auf etwas bestimmtes richten, kann sich der Einsatz von animierten Widgets beim Seitenwechsel lohnen. Und genau das macht das <div class="links"><a href="https://api.flutter.dev/flutter/widgets/Hero-class.html" target="_blank" rel="noopener">Hero Widget</a>.
 Das Hero Widget lässt sich super einfach verwenden. Man muss es einfach um das zu animierende Objekt herum packen, also wird unser Objekt zum `child` des Heros. Das Objekt muss auf beiden Seiten in einem Hero eingepackt sein, außerdem ist es ganz wichtig auf beiden Seiten dem Hero den gleichen `tag` zu geben, damit die App weiß, welche zwei Objekte zusammen gehören. Was wiederum auch heißt, dass wir beliebig viele Hero Widgets auf einer Seite haben können.
 
 {{< highlight dart >}}
@@ -44,23 +44,25 @@ class firstPage extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       floatingActionButton: FloatingActionButton(
-        heroTag: "DemoTag",
-        tooltip: 'like',
-        onPressed: (){
-          Navigator.push(
-            context,
-            PageRouteBuilder(
-                      transitionDuration: Duration(seconds: 2),
-                      pageBuilder: (_, __, ___) => secondPage(
-          )));},
-        child: Icon(Icons.thumb_up)),
+          heroTag: "DemoTag",
+          tooltip: 'like',
+          onPressed: () {
+            Navigator.push(
+              context,
+              PageRouteBuilder(
+                transitionDuration: Duration(seconds: 2),
+                pageBuilder: (_, __, ___) => secondPage(),
+              ),
+            );
+          },
+          child: Icon(Icons.thumb_up)),
     );
   }
 }
 
-class secondPage extends StatelessWidget{
+class secondPage extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Hero Widget - second page'),
