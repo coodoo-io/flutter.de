@@ -14,8 +14,8 @@ link: 20190801-hero-widget/20190801-hero-widget.md
 
 # Das Hero Widget in Flutter
 
-Wenn wir eine App entwickeln, haben wir im Idealfall ein einheitliches Appdesign. Dazu zählt natürlich auch die verwendung von einheitlichen Symbolen oder Bildern. Will man jetzt eine besondere Userexperience kreieren, oder die Aufmerksamkeit des Nutzers auf etwas bestimmtes richten, kann sich der Einsatz von animierten Widgets beim Seitenwechsel lohnen. Und genau das macht das <div class="links"><a href="https://api.flutter.dev/flutter/widgets/Hero-class.html" target="_blank" rel="noopener">Hero Widget</a>.
-Das Hero Widget lässt sich super einfach verwenden. Man muss es einfach um das zu animierende Objekt herum packen, also wird unser Objekt zum `child` des Heros. Das Objekt muss auf beiden Seiten in einem Hero eingepackt sein, außerdem ist es ganz wichtig auf beiden Seiten dem Hero den gleichen `tag` zu geben, damit die App weiß, welche zwei Objekte zusammen gehören. Was wiederum auch heißt, dass wir beliebig viele Hero Widgets auf einer Seite haben können.
+Wenn wir eine App entwickeln, haben wir im Idealfall ein einheitliches Appdesign. Dazu zählt natürlich auch die verwendung von einheitlichen Symbolen oder Bildern. Will man jetzt eine besondere Userexperience kreieren, oder die Aufmerksamkeit des Nutzers auf etwas bestimmtes richten, kann sich der Einsatz von animierten Widgets beim Wechsel von Seiten lohnen. Und genau das macht das <div class="links"><a href="https://api.flutter.dev/flutter/widgets/Hero-class.html" target="_blank" rel="noopener">Hero Widget</a>.
+Das Hero Widget lässt sich super einfach verwenden. Man muss es einfach um das zu animierende Objekt herum packen, das heißt unser Objekt zum `child` des Heros. Das Objekt muss auf beiden Seiten in einem Hero eingepackt sein, außerdem ist es ganz wichtig auf beiden Seiten dem Hero den gleichen `tag` zu geben, damit die App weiß, welche zwei Objekte zusammen gehören. Woraus sich wiederum schließen lässt, dass wir beliebig viele Hero Widgets auf einer Seite haben können, die auf die gleiche oder unterschiedliche Seiten animiert werden.
 
 {{< highlight dart >}}
 Hero(
