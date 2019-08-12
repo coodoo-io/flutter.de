@@ -1,5 +1,5 @@
 ---
-title: "Leichte Internationalization in Flutter"
+title: "Internationalization in Flutter"
 slug: "leichte-internationalization-in-flutter" 
 date: 2019-07-30T07:25:24+02:00
 draft: false
@@ -9,6 +9,7 @@ description: "Übersetzungen in Flutter müssen nicht schwer sein. Wie du deine 
 tags: ["internationalization","übersetzung","fortgeschrittene"]
 categories: Fortgeschrittene * Accessibility * Sprache
 authors: ["Tobias Mautes"]
+link: 20190730-internationalization/20190730-internationalization.md
 ---
 
 Flutter lernen ist sehr einfach. Und so schön und leicht Flutter auch zu benutzen ist, so habe ich doch verzweifelt nach einer einfachen Lösung für ein wichtiges Problem gesucht: Internationalization. Das Framework hat leider noch keine eigene Art und Weise wie das zu lösen ist und überlässt es dem Nutzer, mit der Dart Variante klarzukommen, welche... ein wenig kompliziert zu verstehen ist.

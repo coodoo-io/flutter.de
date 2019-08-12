@@ -5,7 +5,7 @@ date: 2019-07-08T09:28:22+02:00
 draft: false
 header_image: "/artikel/20190708-getting-started/images/getting-started.jpg"
 images: ["/artikel/20190708-getting-started/images/getting-started.jpg"]
-description: "Flutter installieren und was du sonst noch dazu benötigst um das Flutter Hello World zu sehen."
+description: "Flutter First Steps: Flutter installieren, ein Flutter Demo Projekt erstellen und was du sonst noch dazu benötigst, um das Flutter Hello World zu sehen."
 tags: ["flutter-setup","flutter","entwicklungsumgebung","setup"]
 categories: Anfänger * getting started * Entwicklungsumgebung * Setup
 authors: ["markus-kuehle"]
@@ -13,7 +13,9 @@ link: 20190613-gettings-started/20190613-gettings-started.md
 author: Markus Kühle
 ---
 
-Flutter ist ein sehr schönes Framework, das dir den schnellen Einstieg in die Appentwicklung ermöglicht. In diesem Artikel lernst du, wie du die Entwicklungsumgebung schnell einrichten kannst, um direkt mit dem Programmieren loslegen zu können. Dazu müssen für Android und iOS unterschiedliche Tools installiert werden. 
+## Flutter First Steps
+
+Flutter ist ein sehr schönes Framework, das dir den schnellen Einstieg in die Appentwicklung ermöglicht. In diesem Artikel zeige ich allen, die Flutter lernen wollen, wie sie die Entwicklungsumgebung schnell einrichten können, um direkt mit dem Programmieren loslegen zu können. Dazu müssen für Android und iOS unterschiedliche Tools installiert werden. 
 Ziel ist es, dass du nach dieser Anleitung dein Flutter "Hello World" Programm in einem Simulator bzw. Emulator ansehen kannst.
 
 ## Ablauf der Installationsanleitung

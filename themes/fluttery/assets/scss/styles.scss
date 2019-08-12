@@ -165,21 +165,34 @@ header {
 }
 
 .btn-outline-primary {
-
     border-color: #187cc9;
 }
-// .btn {
-//     border-radius: 0;
-//     border: 0;
-// }
+
+.btn-newsletter {
+    background: #187cc9;
+    color: white;
+    height: 35px;
+    :hover {
+        border: #5ba1d6;
+        color: white;
+    }
+}
 
 
+.links {
+    font-size: 1.15rem;
+    line-height: 1.9;
+}
 
+.articles {
+    padding-bottom: 10rem;
+}
 
 .articles {
     .card-text {
         font-size: 15px;
         line-height: 1.5rem;
+        
     }
 }
 
