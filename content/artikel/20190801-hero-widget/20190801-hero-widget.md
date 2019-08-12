@@ -55,10 +55,11 @@ class firstPage extends State<MyHomePage> {
               ),
             );
           },
-          child: Icon(Icons.thumb_up)),
-    );
+          child: Icon(Icons.thumb_up),
+        ),
+      );
+    }
   }
-}
 
 class secondPage extends StatelessWidget {
   @override
@@ -157,7 +158,7 @@ flightShuttleBuilder: (flightContext, animation, direction,
 },
 {{< /highlight >}}
 
-Durch diese if-Abfrage können wir je nach Richtung die Größe individuell einstellen. (Theoretisch könnten wir hier sogar das Widget selbst ändern vor die jeweilige Richtung.)
+Durch diese if-Abfrage können wir je nach Richtung die Größe individuell einstellen. (Theoretisch könnten wir hier sogar das Widget selbst ändern für die jeweilige Richtung.)
 {{< figure src="/artikel/20190801-hero-widget/images/heroWidget-4.gif" width="300" >}}
 
 
