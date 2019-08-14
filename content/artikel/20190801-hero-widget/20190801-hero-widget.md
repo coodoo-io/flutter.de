@@ -14,8 +14,8 @@ link: 20190801-hero-widget/20190801-hero-widget.md
 
 # Das Hero Widget in Flutter
 
-Wenn wir eine App entwickeln, haben wir im Idealfall ein einheitliches Appdesign. Dazu zählt natürlich auch die verwendung von einheitlichen Symbolen oder Bildern. Will man jetzt eine besondere Userexperience kreieren, oder die Aufmerksamkeit des Nutzers auf etwas bestimmtes richten, kann sich der Einsatz von animierten Widgets beim Wechsel von Seiten lohnen. Und genau das macht das <a href="https://api.flutter.dev/flutter/widgets/Hero-class.html" target="_blank" rel="noopener">Hero Widget</a>.
-Das Hero Widget lässt sich super einfach verwenden. Man muss es einfach um das zu animierende Objekt herum packen, das heißt unser Objekt zum `child` des Heros. Das Objekt muss auf beiden Seiten in einem Hero eingepackt sein, außerdem ist es ganz wichtig auf beiden Seiten dem Hero den gleichen `tag` zu geben, damit die App weiß, welche zwei Objekte zusammen gehören. Woraus sich wiederum schließen lässt, dass wir beliebig viele Hero Widgets auf einer Seite haben können, die auf die gleiche oder unterschiedliche Seiten animiert werden.
+Wenn wir eine App entwickeln, haben wir im Idealfall ein einheitliches Appdesign. Dazu zählt natürlich auch die Verwendung von einheitlichen Symbolen und Bildern. Will man jetzt eine besondere Userexperience kreieren, oder die Aufmerksamkeit des Nutzers auf etwas Bestimmtes richten, kann sich der Einsatz von animierten Widgets beim Wechsel von Seiten lohnen. Und genau das macht das <a href="https://api.flutter.dev/flutter/widgets/Hero-class.html" target="_blank" rel="noopener">Hero Widget</a>.
+Das Hero Widget lässt sich super einfach verwenden. Man muss es einfach um das zu animierende Objekt herum packen, das heißt unser Objekt wird zum `child` des Heros. Das Objekt muss auf beiden Seiten in einem Hero eingepackt sein, außerdem ist es ganz wichtig auf beiden Seiten dem Hero den gleichen `tag` zu geben, damit die App weiß, welche zwei Objekte zusammen gehören. Woraus sich wiederum schließen lässt, dass wir beliebig viele Hero Widgets auf einer Seite haben können, die auf die gleiche oder unterschiedliche Seiten animiert werden.
 
 {{< highlight dart >}}
 Hero(
@@ -32,7 +32,7 @@ Hero(
 
 ### Das erste Hero Widget 
 
-In diesem Artikel lasse ich einen Floating Action Button auf die nächste Seite fliegen. Besonders hierbei ist, dass der Floating Action Button selbst schon ein Hero Widget ist, das heißt er muss nicht in einem Hero eingepackt sein, sondern kann direkt den `heroTag` als Parameter nehmen.<br>
+In diesem Artikel lasse ich einen Floating Action Button auf die nächste Seite fliegen. (Einen coolen Artikel wie man einen Floating Action Button erstellen und gestallten kann, findest du <a href="https://flutter.de/artikel/floating-action-button-flutter.html" target="_blank" rel="noopener">hier</a>.) Besonders hierbei ist, dass der Floating Action Button selbst schon ein Hero Widget ist, das heißt er muss nicht in einem Hero eingepackt sein, sondern kann direkt den `heroTag` als Parameter nehmen.<br>
 Hier einmal der Code dazu,  die `transitionDuration` habe ich hochgesetzt, damit man die Animation besser sieht. 
 
 {{< highlight dart >}}
@@ -86,7 +86,7 @@ class secondPage extends StatelessWidget {
 
 ### Einen Placeholder hinzufügen
 
-Jetzt wo unser Widget von einem Ort zum anderen fliegt, haben wir erstmal eine Freifläche. Diese können wir mit einem `placeholderBuilder` als Parameter des Heros füllen. Der `placeholderBuilder` erwartet als Rückgabewert einen Container, den wir gestalten können wie wir wollen. In unserem Beispiel geben wir ihm als `child` einen `CircularProgressIndicator` (Hier wäre auch jedes andere Widget denkbar). Wichtig ist hierbei, dass der Container die selbe Größe hat wie das Hero Widget, sonst springt es am Ende.
+Jetzt wo unser Widget von einem Ort zum anderen fliegt, haben wir erstmal eine Freifläche. Diese können wir mit einem `placeholderBuilder` als Parameter des Heros füllen. Der `placeholderBuilder` erwartet als Rückgabewert einen Container, den wir gestalten können wie wir wollen. In unserem Beispiel geben wir ihm als `child` einen `CircularProgressIndicator` (Hier wäre auch jedes andere Widget denkbar). Wichtig ist hierbei, dass der Container größer oder mindestens gleich groß wie das Hero Widget ist , sonst springt es am Ende.
 
 {{< highlight dart >}}
 Hero(
@@ -103,14 +103,15 @@ Hero(
       child: CircularProgressIndicator(),
     );
   },
+), 
 {{< /highlight >}}
 
 {{< figure src="/artikel/20190801-hero-widget/images/heroWidget-2.gif" width="300" >}}
 
 ### Das Hero Widget verändern
 
-Mit Flutter haben wir die Möglichkeit das Widget, welches von der einen Seite auf die andere fliegt, mit einem anderen zu ersetzen. Also können wir statt dem Daumen nach oben auch ein Herz verwenden.<br>
-Dazu verwenden wir den `flightShuttleBuilder` Parameter. Auch dieser erwartet ein Widget, in unserem Fall ein `Icon`.
+Mit Flutter haben wir die Möglichkeit das Widget, welches von der einen Seite auf die andere fliegt, mit einem anderen zu ersetzen. Also können wir statt dem Daumen nach oben auch ein Herz fliegen lassen.<br>
+Dazu verwenden wir den `flightShuttleBuilder` Parameter. Auch dieser erwartet ein Widget. In unserem Fall ein `Icon`.
 
 {{< highlight dart >}}
 Hero(
