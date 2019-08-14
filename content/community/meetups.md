@@ -102,7 +102,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Rhein-Main (39 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Rhein-Main (46 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup/" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup</a>
             </div>
         </div>
