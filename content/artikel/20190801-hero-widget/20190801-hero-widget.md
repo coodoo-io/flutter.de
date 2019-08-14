@@ -162,7 +162,7 @@ Durch diese if-Abfrage können wir je nach Richtung die Größe individuell eins
 {{< figure src="/artikel/20190801-hero-widget/images/heroWidget-4.gif" width="300" >}}
 
 Jetzt haben wir also die Möglichkeit Dinge von einer Seite auf die nächste fliegen zu lassen.
-Das Projekt dazu findest du hier auf Github.
+Das Projekt dazu findest du <a href="https://github.com/coodoo-io/flutter-hero-widget" target="_blank" rel="noopener">hier</a> auf Github.
 
 
 
