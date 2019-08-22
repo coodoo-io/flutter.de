@@ -2,7 +2,7 @@
 title: "Hero-Widget in Flutter"
 slug: "hero-widget-flutter" 
 date: 2019-08-22T07:30:14+02:00
-draft: true
+draft: false
 header_image: "/artikel/20190822-hero-widget/images/hero-widget.jpeg"
 images: ["/artikel/20190822-hero-widget/images/hero-widget.jpeg"]
 description: "Hero-Widgets in Flutter richtig verwenden"
@@ -18,7 +18,7 @@ Wenn wir eine App entwickeln, haben wir im Idealfall ein einheitliches App Desig
 
 Das Hero Widget lässt sich super einfach verwenden. Man muss es nur um das zu animierende Objekt herum packen. Das heißt unser Objekt wird zum `child` des Heros. Das Objekt muss auf beiden Seiten in einem Hero eingepackt sein, außerdem ist es ganz wichtig auf beiden Seiten dem Hero den gleichen `tag` zu geben, damit die App weiß, welche zwei Objekte zusammen gehören. Woraus sich wiederum schließen lässt, dass wir beliebig viele Hero Widgets auf einer Seite haben können, die auf die gleiche oder unterschiedliche Weise animiert werden.
 
-{{< highlight dart >}}
+{{< highlight dart >}} 
 Hero(
   tag: "DemoTag",
   child: Icon(
