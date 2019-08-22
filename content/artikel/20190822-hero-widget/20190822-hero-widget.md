@@ -1,15 +1,15 @@
 ---
 title: "Hero-Widget in Flutter"
 slug: "hero-widget-flutter" 
-date: 2019-08-01T11:30:14+02:00
+date: 2019-08-22T07:30:14+02:00
 draft: true
-header_image: "/artikel/20190801-hero-widget/images/hero-widget.jpeg"
-images: ["/artikel/20190801-hero-widget/images/hero-widget.jpeg"]
+header_image: "/artikel/20190822-hero-widget/images/hero-widget.jpeg"
+images: ["/artikel/20190822-hero-widget/images/hero-widget.jpeg"]
 description: "Hero-Widgets in Flutter richtig verwenden"
 tags: ["material", "ux", "hero-widget"]
 categories: Anfänger * Widget * Hero
 authors: ["simon-stevens"]
-link: 20190801-hero-widget/20190801-hero-widget.md
+link: 20190822-hero-widget/20190822-hero-widget.md
 ---
 
 # Das Hero Widget in Flutter
@@ -83,7 +83,7 @@ class secondPage extends StatelessWidget {
   }
 }
 {{< /highlight >}}
-{{< figure src="/artikel/20190801-hero-widget/images/heroWidget-1.gif" width="300" >}}
+{{< figure src="/artikel/20190822-hero-widget/images/heroWidget-1.gif" width="300" >}}
 
 ### Einen Placeholder hinzufügen
 
@@ -107,7 +107,7 @@ Hero(
 ), 
 {{< /highlight >}}
 
-{{< figure src="/artikel/20190801-hero-widget/images/heroWidget-2.gif" width="300" >}}
+{{< figure src="/artikel/20190822-hero-widget/images/heroWidget-2.gif" width="300" >}}
 
 ### Das Hero Widget verändern
 
@@ -136,7 +136,7 @@ Hero(
 ),
 {{< /highlight >}}
 
-{{< figure src="/artikel/20190801-hero-widget/images/heroWidget-3.gif" width="300" >}}
+{{< figure src="/artikel/20190822-hero-widget/images/heroWidget-3.gif" width="300" >}}
 
 Aktuell hat unser Herz immer eine Größe von 150.0 in beide Richtungen.
 Da der `flightShuttleBuilder` unter anderem auch einen `direction` Parameter hat, können wir diesen nutzen, um genau das anzupassen.
@@ -161,10 +161,10 @@ flightShuttleBuilder: (flightContext, animation, direction,
 {{< /highlight >}}
 
 Durch diese if-Abfrage können wir, je nach Richtung, die Größe individuell einstellen. Wir könnten hier sogar das Widget selbst ändern für die jeweilige Richtung, denn das Icon Widgeht wird in jedem Fall immer neu erstellt.
-{{< figure src="/artikel/20190801-hero-widget/images/heroWidget-4.gif" width="300" >}}
+{{< figure src="/artikel/20190822-hero-widget/images/heroWidget-4.gif" width="300" >}}
 
 Jetzt haben wir also die Möglichkeit Dinge von einer Seite auf die nächste fliegen zu lassen.
-Das Projekt dazu findest du <a href="https://github.com/coodoo-io/flutter-hero-widget" target="_blank" rel="noopener">hier</a> auf Github.
+Das Projekt dazu findest du <a href="https://github.com/coodoo-io/flutter-hero" target="_blank" rel="noopener">hier</a> auf Github.
 
 
 
