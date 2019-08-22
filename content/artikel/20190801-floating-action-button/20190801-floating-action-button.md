@@ -146,7 +146,12 @@ floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
 
 {{< figure src="/artikel/20190801-floating-action-button/images/5.1-extended.png" width="300" >}}  {{< figure src="/artikel/20190801-floating-action-button/images/5.2-extended.png" width="300" >}}
 
+<<<<<<< HEAD
+
+Ein Beispiel für einen schönen Floating Action Button findet ihr hier: 
+=======
 Ein Beispiel für einen schönen Floating Action Button findet ihr hier: https://github.com/coodoo-io/flutter-floating-action-button
+>>>>>>> develop
 
   
 
