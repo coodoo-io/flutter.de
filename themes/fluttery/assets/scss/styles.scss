@@ -77,6 +77,9 @@ nav {
     .dropdown-menu {
         text-align: center;
     }
+    .menu-buttons {
+        display: block;
+    }
 }
 
 .navbar-brand {
@@ -160,7 +163,7 @@ header {
 }
 
 
-.btn-outline-secondary {
+.btn-outline-secondary { 
     border-color: #333333;
 }
 
@@ -169,13 +172,11 @@ header {
 }
 
 .btn-newsletter {
-    background: #187cc9;
-    color: white;
+    background: white;
+    color: #333333;
     height: 35px;
-    :hover {
-        border: #5ba1d6;
-        color: white;
-    }
+    border-color: #bfbfbf;
+    border-radius: 3px;
 }
 
 
