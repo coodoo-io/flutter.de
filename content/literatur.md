@@ -4,6 +4,7 @@ slug = "literatur"
 header_image = "/images/literatur.jpg"
 description = "Literatur für die deutsche Flutter Community"
 light_mode = true
+draft = true
 +++
 
 ## Bücher
