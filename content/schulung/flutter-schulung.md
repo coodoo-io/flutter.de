@@ -1,7 +1,7 @@
 +++
 slug = "flutter-schulung"
-description = "Flutter Schulungen auf deutsch"
-
+description = "Flutter lernen mit unseren Experten vor Ort: Flutter Schulungen auf deutsch"
+images = ["/schulung/flutter-schulung.png"]
 +++
 
 <div class="container schulung-header pt-5 pb-5">
