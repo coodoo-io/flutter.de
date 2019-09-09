@@ -238,9 +238,9 @@ images = ["/schulung/flutter-schulung.png"]
     <div class="card">
     <div class="card-body text-center">
     <h3 class="pt-3 pb-2"><b>Schreiben Sie uns <br>oder rufen Sie uns an</b></h3>
-       <p> E-Mail: mail@flutter.de</p>
+       <p> E-Mail: <a href="mailto:mail@flutter.de">mail@flutter.de</a></p>
       <hr>
-      <p>Telefon: 061314/640270</p>
+      <p>Telefon: +49 6131 46402 70</p>
     </div>
     </div>
     </div>

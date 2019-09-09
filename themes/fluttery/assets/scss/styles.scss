@@ -47,6 +47,62 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #859099;
 }
 
+
+.btn-outline-secondary { 
+    border-color: #333333;
+}
+
+.btn-outline-primary {
+    border-color: #187cc9;
+}
+
+.btn-newsletter {  
+    color: #333333;
+    text-align: center;
+    border: 1.5px solid;
+    border-color: #e6e6e6;
+    border-radius: 5px;
+    font-size: 0.91rem;
+    padding-left: 0.9rem;
+    padding-right: 0.8rem;
+}
+
+
+.join-slack {
+    display: inline-block;
+    padding: 2rem;
+    padding-top: 0;
+    color: #333333;
+    text-align: center;
+    border: 1px solid transparent;
+    
+    &:hover {
+        // background-color: #f8f9fa;
+        // border-radius: 30px;
+        cursor: pointer;
+        // border-color: #ddd;
+        text-decoration: none;
+        color: black;
+    }
+
+    img {
+        width: 240px;
+    }
+    strong {
+        letter-spacing: 2.4px;
+        margin-top: -24px;
+    }
+
+    .join-slack-word {
+        margin-right: .7rem;
+    }
+}
+
+.links {
+    font-size: 1.15rem;
+    line-height: 1.9;
+}
+
 blockquote {
     margin: 22px 22px;
     padding: 0 20px;
@@ -79,7 +135,7 @@ nav {
         text-align: center;
     }
     .menu-buttons {
-        display: block;
+        display: inline-block;
     }
 }
 
@@ -161,29 +217,6 @@ header {
         // font-weight: 700;
         margin-top: 0;
     }
-}
-
-
-.btn-outline-secondary { 
-    border-color: #333333;
-}
-
-.btn-outline-primary {
-    border-color: #187cc9;
-}
-
-.btn-newsletter {
-    background: white;
-    color: #333333;
-    height: 35px;
-    border-color: #bfbfbf;
-    border-radius: 3px;
-}
-
-
-.links {
-    font-size: 1.15rem;
-    line-height: 1.9;
 }
 
 .articles {
@@ -275,35 +308,6 @@ footer {
     }
 }
 
-.join-slack {
-    display: inline-block;
-    padding: 2rem;
-    padding-top: 0;
-    color: #333333;
-    text-align: center;
-    border: 1px solid transparent;
-    
-    &:hover {
-        // background-color: #f8f9fa;
-        // border-radius: 30px;
-        cursor: pointer;
-        // border-color: #ddd;
-        text-decoration: none;
-        color: black;
-    }
-
-    img {
-        width: 240px;
-    }
-    strong {
-        letter-spacing: 2.4px;
-        margin-top: -24px;
-    }
-
-    .join-slack-word {
-        margin-right: .7rem;
-    }
-}
 
 .emoji {
     font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
