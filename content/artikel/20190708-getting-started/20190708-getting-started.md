@@ -93,7 +93,7 @@ Das aktuelle Flutter SDK kannst du auf flutter.dev herunterladen: [https://flutt
 Das Flutter Zip an einem zentralen ORt entpacken und die `$PATH` Variable auf den entpackten Ordner `/bin` setzen. \
 Um den Pfad permanent zu setzen, muss in der `.bash_profile` der volle Pfad angegeben werden. Bei mir ist folgender Eintrag hinzugekommen:
 ```
-export PATH="$PATH:/Users/markus/Projekte/Flutter/SDK/bin"
+export PATH="$PATH:/Users/markus/development/flutter/bin"
 ```
 Den Befehl `flutter doctor` ausführen, um zu sehen, welche Abhängigkeiten fehlen.
 
