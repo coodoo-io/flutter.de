@@ -1,4 +1,3 @@
-
 .schulung-h1, .schulung-h2 {
   font-family: 'merriweather', 'Open Sans', Roboto;
   font-weight: 500;
@@ -136,6 +135,14 @@ b {
   }
 }
 
+#termine .col-2, #termine .col-5 {
+  border-right: 1px solid lightgrey;
+}
+.blue-button {
+ padding-left: 0px !important;
+ padding-right: 10px !important;
+}
+
 .contact {
   background-color:#FAFAFA;
   position: relative;
@@ -172,49 +179,38 @@ b {
   }
 }
 
-  .btn-schulung {
-      background-color: #53C5F7 !important;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-      color: white !important;
-      font-size: 0.8rem !important;
-      padding: 3rem 3rem 1rem 1rem;
-  }
+.btn-schulung {
+  background-color: #53C5F7 !important;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  color: white !important;
+  font-size: 0.7rem !important;
+  padding: 3rem 3rem 1rem 1rem;
+}
 
-  .workshop-img {
-      min-height: 300px;
-      margin: 10px;
-  }
+.workshop-img {
+  min-height: 300px;
+  margin: 10px;
+}
 
-  .col-md-8 {
-    margin: 0 auto;
-  }
+.col-md-8 {
+  margin: 0 auto;
+}
 
-table {
-  width: 100%;
+.zeile {
+  font-size: 10px;
   font-weight: 400;
   color: #05385F;
-}
-
-
-tr {
+  background-color: white;
+  width: 100%;
   box-shadow: 0 15px 57px -5px rgba(124, 124, 175, 0.20), 0 -6px 16px -6px hsla(0, 0%, 29%, 0.03);
-  border-radius: 8px;
-  border-top: 15px solid white;
-  border-bottom: 15px solid white;
+  border-radius: 5px;
+  border-top: 12px solid white;
+  border-bottom: 12px solid white;
+  margin-bottom: 1rem;
+  margin-left: 0 !important;
+  align-items: center;
 }
 
-table, th , td {
-    background-color: white;  
-}
-
-td {
-  border-right: 1px solid rgba(231, 233, 235, 0.95);
-  font-size: 10px;
- }
-
-tr td:last-child {
-  border-right: none;
-}
   
 .call {
   color: rgb(89, 154, 211);
@@ -238,7 +234,8 @@ tr td:last-child {
     font-size: 1.1rem !important;
     padding: 4rem 4rem 2rem 2rem;
   }
-  td {
+
+  .zeile {
     font-size: 1.1rem
   }
   .icon {
