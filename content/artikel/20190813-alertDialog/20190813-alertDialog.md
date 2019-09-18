@@ -14,7 +14,7 @@ link: 20190813-alertDialog/20190813-alertDialog.md
 
 ## Achtung!!!
 
-Du stehst kurz davor etwas Unwiederrufliches zu tun! Bist du dir sicher, dass du das wirklich löschen willst? Hast du dir das gut überlegt?
+Du stehst kurz davor etwas Unwiderrufliches zu tun! Bist du dir sicher, dass du das wirklich löschen willst? Hast du dir das gut überlegt?
 
 Wäre ich eine App würde ich dich jetzt mit **AlertDialogs** bombardieren.
 
