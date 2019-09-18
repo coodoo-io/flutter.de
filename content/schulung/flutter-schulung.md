@@ -123,109 +123,59 @@ images = ["/schulung/flutter-schulung.png"]
 
 <!-- Termine -->
 
-<div id="termine" class="container dates pt-1 pb-5">
+<div id="termine" class="container pt-1 pb-5 pl-0 pr-0">
   <div class="row pb-3">
     <div class="col">
      <h2 class="schulung-h2 pt-5">Termine</h2>
-     
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <table class="text-center">
-        <tr>
-          <td>
-         <img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz
-          </td>
-          <td>
-          <img src="/images/tag.svg" class="icon mr-2" height="22" />
-          1 Tag
-          </td>
-          <td>
-          <img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
-          Dienstag, 29.Oktober
-          </td>
-          <td>
-           <a class="btn btn-schulung" href="https://forms.gle/D28dedsAQgP6VjL87" target="_blank" rel="noopener">Jetzt anfragen</a>
-          </td>
-        </tr>
-        <tr style="box-shadow:none">
-        <td style="background:transparent; height:40px">
-        </td>
-        </tr>
-        <tr>
-          <td>
-         <img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz
-          </td>
-          <td>
-       <img src="/images/tag.svg" class="icon mr-2" height="22" />   1 Tag
-          </td>
-          <td>
-        <img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />  Dienstag, 26. November
-          </td>
-          <td>
-           <a class="btn btn-schulung" href="https://forms.gle/MoahU4a7xaQCT54a6" target="_blank" rel="noopener">Jetzt anfragen</a>
-          </td>
-        </tr>
-        <tr style="box-shadow:none">
-        <td style="background:transparent; height:40px">
-        </td>
-        </tr>
-        <tr>
-          <td>
-         <img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz
-          </td>
-          <td>
-       <img src="/images/tag.svg" class="icon mr-2" height="22" />   2 Tage
-          </td>
-          <td>
-        <img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />   31. Oktober - 01. November
-          </td>
-          <td>
-           <a class="btn btn-schulung" href="https://forms.gle/krW4yBof4Z1zppcZ9" target="_blank" rel="noopener">Jetzt anfragen</a>
-          </td>
-        </tr>
-            <tr style="box-shadow:none">
-        <td style="background:transparent; height:40px">
-        </td>
-        </tr>
-        <tr>
-          <td>
-         <img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz
-          </td>
-          <td>
-       <img src="/images/tag.svg" class="icon mr-2" height="22" />   2 Tage
-          </td>
-          <td>
-        <img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />   28. November - 29. November
-          </td>
-          <td>
-           <a class="btn btn-schulung" href="https://forms.gle/9fCMSZuPazmpRobt6" target="_blank" rel="noopener">Jetzt anfragen</a>
-          </td>
-        </tr>
-        <tr style="box-shadow:none">
-        <td style="background:transparent; height:40px">
-        </td>
-        </tr>
-        <tr>
-          <td>
-         <img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Flexibel
-          </td>
-          <td>
-        <img src="/images/tag.svg" class="icon mr-2" height="22" />  2 Tage
-          </td>
-          <td>
-        <img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />  Flexibel
-          </td>
-          <td>
-          <a class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Jetzt anfragen</a>
-          </td>
-        </tr>
-      </table>
-</div>
-<p class="schulung-p p-3">Auf Anfrage bieten wir auch Flutter Schulungen in den Städten Hamburg, Berlin, Stuttgart, Leipzig und Köln an. <br>Schreiben Sie uns einfach oder rufen Sie uns an.</p>
     </div>
+  </div>
+
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" /> 1 Tag</div>        
+  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
+          Dienstag, 29.Oktober</div>
+  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/D28dedsAQgP6VjL87" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div>
 
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          1 Tag</div>
+  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
+          Dienstag, 26. November</div>
+  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/MoahU4a7xaQCT54a6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
+</div>
+
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
+         31. Oktober - 01. November</div>
+  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/krW4yBof4Z1zppcZ9" target="_blank" rel="noopener">Jetzt anfragen</a></div>
+</div>
+
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
+         28. November - 29. November</div>
+  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/9fCMSZuPazmpRobt6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
+</div>
+
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Flexibel</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
+         Flexibel</div>
+  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Jetzt anfragen</a></div>
+</div>
+
+<p class="schulung-p p-3">Auf Anfrage bieten wir auch Flutter Schulungen in den Städten Hamburg, Berlin, Stuttgart, Leipzig und Köln an. <br>Schreiben Sie uns einfach oder rufen Sie uns an.</p>
+    </div>
 </div>
 
 <!-- Kontakt -->
