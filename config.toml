@@ -53,11 +53,11 @@ uglyurls = true
     # URL = "community/experten-netzwerk-deutschland"
     # weight = 2
     
-    # [[menu.main]]
-    # parent = "Community"
-    # name = "CTO Guide"
-    # URL = "community/cto-handbuch"
-    # weight = 3
+  [[menu.main]]
+  parent = "Community"
+  name = "Flutter CTO Guide"
+  URL = "community/flutter-cto-guide.html"
+  weight = 3
 
   # [[menu.main]]
   # name = "Literatur"
