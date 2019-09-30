@@ -16,7 +16,7 @@
           aria-haspopup="true" aria-expanded="false">
           {{ .Name }}
         </a>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu text-left">
           {{ range .Children }}
           <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
           {{ end }}

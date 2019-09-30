@@ -5,6 +5,7 @@
 @import 'blog.scss';
 @import 'pagination.scss';
 @import 'schulung.scss';
+@import'cto.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 // @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 // @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
@@ -40,6 +41,8 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 3px !important;
     font-weight: 600;
     font-size: 1.2rem;
+    background-color: rgb(8, 94, 160);
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .btn-secondary {

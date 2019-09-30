@@ -9,6 +9,11 @@
   line-height: 50px;
 }
 
+.schulung-h2 {
+  margin: 0;
+ font-size: 27px;
+}
+
 b {
   border-bottom: 2px solid #1879a5;
 }
@@ -47,6 +52,15 @@ b {
     text-align: center;
   }
 
+.cto-header {
+  position: relative;
+  background-image: url(/images/cto-guide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 15%;
+  text-align: center;
+}
+
   .overlay {
     background-position: 100% 100%;
     background: linear-gradient(0deg, rgba(227, 240, 252, 0.95) 100% ) !important;
@@ -68,13 +82,7 @@ b {
     background-repeat: no-repeat;
     background-position: 60% -5%;
     text-align: center;
-    
-
-    .schulung-h2 {
-      margin: 0;
-      // padding: 4rem 0rem 0rem 4rem;
-    }
-    
+ 
     h3 {
       font-family: 'Open Sans', Roboto;
       font-size: 20Px;
@@ -98,6 +106,7 @@ b {
       margin-bottom: 2rem;
     }
   }
+
 
   .overlay2 {
     position: absolute;
@@ -223,7 +232,7 @@ b {
     background: linear-gradient(-70deg,   rgba(227, 240, 252, 0) 0%, rgba(227, 240, 252, 0) 55%,  rgba(227, 240, 252, 0.95) 55.1%,  rgba(227, 240, 252, 0.95) 100% ) !important;
   }
   .workshops {
-       .card {
+    .card {
       padding-bottom: 0;
     }
   }
