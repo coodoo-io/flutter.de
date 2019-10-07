@@ -4,6 +4,8 @@
 @import 'blog-list.scss';
 @import 'blog.scss';
 @import 'pagination.scss';
+@import 'schulung.scss';
+@import'cto.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 // @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 // @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
@@ -39,11 +41,69 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 3px !important;
     font-weight: 600;
     font-size: 1.2rem;
+    background-color: rgb(8, 94, 160);
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .btn-secondary {
     border-radius: 3px !important;
     background-color: #859099;
+}
+
+
+.btn-outline-secondary { 
+    border-color: #333333;
+}
+
+.btn-outline-primary {
+    border-color: #187cc9;
+}
+
+.btn-newsletter {  
+    color: #333333;
+    text-align: center;
+    border: 1.5px solid;
+    border-color: #e6e6e6;
+    border-radius: 5px;
+    font-size: 0.91rem;
+    padding-left: 0.9rem;
+    padding-right: 0.8rem;
+}
+
+
+.join-slack {
+    display: inline-block;
+    padding: 2rem;
+    padding-top: 0;
+    color: #333333;
+    text-align: center;
+    border: 1px solid transparent;
+    
+    &:hover {
+        // background-color: #f8f9fa;
+        // border-radius: 30px;
+        cursor: pointer;
+        // border-color: #ddd;
+        text-decoration: none;
+        color: black;
+    }
+
+    img {
+        width: 240px;
+    }
+    strong {
+        letter-spacing: 2.4px;
+        margin-top: -24px;
+    }
+
+    .join-slack-word {
+        margin-right: .7rem;
+    }
+}
+
+.links {
+    font-size: 1.15rem;
+    line-height: 1.9;
 }
 
 blockquote {
@@ -76,6 +136,9 @@ nav {
     }
     .dropdown-menu {
         text-align: center;
+    }
+    .menu-buttons {
+        display: inline-block;
     }
 }
 
@@ -116,7 +179,7 @@ nav {
 }
 
 .page-spacer {
-    padding-bottom: 54px;
+    padding-bottom: 100px;
 }
 
 header {
@@ -159,27 +222,15 @@ header {
     }
 }
 
-
-.btn-outline-secondary {
-    border-color: #333333;
+.articles {
+    padding-bottom: 10rem;
 }
-
-.btn-outline-primary {
-
-    border-color: #187cc9;
-}
-// .btn {
-//     border-radius: 0;
-//     border: 0;
-// }
-
-
-
 
 .articles {
     .card-text {
         font-size: 15px;
         line-height: 1.5rem;
+        
     }
 }
 
@@ -260,35 +311,6 @@ footer {
     }
 }
 
-.join-slack {
-    display: inline-block;
-    padding: 2rem;
-    padding-top: 0;
-    color: #333333;
-    text-align: center;
-    border: 1px solid transparent;
-    
-    &:hover {
-        // background-color: #f8f9fa;
-        // border-radius: 30px;
-        cursor: pointer;
-        // border-color: #ddd;
-        text-decoration: none;
-        color: black;
-    }
-
-    img {
-        width: 240px;
-    }
-    strong {
-        letter-spacing: 2.4px;
-        margin-top: -24px;
-    }
-
-    .join-slack-word {
-        margin-right: .7rem;
-    }
-}
 
 .emoji {
     font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;

@@ -16,7 +16,7 @@
           aria-haspopup="true" aria-expanded="false">
           {{ .Name }}
         </a>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu text-left">
           {{ range .Children }}
           <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
           {{ end }}
@@ -30,13 +30,23 @@
       {{ end }}
     </ul>
 
-    <form class="form-inline my-2 my-lg-0">
+    <div class="form-inline my-2 my-lg-0 menu-buttons">
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+      <a href="https://forms.gle/jtsxwRXxRX4wBuT88" target="_blank" rel="noopener" class="btn btn-newsletter">
+        <div class="align-center">
+          <ion-icon name="mail-open"></ion-icon> Newsletter
+        </div>
+      </a>
+      <!-- https://www.addthis.com/register?next=/dashboard#tool-config/pco/shin/socialnetworks?services=slack -->
+      <!-- <button class="btn btn-primary my-2 my-sm-0" type="submit">Nimm teil!</button> -->
+    </div>
+    <div class="form-inline my-2 my-lg-0 menu-buttons">
       <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
       <a href="https://join.slack.com/t/flutter-de/shared_invite/enQtNjYyODAzNDQ5MjUxLWNlOGUwNTUwMDA1ZTc2YmFlODhmMGZmMmVhOGJmYWIyYjBhYjY4Yjc5MDQ0MGJiY2ZjYTdhMzdhMDhlMTA4YjI"
         target="_blank" rel="noopener" class="btn btn-link"><img src="/images/btn-add-to-slack.png" alt="slack logo"
           style="width:120px;"></a>
       <!-- https://www.addthis.com/register?next=/dashboard#tool-config/pco/shin/socialnetworks?services=slack -->
       <!-- <button class="btn btn-primary my-2 my-sm-0" type="submit">Nimm teil!</button> -->
-    </form>
+    </div>
   </div>
 </nav>

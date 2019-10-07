@@ -1,5 +1,5 @@
 ---
-title: "Assets (Bilder und Sound) in Flutter einfügen und verwenden"
+title: "Assets (Bilder und Sound) in Flutter"
 slug: "flutter-assets-bilder-sound-verwenden" 
 date: 2019-07-25T07:48:22+02:00
 draft: false
@@ -26,7 +26,7 @@ Des weiteren erwarten manche Packages wie z.B. [Flame](https://pub.dev/packages/
 
 Das sieht in etwa so aus:
 
-{{< figure src="/artikel/20190725-using-assets/images/file-tree.png" height="150" >}}
+{{< figure src="/artikel/20190725-using-assets/images/file-tree.png" width="200" >}}
 
 ### Dateien deklarieren
 
@@ -90,7 +90,7 @@ class MyApp extends StatelessWidget {
 
 Dies sieht dann so aus:
 
-{{< figure src="/artikel/20190725-using-assets/images/picture-example.png" height="400" width="300" >}}
+{{< figure src="/artikel/20190725-using-assets/images/picture-example.png" width="300" >}}
 
 
 
@@ -150,4 +150,4 @@ class MyApp extends StatelessWidget {
 
 Die Beispiel-App sieht so aus:
 
-{{< figure src="/artikel/20190725-using-assets/images/sound-example.png" height="400" width="300" >}}
+{{< figure src="/artikel/20190725-using-assets/images/sound-example.png" width="300" >}}

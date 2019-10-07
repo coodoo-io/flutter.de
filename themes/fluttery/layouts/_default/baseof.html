@@ -3,6 +3,7 @@
 {{- partial "head.html" . -}}
 
 {{ $bootstrapDarkTheme := .Param "light_mode" }}
+
 <body {{ with $bootstrapDarkTheme }} class="theme-light" {{end}}>
     <div class="page-container">
         {{- partial "header.html" . -}}

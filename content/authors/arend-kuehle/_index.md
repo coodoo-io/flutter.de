@@ -1,7 +1,7 @@
 ---
 name: Arend Kühle
-bio: 
+bio: Arend schreibt Artikel für flutter.de und ist Entwickler bei coodoo.
 image: /authors/arend-kuehle/arend.png
-twitter: coodoo_io
+twitter: laugentier
 github: laugen
 ---

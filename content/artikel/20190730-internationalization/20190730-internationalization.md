@@ -1,17 +1,18 @@
 ---
-title: "Leichte Internationalization in Flutter"
+title: "Internationalization in Flutter"
 slug: "leichte-internationalization-in-flutter" 
-date: 2019-07-08T14:25:24+02:00
-draft: true
+date: 2019-07-30T07:25:24+02:00
+draft: false
 header_image: "/artikel/20190730-internationalization/images/internationalization.jpg"
 images: ["/artikel/20190730-internationalization/images/internationalization.jpg"]
-description: "Wie du deine App stressfrei in Flutter übersetzt"
+description: "Übersetzungen in Flutter müssen nicht schwer sein. Wie du deine App stressfrei in Flutter übersetzt"
 tags: ["internationalization","übersetzung","fortgeschrittene"]
 categories: Fortgeschrittene * Accessibility * Sprache
 authors: ["Tobias Mautes"]
+link: 20190730-internationalization/20190730-internationalization.md
 ---
 
-So schön und leicht Flutter auch zu benutzen ist, so habe ich verzweifelt nach einer einfachen Lösung für ein wichtiges Problem gesucht: Internationalization. Das Framework hat leider noch keine eigene Art und Weise wie das zu lösen ist und überlässt es dem Nutzer, mit der Dart Variante klarzukommen, welche... ein wenig kompliziert zu verstehen ist.
+Flutter lernen ist sehr einfach. Und so schön und leicht Flutter auch zu benutzen ist, so habe ich doch verzweifelt nach einer einfachen Lösung für ein wichtiges Problem gesucht: Internationalization. Das Framework hat leider noch keine eigene Art und Weise wie das zu lösen ist und überlässt es dem Nutzer, mit der Dart Variante klarzukommen, welche... ein wenig kompliziert zu verstehen ist.
 
 Nach langer Suche habe ich jedoch einen schnellen und einfachen Weg gefunden eine Flutter-App zu übersetzen.
 
@@ -21,7 +22,7 @@ Für diesen Weg verwende ich ein Plugin für VisualStudioCode. Dementsprechend b
 
 ### Plugin installieren
 
-Zuallererst installierst du dir folgendes [Plugin](https://marketplace.visualstudio.com/items?itemName=esskar.vscode-flutter-i18n-json).
+Zuallererst installierst du folgendes [Plugin](https://marketplace.visualstudio.com/items?itemName=esskar.vscode-flutter-i18n-json).
 
 Alternativ kannst du in Code auch einfach nach `vscode-flutter-i18n-json` suchen:
 
