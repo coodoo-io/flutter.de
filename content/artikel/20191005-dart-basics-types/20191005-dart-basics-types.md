@@ -43,7 +43,7 @@ var haustiere = {'Hund', 'Katze', 'Maus', 'Hase'}; // Set von strings
 var loading = false; // bool
 {{< /highlight >}}
 
-Gerade bei bei Zahlen oder boolschen Werten wird schon bei diesen Beispielen klar, dass man auch ohne das hinschreiben des Typs ohne Probleme erkennen würde um was für einen statischen Typ es sich handelt.
+Gerade bei bei Zahlen oder boolschen Werten wird schon bei diesen Beispielen klar, dass man auch ohne das beschreiben des Typs ohne Probleme erkennen würde um was für einen statischen Typ es sich handelt.
 
 ### Empfehlungen für die Vorgehensweise
 
