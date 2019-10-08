@@ -1,23 +1,21 @@
 ---
-title: "Dart Basics - Types"
-slug: "dart-basics-types" 
+title: "Dart Basics - Datentypen"
+slug: "dart-basics-datentypen" 
 date: 2019-10-05T18:12:14+02:00
-draft: true
+draft: false
 header_image: "/artikel/20191005-dart-basics-types/images/dart-teaser.png"
 images: ["/artikel/20191005-dart-basics-types/images/dart-teaser.png"]
-description: "Dart Grundlagen - Types"
+description: "Dart Grundlagen - Datentypen"
 tags: ["dart", "basics"]
 categories: Anfänger * Dart
 authors: ["markus-kuehle"]
 link: 20191005-dart-basics-types/20191005-dart-basics-types.md
 ---
 
-Dart erlebt durch Flutter eine Belebung aus dem Nischenprodukt hin zu einer ernstzunehmenden Alternative für Client Programmiersprachen. Es wird vor allem als Javascript Ersatz im Browser gehandelt seit es bei der [Google IO 2018](http://sotagtrends.com/?tags=[dart,flutter]) im Zusammenspiel mit Flutter angekündigt wurde.
-
-Es wird also Zeit ein paar Grundlagen von Dart festzuhalten, heute geht es um Datentypen.
+Dart ist eine typsichere Sprache obwohl man keinen Typ direkt angeben muss. Wie hängt das zusammen und welche Typen bringt Dart mit? In diesem Artikel geht es um die Typisierung und Datentypen von Dart 2.5.
 
 ## Statische oder dynamische Typisierung einer Variable
-Dart ist entweder "stark typisiert" oder "dynamisch typisiert". Dabei unterscheidet Dart zwischen drei Zuständen:
+Dart ist entweder "stark typisiert" oder "dynamisch typisiert". Dabei unterscheidet Dart (ab Version 2) zwischen drei Zuständen:
 
 1. `type annotated` - Der Typ der Variable, des Parameters oder der Rückgabe ist angegeben.
 2. `inferred` - Es wurde kein Typ angegeben und Dart hat den Typen erfolgreich selbst herausgefunden. Kann Dart den Typen nicht erkennt wird als Fallback der `dynamic` Typ verwendet.
@@ -67,9 +65,9 @@ Dart ist eine typisierte Sprache und unterstützt folgende Datentypen:
 *  Maps
 *  Runes
   
-**Intialisierung der Typen mit null**
+**Jeder Datentyp ist ein Objekt**
 
-Eine Variable eines jeden Datentyps ist initial immer `null`. Deswegen benötigt man keine `null`-Initialisierung, das zählt als schlechter Stil.
+In Dart ist alles ein Objekt, auch wenn der Datentyp wie z.B. `num` oder `bool` klein geschrieben werden (Java Entwickler kennen das als primitiven Datentypen, welcher kein Objekt ist). Und weil jeder Datentyp ein Objekt ist, ist auch der Wert ohne Initialisierung immer `null`. Im Umkehrschluss ist eine `null`-Initialisierung auch nicht notwendig, zählt sogar als schlechter Stil.
 
 Bei `int`, `double` und `bool` sollte man generell darauf verzichten `null` Werte zu setzen, weil man bei diesen Typen immer einen Wert erwartet. In seltenen Ausnahmen kann es aber auch von Vorteil sein, dass ein `bool` mal den Wert `null` hat. Sollte dies vorkommen sollte es auch klar dokumentiert sein unter welchen Umständen die Rückgabe hier `null` ist.
 
