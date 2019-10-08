@@ -41,7 +41,7 @@ var haustiere = {'Hund', 'Katze', 'Maus', 'Hase'}; // Set von strings
 var loading = false; // bool
 {{< /highlight >}}
 
-Gerade bei bei Zahlen oder boolschen Werten wird schon bei diesen Beispielen klar, dass man auch ohne das hinschreiben des Typs ohne Probleme erkennen würde um was für einen statischen Typ es sich handelt.
+Gerade bei bei Zahlen oder boolschen Werten wird schon bei diesen Beispielen klar, dass man auch ohne das beschreiben des Typs ohne Probleme erkennen würde um was für einen statischen Typ es sich handelt.
 
 ### Empfehlungen für die Vorgehensweise
 
@@ -51,7 +51,7 @@ Weil beide Varianten (`type annotated` und `ìnferred`) verschiedene Vorteile ha
 *  Ziehe in Betracht statische Typen zu verwenden wenn es sich um private Attribute und Top-Level Variablen handelt deren Typ nicht direkt zu erkennen ist. (<a href="https://dart.dev/guides/language/effective-dart/design#consider-type-annotating-private-fields-and-top-level-variables-if-the-type-isnt-obvious" target="_blank">Doku</a>)
 *  Verwende automatische Erkennung (`ìnferred`) bei Variablen innerhalb von Methoden. (<a href="https://dart.dev/guides/language/effective-dart/design#avoid-type-annotating-initialized-local-variables" target="_blank">Doku</a>)
 *  Verwende implizite Typisierung bei Function Expressions, weil der Typ in der Regel durch die Liste oder Map außerhalb bereits bekannt ist. Ist dies nicht der Fall verwende auch in der Expression den statischen Typ um Klarheit zu schaffen. (<a href="https://dart.dev/guides/language/effective-dart/design#avoid-annotating-inferred-parameter-types-on-function-expressions" target="_blank">Doku</a>)
-*  Verwende keine doppelten Typ-Angaben bei generischen Aufrufen (Generics). Ist der Typ der Variable nicht klar dar bei dem Generics der Typ angegeben werden. Der statische Typ sollte hier nicht doppelt angegeben werden. (<a href="https://dart.dev/guides/language/effective-dart/design#avoid-redundant-type-arguments-on-generic-invocations" target="_blank">Doku</a>)
+*  Verwende keine doppelten Typ-Angaben bei generischen Aufrufen (Generics). Ist der Typ der Variable nicht klar darf bei dem Generics der Typ angegeben werden. Der statische Typ sollte hier nicht doppelt angegeben werden. (<a href="https://dart.dev/guides/language/effective-dart/design#avoid-redundant-type-arguments-on-generic-invocations" target="_blank">Doku</a>)
 *  Wird der Typ bei der automatischen Erkennung durch Dart falsch erkannt sollte der Typ direkt angegeben werden. Das passiert unter anderem dann wenn der Supertyp verwendet werden soll und Dart immer den direkten Typ erkennt (z.B. `double` anstatt `number`). (<a href="https://dart.dev/guides/language/effective-dart/design#do-annotate-when-dart-infers-the-wrong-type" target="_blank">Doku</a>)
 *  Verwende `dynamic` wenn klar ist, dass die automatische Erkennung durch Dart fehlschlagen wird. Dadurch wird klarer das manche Teile des Codes einfach nicht typsicher sind und das dem Entwickler klar ist.
 
