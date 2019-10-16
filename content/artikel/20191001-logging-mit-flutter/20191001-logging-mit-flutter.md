@@ -5,7 +5,7 @@ date: 2019-10-14T11:26:53+02:00
 draft: true
 header_image: "/artikel/20191001-logging-mit-flutter/images/notebook.jpg"
 images: ["/artikel/20191001-logging-mit-flutter/images/notebook.jpg"]
-description: "Lorem ipsum"
+description: "In diesem Flutter Artikel wird erklärt, wie man einen Logger einbauen kann."
 tags: ["flutter-logging","flutter","Logger"]
 categories: Anfänger * Logging
 authors: ["tristan-schuller"]
