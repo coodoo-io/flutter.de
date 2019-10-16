@@ -9,7 +9,7 @@ description: "In diesem Flutter Artikel wird erklärt, wie man einen Logger einb
 tags: ["flutter-logging","flutter","Logger"]
 categories: Anfänger * Logging
 authors: ["tristan-schuller"]
-link: 
+link: 20191001-logging-mit-flutter/20191001-logging-mit-flutter.md
 author: Tristan Schuller
 ---
 
