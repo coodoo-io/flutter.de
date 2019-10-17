@@ -18,7 +18,7 @@ In diesem Artikel möchte ich eine Möglichkeit aufzeigen einen Logger in neue, 
 
 ## Den Logger in Flutter einbauen
 
-<div class="alert alert-info">Hinweis: Das Tutorial bezieht sich auf das <a href="https://pub.dev/packages/logger#-readme-tab-" target="_blank" rel="noopener">logger</a> Dart Package. Wir verwenden ein neu erstelltes Projekt, wie man es auch auf <a href="" target="_blank" rel="noopener">flutter.dev/docs/get-started/test-drive</a> findet. Das Hinzufügen des Loggers in bestehende Projekte verhält sich allerdings gleich.</div>
+<div class="alert alert-info">Hinweis: Das Flutter Tutorial bezieht sich auf das <a href="https://pub.dev/packages/logger#-readme-tab-" target="_blank" rel="noopener">logger</a> Dart Package. Wir verwenden ein neu erstelltes Projekt, wie man es auch auf <a href="" target="_blank" rel="noopener">flutter.dev/docs/get-started/test-drive</a> findet. Das Hinzufügen des Loggers in bestehende Projekte verhält sich allerdings gleich.</div>
 
 ##### Unsere `main.dart` sieht zu Beginn so aus:
 
@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
 
 Eine Seite mit einem `FlatButton` Widget in der Mitte, welcher eine Methode auslöst, in der allerdings noch nichts passiert.
 
-##### 1. Fügen Sie das <a href="https://pub.dev/packages/logger#-readme-tab-" target="_blank" rel="noopener">logger</a> Package zu der `pubspec.yaml` Datei hinzu.
+##### 1. Füge das <a href="https://pub.dev/packages/logger#-readme-tab-" target="_blank" rel="noopener">logger</a> Package zu der `pubspec.yaml` Datei hinzu.
 
 {{< highlight console >}}
 dependencies:
@@ -67,11 +67,11 @@ dependencies:
 
 ##### 2. Im Projekt `flutter pub get` aufrufen, um das Package zum Projekt hinzuzufügen.
 
-##### 3. Wir lagern den Logger aus. Erstellen Sie eine Datei `logger.util.dart`.
+##### 3. Wir lagern den Logger aus. Erstelle eine Datei `logger.util.dart`.
 
 {{< figure src="/artikel/20191001-logging-mit-flutter/images/logger-in-file-tree.png" width="320" >}}
 
-##### Fügen Sie folgenden Code in die neu erstellte Datei ein.
+##### Füge folgenden Code in die neu erstellte Datei ein.
 
 {{< highlight dart >}}
 import 'package:logger/logger.dart';
@@ -88,7 +88,7 @@ Logger getLogger() {
 }
 {{< /highlight >}}
 
-Das Auslagern machen wir, um uns etwas Schreibarbeit zu sparen und einheitliche Logging-Ausgaben zu erreichen. Der `PrettyPrinter` hat viele verschiedene Einstellungsmöglichkeiten. Wir definieren hier erst mal ein paar Grundeinstellungen für unsere Logging-Ausgabe. Das wir `colors: false` einstellen müssen liegt daran, dass momentan die Farbausgabe nur bei Android Geräten funktioniert.
+Das Auslagern machen wir, um uns etwas Schreibarbeit zu sparen und einheitliche Logging-Ausgaben zu erreichen. Der `PrettyPrinter` hat viele verschiedene Einstellungsmöglichkeiten. Wir definieren hier erst mal ein paar Grundeinstellungen für unsere Logging-Ausgabe. Dass wir `colors: false` einstellen müssen, liegt daran, dass momentan die Farbausgabe nur bei Android Geräten funktioniert.
 
 ##### 4. Nun die `main.dart` öffnen und die Packages importieren.
 {{< highlight dart >}}
@@ -104,7 +104,7 @@ void main() {
 }
 {{< /highlight >}}
 
-Der Logger bietet, wie auch bei anderen Loggern üblich, mehrere Logging-Level an um die Logs ins Kategorien zu unterteilen. Das logger Package besteht aus den Leveln *verbose, debug, info, warning, error, wtf, nothing* und sollte damit so ziemlich jeden Fall abdecken für den man Logs erstellen möchte. In unserem Projekt beschränken wir uns auf die Stufen `debug, info` und `error`. Stellt man, so wie hier, das Level auf *debug*, so werden alle Logs der Stufe debug abwärts angezeigt, also debug, info und error. Stellt man die Stufe auf info, so werden nur die Logs für info und error angezeigt usw. Somit hat man die Möglichkeit z.B. in der Produktionsumgebung nur bestimmte Levels anzuzeigen.
+Der Logger bietet, wie auch bei anderen Loggern üblich, mehrere Logging-Level an, um die Logs in Kategorien zu unterteilen. Das logger Package besteht aus den Leveln *verbose, debug, info, warning, error, wtf, nothing* und sollte damit so ziemlich jeden Fall abdecken, für den man Logs erstellen möchte. In unserem Projekt beschränken wir uns auf die Stufen `debug, info` und `error`. Stellt man, so wie hier, das Level auf *debug*, so werden alle Logs der Stufe debug abwärts angezeigt, also debug, info und error. Stellt man die Stufe auf info, so werden nur die Logs für info und error angezeigt usw. Somit hat man die Möglichkeit z.B. in der Produktionsumgebung nur bestimmte Levels anzuzeigen.
 
 ##### 6. Nun kann man in der Klasse, in der man den Logger benutzen möchte, eine Instanz des Loggers erstellen. In unserem Beispiel ist dies die Klasse `MyApp`.
 {{< highlight dart >}}
@@ -176,7 +176,7 @@ Die Ausgabe im `Terminal`, hier in **Visaul Studio Code** sieht dann so aus:
 └──────────────────────────────────────────────────────────────────────────────
 {{< /highlight >}}
 
-Hier sieht man in welcher *Klasse* und in welcher *Methode*, sowie in welcher *Datei*, die Log-Nachricht ausgegeben wurde. Um die verschiedenen Level des Logs unterscheiden zu können werden Emojis genutzt.<br/> Hier also 🐛(debug), 💡(info) und ⛔(error).
+Hier sieht man in welcher *Klasse* und in welcher *Methode*, sowie in welcher *Datei*, die Log-Nachricht ausgegeben wurde. Um die verschiedenen Level des Logs unterscheiden zu können, werden Emojis genutzt.<br/> Hier also 🐛(debug), 💡(info) und ⛔(error).
 
 
 #### Hier der vollständige Code für unser Logging-Beispiel:
@@ -241,4 +241,4 @@ class MyApp extends StatelessWidget {
 }
 {{< /highlight >}}
 
-##### Du findest dieses und alle anderen Projekte aus unseren Artikeln auch <a href="https://github.com/coodoo-io/flutter-samples" target="_blank" rel="noopener">hier</a> auf Github.
+##### Du findest dieses Flutter Projekt und alle anderen Projekte aus unseren Artikeln auch <a href="https://github.com/coodoo-io/flutter-samples" target="_blank" rel="noopener">hier</a> auf Github.
