@@ -2,7 +2,7 @@
 title: "Logging mit Flutter"
 slug: "logging-mit-flutter" 
 date: 2019-10-14T11:26:53+02:00
-draft: true
+draft: false
 header_image: "/artikel/20191001-logging-mit-flutter/images/notebook.jpg"
 images: ["/artikel/20191001-logging-mit-flutter/images/notebook.jpg"]
 description: "In diesem Flutter Artikel wird erklärt, wie man einen Logger einbauen kann."
@@ -13,8 +13,7 @@ link: 20191001-logging-mit-flutter/20191001-logging-mit-flutter.md
 author: Tristan Schuller
 ---
 
-Einen Logger zu nutzen ist praktisch – auch bei Flutter.
-In diesem Artikel möchte ich eine Möglichkeit aufzeigen einen Logger in neue, oder bestehende Projekte zu implementieren. 
+Einen Logger zu nutzen ist praktisch – auch bei Flutter. Für alle, die Flutter lernen wollen, zeige ich in diesem Artikel eine Möglichkeit einen Logger in neue, oder bestehende Flutter Projekte zu implementieren. 
 
 ## Den Logger in Flutter einbauen
 
@@ -241,4 +240,4 @@ class MyApp extends StatelessWidget {
 }
 {{< /highlight >}}
 
-##### Du findest dieses Flutter Projekt und alle anderen Projekte aus unseren Artikeln auch <a href="https://github.com/coodoo-io/flutter-samples" target="_blank" rel="noopener">hier</a> auf Github.
+##### Du findest dieses Flutter Projekt und alle anderen Projekte aus unseren Artikeln auch <a href="https://github.com/coodoo-io/flutter-samples/tree/master/010-logging" target="_blank" rel="noopener">hier</a> auf Github.
