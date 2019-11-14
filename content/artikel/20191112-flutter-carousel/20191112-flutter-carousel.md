@@ -12,7 +12,7 @@ authors: ["simon-stevens"]
 link: 20191112-carousel/20191112-carousel.md
 ---
 
-Swipe, swipe, swipe.. nein ich rede nicht von Tinder. Ich rede von einem Flutter Karussell
+Swipe, swipe, swipe.. nein ich rede nicht von Tinder. Ich rede von einem Flutter Karussell!
 
 
 ## Carousel Slider in Flutter - Lass uns Karussell fahren!
