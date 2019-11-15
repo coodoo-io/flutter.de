@@ -134,15 +134,6 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" /> 1 Tag</div>        
   <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
-          Dienstag, 29.Oktober</div>
-  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/D28dedsAQgP6VjL87" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div>
-
-<div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          1 Tag</div>
-  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
           Dienstag, 26. November</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/MoahU4a7xaQCT54a6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div>
@@ -150,10 +141,10 @@ images = ["/schulung/flutter-schulung.png"]
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          2 Tage</div>
+          1 Tag</div>
   <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
-         31. Oktober - 01. November</div>
-  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/krW4yBof4Z1zppcZ9" target="_blank" rel="noopener">Jetzt anfragen</a></div>
+          Dienstag, 28. Januar 2020</div>
+  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/LP5Soryzd5LCKzZYA" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div>
 
 <div class="row zeile">
@@ -163,6 +154,15 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
          28. November - 29. November</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/9fCMSZuPazmpRobt6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
+</div>
+
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
+         30.01.2020 - 31.01.2020</div>
+  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/y96ngWR3NbZuXshP7" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div>
 
 <div class="row zeile">
