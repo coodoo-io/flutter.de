@@ -102,12 +102,13 @@ Da unser Carousel Slider ein Widget ist, können wir es ganz einfach einem ander
 
 Nun sieht unsere App wie folgt aus. Um die einzelnen Items ein bisschen voneinander visuell zu trennen habe ich noch ein padding in jeden Container gesetzt.
 
-{{< figure src="/artikel/20191112-flutter-carousel/images/carousel_01.gif" width="300" >}}
 {{< figure src="/artikel/20191112-flutter-carousel/images/carousel_02.gif" width="300" >}}
 
-Nun können wir an die Gestaltung unseres Karussells gehen. Das CarouselSlider Widget nimmt natürlich mehr Parameter als nur `items` und `height`.
-Ein paar interessante Parameter werde ich in diesem Artikel vorstellen.
-Wichtig kann zum Beispiel der Boolean `enableInfiniteScroll`. Dieser ist per Default auf **true**. Es kann aber durchaus sinnvoll sein, diesen auf **false** zu setzen. Ein weiterer ist der Boolean `autoPlay`. Wird dieser auf **true** gesetzt, läuft das Karussell – welch ein Wunder – automatisch. Will man `enableInfiniteScroll` auf **false** und `autoPlay` auf **true** setzen, sollte man auf jeden Fall das autoScroll beim letzten Item abfangen, da es sonst immer wieder versucht weiterzuscrollen.
+Nun können wir an die Gestaltung unseres Karussells gehen. Das `CarouselSlider` Widget nimmt natürlich mehr Parameter als nur `items` und `height`. Ein paar interessante Parameter werde ich in diesem Artikel vorstellen.
+
+Wichtig kann zum Beispiel der Parameter `enableInfiniteScroll` sein, welcher ermöglicht, dass man immer weiter blättern kan.. Dieser ist per Default auf **true**. Es kann aber durchaus sinnvoll sein, diesen auf **false** zu setzen, so dass man nicht immer von vorne wieder anfängt sondern am letzten Element stehen bleibt.
+
+Ein weiterer wichtiger Parameter ist `autoPlay`. Wird dieser auf **true** gesetzt, läuft das Karussell – welch ein Wunder – automatisch. Will man `enableInfiniteScroll` auf **false** und `autoPlay` auf **true** setzen, sollte man auf jeden Fall das autoScroll beim letzten Item abfangen, da es sonst immer wieder versucht weiterzuscrollen.
 
 
 {{< figure src="/artikel/20191112-flutter-carousel/images/carousel_03.gif" width="300" >}}
@@ -130,7 +131,9 @@ Unser Slider kommt mit vier fertigen Funktionen.
 
 {{< figure src="/artikel/20191112-flutter-carousel/images/carousel_04.gif" width="300" >}}
 
-In diesem Beispiel habe ich einen zweiten Slider erstellt. Der erste läuft über autoPlay, der zweite wird über die Buttons gesteuert. Natürlich können auch beide immer durch eine Wischbewegung gesteuert werden.
+In diesem Beispiel habe ich einen zweiten Slider erstellt. Der erste läuft über `autoPlay`, der zweite wird über die Buttons gesteuert. Natürlich können auch beide immer durch eine Wischbewegung gesteuert werden.
+
+Im Folgenden ist der gesamte Code des Beispiels noch einmal zu sehen:
 
 {{< highlight dart>}}
 class _MyHomePageState extends State<MyHomePage> {
