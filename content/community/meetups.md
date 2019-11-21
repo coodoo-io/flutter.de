@@ -53,6 +53,15 @@ geoMap = true
             </div>
         </div>
     </div>
+     <!-- Darmstadt -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-4">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Darmstadt (24 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/Flutter-Frankfurt-Darmstadt/" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Flutter-Frankfurt-Darmstadt/</a>
+            </div>
+        </div>
+    </div>
     <!-- Düsseldorf -->
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
@@ -80,12 +89,29 @@ geoMap = true
             </div>
         </div>
     </div>
+    <!-- Kiel -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-4">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Kiel (29 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/Flutter-Meetup-SH/" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Flutter-Meetup-SH/</a>
+            </div>
+        </div>
+    </div>
     <!-- München -->
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
                 <h4 class="card-title mt-0">Flutter München (554 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Flutter-Munich" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Flutter-Munich</a>
+            </div>
+        </div>
+    </div> <!-- Oldenburg -->
+    <div class="col-12 col-md-6">
+        <div class="card bg-light mb-4">
+            <div class="card-body">
+                <h4 class="card-title mt-0">Flutter Oldenburg (11 Mitglieder)</h4>
+                <a href="https://www.meetup.com/de-DE/Flutter-Community-Oldenburg/" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Flutter-Community-Oldenburg/</a>
             </div>
         </div>
     </div>
