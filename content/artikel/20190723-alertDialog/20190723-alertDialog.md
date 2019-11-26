@@ -5,7 +5,7 @@ date: 2019-07-23T07:45:30+02:00
 draft: true
 header_image: "/artikel/20190723-alertDialog/images/alertDialog.png"
 images: ["/artikel/20190723-alertDialog/images/alertDialog.png"]
-description: "Flutter auf deutsch: Wie du AlertDialogs in Flutter erstellen und gestalten kannst."
+description: "Flutter Tutorial auf deutsch: Wie du AlertDialogs in Flutter erstellen und gestalten kannst."
 tags: ["flutter","alertDialog","Dialog"]
 categories: Anfänger * Widgets * Dialog
 authors: ["simon-stevens"]
@@ -32,7 +32,7 @@ In einem SimpleDialog hat man meist verschiedene Optionen in Form einer Auswahl 
 Im Gegensatz dazu steht ein AlertDialog. Dieser braucht eine Bestätigung, dass eine bestimmte Aktion durchgeführt werden soll, oder nicht.<br>
 {{< figure src="/artikel/20190723-alertDialog/images/alertDialogExample.png" height="180" >}}
 
-In diesem Artikel gehen wir genauer auf AlertDialogs ein.<br>
+In diesem Flutter Tutorial auf deutsch gehen wir genauer auf AlertDialogs ein.<br>
 Um einen AlertDialog aufzurufen, müssen wir zunächst die `showDialog()`Methode aufrufen. <br>
 Diese benötigt zum einen den `context` und zum anderen einen `itemBuilder`, der als Rückgabewert einen Typ von Dialog zurückgibt. In unserem Fall einen AlertDialog.
 

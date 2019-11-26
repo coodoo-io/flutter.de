@@ -12,7 +12,7 @@ authors: ["simon-stevens"]
 link: 20191112-carousel/20191112-carousel.md
 ---
 
-Swipe, swipe, swipe.. nein, ich rede nicht von Tinder. Ich rede von einem Flutter Karussell! Jeder weiß, wie ein Karussell in einer App aussieht und Flutter macht es Entwicklern jetzt noch einfacher, ein Karussel schnell in die eigene Anwendung einzubauen. Für alle, die Flutter lernen wollen, ist dies ein nützlicher Flutter Artikel.
+Swipe, swipe, swipe.. nein, ich rede nicht von Tinder. Ich rede von einem Flutter Karussell! Jeder weiß, wie ein Karussell in einer App aussieht und Flutter macht es Entwicklern jetzt noch einfacher, ein Karussel schnell in die eigene Anwendung einzubauen. Für alle, die Flutter lernen wollen, ist dies ein nützliches Flutter Tutorial auf deutsch.
 
 
 ## Carousel Slider in Flutter - Lass uns Karussell fahren!
