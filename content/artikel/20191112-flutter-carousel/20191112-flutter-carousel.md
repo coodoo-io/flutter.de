@@ -41,7 +41,7 @@ Nun können wir wie gewohnt unsere App bauen.
 
 #### Erstellen eines Karussells
 
-Wir gehen später im Artikel nochmal genauer drauf ein, aber da ein Carousel Widget in Flutter, bzw. der Inhalt des Carousels doch mehr als nur ein paar Zeilen sind, lohnt es sich, das Erstellen des Carousels auszulagern.
+Wir gehen später im Artikel nochmal genauer darauf ein, aber da ein Carousel Widget in Flutter, bzw. der Inhalt des Carousels doch mehr als nur ein paar Zeilen sind, lohnt es sich, das Erstellen des Carousels auszulagern.
 Das machen wir ganz einfach zum Beispiel vor der build Methode.
 
 {{< highlight dart >}}
@@ -106,7 +106,7 @@ Nun sieht unsere App wie folgt aus. Um die einzelnen Items ein bisschen voneinan
 
 Nun können wir an die Gestaltung unseres Karussells gehen. Das `CarouselSlider` Widget nimmt natürlich mehr Parameter als nur `items` und `height`. Ein paar interessante Parameter werde ich in diesem Artikel vorstellen.
 
-Wichtig kann zum Beispiel der Parameter `enableInfiniteScroll` sein, welcher ermöglicht, dass man immer weiter blättern kan.. Dieser ist per Default auf **true**. Es kann aber durchaus sinnvoll sein, diesen auf **false** zu setzen, so dass man nicht immer von vorne wieder anfängt sondern am letzten Element stehen bleibt.
+Wichtig kann zum Beispiel der Parameter `enableInfiniteScroll` sein, welcher ermöglicht, dass man immer weiter blättern kann. Dieser ist per Default auf **true**. Es kann aber durchaus sinnvoll sein, diesen auf **false** zu setzen, so dass man nicht immer von vorne wieder anfängt, sondern am letzten Element stehen bleibt.
 
 Ein weiterer wichtiger Parameter ist `autoPlay`. Wird dieser auf **true** gesetzt, läuft das Karussell – welch ein Wunder – automatisch. Will man `enableInfiniteScroll` auf **false** und `autoPlay` auf **true** setzen, sollte man auf jeden Fall das autoScroll beim letzten Item abfangen, da es sonst immer wieder versucht weiterzuscrollen.
 
