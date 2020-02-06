@@ -66,7 +66,7 @@ images = ["/schulung/flutter-schulung.png"]
     </div>
   </div>
   <div class="row pb-1">
-    <div class="col-md-4 text-center">
+    <!-- <div class="col-md-4 text-center">
      <div class="card">
       <div class="card-body">
     <h3><b>Ein-Tages</b>-Kurs</h3>
@@ -98,14 +98,37 @@ images = ["/schulung/flutter-schulung.png"]
     </div>
     </div>
     </div>
-  </div>
-  <div class="col-md-4 text-center">
+  </div> -->
+
+  <div class="col-md-6 text-center">
    <div class="card">
       <div class="card-body">
-    <h3><b>Kurse </b>vor Ort</h3>
+    <h3><b>Kurse </b>in Mainz</h3>
     <div class="text-left">
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Ab 4 Personen</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Individuelle Kursgestaltung</p>
-     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Kurse bei Ihnen vor Ort</p>
+        <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" />Verpflegung vor Ort</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Variable Länge der Kurse (1-3 Tage)</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Einführung in Dart</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Einführung in Flutter</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Widget Einführung</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Testing</p>
+    <a href="https://forms.gle/BzMHv9ELzYHCKdYy6" target="_blank" rel="noopener"><p class="text-center"><b>€900 pro Person</b></p></a> <p class="text-center"><b></b></p>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 text-center">
+   <div class="card">
+      <div class="card-body">
+    <h3><b>Kurse </b>bei Ihnen vor Ort</h3>
+    <div class="text-left">
+         <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Kurse bei Ihnen vor Ort</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Kleine Gruppengröße</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Individuelle Kursgestaltung</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Variable Länge der Kurse (ab 2 Tagen)</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Einführung in Dart</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Einführung in Flutter</p>
@@ -113,26 +136,27 @@ images = ["/schulung/flutter-schulung.png"]
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Testing</p>
-     <p class="text-center"><b>Preis nach Vereinbarung</b></p>
+     <a href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener"><p class="text-center"><b>Preis nach Vereinbarung</b></p></a>
     </div>
     </div>
     </div>
   </div>
+
  </div>
 </div>
 
 <!-- Termine -->
 
-<div id="termine" class="container pt-1 pb-5 pl-0 pr-0">
+<!-- <div id="termine" class="container pt-1 pb-5 pl-0 pr-0">
   <div class="row pb-3">
     <div class="col">
      <h2 class="schulung-h2 pt-5">Termine</h2>
     </div>
-  </div>
+  </div> -->
 
 
 
-<div class="row zeile">
+<!-- <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           1 Tag</div>
@@ -140,25 +164,25 @@ images = ["/schulung/flutter-schulung.png"]
           Dienstag, 25. Februar</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/9oS9VnXWPn24vneX6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
   
-</div>
+</div> -->
 
-<div class="row zeile">
+<!-- <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" /> 1 Tag</div>        
   <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
           Dienstag, 24. März 2020</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/Jn5yCsDbuK4mEjrb6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div>
+</div> -->
 
-<div class="row zeile">
+<!-- <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           2 Tage</div>
           <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
          27. Februar - 28. Februar</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/ffpaUvQr9Ya3tsxn6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div>
-
+</div> -->
+<!-- 
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
@@ -179,9 +203,15 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div>
 
-<p class="schulung-p p-3">Auf Anfrage bieten wir auch Flutter Schulungen in den Städten Hamburg, Berlin, Stuttgart, Leipzig und Köln an. <br>Schreiben Sie uns einfach oder rufen Sie uns an.</p>
+-->
+<!-- 
+<p class="schulung-p p-3 text-center">Erfahren Sie mehr über den Ablauf unserer Flutter Schulungen.</p>
     </div>
-</div>
+       <div class="text-center pt-2 pb-3">
+                <a href="/community/meetups.html">
+        <a href="/schulung/flutter-schulung-ablauf.html" target="_blank" rel="noopener" class="btn btn-primary">Schulungsablauf</a>
+      </div>
+</div>  -->
 
 <!-- Kontakt -->
 
