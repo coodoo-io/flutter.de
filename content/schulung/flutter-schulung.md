@@ -132,7 +132,7 @@ images = ["/schulung/flutter-schulung.png"]
 
 
 
-<div class="row zeile">
+<!-- <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           1 Tag</div>
@@ -140,7 +140,7 @@ images = ["/schulung/flutter-schulung.png"]
           Dienstag, 25. Februar</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/9oS9VnXWPn24vneX6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
   
-</div>
+</div> -->
 
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
@@ -149,7 +149,7 @@ images = ["/schulung/flutter-schulung.png"]
           Dienstag, 24. März 2020</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/Jn5yCsDbuK4mEjrb6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div>
-
+<!-- 
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
@@ -157,7 +157,7 @@ images = ["/schulung/flutter-schulung.png"]
           <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
          27. Februar - 28. Februar</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/ffpaUvQr9Ya3tsxn6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div>
+</div> -->
 
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>

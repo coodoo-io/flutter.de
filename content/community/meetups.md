@@ -48,7 +48,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Berlin (561 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Berlin (602 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/flutter-berlin" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/flutter-berlin</a>
             </div>
         </div>
@@ -57,7 +57,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Darmstadt (28 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Darmstadt (31 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Flutter-Frankfurt-Darmstadt/" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Flutter-Frankfurt-Darmstadt/</a>
             </div>
         </div>
@@ -66,7 +66,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Düsseldorf (439 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Düsseldorf (475 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/flutter-school" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/flutter-school</a>
             </div>
         </div>
@@ -75,7 +75,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Frankfurt (186 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Frankfurt (207 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Frankfurt-Flutterers-Meetup" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Frankfurt-Flutterers-Meetup</a>
             </div>
         </div>
@@ -84,7 +84,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Karlsruhe (216 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Karlsruhe (227 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Karlsruhe-Flutter-Meetup" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Karlsruhe-Flutter-Meetup</a>
             </div>
         </div>
@@ -93,7 +93,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Kiel (54 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Kiel (57 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Flutter-Meetup-SH/" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Flutter-Meetup-SH/</a>
             </div>
         </div>
@@ -102,7 +102,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter München (661 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter München (723 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Flutter-Munich" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Flutter-Munich</a>
             </div>
         </div>
@@ -110,7 +110,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Oldenburg (16 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Oldenburg (17 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Flutter-Community-Oldenburg/" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Flutter-Community-Oldenburg/</a>
             </div>
         </div>
@@ -119,7 +119,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Rhein-Main (81 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Rhein-Main (82 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup/" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Rhein-Main-Flutter-Meetup</a>
             </div>
         </div>
@@ -128,7 +128,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Solingen (231 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Solingen (265 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/tech-and-talk/" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/tech-and-talk</a>
             </div>
         </div>
@@ -137,7 +137,7 @@ geoMap = true
     <div class="col-12 col-md-6">
         <div class="card bg-light mb-4">
             <div class="card-body">
-                <h4 class="card-title mt-0">Flutter Stuttgart (214 Mitglieder)</h4>
+                <h4 class="card-title mt-0">Flutter Stuttgart (221 Mitglieder)</h4>
                 <a href="https://www.meetup.com/de-DE/Flutter-Stuttgart" target="_blank" rel="noopener" class="card-link">https://www.meetup.com/de-DE/Flutter-Stuttgart</a>
             </div>
         </div>
