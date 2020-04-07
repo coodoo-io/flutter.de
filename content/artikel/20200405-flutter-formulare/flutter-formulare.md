@@ -2,7 +2,7 @@
 title: "Formulare in Flutter (Teil 1)"
 slug: "flutter-formulare" 
 date: 2020-04-02T12:46:56+02:00
-draft: true
+draft: false
 header_image: "/artikel/20200405-flutter-formulare/images/abstract_formfields.png"
 images: ["/artikel/20200405-flutter-formulare/images/abstract_formfields.png"]
 description: "Dieses Flutter Tutorial auf deutsch erklärt, wie man Formulare in Flutter erstellt."
