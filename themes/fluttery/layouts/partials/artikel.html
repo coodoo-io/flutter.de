@@ -3,7 +3,9 @@
     <article class="blog-post pb-5">
         <h1 class="blog-post-title">{{ .Title }}</h1>
         <span class="blog-post-date mb-0">{{ dateFormat "2. January 2006" .Date }}</span>
-        <span class="blog-post-date mb-0">{{ .ReadingTime}} Minute Lesezeit, {{ .WordCount}} Wörter</span>
+        <span class="blog-post-date mb-0">{{ .ReadingTime}}
+            {{ if gt .ReadingTime 1 }}Minuten{{ else }}Minute{{ end }}
+            Lesezeit, {{ .WordCount }} Wörter</span>
         <span class="blog-post-date mb-0">{{ .Params.Categories }}</span>
         {{- range .Params.authors }}
         {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
@@ -25,19 +27,25 @@
                         </div>
                         <div>
                             <strong>{{ .Params.name }}<br></strong>
-                            <!-- <small>{{ .Params.bio }}</small> -->
+                            {{ if (isset .Params "bio") }}
+                            <small>{{ .Params.bio }}</small>
+                            {{ end }}
                             <div class="pt-2">
+                                {{ if (isset .Params "twitter") }}
                                 <a href="https://twitter.com/{{ .Params.twitter }}"
                                     class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Twitter</a>
+                                {{ end }}
+                                {{ if (isset .Params "github") }}
                                 <a href="https://github.com/{{ .Params.github }}" class="btn btn-sm btn-outline-primary"
                                     target="_blank" rel="noopener">Github</a>
+                                {{ end }}
                             </div>
                         </div>
                     </figure>
                     <!--Link zur Authors Page-->
                     <!-- <figcaption>
-                            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
-                          </figcaption> -->
+                        <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+                    </figcaption> -->
                     {{ end }}
                     {{ end }}
                 </div>
