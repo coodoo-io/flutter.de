@@ -19,9 +19,10 @@
                     <a href='{{ .Permalink }}' title='{{ .Title }}'>
                         <h5 class="card-title">{{ .Title }}</h5>
                     </a>
+                    {{if gt (len .Summary) 0}}
                     <p class="card-text">{{ slicestr .Summary 0 200 }}... <a class='btn-link' href='{{ .Permalink }}'
                             title='{{ .Title }}'>Weiterlesen</a></p>
-
+                    {{end}}
                     <p class="card-text">
 
                         <small

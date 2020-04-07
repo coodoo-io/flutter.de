@@ -1,7 +1,6 @@
 ---
 name: Tristan Schuller
-bio: 
+bio: Werkstudent bei coodoo GmbH in Mainz.
 image: /authors/tristan-schuller/tristan.png
-twitter: coodoo_io
-github: coodoo-io
+github: tr-sc
 ---

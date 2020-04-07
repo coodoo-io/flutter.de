@@ -13,7 +13,7 @@ link: 20191001-logging-mit-flutter/20191001-logging-mit-flutter.md
 author: Tristan Schuller
 ---
 
-Einen Logger zu nutzen ist praktisch – auch bei Flutter. Für alle, die Flutter lernen wollen, zeige ich in diesem Artikel eine Möglichkeit einen Logger in neue, oder bestehende Flutter Projekte zu implementieren. 
+Einen Logger zu nutzen ist praktisch — auch bei Flutter. Für alle, die Flutter lernen wollen, zeige ich in diesem Artikel eine Möglichkeit einen Logger in neue, oder bestehende Flutter Projekte zu implementieren. 
 
 ## Den Logger in Flutter einbauen
 
