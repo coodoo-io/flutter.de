@@ -164,4 +164,4 @@ return Scaffold(
 
 Das Plugin macht das Ganze also zu einem viel schmerzloseren Prozess, als das manuelle Einpflegen der ganzen Übersetzungen und Erweitern der Klasse. Hoffentlich legt Google aber mit einer Methode nach, die einfacher zu verwenden ist und vom Framework offiziell unterstützt wird.
 
-Code-Beispiel findest du auf [GitHub](https://github.com/coodoo-io/flutter-internationalization).
+<a href="https://github.com/coodoo-io/flutter-internationalization" class="btn btn-primary" target="_blank" rel="noopener">Das Projekt auf Github ansehen</a>

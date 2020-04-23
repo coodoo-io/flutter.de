@@ -506,4 +506,4 @@ Wir können jetzt ein einfaches Formular mit Flutter bauen, der Textfelder mit s
 
 <div class="alert alert-info">Hinweis: Wenn du jetzt sofort noch mehr über Formulare lernen möchtest, dann lies dir hierzu die aktuelle <a href="https://flutter.dev/docs/cookbook/forms" target="_blank" rel="noopener">Flutter Dokumentation</a> durch. Hier erfährst du alles, was wir in diesem Artikel nicht behandeln konnten.</div>
 <br />
-{{< button href="https://github.com/coodoo-io/flutter-samples/tree/master/012-flutter-forms" class="btn btn-primary" target="_blank" rel="noopener">}}Das Projekt auf Github ansehen{{< /button >}}
+<a href="https://github.com/coodoo-io/flutter-samples/tree/master/012-flutter-forms" class="btn btn-primary" target="_blank" rel="noopener">Das Projekt auf Github ansehen</a>
