@@ -127,6 +127,7 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="row pb-3">
     <div class="col">
      <h2 class="schulung-h2 pt-5">Termine</h2>
+     <p class="schulung-p p-3">Aufgrund der derzeitigen Beschränkungen durch die Covid-19 Pandemie bieten wir keine konkreten Termine für Flutter-Schulungen an. Sie können uns jedoch jederzeit für flexible, ortsunabhängige Termine für das dritte und vierte Quartal 2020 anfragen.</p>
     </div>
   </div>
 
@@ -142,13 +143,13 @@ images = ["/schulung/flutter-schulung.png"]
   
 </div> -->
 
-<div class="row zeile">
+<!-- <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" /> 1 Tag</div>        
   <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
           Dienstag, 24. März 2020</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/Jn5yCsDbuK4mEjrb6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div>
+</div> -->
 <!-- 
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
@@ -159,23 +160,23 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/ffpaUvQr9Ya3tsxn6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div> -->
 
-<div class="row zeile">
+<!-- <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           2 Tage</div>
   <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
          26. März 2020 - 27. März 2020</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/GtbLiAWkFXx6xkLj9" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div>
+</div> -->
 
 
 
 <div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Flexibel</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          2 Tage</div>
-  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
-         Flexibel</div>
+  <div class="col-3 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Ort flexibel</div>
+  <div class="col-3 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          Ab 2 Tagen</div>
+  <div class="col-3 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
+         Termin flexibel</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div>
 
