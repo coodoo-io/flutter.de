@@ -17,5 +17,3 @@
 {{ $styles := resources.Get "scss/styles.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 {{ end }}
-
-{{ template "_internal/google_analytics_async.html" . }}
