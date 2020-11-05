@@ -1,4 +1,4 @@
-image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+image: registry.gitlab.com/pages/hugo/hugo_extended:e1de06d369c360a557dd73b61b0d2dc630f292a06ce20152027bffbc57c5aab0
 
 stages:
   - build
