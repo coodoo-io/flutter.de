@@ -5,16 +5,10 @@ theme = "fluttery"
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "de"
 Paginate = 18 # this is set low for demonstrating with dummy content. Set to a higher number
-googleAnalytics = "UA-140814434-1"
 enableRobotsTXT = true
 enableEmoji = true
 disqusShortname = "localhost"
 uglyurls = true
-
-[privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    respectDoNotTrack = true
 
 [permalinks]
   artikel = "artikel/:slug/"

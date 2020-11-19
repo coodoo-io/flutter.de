@@ -2,6 +2,7 @@
 title: "AlertDialog in Flutter erstellen und gestalten"
 slug: "alert-dialog-flutter" 
 date: 2019-07-23T07:45:30+02:00
+expirydate: 2019-07-24T07:45:30+02:00
 draft: true
 header_image: "/artikel/20190723-alertDialog/images/alertDialog.png"
 images: ["/artikel/20190723-alertDialog/images/alertDialog.png"]
