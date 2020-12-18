@@ -6,6 +6,14 @@
 <meta name="description" content="{{.Description}}" />
 <meta name="author" content="coodoo GmbH">
 
+<!-- CookiePro Cookie-Einwilligungshinweis – Anfang für flutter.de -->
+<script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8"
+    data-domain-script="afddbfb8-7b40-4c6a-b486-5236f0536e1c"></script>
+<script type="text/javascript">
+    function OptanonWrapper() { }
+</script>
+<!-- CookiePro-Cookie-Einwilligungshinweis – Ende für flutter.de -->
+
 {{ template "_internal/opengraph.html" . }}
 
 {{ if .Site.IsServer }}
@@ -15,5 +23,9 @@
 {{ else }}
 {{ $cssOpts := (dict "targetPath" "css/styles.css" ) }}
 {{ $styles := resources.Get "scss/styles.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"
+    crossorigin="anonymous" media="screen" />
+
+{{ template "_internal/google_analytics_async.html" . }}
+
 {{ end }}
