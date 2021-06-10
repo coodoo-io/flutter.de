@@ -2,6 +2,7 @@
 title: "Taschenrechner in Flutter"
 slug: "flutter-calculator" 
 date: 2020-04-24T09:46:56+02:00
+dateOfUpdate: 2021-08-10T09:46:56+02:00
 draft: false
 header_image: "/artikel/20200424-flutter-calculator/images/numbers.jpg"
 images: ["/artikel/20200424-flutter-calculator/images/numbers.jpg"]
@@ -43,9 +44,15 @@ Zuerst löschen wir alles, was in `body` enthalten ist und ersetzen es durch das
               alignment: Alignment.centerRight,
               color: Colors.white,
               padding: EdgeInsets.symmetric(vertical: 24.0, horizontal: 12.0),
-              child: Text("0",
-                  style:
-                      TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold)),
+              child: Text(
+                0,
+                overflow: TextOverflow.clip,
+                maxLines: 1,
+                style: TextStyle(
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
             Column(
               children: <Widget>[
@@ -54,7 +61,7 @@ Zuerst löschen wir alles, was in `body` enthalten ist und ersetzen es durch das
                     counterButton("7"),
                     counterButton("8"),
                     counterButton("9"),
-                    counterButton("/"),
+                    counterButton(operands["div"]),
                   ],
                 ),
                 Row(
@@ -62,7 +69,7 @@ Zuerst löschen wir alles, was in `body` enthalten ist und ersetzen es durch das
                     counterButton("4"),
                     counterButton("5"),
                     counterButton("6"),
-                    counterButton("X"),
+                    counterButton(operands["mul"]),
                   ],
                 ),
                 Row(
@@ -70,15 +77,15 @@ Zuerst löschen wir alles, was in `body` enthalten ist und ersetzen es durch das
                     counterButton("1"),
                     counterButton("2"),
                     counterButton("3"),
-                    counterButton("_"),
+                    counterButton(operands["sub"]),
                   ],
                 ),
                 Row(
                   children: <Widget>[
                     counterButton("0"),
-                    counterButton("CL"),
-                    counterButton("="),
-                    counterButton("+"),
+                    counterButton("Clear"),
+                    counterButton(operands["equals"]),
+                    counterButton(operands["add"]),
                   ],
                 ),
               ],
@@ -94,17 +101,26 @@ In der ersten Column ist das Feld für die Anzeige unseres Ergebnisses. Danach f
 
 {{< highlight dart >}}
 
-class _MyHomePageState extends State<MyHomePage> {
-
-  Widget counterButton(String buttonText) {
+Widget counterButton(var buttonText) {
     return Expanded(
-      child: new OutlineButton(
-          onPressed: () {},
-          child: new Text(buttonText,
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
-          color: Colors.white,
-          textColor: Colors.black,
-          padding: EdgeInsets.all(24.0)),
+      child: OutlinedButton(
+        onPressed: () => {},
+        child: Text(buttonText,
+            style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black)),
+        style: ButtonStyle(
+          padding: MaterialStateProperty.all(EdgeInsets.all(24.0)),
+          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+          textStyle: MaterialStateProperty.all(
+            TextStyle(
+              //backgroundColor: Colors.yellow,
+              color: Colors.black,
+            ),
+          ),
+        ),
+      ),
     );
   }
 {{< /highlight >}}
@@ -122,7 +138,7 @@ Erstellt zuerst einmal die Variable `output` in der `_MyHomePageState` State-Kla
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  String output = "0";
+  var output = "0";
   ...
 }
   {{< /highlight >}}
@@ -134,9 +150,15 @@ Container(
   alignment: Alignment.centerRight,
   color: Colors.white,
   padding: EdgeInsets.symmetric(vertical: 24.0, horizontal: 12.0),
-  child: Text(output,
-      style:
-          TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold)),
+  child: Text(
+    output,
+    overflow: TextOverflow.clip,
+    maxLines: 1,
+    style: TextStyle(
+      fontSize: 40.0,
+      fontWeight: FontWeight.bold,
+    ),
+  ),
 ),
   {{< /highlight >}}
 
@@ -167,81 +189,89 @@ buttonPressed(String buttonText) {}
 
 Bevor wir die Funktion mit `if`s und `else`s füllen, müssen wir noch ein paar Variablen deklarieren.
 {{< highlight dart >}}
-  String _output = "0";
-  double num1 = 0.0;
-  double num2 = 0.0;
-  String operand = "";
+  valueOfOperation = 0.0;
+  firstValue = 0.0;
+  secondValue = 0.0;
+  operand = "";
 {{< /highlight >}}
 
-`_output` entspricht der Anzeige.
-`num1` und `num2` sind die beiden eingegebenen Werte.
-Der `operand` ist der mathematische Operator, also +,-,x oder /.
+`valueOfOperation` entspricht der Anzeige.
+`firstValue` und `secondValue` sind die beiden eingegebenen Werte.
+Der `operand` ist der mathematische Operator, also +,-,* oder /.
 
 ### Kalkulation
 
 Jetzt können wir der `buttonPressed` Funktion sagen, was sie mit den eingegebenen Werten tun soll.
 
 {{< highlight dart >}}
-class _MyHomePageState extends State<MyHomePage> {
-  String output = "0";
-  
-  String _output = "0";
-  double num1 = 0.0;
-  double num2 = 0.0;
-  String operand = "";
-
-  buttonPressed(String buttonText) {
-    if (buttonText == "CL") {
-      _output = "0";
-      num1 = 0.0;
-      num2 = 0.0;
+buttonPressed(String buttonText) {
+    if (buttonText == "Clear") {
+      valueOfOperation = 0.0;
+      firstValue = 0.0;
+      secondValue = 0.0;
       operand = "";
-    } else if (buttonText == "+" ||
-        buttonText == "-" ||
-        buttonText == "X" ||
-        buttonText == "/") {
-      num1 = double.parse(output);
+      //Wenn gleich gedrückt wird
+    } else if (buttonText == operands["equals"]) {
+      secondValue = double.parse(output);
+
+      if (operand == operands["add"]) {
+        valueOfOperation = firstValue + secondValue;
+      } else if (operand == operands["sub"]) {
+        valueOfOperation = firstValue - secondValue;
+      } else if (operand == operands["mul"]) {
+        valueOfOperation = firstValue * secondValue;
+      } else if (operand == operands["div"]) {
+        valueOfOperation = firstValue / secondValue;
+      }
+      firstValue = 0.0;
+      secondValue = 0.0;
+      operand = "";
+      //Wenn ein anderer Operand gedrückt wird
+    } else if (operands.containsValue(buttonText)) {
+      firstValue = double.parse(output);
       operand = buttonText;
-      _output = "";
-    } else if (buttonText == "=") {
-      num2 = double.parse(output);
-
-      if (operand == "+") {
-        _output = (num1 + num2).toString();
-      }
-      if (operand == "-") {
-        _output = (num1 - num2).toString();
-      }
-      if (operand == "X") {
-        _output = (num1 * num2).toString();
-      }
-      if (operand == "/") {
-        _output = (num1 / num2).toString();
-      }
-      num1 = 0.0;
-      num2 = 0.0;
-      operand = "";
+      valueOfOperation = 0.0;
+      //Wenn eine Zahl gedrückt wird
     } else {
-      _output = _output + buttonText;
+      if (valueOfOperation == 0.0) {
+        valueOfOperation = double.parse(buttonText);
+      } else {
+        var zahlensplit = valueOfOperation.toString().split(".");
+        var ganzzahl = zahlensplit[0];
+        var kommazahl = zahlensplit[1];
+
+        valueOfOperation =
+            double.parse(ganzzahl + buttonText + "." + kommazahl);
+      }
     }
-    print(_output);
-    setState(() {
-      output = double.parse(_output).toStringAsFixed(0);
-    });
-  }
 {{< /highlight >}}
 
-Bei der Eingabe von `CL` (also `CLEAR`) wird keine Berechnung ausgeführt, sondern die Werte einfach auf 0 zurückgesetzt. 
+Bei der Eingabe von `Clear` wird keine Berechnung ausgeführt, sondern die Werte einfach auf 0 zurückgesetzt. 
 
-Wenn der `buttonText` <b>+,-,x oder /</b> ist, legen wir fest, dass der erste Output, der ja ein String ist, zu einem Double geparst werden und in `num1` gespeichert soll. Das gleiche soll für den zweiten Output geschehen. 
+Wenn der `buttonText` <b>+,-,* oder /</b> ist, legen wir fest, dass der erste Output, der ja ein String ist, zu einem Double geparst werden und in `firstValue` gespeichert soll. Das gleiche soll für den zweiten Output geschehen. 
 
 Wenn der `buttonText` "=" entspricht, dann wird die Berechnung für das jeweilige Zeichen ausgeführt und das Ergebnis wieder in ein String umgewandelt.
 
-Dann resetten wir noch den Wert von `num1`, `num2` und `_output` zu `0`. 
+Dann resetten wir noch den Wert von `firstValue`, `secondValue` und `valueOfOperation` zu `0`. 
 
-Dann fügen wir unserem `_output` noch den `buttonText` hinzu, damit dieser angezeigt wird, wenn keine Kalkulation durchgeführt wird.
+Dann fügen wir unserem `valueOfOperation` noch den `buttonText` hinzu, damit dieser angezeigt wird, wenn keine Kalkulation durchgeführt wird.
 
-Und ganz zum Schluss geben wir noch den Wert von `_output` als String aus.
+Ganz zum Schluss geben wir, über setState, noch den Wert von `valueOfOperation` an `output`, damit er ausgegeben wird.
+
+{{< highlight dart >}}
+setState(
+  () {
+    var valueOfOperationString = valueOfOperation.toString();
+    var valueOfOperationSplit = valueOfOperationString.split(".");
+
+    if (valueOfOperationSplit[1] == "0") {
+      output = valueOfOperationSplit[0];
+    } else {
+      output = valueOfOperationString;
+    }
+  },
+);
+{{</highlight>}}
 
 #### Der komplette Code in der Main.dart
 
@@ -253,14 +283,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Taschenrechner'),
     );
@@ -268,7 +296,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -277,62 +305,96 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String output = "0";
+  Map<String, String> operands = {
+    "add": "+",
+    "sub": "-",
+    "mul": "*",
+    "div": "/",
+    "equals": "=",
+  };
 
-  String _output = "0";
-  double num1 = 0.0;
-  double num2 = 0.0;
-  String operand = "";
+  var output = "0";
+
+  var valueOfOperation = 0.0;
+  var firstValue = 0.0;
+  var secondValue = 0.0;
+  var operand = "";
 
   buttonPressed(String buttonText) {
-    if (buttonText == "CL") {
-      _output = "0";
-      num1 = 0.0;
-      num2 = 0.0;
+    if (buttonText == "Clear") {
+      valueOfOperation = 0.0;
+      firstValue = 0.0;
+      secondValue = 0.0;
       operand = "";
-    } else if (buttonText == "+" ||
-        buttonText == "-" ||
-        buttonText == "X" ||
-        buttonText == "/") {
-      num1 = double.parse(output);
-      operand = buttonText;
-      _output = "";
-    } else if (buttonText == "=") {
-      num2 = double.parse(output);
+      //Wenn gleich gedrückt wird
+    } else if (buttonText == operands["equals"]) {
+      secondValue = double.parse(output);
 
-      if (operand == "+") {
-        _output = (num1 + num2).toString();
+      if (operand == operands["add"]) {
+        valueOfOperation = firstValue + secondValue;
+      } else if (operand == operands["sub"]) {
+        valueOfOperation = firstValue - secondValue;
+      } else if (operand == operands["mul"]) {
+        valueOfOperation = firstValue * secondValue;
+      } else if (operand == operands["div"]) {
+        valueOfOperation = firstValue / secondValue;
       }
-      if (operand == "-") {
-        _output = (num1 - num2).toString();
-      }
-      if (operand == "X") {
-        _output = (num1 * num2).toString();
-      }
-      if (operand == "/") {
-        _output = (num1 / num2).toString();
-      }
-      num1 = 0.0;
-      num2 = 0.0;
+      firstValue = 0.0;
+      secondValue = 0.0;
       operand = "";
+      //Wenn ein anderer Operand gedrückt wird
+    } else if (operands.containsValue(buttonText)) {
+      firstValue = double.parse(output);
+      operand = buttonText;
+      valueOfOperation = 0.0;
+      //Wenn eine Zahl gedrückt wird
     } else {
-      _output = _output + buttonText;
+      if (valueOfOperation == 0.0) {
+        valueOfOperation = double.parse(buttonText);
+      } else {
+        var zahlensplit = valueOfOperation.toString().split(".");
+        var ganzzahl = zahlensplit[0];
+        var kommazahl = zahlensplit[1];
+
+        valueOfOperation =
+            double.parse(ganzzahl + buttonText + "." + kommazahl);
+      }
     }
-    print(_output);
-    setState(() {
-      output = double.parse(_output).toStringAsFixed(0);
-    });
+
+    setState(
+      () {
+        var valueOfOperationString = valueOfOperation.toString();
+        var valueOfOperationSplit = valueOfOperationString.split(".");
+
+        if (valueOfOperationSplit[1] == "0") {
+          output = valueOfOperationSplit[0];
+        } else {
+          output = valueOfOperationString;
+        }
+      },
+    );
   }
 
-  Widget counterButton(String buttonText) {
+  Widget counterButton(var buttonText) {
     return Expanded(
-      child: new OutlineButton(
-          onPressed: () => buttonPressed(buttonText),
-          child: new Text(buttonText,
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
-          color: Colors.white,
-          textColor: Colors.black,
-          padding: EdgeInsets.all(24.0)),
+      child: OutlinedButton(
+        onPressed: () => buttonPressed(buttonText),
+        child: Text(buttonText,
+            style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black)),
+        style: ButtonStyle(
+          padding: MaterialStateProperty.all(EdgeInsets.all(24.0)),
+          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+          textStyle: MaterialStateProperty.all(
+            TextStyle(
+              //backgroundColor: Colors.yellow,
+              color: Colors.black,
+            ),
+          ),
+        ),
+      ),
     );
   }
 
@@ -350,9 +412,15 @@ class _MyHomePageState extends State<MyHomePage> {
               alignment: Alignment.centerRight,
               color: Colors.white,
               padding: EdgeInsets.symmetric(vertical: 24.0, horizontal: 12.0),
-              child: Text(output,
-                  style:
-                      TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold)),
+              child: Text(
+                output,
+                overflow: TextOverflow.clip,
+                maxLines: 1,
+                style: TextStyle(
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
             Column(
               children: <Widget>[
@@ -361,7 +429,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     counterButton("7"),
                     counterButton("8"),
                     counterButton("9"),
-                    counterButton("/"),
+                    counterButton(operands["div"]),
                   ],
                 ),
                 Row(
@@ -369,7 +437,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     counterButton("4"),
                     counterButton("5"),
                     counterButton("6"),
-                    counterButton("X"),
+                    counterButton(operands["mul"]),
                   ],
                 ),
                 Row(
@@ -377,15 +445,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     counterButton("1"),
                     counterButton("2"),
                     counterButton("3"),
-                    counterButton("_"),
+                    counterButton(operands["sub"]),
                   ],
                 ),
                 Row(
                   children: <Widget>[
                     counterButton("0"),
-                    counterButton("CL"),
-                    counterButton("="),
-                    counterButton("+"),
+                    counterButton("Clear"),
+                    counterButton(operands["equals"]),
+                    counterButton(operands["add"]),
                   ],
                 ),
               ],
@@ -396,6 +464,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 {{< /highlight >}}
 
 #### Was haben wir gelernt?
