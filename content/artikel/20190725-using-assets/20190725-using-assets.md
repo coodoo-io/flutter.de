@@ -2,6 +2,7 @@
 title: "Assets (Bilder und Sound) in Flutter"
 slug: "flutter-assets-bilder-sound-verwenden" 
 date: 2019-07-25T07:48:22+02:00
+dateOfUpdate: 2021-06-09T08:38:00+02:00
 draft: false
 description: "Bild und Sound in Flutter anzeigen und abspielen."
 images: ["/artikel/20190725-using-assets/images/using-assets.png"]
@@ -66,7 +67,7 @@ Hierbei ist es allerdings wichtig, dass der angehängte forward slash (`/`) nich
 
 ### Bild verwenden
 
-Nun kannst du ohne Probleme auf die Bilder zugreifen, hier ein Beispiel:
+Nun kannst du ohne Probleme auf die Bilder zugreifen (es funktionieren sogar gifs), hier ein Beispiel:
 
 {{< highlight dart >}}
 import 'package:flutter/material.dart';
@@ -105,10 +106,11 @@ dependencies:
    sdk: flutter
 
  # Adds functionality to play sound files
- audioplayers: ^0.12.1
+ audioplayers: ^0.19.0
 {{< /highlight >}}
 
-    (Es ist ein gute Angewohnheit zu kommentieren, wofür die imports genutzt werden.)
+    (Es ist eine gute Angewohnheit zu kommentieren, wofür die imports genutzt werden.
+     Bei Kotlin Fehler, die aktuelle Version von Kotlin verwenden)
 
 Du kannst es nun abspielen, indem du innerhalb deines Widgets ein neues AudioCache Objekt deklarierst:
 
@@ -138,7 +140,7 @@ class MyApp extends StatelessWidget {
            title: Text("Sound abspielen Beispiel"),
          ),
          body: Center(
-           child: RaisedButton(
+           child: ElevatedButton(
              child: Text('Abspielen'),
              onPressed: () => {player.play("audio/explosion.mp3")},
            ),
