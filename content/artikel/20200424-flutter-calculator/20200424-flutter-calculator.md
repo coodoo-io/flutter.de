@@ -2,7 +2,7 @@
 title: "Taschenrechner in Flutter"
 slug: "flutter-calculator" 
 date: 2020-04-24T09:46:56+02:00
-dateOfUpdate: 2021-08-10T09:46:56+02:00
+dateOfUpdate: 2021-06-10T09:46:56+02:00
 draft: false
 header_image: "/artikel/20200424-flutter-calculator/images/numbers.jpg"
 images: ["/artikel/20200424-flutter-calculator/images/numbers.jpg"]
