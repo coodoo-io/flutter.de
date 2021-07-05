@@ -2,6 +2,7 @@
 title: "Formulare in Flutter (Teil 1)"
 slug: "flutter-formulare" 
 date: 2020-04-02T12:46:56+02:00
+dateOfUpdate: 2021-08-10T12:46:56+02:00
 draft: false
 header_image: "/artikel/20200405-flutter-formulare/images/abstract_formfields.png"
 images: ["/artikel/20200405-flutter-formulare/images/abstract_formfields.png"]
@@ -230,20 +231,20 @@ TextFormField(
 ),
 {{< /highlight >}}
 
-### RaisedButton
+### ElevatedButton
 
-Nun fügen wir noch zwei Buttons hinzu, um die Eingaben später aus dem Formular speichern oder löschen zu können. Wir fügen also eine *Row* ein, in die wir die zwei *RaisedButton* Widgets mittig einfügen.
+Nun fügen wir noch zwei Buttons hinzu, um die Eingaben später aus dem Formular speichern oder löschen zu können. Wir fügen also eine *Row* ein, in die wir die zwei *ElevatedButton* Widgets mittig einfügen.
 
 {{< highlight dart >}}
 Row(
   mainAxisAlignment: MainAxisAlignment.center,
   children: <Widget>[
-    RaisedButton(
+    ElevatedButton(
       onPressed: () {},
       child: Text('Löschen'),
     ),
     SizedBox(width: 25),
-    RaisedButton(
+    ElevatedButton(
       onPressed: () {},
       child: Text('Speichern'),
     )
@@ -286,7 +287,7 @@ Das Feld der Lieblingszahl soll zum Beispiel nur als korrekt gelten, wenn die ei
 Beispiel für einen Validator (innerhalb der `_MyFormPageState` Klasse), der prüft, ob die Eingabe eine ungerade Zahl ist:
 {{< highlight dart >}}
 String zahlValidator(value) {
-  num zahl = int.parse(value as String);
+  num zahl = int.tryParse(value.toString()) ?? 0;
   if (zahl % 2 == 0) {
     return 'Es sind nur ungerade Zahlen erlaubt';
   }
@@ -322,9 +323,10 @@ Die zwei *RaisedButton* Widgets sehen danach so aus:
 Row(
   mainAxisAlignment: MainAxisAlignment.center,
   children: <Widget>[
-    RaisedButton(
-      color: Colors.grey,
-      textColor: Colors.white,
+    ElevatedButton(
+      style: ElevatedButton.styleFrom(
+      primary: Colors.grey,
+      textStyle: TextStyle(color: Colors.white)),
       onPressed: () {
         // reset() setzt alle Felder wieder auf den Initalwert zurück.
         _formKey.currentState.reset();
@@ -332,9 +334,10 @@ Row(
       child: Text('Löschen'),
     ),
     SizedBox(width: 25),
-    RaisedButton(
-      color: Colors.blue,
-      textColor: Colors.white,
+    ElevatedButton(
+      style: ElevatedButton.styleFrom(
+      primary: Colors.blue,
+      textStyle: TextStyle(color: Colors.white)),
       onPressed: () {
         // Wenn alle Validatoren der Felder des Formulars gültig sind.
         if (_formKey.currentState.validate()) {
@@ -441,7 +444,7 @@ class _MyFormPageState extends State<MyFormPage> {
                     ),
                     validator: zahlValidator,
                     inputFormatters: <TextInputFormatter>[
-                      WhitelistingTextInputFormatter.digitsOnly,
+                      FilteringTextInputFormatter.digitsOnly,
                     ],
                   ),
                   SizedBox(height: 20),
@@ -457,9 +460,10 @@ class _MyFormPageState extends State<MyFormPage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      RaisedButton(
-                        color: Colors.grey,
-                        textColor: Colors.white,
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.grey,
+                            textStyle: TextStyle(color: Colors.white)),
                         onPressed: () {
                           // reset() setzt alle Felder wieder auf den Initalwert zurück.
                           _formKey.currentState.reset();
@@ -467,13 +471,15 @@ class _MyFormPageState extends State<MyFormPage> {
                         child: Text('Löschen'),
                       ),
                       SizedBox(width: 25),
-                      RaisedButton(
-                        color: Colors.blue,
-                        textColor: Colors.white,
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.blue,
+                            textStyle: TextStyle(color: Colors.white)),
                         onPressed: () {
                           // Wenn alle Validatoren der Felder des Formulars gültig sind.
                           if (_formKey.currentState.validate()) {
-                            print("Formular ist gültig und kann verarbeitet werden");
+                            print(
+                                "Formular ist gültig und kann verarbeitet werden");
                           } else {
                             print("Formular ist nicht gültig");
                           }
@@ -490,7 +496,7 @@ class _MyFormPageState extends State<MyFormPage> {
   }
 
   String zahlValidator(value) {
-    num zahl = int.parse(value as String);
+    var zahl = int.tryParse(value.toString()) ?? 0;
     if (zahl % 2 == 0) {
       return 'Es sind nur ungerade Zahlen erlaubt';
     }
