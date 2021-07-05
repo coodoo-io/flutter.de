@@ -3,6 +3,9 @@
     <article class="blog-post pb-5">
         <h1 class="blog-post-title">{{ .Title }}</h1>
         <span class="blog-post-date mb-0">{{ dateFormat "2. January 2006" .Date }}</span>
+        {{if (.Params.DateOfUpdate)}}
+        <span class="blog-post-date mb-0">aktualisert: {{ dateFormat "2. January 2006" .Params.DateOfUpdate}}</span>
+        {{end}}
         <span class="blog-post-date mb-0">{{ .ReadingTime}}
             {{ if gt .ReadingTime 1 }}Minuten{{ else }}Minute{{ end }}
             Lesezeit, {{ .WordCount }} Wörter</span>

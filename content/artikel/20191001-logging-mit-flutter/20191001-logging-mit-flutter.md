@@ -2,6 +2,7 @@
 title: "Logging mit Flutter"
 slug: "logging-mit-flutter" 
 date: 2019-10-14T11:26:53+02:00
+dateOfUpdate: 2021-06-09T08:38:00+02:00
 draft: false
 header_image: "/artikel/20191001-logging-mit-flutter/images/notebook.jpg"
 images: ["/artikel/20191001-logging-mit-flutter/images/notebook.jpg"]
@@ -35,13 +36,15 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Center(
-            child: FlatButton(
-          color: Colors.blue,
-          textColor: Colors.white,
+            child: TextButton(
           onPressed: exampleMethod,
           child: Text(
             "Log-Nachricht ausgeben.",
-            style: TextStyle(fontSize: 20.0),
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.blue,
+              decorationColor: Colors.white,
+            ),
           ),
         )),
       ),
@@ -52,7 +55,7 @@ class MyApp extends StatelessWidget {
 }
 {{< /highlight >}}
 
-Eine Seite mit einem `FlatButton` Widget in der Mitte, welcher eine Methode auslöst, in der allerdings noch nichts passiert.
+Eine Seite mit einem `TextButton` Widget in der Mitte, welcher eine Methode auslöst, in der allerdings noch nichts passiert.
 
 ##### 1. Füge das <a href="https://pub.dev/packages/logger#-readme-tab-" target="_blank" rel="noopener">logger</a> Package zu der `pubspec.yaml` Datei hinzu.
 
@@ -61,7 +64,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  logger: ^0.7.0+2
+  logger: ^1.0.0
 {{< /highlight >}}
 
 ##### 2. Im Projekt `flutter pub get` aufrufen, um das Package zum Projekt hinzuzufügen.
@@ -127,13 +130,15 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Center(
-            child: FlatButton(
-          color: Colors.blue,
-          textColor: Colors.white,
+            child: TextButton(
           onPressed: exampleMethod,
           child: Text(
             "Log-Nachricht ausgeben.",
-            style: TextStyle(fontSize: 20.0),
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.blue,
+              decorationColor: Colors.white,
+            ),
           ),
         )),
       ),
@@ -221,13 +226,15 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Center(
-            child: FlatButton(
-          color: Colors.blue,
-          textColor: Colors.white,
+            child: TextButton(
           onPressed: exampleMethod,
           child: Text(
             "Log-Nachricht ausgeben.",
-            style: TextStyle(fontSize: 20.0),
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.blue,
+              decorationColor: Colors.white,
+            ),
           ),
         )),
       ),
