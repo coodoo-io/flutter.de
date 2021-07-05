@@ -2,6 +2,7 @@
 title: "AlertDialog in Flutter erstellen"
 slug: "alert-dialog-flutter" 
 date: 2019-08-13T07:45:30+02:00
+dateOfUpdate: 2021-06-09T08:38:00+02:00
 draft: false
 header_image: "/artikel/20190813-alertDialog/images/alertDialog.png"
 images: ["/artikel/20190813-alertDialog/images/alertDialog.png"]
@@ -82,14 +83,14 @@ return AlertDialog(
           title: Text('Alert!'),
           content: Text('Bitte Aktion bestätigen.'),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               child: Text('Abbrechen'),
               onPressed: (){
                 // Hier passiert etwas
                 Navigator.of(context).pop();
               }
             ),
-            FlatButton(
+            TextButton(
               child: Text('Bestätigen'),
               onPressed: (){
                 // Hier passiert etwas anderes
@@ -116,19 +117,30 @@ return AlertDialog(
           content: Text('Bitte Aktion bestätigen.', style: TextStyle(color: Colors.purple),),
           backgroundColor: Colors.yellow,
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               child: Text('Abbrechen'),
-              color: Colors.blue[100],
-              onPressed: (){
+              style: ButtonStyle(
+                textStyle: MaterialStateProperty.all(
+                  TextStyle(
+                    color: Colors.blue[100],
+                  ),
+                ),
+              ),
+              onPressed: () {
                 _counterZero();
                 Navigator.of(context).pop();
               },
             ),
-            OutlineButton(
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-              borderSide: BorderSide(color: Colors.orange[800], width: 2.0),
+            TextButton(
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                      side: BorderSide(color: Colors.orange[800], width: 2.0),
+                      borderRadius: BorderRadius.circular(30.0)),
+                ),
+              ),
               child: Text('Bestätigen'),
-              onPressed: (){
+              onPressed: () {
                 Navigator.of(context).pop();
               },
             ),
