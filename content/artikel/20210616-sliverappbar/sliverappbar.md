@@ -1,7 +1,7 @@
 ---
 title: "SliverAppBar in Flutter"
 date: 2021-06-16T13:30:03+02:00
-draft: true
+draft: false
 header_image: "/artikel/20210616-sliverappbar/images/splitter.jpg"
 images: ["/artikel/20210616-sliverappbar/images/splitter.jpg"]
 authors: ["florian-schmitz"]

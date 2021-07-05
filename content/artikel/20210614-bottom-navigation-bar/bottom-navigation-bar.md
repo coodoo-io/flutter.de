@@ -1,7 +1,7 @@
 ---
 title: "Bottom Navigation Bar in Flutter"
 date: 2021-06-14T14:15:59+02:00
-draft: true
+draft: false
 header_image: "/artikel/20210614-bottom-navigation-bar/images/compass.png"
 images: ["/artikel/20210614-bottom-navigation-bar/images/compass.png"]
 authors: ["andreas-mayer"]
