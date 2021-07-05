@@ -64,16 +64,16 @@ uglyurls = true
   # URL = "literatur"
   # weight = 4
   
-  # [[menu.main]]
-  # name = "Schulung"
-  # URL = "schulung"
-  # weight = 5
+   [[menu.main]]
+   name = "Schulung"
+   URL = "schulung"
+   weight = 5
     
- #   [[menu.main]]
-#    parent = "Schulung"
- #   name = "Flutter Schulung"
- #   URL = "schulung/flutter-schulung.html"
-#    weight = 1
+    [[menu.main]]
+    parent = "Schulung"
+    name = "Flutter Schulung"
+    URL = "schulung/flutter-schulung.html"
+    weight = 1
     
     # [[menu.main]]
     # parent = "Schulung"
