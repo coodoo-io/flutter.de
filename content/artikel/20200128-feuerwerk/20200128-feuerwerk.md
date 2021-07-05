@@ -2,6 +2,7 @@
 title: "Feuerwerk Animation in Flutter"
 slug: "flutter-feuerwerk" 
 date: 2020-01-28T09:12:14+02:00
+dateOfUpdate: 2020-06-09T09:12:14+02:00
 draft: false
 header_image: "/artikel/20200128-feuerwerk/images/feuerwerk.jpg"
 images: ["/artikel/20200128-feuerwerk/images/feuerwerk.jpg"]
