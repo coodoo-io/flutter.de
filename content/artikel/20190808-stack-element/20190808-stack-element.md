@@ -2,6 +2,7 @@
 title: "Stack Element in Flutter"
 slug: "elemente-in-flutter-stapeln-mit-stack-element" 
 date: 2019-08-08T07:55:24+02:00
+dateOfUpdate: 2021-06-09T08:38:00+02:00
 draft: false
 description: "Wie man durch das Stapeln von Elementen komplexe UI in Flutter darstellen kann"
 tags: ["beginner"]
@@ -168,7 +169,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class IndexedStackPage extends StatefulWidget {
-  IndexedStackPage({Key key}) : super(key: key);
+  IndexedStackPage({Key? key}) : super(key: key);
 
   _IndexedStackPageState createState() => _IndexedStackPageState();
 }
