@@ -1,7 +1,7 @@
 ---
 title: "Wie scrolle ich in meiner Flutter App?"
 date: 2021-06-14T13:40:32+02:00
-draft: true
+draft: false
 header_image: "/artikel/20210614-scrollen/images/mouse.jpg"
 images: ["/artikel/20210614-scrollen/images/mouse.jpg"]
 authors: ["florian-schmitz"]
