@@ -1,6 +1,6 @@
 ---
 name: Tristan Schuller
-bio: Werkstudent bei coodoo GmbH in Mainz.
+bio: Flutter Entwickler bei coodoo.
 image: /authors/tristan-schuller/tristan.png
 github: tr-sc
 ---
