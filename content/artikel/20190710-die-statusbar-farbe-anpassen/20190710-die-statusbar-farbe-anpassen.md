@@ -2,6 +2,7 @@
 title: "Die Statusbar Farbe ändern"
 slug: "flutter-statusbar-farbe-ändern"
 date: 2019-07-10T09:29:00+02:00
+dateOfUpdate: 2021-06-08T08:38:00+02:00
 draft: false
 header_image: "/artikel/20190710-die-statusbar-farbe-anpassen/images/farbe_anpassen.jpg"
 images: ["artikel/20190710-die-statusbar-farbe-anpassen/images/farbe_anpassen.jpg"]
@@ -21,10 +22,10 @@ SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
 {{< /highlight >}}
 
 Leider wirkt auch diese Lösung wieder einmal relativ kompliziert. Glücklicherweise gibt es bereits ein pub-Module, das das Ganze extrem einfach macht:
-https://pub.dev/packages/flutter_statusbarcolor
+https://pub.dev/packages/flutter_statusbarcolor_ns
 
 {{< highlight dart >}}
-import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
+import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 await FlutterStatusbarcolor.setStatusBarColor(Colors.pink);
 await FlutterStatusbarcolor.setNavigationBarColor(Colors.orange);
 {{< /highlight >}}
