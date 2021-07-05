@@ -2,6 +2,7 @@
 title: "Seitennavigation mit Flutter"
 slug: "seiten-navigation-mit-flutter" 
 date: 2019-07-15T08:15:45+02:00
+dateOfUpdate: 2021-06-08T14:38:00+02:00
 draft: false
 images: ["/artikel/20190715-seiten-navigation-mit-flutter/images/head.jpg"]
 header_image: "/artikel/20190715-seiten-navigation-mit-flutter/images/head.jpg"
@@ -18,6 +19,13 @@ Eine Mobile App besteht zumeist aus mehreren Seiten / Views, die ein Nutzer betr
 Auch mit Flutter kann man seine App so strukturieren, dass man seine einzelnen Views als Pages darstellt. Dies ist auch grundsätzlich zu empfehlen, da man sonst schnell in eine unübersichtliche Code-Hölle kommt.
 
 Aber wie navigiert man in Flutter von einer Seite zur nächsten?
+
+## Erste (einfache) Möglichkeit
+Mit
+{{<highlight dart>}}
+Navigator.of(context).push(MaterialPageRoute(builder: (context) => NeueSeite()));
+{{</highlight>}}
+kann man leicht auf eine Neue Seite wechseln. Für mehr Übersicht empfehlen sich jedoch die folgenden Schritte:
 
 ### 1. Definition der Routen
 
