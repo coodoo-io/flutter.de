@@ -1,6 +1,7 @@
 +++ 
 draft = true
 date = {{ .Date }}
+dateOfUpdate = {{ .DateOfUpdate}}
 title = ""
 description = ""
 slug = ""
