@@ -2,6 +2,7 @@
 title: "Text-to-speech in Flutter"
 slug: "text-to-speech" 
 date: 2019-07-04T09:00:00+02:00
+dateOfUpdate: 2021-06-08T08:38:00+02:00
 draft: false
 header_image: "/artikel/20190705-text-to-speech/images/text-to-speech.jpg"
 images: ["/artikel/20190705-text-to-speech/images/text-to-speech.jpg"]
@@ -32,7 +33,7 @@ Mit dem Fokus auf Vorschulkinder, habe ich versucht, die App so einfach wie mög
 
 Wie bringe ich die App nun zum Sprechen? Text-to-Speech (TTS) ist das Schlüsselwort! Jeder kennt ja die Stimme seines Navigationssystems. Diese wird vom darunter liegenden Betriebssystem zur Verfügung gestellt und das wollte ich für diese App nutzen. 
 Für fast alles gibt es bereits Implementierungen für Flutter, somit musste ich nicht lange suchen, um auf dieses Flutter Text to Speech Package [Flutter Text to Speech Package](https://github.com/dlutton/flutter_tts "Flutter Text to Speech Package") zu stoßen.
-Die Einbindung war denkbar einfach, dank einer [Beispielimplementierung](https://github.com/dlutton/flutter_tts/blob/master/example/lib/main.dart "Beispielimplementierung") im gleichen GitHub Repository. Man erstellt eine Instanz und gibt ihr etwas zum Sprechen. 
+Die Einbindung war denkbar einfach, dank einer [Beispielimplementierung](https://github.com/dlutton/flutter_tts/blob/master/example/lib/main.dart "Beispielimplementierung") im gleichen GitHub Repository. Man fügt das package seiner pube.yaml hinzu und importiert es. Dann erstellt man einfach eine Instanz und gibt ihr etwas zum Sprechen. 
 {{< highlight dart >}}
 flutterTts = FlutterTts();
 await flutterTts.speak('Hallo Welt');
@@ -41,7 +42,8 @@ Doch zwei kleine Hürden galt es doch zu nehmen, bevor ich meine App sprechen h�
 
 *   iOS muss erst um den Zugriff auf Audio gebeten werden. Mir hat dabei eine [Stack Overflow-Antwort](https://stackoverflow.com/questions/50458556/flutter-swift-version-must-be-set-to-a-supported-value/52194702#52194702 "Stack Overflow-Antwort") geholfen. Allerdings klappte es erst nach einer Rasur in der Projektstruktur: 
 `rm -rf ios android && flutter create -i swift .`
-*   Android hingegen verlangte nur die Festlegung auf mindestens Version 21: `minSdkVersion 21`
+*   Android hingegen verlangte nur die Festlegung auf mindestens Version 21: `minSdkVersion 21` 
+*   Mit der neusten Androidversion (30) funktioniert es aktuell noch nicht, man kann jedoch eine Ältere benutzer (z.B. 29)
 
 Alles, was ich nun noch tun musste, war mittels des FloatingActionButton den eingegebenen Text der `speak` Methode zu übergeben.
 
