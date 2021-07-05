@@ -2,6 +2,7 @@
 title: "Wie Flutteraner Karussell fahren"
 slug: "flutter-carousel" 
 date: 2019-11-12T18:12:14+02:00
+dateOfUpdate: 2021-06-10T08:38:00+02:00
 draft: false
 header_image: "/artikel/20191112-flutter-carousel/images/carousel-header.jpg"
 images: ["/artikel/20191112-flutter-carousel/images/carousel-header.jpg"]
@@ -19,13 +20,13 @@ Swipe, swipe, swipe.. nein, ich rede nicht von Tinder. Ich rede von einem Flutte
 
 Um in Flutter das bekannte Carousel zu bauen, benutzen wir das <a href="https://pub.dev/packages/carousel_slider" target="_blank">Carousel Slider Package</a> von Dart.
 
-Dazu müssen wir zunächst in der `pubspec.yaml` Datei in den Dependencies direkt unter die Flutter SDK “carousel_slider: ^1.3.0” einfügen
+Dazu müssen wir zunächst in der `pubspec.yaml` Datei in den Dependencies direkt unter die Flutter SDK “carousel_slider: ^4.0.0” einfügen
 
 {{< highlight dart >}}
     dependencies:
         flutter:
             sdk: flutter
-        carousel_slider: ^1.3.0
+        carousel_slider: ^4.0.0
 {{< /highlight >}}
 
 Anschließend können wir im Terminal `flutter packages get` laufen lassen oder bei VS Code in der Command Palette `>Flutter: Get Packages` verwenden.
@@ -136,40 +137,45 @@ In diesem Beispiel habe ich einen zweiten Slider erstellt. Der erste läuft übe
 Im Folgenden ist der gesamte Code des Beispiels noch einmal zu sehen:
 
 {{< highlight dart>}}
-class _MyHomePageState extends State<MyHomePage> {
-  final slider1 = CarouselSlider(
-    height: 150,
-    items: <Widget>[
-      Container(
-          padding: EdgeInsets.only(left: 10.0, right: 10.0),
-          child: Container(
-            color: Colors.blue,
-          )),
-      Container(
-          padding: EdgeInsets.only(left: 10.0, right: 10.0),
-          child: Container(
-            color: Colors.red,
-          )),
-      Container(
-          padding: EdgeInsets.only(left: 10.0, right: 10.0),
-          child: Container(
-            color: Colors.green,
-          )),
-      Container(
-          padding: EdgeInsets.only(left: 10.0, right: 10.0),
-          child: Container(
-            color: Colors.yellow,
-          )),
-    ],
-    autoPlay: true,
-    autoPlayInterval: Duration(seconds: 2),
-    autoPlayAnimationDuration: Duration(seconds: 2),
-    autoPlayCurve: Curves.easeInOutBack,
-    enlargeCenterPage: true,
-  );
+import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
-  final slider2 = CarouselSlider(
-    height: 150,
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+      ),
+      home: MyHomePage(title: 'Flutter Carousel'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  CarouselController buttonCarouselController2 = CarouselController();
+
+  final slider1 = CarouselSlider(
+    options: CarouselOptions(
+      height: 150,
+      autoPlay: true,
+      autoPlayInterval: Duration(seconds: 2),
+      autoPlayAnimationDuration: Duration(seconds: 2),
+      autoPlayCurve: Curves.easeInOutBack,
+      enlargeCenterPage: true,
+    ),
     items: <Widget>[
       Container(
           padding: EdgeInsets.only(left: 10.0, right: 10.0),
@@ -192,8 +198,6 @@ class _MyHomePageState extends State<MyHomePage> {
             color: Colors.yellow,
           )),
     ],
-    enlargeCenterPage: true,
-    enableInfiniteScroll: false,
   );
 
   @override
@@ -212,49 +216,83 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               height: 100,
             ),
-            Container(child: slider2),
+            Container(
+                child: CarouselSlider(
+              options: CarouselOptions(
+                height: 150,
+                enlargeCenterPage: true,
+                enableInfiniteScroll: false,
+              ),
+              carouselController: buttonCarouselController2,
+              items: <Widget>[
+                Container(
+                    padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                    child: Container(
+                      color: Colors.blue,
+                    )),
+                Container(
+                    padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                    child: Container(
+                      color: Colors.red,
+                    )),
+                Container(
+                    padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                    child: Container(
+                      color: Colors.green,
+                    )),
+                Container(
+                    padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                    child: Container(
+                      color: Colors.yellow,
+                    )),
+              ],
+            )),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                RaisedButton(
-                    onPressed: () => slider2.previousPage(
+                ElevatedButton(
+                    onPressed: () => buttonCarouselController2.previousPage(
                         duration: Duration(milliseconds: 400),
                         curve: Curves.linear),
                     child: Text('Back')),
                 ButtonTheme(
                     minWidth: 0,
-                    child: FlatButton(
+                    child: TextButton(
                       child: Text('1'),
-                      onPressed: () => slider2.animateToPage(0,
+                      onPressed: () => buttonCarouselController2.animateToPage(
+                          0,
                           duration: Duration(milliseconds: 400),
                           curve: Curves.linear),
                     )),
                 ButtonTheme(
                     minWidth: 0,
-                    child: FlatButton(
+                    child: TextButton(
                       child: Text('2'),
-                      onPressed: () => slider2.animateToPage(1,
+                      onPressed: () => buttonCarouselController2.animateToPage(
+                          1,
                           duration: Duration(milliseconds: 400),
                           curve: Curves.linear),
                     )),
                 ButtonTheme(
                     minWidth: 0,
-                    child: FlatButton(
+                    child: TextButton(
                       child: Text('3'),
-                      onPressed: () => slider2.animateToPage(2,
+                      onPressed: () => buttonCarouselController2.animateToPage(
+                          2,
                           duration: Duration(milliseconds: 400),
                           curve: Curves.linear),
                     )),
                 ButtonTheme(
                     minWidth: 0,
-                    child: FlatButton(
+                    child: TextButton(
                       child: Text('4'),
-                      onPressed: () => slider2.animateToPage(3,
+                      onPressed: () => buttonCarouselController2.animateToPage(
+                          3,
                           duration: Duration(milliseconds: 400),
                           curve: Curves.linear),
                     )),
-                RaisedButton(
-                    onPressed: () => slider2.nextPage(
+                ElevatedButton(
+                    onPressed: () => buttonCarouselController2.nextPage(
                         duration: Duration(milliseconds: 400),
                         curve: Curves.linear),
                     child: Text('Next')),
