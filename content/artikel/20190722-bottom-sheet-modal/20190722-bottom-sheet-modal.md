@@ -2,6 +2,7 @@
 title: "Bottom sheet modals in Flutter"
 slug: "bottom-sheet-modals-in-flutter" 
 date: 2019-07-22T07:35:45+02:00
+dateOfUpdate: 2021-06-09T08:38:00+02:00
 draft: false
 description: "Wie man in Flutter ein abgerundetes Bottom Sheet Modal implementiert."
 images: ["/artikel/20190722-bottom-sheet-modal/images/bottom-sheet-modal.jpg"]
@@ -16,7 +17,7 @@ Bottom sheet modals sind ein verbreitetes Element, da sie dem User eine Auswahl 
 
 ### Wie es funktioniert
 
-An sich ist das ganz einfach. Du musst einfach nur diese Funktion ausführen und schon hast du ein simples bottom sheet modal:
+An sich ist das ganz einfach. Du musst einfach nur diese Funktion ausführen und schon hast du ein simples bottom sheet modal, falls du dir unsicher bist wohin mit dem Code, dann schau einfach ins Codebeispiel auf [GitHub](https://github.com/coodoo-io/flutter-bottom-sheet "Github"):
 
 {{< highlight dart >}}
 showModalBottomSheet(
