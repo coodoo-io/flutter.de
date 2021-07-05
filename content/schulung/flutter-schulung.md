@@ -174,13 +174,8 @@ images = ["/schulung/flutter-schulung.png"]
           Dienstag, 24. März 2020</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/Jn5yCsDbuK4mEjrb6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div> -->
-<<<<<<< HEAD
 
 <!-- <div class="row zeile">
-=======
-<!-- 
-<div class="row zeile">
->>>>>>> master
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           2 Tage</div>
@@ -209,7 +204,7 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div>
 
--->
+
 <!-- 
 <p class="schulung-p p-3 text-center">Erfahren Sie mehr über den Ablauf unserer Flutter Schulungen.</p>
     </div>
@@ -229,9 +224,9 @@ images = ["/schulung/flutter-schulung.png"]
     <div class="card" style="width:80%">
     <div class="card-body text-center">
     <h3 class="pt-3 pb-2"><b>Schreiben Sie uns <br>oder rufen Sie uns an!</b></h3>
-       <p> E-Mail: <a href="mailto:mail@flutter.de">mail@flutter.de</a></p>
+       <p> E-Mail: <a href="mailto:mail@flutter.de">mail@coodoo.de</a></p>
       <hr>
-      <p>Telefon: +49 6131 46402 70</p>
+      <p>Telefon: +49 6131 46402 74</p>
     </div>
     </div>
     </div>
