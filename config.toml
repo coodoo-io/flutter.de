@@ -59,27 +59,27 @@ uglyurls = true
   URL = "community/flutter-cto-guide.html"
   weight = 3
 
-  # [[menu.main]]
-  # name = "Literatur"
-  # URL = "literatur"
-  # weight = 4
+  [[menu.main]]
+  name = "App Entwicklung"
+  URL = "projekt-kickoff.html"
+  weight = 4
   
    [[menu.main]]
    name = "Schulung"
-   URL = "schulung"
+   URL = "schulung/flutter-schulung.html"
    weight = 5
     
-    [[menu.main]]
-    parent = "Schulung"
-    name = "Flutter Schulung"
-    URL = "schulung/flutter-schulung.html"
-    weight = 1
+    ##[[menu.main]]
+    ##parent = "Schulung"
+    ##name = "Flutter Schulung"
+    ##URL = "schulung/flutter-schulung.html"
+    ##weight = 1
     
-    # [[menu.main]]
-    # parent = "Schulung"
-    # name = "Projekt Kickoff"
-    # URL = "schulung/projekt-kickoff"
-    # weight = 2
+    ##[[menu.main]]
+    ##parent = "Schulung"
+    ##name = "Projekt Kickoff"
+    ##URL = "schulung/projekt-kickoff.html"
+    ##weight = 2
 
 [taxonomies]
   author = "authors"

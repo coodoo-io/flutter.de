@@ -144,6 +144,38 @@ b {
   }
 }
 
+  .projekt {
+    .card {
+      border-radius: 15px !important;
+      margin-bottom: 2rem;
+      min-height: 175px;
+    }
+
+    .card-body {
+      background: linear-gradient(100deg, #01579B 0%,  #53C5F7 100% );
+      border-radius: 15px ;
+
+    // background-color: #209dd7;
+      h5 {
+        color: white;
+        font-weight: 400 !important;
+        margin: 1rem;
+    }
+      p {
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+  }
+}
+
+.team {
+
+  border-radius: 50%;
+  width: 80%;
+  padding: 1rem;
+}
+
 #termine .col-2, #termine .col-5 {
   border-right: 1px solid lightgrey;
 }
