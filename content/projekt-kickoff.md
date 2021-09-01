@@ -1,6 +1,6 @@
 +++
 slug = "projekt-kickoff"
-draft = true
+draft = false
 description = "Flutter lernen mit unseren Experten vor Ort: Flutter Schulungen auf deutsch"
 images = ["/schulung/flutter-schulung.png"]
 +++
