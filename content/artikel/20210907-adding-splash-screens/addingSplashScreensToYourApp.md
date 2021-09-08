@@ -5,7 +5,7 @@ date: 2021-09-07T10:00:25+02:00
 draft: false
 header_image: "/artikel/20210907-adding-splash-screens/images/splash-screens_header.png"
 images: ["/artikel/20210907-adding-splash-screens/images/splash-screens_header.png"]
-description: "Splash Screens in Flutter (non-animated, animated...)"
+description: "Erstelle animierte und statische Splash Screens in Flutter"
 tags: ["flutter", "splash"]
 categories: Anfänger * UI * Flutter
 authors: ["marcel-ploch"]
