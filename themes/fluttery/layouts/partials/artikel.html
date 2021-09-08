@@ -1,91 +1,95 @@
 <div class="container page-spacer">
-    {{/*  <a href="/artikel" class="btn btn-link mt-3" style="position: absolute; left: 30px;color: #333333;">< Zurück</a>  */}}
-    <article class="blog-post pb-5">
-        <h1 class="blog-post-title">{{ .Title }}</h1>
-        <span class="blog-post-date mb-0">{{ dateFormat "2. January 2006" .Date }}</span>
-        {{if (.Params.DateOfUpdate)}}
-        <span class="blog-post-date mb-0">aktualisert: {{ dateFormat "2. January 2006" .Params.DateOfUpdate}}</span>
-        {{end}}
-        <span class="blog-post-date mb-0">{{ .ReadingTime}}
-            {{ if gt .ReadingTime 1 }}Minuten{{ else }}Minute{{ end }}
-            Lesezeit, {{ .WordCount }} Wörter</span>
-        <span class="blog-post-date mb-0">{{ .Params.Categories }}</span>
-        {{- range .Params.authors }}
-        {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-        <span class="blog-post-date mb-0 mt-3">{{ .Params.name }}</span>
-        {{ end }}
-        {{ end }}
-        <img src="{{ .Params.header_image }}" class="blog-post-title-image mt-5" alt="{{ .Title }}" />
-        <div class="blog-post-content mt-5 mb-5">{{ .Content }}</div>
-        <div class="blog-post-author bg-light">
-            <div class="row">
-                <div class="col-8">
-                    <img class="float-left img-fluid">
-                    {{- range .Params.authors }}
-                    {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-                    <figure>
-                        <div>
-                            <img class="float-left img-fluid autor mr-3" src="{{ .Params.image }}" width="100px"
-                                alt="{{ .Params.name }}" />
-                        </div>
-                        <div>
-                            <strong>{{ .Params.name }}<br></strong>
-                            {{ if (isset .Params "bio") }}
-                            <small>{{ .Params.bio }}</small>
-                            {{ end }}
-                            <div class="pt-2">
-                                {{ if (isset .Params "twitter") }}
-                                <a href="https://twitter.com/{{ .Params.twitter }}"
-                                    class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Twitter</a>
-                                {{ end }}
-                                {{ if (isset .Params "github") }}
-                                <a href="https://github.com/{{ .Params.github }}" class="btn btn-sm btn-outline-primary"
-                                    target="_blank" rel="noopener">Github</a>
-                                {{ end }}
-                            </div>
-                        </div>
-                    </figure>
-                    <!--Link zur Authors Page-->
-                    <!-- <figcaption>
+    {{/* <a href="/artikel" class="btn btn-link mt-3" style="position: absolute; left: 30px;color: #333333;">
+        < Zurück</a> */}}
+            <article class="blog-post pb-5">
+                <h1 class="blog-post-title">{{ .Title }}</h1>
+                <span class="blog-post-date mb-0">{{ .Date.Format "2. January 2006" }}</span>
+                {{if (.Params.DateOfUpdate)}}
+                <span class="blog-post-date mb-0">aktualisert: {{ dateFormat "2. Jan 2006" .Params.DateOfUpdate }}</span>
+                {{end}}
+                <span class="blog-post-date mb-0">{{ .ReadingTime}}
+                    {{ if gt .ReadingTime 1 }}Minuten{{ else }}Minute{{ end }}
+                    Lesezeit, {{ .WordCount }} Wörter</span>
+                <span class="blog-post-date mb-0">{{ .Params.Categories }}</span>
+                {{- range .Params.authors }}
+                {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                <span class="blog-post-date mb-0 mt-3">{{ .Params.name }}</span>
+                {{ end }}
+                {{ end }}
+                <img src="{{ .Params.header_image }}" class="blog-post-title-image mt-5" alt="{{ .Title }}" />
+                <div class="blog-post-content mt-5 mb-5">{{ .Content }}</div>
+                <div class="blog-post-author bg-light">
+                    <div class="row">
+                        <div class="col-8">
+                            <img class="float-left img-fluid">
+                            {{- range .Params.authors }}
+                            {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                            <figure>
+                                <div>
+                                    <img class="float-left img-fluid autor mr-3" src="{{ .Params.image }}" width="100px"
+                                        alt="{{ .Params.name }}" />
+                                </div>
+                                <div>
+                                    <strong>{{ .Params.name }}<br></strong>
+                                    {{ if (isset .Params "bio") }}
+                                    <small>{{ .Params.bio }}</small>
+                                    {{ end }}
+                                    <div class="pt-2">
+                                        {{ if (isset .Params "twitter") }}
+                                        <a href="https://twitter.com/{{ .Params.twitter }}"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank"
+                                            rel="noopener">Twitter</a>
+                                        {{ end }}
+                                        {{ if (isset .Params "github") }}
+                                        <a href="https://github.com/{{ .Params.github }}"
+                                            class="btn btn-sm btn-outline-primary" target="_blank"
+                                            rel="noopener">Github</a>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            </figure>
+                            <!--Link zur Authors Page-->
+                            <!-- <figcaption>
                         <a href="{{ .Permalink }}">{{ .Params.name }}</a>
                     </figcaption> -->
-                    {{ end }}
-                    {{ end }}
+                            {{ end }}
+                            {{ end }}
+                        </div>
+
+                        <!-- Button -->
+                        <div class="col-md-4 text-md-right">
+                            <a href="https://github.com/coodoo-io/flutter.de/blob/master/content/artikel/{{ .Params.Link }}"
+                                target="_blank" rel="noopener" class="btn btn-secondary mt-2 mt-md-0">Artikel
+                                verbessern</a>
+                        </div>
+
+
+
+                        <!-- Social Media -->
+                        <div class="col-4 text-right">
+                            {{/* <a href="#" class="btn btn-primary">Tweet</a>
+                            <a href="#" class="btn btn-secondary ml-3">Share</a> */}}
+                        </div>
+                    </div>
                 </div>
+            </article>
+            {{/* <div class="kommentare">
+                <!-- Disqus Kommentare -->
+                {{- $.Scratch.Set "isDisqus" true -}}
 
-                <!-- Button -->
-                <div class="col-md-4 text-md-right">
-                    <a href="https://github.com/coodoo-io/flutter.de/blob/master/content/artikel/{{ .Params.Link }}"
-                        target="_blank" rel="noopener" class="btn btn-secondary mt-2 mt-md-0">Artikel
-                        verbessern</a>
-                </div>
+                {{- if and (isset .Params "type") (in (.Site.Params.disableDisqusTypes | default (slice "page"))
+                .Params.type) -}}
+                {{- $.Scratch.Set "isDisqus" false -}}
+                {{- end -}}
 
+                {{- if and (isset .Params "disqus") (eq .Params.disqus false) -}}
+                {{- $.Scratch.Set "isDisqus" false -}}
+                {{- else if and (isset .Params "disqus") (eq .Params.disqus true) -}}
+                {{- $.Scratch.Set "isDisqus" true -}}
+                {{- end -}}
 
-
-                <!-- Social Media -->
-                <div class="col-4 text-right">
-                    {{/*  <a href="#" class="btn btn-primary">Tweet</a>
-                    <a href="#" class="btn btn-secondary ml-3">Share</a>  */}}
-                </div>
-            </div>
-        </div>
-    </article>
-    {{/*  <div class="kommentare">
-        <!-- Disqus Kommentare -->
-        {{- $.Scratch.Set "isDisqus" true -}}
-
-    {{- if and (isset .Params "type") (in (.Site.Params.disableDisqusTypes | default (slice "page")) .Params.type) -}}
-    {{- $.Scratch.Set "isDisqus" false -}}
-    {{- end -}}
-
-    {{- if and (isset .Params "disqus") (eq .Params.disqus false) -}}
-    {{- $.Scratch.Set "isDisqus" false -}}
-    {{- else if and (isset .Params "disqus") (eq .Params.disqus true) -}}
-    {{- $.Scratch.Set "isDisqus" true -}}
-    {{- end -}}
-
-    {{- if eq ($.Scratch.Get "isDisqus") true -}}
-    {{- partial "disqus.html" . -}}
-    {{- end -}}
-</div> */}}
+                {{- if eq ($.Scratch.Get "isDisqus") true -}}
+                {{- partial "disqus.html" . -}}
+                {{- end -}}
+            </div> */}}
 </div>
