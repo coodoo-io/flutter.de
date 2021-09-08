@@ -1,6 +1,6 @@
 {
     "name": "flutter.de",
-    "version": "0.5.44",
+    "version": "0.5.45",
     "scripts": {
         "start": "$(npm bin)/hugo server -D",
         "build:local": "rm -rf public && hugo -b=http://localhost:8081 -e production && npm run serve",
