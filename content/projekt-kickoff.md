@@ -1,7 +1,7 @@
 +++
-slug = "projekt-kickoff"
+slug = "app-entwicklung-mit-flutter"
 draft = false
-description = "Flutter lernen mit unseren Experten vor Ort: Flutter Schulungen auf deutsch"
+description = "Wir setzen dein App Projekt für dich um - schnell und effektiv."
 images = ["/schulung/flutter-schulung.png"]
 +++
 
@@ -10,8 +10,8 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="row pb-5">
     <div class="col-md-6 text-left">
       <h1 class="schulung-h1">
-     Verwirkliche dein <br>Mobile App Projekt</h1>
-    <p>Mobile Application Entwicklung <br>mit erfahrenen App Entwicklern</p>
+     App Entwicklung mit <br>Expertise und Innovation</h1>
+    <p>Wir setzen dein Mobile App Projekt um - <br>effizient und schnell</p>
     </div>
   </div>
 </div>
