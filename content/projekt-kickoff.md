@@ -12,6 +12,7 @@ images = ["/schulung/flutter-schulung.png"]
       <h1 class="schulung-h1">
      App Entwicklung mit <br>Expertise und Innovation</h1>
     <p>Wir setzen dein Mobile App Projekt um - <br>effizient und schnell</p>
+     <div class="blue-button"> <a class="btn btn-primary" href="https://forms.gle/1AArJQnGSD4BJtrW7" target="_blank" rel="noopener">Projekt schätzen</a></div> 
     </div>
   </div>
 </div>
@@ -71,28 +72,28 @@ images = ["/schulung/flutter-schulung.png"]
     <div class="col-md-6 col-lg-3 text-center">
       <div class="card">
         <div class="card-body">
-          <h5>Umsetzung einer Flutter App - von der Konzeption bis zum Release inkl. Wartung</h5>
+          <h5>Umsetzung einer App für Android und iOS - von der Konzeption bis zum Release</h5>
         </div>
       </div>
     </div>  
     <div class="col-md-6 col-lg-3 text-center">
       <div class="card">
         <div class="card-body">
-          <h5>Migration deiner bestehenden App zu Flutter</h5>
+          <h5>Migration deiner bestehenden Android und iOS App zu Flutter</h5>
         </div>
       </div>
     </div>  
     <div class="col-md-6 col-lg-3 text-center">
       <div class="card">
         <div class="card-body">
-          <h5>Unterstützung deines Teams bei der Umsetzung deiner Flutter Applikation</h5>
+          <h5>Unterstützung deines Teams bei der Umsetzung deiner iOS und Android App</h5>
         </div>
       </div>
     </div> 
     <div class="col-md-6 col-lg-3 text-center">
       <div class="card">
         <div class="card-body">
-          <h5>Schulung deines Teams bei der Entwicklung deiner Flutter Applikation</h5>
+          <h5>Schulung deines Teams bei der Entwicklung deiner Applikation</h5>
         </div>
       </div>
     </div>  
@@ -112,7 +113,7 @@ images = ["/schulung/flutter-schulung.png"]
         <div class="card-body pr-5 pl-5">
         <h5><b>Workshop</b></h5>
         <p>
-          In einem kurzen und effizienten Workshop setzen wir den Umfang deines Flutter-Projekts fest und setzen erste Meilensteine für die Umsetzung.</p>
+          In einem kurzen und effizienten Workshop setzen wir den Umfang deines App-Projekts fest und setzen erste Meilensteine für die Umsetzung.</p>
         </div>
       </div>
     </div>  
@@ -121,7 +122,7 @@ images = ["/schulung/flutter-schulung.png"]
         <div class="card-body pr-5 pl-5">
         <h5><b>Wireframes</b></h5>
         <p>
-          Unsere erfahrenen UI/UX Designer erstellen erste Wireframes deiner Flutter App.</p>
+          Unsere erfahrenen UI/UX Designer erstellen erste Wireframes deiner App für iOS und Android.</p>
         </div>
       </div>
     </div>  
@@ -139,7 +140,7 @@ images = ["/schulung/flutter-schulung.png"]
         <div class="card-body pr-5 pl-5">
         <h5><b>Projekt-Kickoff</b></h5>
         <p>
-        Wir starten dein Flutter-Projekt und setzen die Prozesse mit dir und deinem Team auf.</p>
+        Wir starten dein App-Projekt und setzen die Prozesse mit dir und deinem Team auf.</p>
         </div>
       </div>
     </div>
@@ -157,7 +158,7 @@ images = ["/schulung/flutter-schulung.png"]
         <div class="card-body pr-5 pl-5">
         <h5><b>Entwicklung und Testing</b></h5>
         <p>
-       In übersichtlichen und vorher gesteckten Iterationen setzen wir deine Flutter Applikation um.</p>
+       In übersichtlichen und vorher gesteckten Iterationen setzen wir deine Applikation um.</p>
         </div>
       </div>
     </div>
@@ -189,37 +190,32 @@ images = ["/schulung/flutter-schulung.png"]
     <div class="col-12">
         <h1 class="schulung-h1">Das App Development Team</h1>
         <p>Unser eingespieltes Team begleitet dich durch dein <br>Mobile App Projekt - vor Ort in Mainz oder Remote.</p>
-         <div class="blue-button"> <a class="btn btn-schulung" href="https://coodoo.de/software-entwicklung-team-extension" target="_blank" rel="noopener">Mehr erfahren</a></div> 
     </div>
 <div class="row text-center">
-  <div class="col-6 col-lg-3 p-2">
-    <img class="team img-fluid"  src="/images/Team/Jan2.JPG">
-    <p><strong>Jan Marsh</strong><br>Infrastruktur Architekt</p>
-  </div>
    <div class="col-6 col-lg-3 p-2">
     <img class="team img-fluid"  src="/images/Team/Eike.jpg">
-    <p><strong>Eike Rautenstrauch</strong></p>
-    <p>Projektmanager</p>
+    <p><strong>Eike Rautenstrauch</strong><br>
+    Projektmanager</p>
   </div>
     <div class="col-6 col-lg-3 p-2">
   <img class="team img-fluid" src="/images/Team/Tristan.jpg">
         <p><strong>Tristan Schuller</strong><br>
-        Frontend Entwickler</p>
+        App Entwickler</p>
     </div>
         <div class="col-6 col-lg-3 p-2">
         <img class="team img-fluid" src="/images/Team/Katha2.jpg">
-        <p><strong>Katharina Bineider</strong></p>
-        <p>UI/UX Designerin</p>
+        <p><strong>Katharina Bineider</strong><br>
+        UI/UX Designerin</p>
     </div>
         <div class="col-6 col-lg-3 p-2">
          <img class="team img-fluid" style="border-radius:50%" src="/images/Team/Julia.jpg">
         <p><strong>Julia Giebelhausen</strong><br>
-        Flutter Entwicklerin</p>
+        App Entwicklerin</p>
     </div>
        <div class="col-6 col-lg-3 p-2">
           <img class="team img-fluid" src="/images/Team/Simon2.jpg">
         <p><strong>Simon Stevens</strong><br>
-        Flutter Entwickler</p>
+        App Entwickler</p>
     </div>
      <div class="col-6 col-lg-3 p-2">
          <img class="team img-fluid" src="/images/Team/Arend_Q.jpg">
@@ -229,6 +225,15 @@ Backend Entwickler</p>
     <div class="col-6 col-lg-3 p-2">
           <img class="team img-fluid"  src="/images/Team/Markus2.JPG">
         <p><strong>Markus Kühle</strong><br>Backend Architekt</p>
+    </div>
+      <div class="col-6 col-lg-3 p-2">
+    <img class="team img-fluid"  src="/images/Team/Jan2.JPG">
+    <p><strong>Jan Marsh</strong><br>Infrastruktur Architekt</p>
+  </div>
+  </div>
+  <div class="row text-center test pt-4">
+  <div class="col-12 text-center">
+    <div class="blue-button text-center"> <a class="btn btn-primary" href="https://coodoo.de/software-entwicklung-team-extension" target="_blank" rel="noopener">Team kennenlernen</a></div> 
     </div>
   </div>
 </div>
@@ -251,7 +256,7 @@ Backend Entwickler</p>
 </div>
 <div class="col-6 pr-5">
 <h5>Eingespieltes Remote-Team</h5>
-<p>Alle unsere Mitarbeiter - vom Projektmanager zum Flutter Entwickler - arbeiten exklusiv für dich in unserem Büro in Mainz.</p>
+<p>Alle unsere Mitarbeiter - vom Projektmanager zum App Entwickler - arbeiten exklusiv für dich in unserem Büro in Mainz.</p>
 </div>
 <div class="col-6">
 <h5>Effizient und schnell</h5>
@@ -266,10 +271,11 @@ Backend Entwickler</p>
  
   <div class="row pb-5">
     <div class="col-md-6 pb-5">
-     <h2 class="schulung-h2 pb-3 ">Kontaktiere uns!</h2>
+     <h2 class="schulung-h2 pb-3 ">Starte jetzt dein App Projekt mit uns!</h2>
     <div class="card" style="width:80%">
     <div class="card-body text-center">
-    <h3 class="pt-3 pb-2"><b>Schreib uns <br>oder ruf uns an!</b></h3>
+ <p>Stelle jetzt deine unverbindliche Anfrage. Wir antworten garantiert! Schätze jetzt dein App Projekt oder rufe uns einfach an!</p>
+     <div class="blue-button"> <a class="btn btn-primary" href="https://forms.gle/1AArJQnGSD4BJtrW7" target="_blank" rel="noopener">Projekt schätzen</a></div> 
        <p> E-Mail: <a href="mailto:mail@flutter.de">mail@coodoo.de</a></p>
       <hr>
       <p>Telefon: +49 6131 46402 74</p>
