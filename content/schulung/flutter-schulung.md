@@ -11,7 +11,7 @@ images = ["/schulung/flutter-schulung.png"]
       <h1 class="schulung-h1">
       Werde Deutschlands <br> <b>schnellster Appentwickler</b> – <br>
       mit Flutter!</h1>
-      <a class="btn btn-schulung pl-4 pr-4 pt-2 pb-2" href="/schulung/flutter-schulung.html#termine">Neueste Termine</a>
+      <!-- <a class="btn btn-schulung pl-4 pr-4 pt-2 pb-2" href="/schulung/flutter-schulung.html#termine">Neueste Termine</a> -->
     </div>
   </div>
 </div>
@@ -115,7 +115,8 @@ images = ["/schulung/flutter-schulung.png"]
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Testing</p>
-    <a href="https://forms.gle/BzMHv9ELzYHCKdYy6" target="_blank" rel="noopener"><p class="text-center"><b>€900 pro Person</b></p></a> <p class="text-center"><b></b></p>
+      <div class="blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/BzMHv9ELzYHCKdYy6" target="_blank" rel="noopener">€900 pro Person</a></div> 
+    <p class="text-center"><b></b></p>
     </div>
     </div>
     </div>
@@ -136,7 +137,7 @@ images = ["/schulung/flutter-schulung.png"]
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Testing</p>
-     <a href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener"><p class="text-center"><b>Preis nach Vereinbarung</b></p></a>
+       <div class="blue-button text-center mb-4"> <a class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Preis nach Vereinbarung</a></div>
     </div>
     </div>
     </div>
@@ -194,7 +195,7 @@ images = ["/schulung/flutter-schulung.png"]
 </div> -->
 
 
-
+<!-- 
 <div class="row zeile">
   <div class="col-3 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Ort flexibel</div>
   <div class="col-3 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
@@ -202,7 +203,7 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-3 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
          Termin flexibel</div>
   <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div>
+</div> -->
 
 
 <!-- 
