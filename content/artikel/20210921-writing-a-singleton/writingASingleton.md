@@ -1,5 +1,5 @@
 ---
-title: "Singletons, Singletons überall"
+title: "Singletons, Singletons in Flutter überall"
 slug: "flutter-singletons" 
 date: 2021-09-21T10:00:25+02:00
 draft: false
@@ -12,29 +12,29 @@ authors: ["marcel-ploch"]
 link: 20210921-writing-a-singleton/writingASingleton.md
 ---
 Singletons sind in der Software Entwicklung nicht weg zu denken.
-Sie dienen vorallem dazu immer das gleiche Objekt einer Instanz mit allen im speicher befindlichen Informationen an jeder Stelle einer Software zu erhalten.
+Sie dienen vor allem dazu, immer das gleiche Objekt einer Instanz überall in unserer Software zu erhalten. Hierbei haben wir Zugriff auf alle Informationen unseres Objektes.
 
-Innerhalb von Flutter können wir Singletons dann nutzen wenn wir Daten von API's oder externen Datenquellen vorhalten wollen und in diversen Widgets nutzten wollen.
+Innerhalb von Flutter können wir Singletons dann nutzen, wenn wir Daten von APIs oder externen Datenquellen vorhalten und in diversen Widgets nutzen wollen.
 
-Hier müsse wir nocht nocheinmal die Daten laden sondern können die vorgehaltenen Daten an allen Stellen in unserem Code nutzten, da wir überall die gleiche Instanz haben.
+Hier müssen wir nicht noch einmal die Daten laden, sondern können die vorgehaltenen Daten an allen Stellen in unserem Code nutzen, da wir überall die gleiche Instanz haben.
 
-Aber wir erzeugen wir solch ein Singelton in Dart. Da Dart das Factroy Pattern nutzt können wir ein Singleton einfach über den Factory Construcor lösen.
+Aber wie erzeugen wir solch ein Singelton in Dart? Da Dart das Factory Pattern nutzt, können wir ein Singleton einfach über den Factory Constructor lösen.
 
 Unsere Service Klasse soll ein Singleton werden. Schauen wir uns dazu den Code an.
 
 {{<highlight dart>}}
 class DeskService {
 
-  /// Unsere Singleton Instanz welche einmalig instanziert wird
+  /// Unsere Singleton Instanz, die einmalig instanziiert wird
   static final DeskService _singleton = DeskService._internal();
   
-  /// Unsere Referenz die wir zugreifbar machen wollen innerhalb unseres Singletons muss final sein
+  /// Unsere Referenz, die wir zugreifbar machen wollen innerhalb unseres Singletons, muss final sein
   final CollectionReference desks = FirebaseFirestore.instance.collection('desk');
 
-  /// Member Variable die zugirffbar gemacht werden soll
+  /// Member Variable, die zugreifbar gemacht werden soll
   late List<DeskModel> data = [];
 
-  /// Factory Constructor der die Instanz der Klasse zurück gibt egal wann sie aufgerufen wird
+  /// Factory Constructor, der die Instanz der Klasse zurückgibt, egal wann sie aufgerufen wird
   factory DeskService() {
     return _singleton;
   }
@@ -70,8 +70,8 @@ class DeskService {
 }
 {{</highlight>}}
 
-Unsere Klasse ist jetzt ein Singleton und kann überall in unserem Code genuttz werden.
-Dazu rufen wir nur noch unsere Klasse auf und können direkt auf die Methoden zugreifen wie im zweitem Beispiel.
+Unsere Klasse ist jetzt ein Singleton und kann überall in unserem Code genutzt werden.
+Dazu rufen wir nur noch unsere Klasse auf und können direkt auf die Methoden zugreifen, wie im zweitem Beispiel aufgezeigt.
 
 {{<highlight dart>}}
   class DeskState extends ChangeNotifier {
@@ -85,7 +85,7 @@ Dazu rufen wir nur noch unsere Klasse auf und können direkt auf die Methoden zu
 }
 {{</highlight>}}
 
-Nun können wir einfach Singletons in Dart schreiben und diese an allen Stellen unsere App Nutzten.
+Nun können wir einfach Singletons in Dart schreiben und diese an allen Stellen unserer App nutzen.
 Jedes Widget kann auf die Daten und Methoden des Singletons zugreifen und das an jeder Stelle im Code.
 
 Beste Grüße und Happy Coding
