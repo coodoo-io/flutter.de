@@ -3,8 +3,8 @@ title: "Singletons, Singletons in Flutter überall"
 slug: "flutter-singletons" 
 date: 2021-09-21T10:00:25+02:00
 draft: false
-header_image: "/artikel/20210921-writing-a-singleton/images/5npfgs.jpg"
-images: ["/artikel/20210921-writing-a-singleton/images/5npfgs.jpg"]
+header_image: "/artikel/20210921-writing-a-singleton/images/handshake-3382503_1920.jpg"
+images: ["/artikel/20210921-writing-a-singleton/images/handshake-3382503_1920.jpg"]
 description: "Wie schreibe ich ein Singleton in Dart und wie nutze ich es"
 tags: ["flutter", "splash"]
 categories: Anfänger * Flutter * Dart * Architecture
