@@ -11,14 +11,14 @@ categories: Anfänger * Flutter * Dart * Architecture
 authors: ["marcel-ploch"]
 link: 20210921-writing-a-singleton/writingASingleton.md
 ---
-Singletons sind in der Software Entwicklung nicht weg zu denken.
+Singletons sind in der Software Entwicklung nicht wegzudenken.
 Sie dienen vor allem dazu, immer das gleiche Objekt einer Instanz überall in unserer Software zu erhalten. Hierbei haben wir Zugriff auf alle Informationen unseres Objektes.
 
 Innerhalb von Flutter können wir Singletons dann nutzen, wenn wir Daten von APIs oder externen Datenquellen vorhalten und in diversen Widgets nutzen wollen.
 
 Hier müssen wir nicht noch einmal die Daten laden, sondern können die vorgehaltenen Daten an allen Stellen in unserem Code nutzen, da wir überall die gleiche Instanz haben.
 
-Aber wie erzeugen wir solch ein Singelton in Dart? Da Dart das Factory Pattern nutzt, können wir ein Singleton einfach über den Factory Constructor lösen.
+Aber wie erzeugen wir solch ein Singelton in Dart? Da Dart das Factory Pattern nutzt, können wir ein Singleton einfach über den Factory Konstruktor lösen.
 
 Unsere Service Klasse soll ein Singleton werden. Schauen wir uns dazu den Code an.
 
@@ -28,7 +28,7 @@ class DeskService {
   /// Unsere Singleton Instanz, die einmalig instanziiert wird
   static final DeskService _singleton = DeskService._internal();
   
-  /// Unsere Referenz, die wir zugreifbar machen wollen innerhalb unseres Singletons, muss final sein
+  /// Unsere Referenz, die wir innerhalb unseres Singletons zugreifbar machen wollen, muss final sein
   final CollectionReference desks = FirebaseFirestore.instance.collection('desk');
 
   /// Member Variable, die zugreifbar gemacht werden soll
@@ -71,7 +71,7 @@ class DeskService {
 {{</highlight>}}
 
 Unsere Klasse ist jetzt ein Singleton und kann überall in unserem Code genutzt werden.
-Dazu rufen wir nur noch unsere Klasse auf und können direkt auf die Methoden zugreifen, wie im zweitem Beispiel aufgezeigt.
+Dazu rufen wir nur noch unsere Klasse auf und können direkt auf die Methoden zugreifen, wie im zweiten Beispiel aufgezeigt.
 
 {{<highlight dart>}}
   class DeskState extends ChangeNotifier {
@@ -86,6 +86,6 @@ Dazu rufen wir nur noch unsere Klasse auf und können direkt auf die Methoden zu
 {{</highlight>}}
 
 Nun können wir einfach Singletons in Dart schreiben und diese an allen Stellen unserer App nutzen.
-Jedes Widget kann auf die Daten und Methoden des Singletons zugreifen und das an jeder Stelle im Code.
+Jedes Widget kann auf die Daten und Methoden des Singletons zugreifen, und das an jeder Stelle im Code.
 
 Beste Grüße und Happy Coding
