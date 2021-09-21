@@ -1,5 +1,8 @@
 image: registry.gitlab.com/pages/hugo/hugo_extended:0.74.3
 
+services:
+  - docker:dind
+  
 # Immer Git-Branch/-Tag als Image-Tag nutzen
 variables:
   K8S_DEPLOYMENT_NAME: hugo
