@@ -1,7 +1,14 @@
 image: registry.gitlab.com/pages/hugo/hugo_extended:0.74.3
 
+# Immer Git-Branch/-Tag als Image-Tag nutzen
+variables:
+  K8S_DEPLOYMENT_NAME: hugo
+  REPOSITORY_URL: 238737228879.dkr.ecr.eu-central-1.amazonaws.com/flutter-de
+  DOCKER_TLS_CERTDIR: ""
+
 stages:
   - build
+  - dockerize
   - release
 
 # Build
@@ -22,13 +29,64 @@ build:
     - public
     expire_in: 1 hour
 
-# Static live deploy
-Live Deploy:
-  dependencies: 
+#
+# Static stage deploy
+#
+Dockerize Stage:
+  stage: dockerize
+  image: guss77/dind-awscli
+  dependencies:
     - build
   tags:
     - Node
-  image: carimus/node-alpine-aws:node10
+  variables:
+    DOCKER_TLS_CERTDIR: ""
+  script:
+    - $(aws ecr get-login --no-include-email --region eu-central-1)
+    - docker build -t ${REPOSITORY_URL}:latest .
+    - docker push ${REPOSITORY_URL}:latest
+  only:
+    - main
+    - master
+    - stage-environment
+
+Deploy Stage:
+  stage: release
+  image: lachlanevenson/k8s-kubectl
+  dependencies:
+    - Dockerize Stage
+  tags:
+    - Node
+  retry: 2
+  variables:
+    GIT_STRATEGY: none
+  only:
+    - main
+    - master
+    - stage-environment
+  tags:
+    - k8s-dev
+  variables:
+    KUBERNETES_NAMESPACE_OVERWRITE: "flutter-de"
+    KUBERNETES_POD_ANNOTATIONS_1: "labels=flutter"
+  script:
+    - REGISTRY_IMAGE=${REPOSITORY_URL}:latest
+    - kubectl set image deployment/${K8S_DEPLOYMENT_NAME} ${K8S_DEPLOYMENT_NAME}=$REGISTRY_IMAGE
+    - kubectl patch deployment ${K8S_DEPLOYMENT_NAME} -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"ci-last-updated\":\"$(date +'%s')\"}}}}}"
+    - kubectl rollout status deployment/${K8S_DEPLOYMENT_NAME}
+  environment:
+    name: Stage
+    url: https://stage.flutter.de
+
+#
+# Static live deploy
+#
+Deploy Live:
+  dependencies:
+    - build
+  tags:
+    - Node
+  image: carimus/node-alpine-aws:node12
   stage: release
   script:
     - npm run deploy:s3

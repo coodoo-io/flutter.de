@@ -7,7 +7,11 @@
         "build:prod": "rm -rf public && hugo -b https://flutter.de/ -e production",
         "serve": "http-server public",
         "deploy:s3": "aws s3 sync public s3://flutter.de --delete",
-        "cloudfront:invalidate": "aws cloudfront create-invalidation --distribution-id E2QMB3HIWWOL4R --paths '/*'"
+        "cloudfront:invalidate": "aws cloudfront create-invalidation --distribution-id E2QMB3HIWWOL4R --paths '/*'",
+        "docker:build": "docker build -t flutter-de:latest -t 238737228879.dkr.ecr.eu-central-1.amazonaws.com/flutter-de:latest .",
+        "docker:push": "docker push 238737228879.dkr.ecr.eu-central-1.amazonaws.com/flutter-de:latest",
+        "docker:run": "docker run -p 80:80 flutter-de:latest",
+        "aws:login": "aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 238737228879.dkr.ecr.eu-central-1.amazonaws.com"
     },
     "private": true,
     "hugo-bin": {
