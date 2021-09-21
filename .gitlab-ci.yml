@@ -51,7 +51,6 @@ Dockerize Stage:
   only:
     - main
     - master
-    - stage-environment
 
 Deploy Stage:
   stage: release
@@ -66,7 +65,6 @@ Deploy Stage:
   only:
     - main
     - master
-    - stage-environment
   tags:
     - k8s-dev
   variables:
