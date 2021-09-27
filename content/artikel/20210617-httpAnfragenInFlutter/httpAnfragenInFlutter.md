@@ -3,8 +3,8 @@ title: "HTTP Anfragen in Flutter"
 slug: "http-flutter" 
 date: 2021-06-17T14:09:25+02:00
 draft: false
-header_image: "/artikel/20210617-httpAnfragenInFlutter/images/header.png"
-images: ["/artikel/20210617-httpAnfragenInFlutter/images/header.png"]
+header_image: "/artikel/20210617-httpAnfragenInFlutter/images/header-kabel.png"
+images: ["/artikel/20210617-httpAnfragenInFlutter/images/header-kabel.png"]
 description: "http-anfragen in flutter"
 tags: ["flutter"]
 categories: Anfänger * http 

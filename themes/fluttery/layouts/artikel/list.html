@@ -1,43 +1,52 @@
 {{ define "content" }}
-<h1 class="blog-post-title text-center mb-2">Artikel</h1>
-<p class="text-center mb-4">Wissenswerte Flutter Tutorials auf deutsch!</p>
-<div class="text-center mb-5">
-    <a class="btn btn-primary text-center" target="_blank" rel="noopener"
+<div class="container text-center pt-2 pb-3">
+    <h1 class="blog-post-title mb-2">Artikel</h1>
+    <p class="mb-4">Wissenswerte Flutter Tutorials auf deutsch!</p>
+    <!-- <div class="mb-5">
+    <a class="btn btn-primary" target="_blank" rel="noopener"
         href="https://github.com/coodoo-io/flutter.de/blob/master/readme.md">Eigenen
         Artikel
         erstellen</a>
+    </div> -->
 </div>
 <div class="container articles">
     <div class="row">
         {{ range .Paginator.Pages }}
-        <div class="col-12 col-md-4">
+        <div class="col-1"></div>
+        <div class="col-10">
             <div class="card bg-light mb-5">
-                <a href='{{ .Permalink }}' title='{{ .Title }}'>
-                    <img src="{{ .Params.header_image }}" class="card-img-top" alt="{{ .Title }}" />
-                </a>
                 <div class="card-body">
-                    <a href='{{ .Permalink }}' title='{{ .Title }}'>
-                        <h5 class="card-title">{{ .Title }}</h5>
-                    </a>
-                    {{if gt (len .Summary) 0}}
-                    <p class="card-text">{{ slicestr .Summary 0 200 }}... <a class='btn-link' href='{{ .Permalink }}'
+                    <div class="row">
+                        <div class="col-md-3 mb-4 mb-md-0 ">   
+                            <a href='{{ .Permalink }}' title='{{ .Title }}'>
+                            <img style="max-height:250px" src="{{ .Params.header_image }}" class="card-img-top mt-md-2" alt="{{ .Title }}" />
+                            </a>
+                        </div>
+                        <div class="col-md-9 pr-5">
+                            <a href='{{ .Permalink }}' title='{{ .Title }}'>
+                            <h3 class="card-title mt-0">{{ .Title }}</h3>
+                            </a>
+                         
+                            {{if gt (len .Summary) 0}}
+                            <p class="card-text mb-2">{{ slicestr .Summary 0 225 }}... <a class='btn-link' href='{{ .Permalink }}'
                             title='{{ .Title }}'>Weiterlesen</a></p>
-                    {{end}}
-                    <p class="card-text">
-
-                        <small
-                            class="text-muted">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
-                        </small>
-
-                        {{- range .Params.authors }}
-                        {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-                        <small class="text-muted"> | {{ .Params.name }}
-                        </small> {{ end }} {{ end }}
-
-                    </p>
+                            {{end}}
+                               <p class="card-text m-0">
+                                <small class="text-muted"> {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006")}}</small>
+                                {{- range .Params.authors }}
+                                {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                                <small class="text-muted"> | {{ .Params.name }} |
+                                </small> {{ end }} {{ end }}
+                                 <small class="text-muted blog-post-date mb-0">{{ .ReadingTime}}
+                    {{ if gt .ReadingTime 1 }}Minuten{{ else }}Minute{{ end }}
+                    Lesezeit | {{ .WordCount }} Wörter</small>
+                            </p>
+                        </div>                       
+                    </div>
                 </div>
             </div>
         </div>
+          <div class="col-1"></div>
         {{ end }}
     </div>
     <!-- Pagination -->
