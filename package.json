@@ -4,6 +4,7 @@
     "scripts": {
         "start": "$(npm bin)/hugo server -D",
         "build:local": "rm -rf public && hugo -b=http://localhost:8081 -e production && npm run serve",
+        "build:stage": "rm -rf public && hugo -b https://stage.flutter.de/ -e production",
         "build:prod": "rm -rf public && hugo -b https://flutter.de/ -e production",
         "serve": "http-server public",
         "deploy:s3": "aws s3 sync public s3://flutter.de --delete",

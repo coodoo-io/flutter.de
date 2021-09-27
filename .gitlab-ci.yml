@@ -15,7 +15,7 @@ stages:
   - release
 
 # Build
-build:
+.build: &build
   stage: build
   before_script:
     - apk add --update nodejs npm
@@ -25,12 +25,26 @@ build:
     - hugo version
   tags:
     - Node
-  script:
-    - npm run build:prod
   artifacts:
     paths:
     - public
     expire_in: 1 hour
+  
+Build Stage:
+  <<: *build
+  only:
+    - main
+    - master
+  script:
+    - npm run build:stage
+
+Build Prod:
+  <<: *build
+  except:
+    - main
+    - master
+  script:
+    - npm run build:prod
 
 #
 # Static stage deploy
@@ -39,7 +53,7 @@ Dockerize Stage:
   stage: dockerize
   image: guss77/dind-awscli
   dependencies:
-    - build
+    - Build Stage
   tags:
     - Node
   variables:
@@ -84,7 +98,7 @@ Deploy Stage:
 #
 Deploy Live:
   dependencies:
-    - build
+    - Build Prod
   tags:
     - Node
   image: carimus/node-alpine-aws:node12
