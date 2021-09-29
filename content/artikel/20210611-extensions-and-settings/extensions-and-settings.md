@@ -2,8 +2,8 @@
 title: "Nützliche VS-Code Flutter Extensions und Einstellungen"
 date: 2021-06-11T10:37:59+02:00
 draft: false
-header_image: "/artikel/20210611-extensions-and-settings/images/header_image.png"
-images: ["/artikel/20210611-extensions-and-settings/images/header_image.png"]
+header_image: "/artikel/20210611-extensions-and-settings/images/header_image.jpeg"
+images: ["/artikel/20210611-extensions-and-settings/images/header_image.jpeg"]
 authors: ["florian-schmitz"]
 description: "Nützliche VS-Code Extensions und Einstellungen für Flutter"
 tags: ["flutter", "vs-code", "extensions", "einstellungen"]
