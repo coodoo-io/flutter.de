@@ -8,11 +8,11 @@ images = ["/schulung/flutter-schulung.png"]
 <div class="container schulung-header pt-5 pb-5">
 <div class="overlay"></div>
   <div class="row pb-5">
-    <div class="col-md-6 text-left">
+    <div class="col-md-6 pl-5 text-left">
       <h1 class="schulung-h1">
      App Entwicklung mit <br>Expertise und Innovation</h1>
     <p>Wir setzen dein Mobile App Projekt um - <br>effizient und schnell</p>
-     <div class="blue-button"> <a class="btn btn-primary" href="https://forms.gle/1AArJQnGSD4BJtrW7" target="_blank" rel="noopener">Projekt schätzen</a></div> 
+     <div class="blue-button"> <a class="btn btn-primary  pr-4 pl-4 pt-2 pb-2" style="background-color:#F6A300; border-color:#F6A300"  href="https://coodoo.de/mobile-app-entwicklung" target="_blank" rel="noopener">Mehr erfahren</a></div> 
     </div>
   </div>
 </div>
@@ -42,7 +42,7 @@ images = ["/schulung/flutter-schulung.png"]
    </div>
 </div>
 
-<div class="container pt-5">
+<!-- <div class="container pt-5">
   <div class="row">
     <div class="col-md-4">
       <img src="/images/hz-mobile.png" class="img-fluid"></div>
@@ -60,7 +60,7 @@ images = ["/schulung/flutter-schulung.png"]
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Wir setzen es für Sie um -->
 <div class="container pt-5 pb-1 text-center projekt">
@@ -185,7 +185,7 @@ images = ["/schulung/flutter-schulung.png"]
 
 
 <!-- App Team -->
-<div class="container">
+<!-- <div class="container">
   <div class="row pb-5">
     <div class="col-12">
         <h1 class="schulung-h1">Das App Development Team</h1>
@@ -236,7 +236,7 @@ Backend Entwickler</p>
     <div class="blue-button text-center"> <a class="btn btn-primary" href="https://coodoo.de/software-entwicklung-team-extension" target="_blank" rel="noopener">Team kennenlernen</a></div> 
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- In den besten Händen -->
 <div class="container pb-5 mb-5">
@@ -266,16 +266,27 @@ Backend Entwickler</p>
 </div>
 </div>
 
+<!-- Kontakt2 -->
+<div class="container pt-5 pb-5" id="kontakt">
+  <div class="row pb-5">
+    <div class="col-12 pb-5 text-center">
+     <h1 class="schulung-h1 pb-3 ">Starte jetzt dein App Projekt!</h1>
+      <p>Schätze jetzt dein App Projekt oder stelle eine unverbindliche Anfrage!</p>
+     <div class="blue-button mt-5"> <a class="btn btn-primary pr-4 pl-4 pt-2 pb-2" style="background-color:#F6A300; border-color:#F6A300" href="https://coodoo.de/mobile-app-entwicklung" target="_blank" rel="noopener">Mehr erfahren</a></div> 
+</div>
+</div>
+</div>
+
 <!-- Kontakt -->
-<div class="container contact pt-5 pb-5" id="kontakt">
+<!-- <div class="container contact pt-5 pb-5" id="kontakt">
  
   <div class="row pb-5">
     <div class="col-md-6 pb-5">
-     <h2 class="schulung-h2 pb-3 ">Starte jetzt dein App Projekt mit uns!</h2>
+     <h2 class="schulung-h2 pb-3 ">Starte jetzt dein App Projekt!</h2>
     <div class="card" style="width:80%">
     <div class="card-body text-center">
  <p>Stelle jetzt deine unverbindliche Anfrage. Wir antworten garantiert! Schätze jetzt dein App Projekt oder rufe uns einfach an!</p>
-     <div class="blue-button"> <a class="btn btn-primary" href="https://forms.gle/1AArJQnGSD4BJtrW7" target="_blank" rel="noopener">Projekt schätzen</a></div> 
+     <div class="blue-button"> <a class="btn btn-primary pr-4 pl-4 pt-2 pb-2" style="background-color:#F6A300; border-color:#F6A300" href="https://coodoo.de/mobile-app-entwicklung" target="_blank" rel="noopener">Mehr erfahren</a></div> 
        <p> E-Mail: <a href="mailto:mail@flutter.de">mail@coodoo.de</a></p>
       <hr>
       <p>Telefon: +49 6131 46402 74</p>
@@ -283,9 +294,9 @@ Backend Entwickler</p>
     </div>
     </div>
     <div class="adresse col-md-3 text-center pt-5">
-      <!-- <p> <img src="/images/team.svg" class="icon-weiss mr-2" height="42" /> Your Flutter Team</p>
+      <p> <img src="/images/team.svg" class="icon-weiss mr-2" height="42" /> Your Flutter Team</p>
       <img src="/images/envelope.svg" class="icon mr-2" height="22" />
-      <p> <img src="/images/envelope.svg" class="icon-weiss mr-2" height="42" /> mail@flutter.de</p> -->
+      <p> <img src="/images/envelope.svg" class="icon-weiss mr-2" height="42" /> mail@flutter.de</p>
       <img src="/images/placeholder-2.png" class="icon-weiss2" height="82" />
       <p>coodoo GmbH
       <br>W.-T.-Römheld-Str. 20
@@ -294,17 +305,17 @@ Backend Entwickler</p>
     <div class="col-md-3">
     </div>
   </div>
-  </div>
-
+  </div> -->
+<!-- 
 <div class="container pb-3">
 <div class="row">
 <div class="col-12">
-<h1 class="schulung-h1">Kostengünstig und schnell</h1>
+<h2 class="schulung-h2">Kostengünstig und schnell</h2>
 <p>Es gibt viele gute Gründe auf Flutter als Entwicklungstechnologie zu setzen. Mehr erfährst du in unserem CTO Guide. </p>
 <div class="blue-button"> <a class="btn btn-schulung" href="https://flutter.de/community/flutter-cto-guide.html" target="_blank" rel="noopener">Flutter CTO Guide</a></div>
 </div>
 </div>
-</div>
+</div> -->
 
 
 <div class="container pb-5 mb-5"></div>
