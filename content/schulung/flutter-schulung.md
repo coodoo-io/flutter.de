@@ -115,7 +115,7 @@ images = ["/schulung/flutter-schulung.png"]
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Testing</p>
-      <div class="blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/BzMHv9ELzYHCKdYy6" target="_blank" rel="noopener">€600 – €1.000 pro Person</a></div> 
+      <div class="blue-button text-center"> <a id="schulung_mainz" class="btn btn-schulung" href="https://forms.gle/BzMHv9ELzYHCKdYy6" target="_blank" rel="noopener">€600 – €1.000 pro Person</a></div> 
     <p class="text-center"><b></b></p>
     </div>
     </div>
@@ -137,7 +137,7 @@ images = ["/schulung/flutter-schulung.png"]
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Testing</p>
-       <div class="blue-button text-center mb-4"> <a class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Preis nach Vereinbarung</a></div>
+       <div class="blue-button text-center mb-4"> <a id="schulung_vor_ort" class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Preis nach Vereinbarung</a></div>
     </div>
     </div>
     </div>
@@ -165,7 +165,7 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-4 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
           24. Januar 2022</div> <div class="col-1 text-center"> 
           € 600</div>
-  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/2ZxxfL1VTHwmwh2e9" target="_blank" rel="noopener">Jetzt anfragen</a></div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/2ZxxfL1VTHwmwh2e9" target="_blank" rel="noopener">Jetzt anfragen</a></div>
   
 </div>
 
@@ -185,7 +185,7 @@ images = ["/schulung/flutter-schulung.png"]
          24. - 25. Januar 2022</div>
            <div class="col-1 text-center"> 
           € 1.000</div>
-  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/FevFW4WyS23kaev2A" target="_blank" rel="noopener">Jetzt anfragen</a></div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/FevFW4WyS23kaev2A" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div>
 
 <!-- <div class="row zeile">
