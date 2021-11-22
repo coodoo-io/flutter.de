@@ -1,5 +1,5 @@
 ---
-title: "Nullsafety first - wie geht das eigentlicht und was ist es"
+title: "Null Safety in Flutter -  Was ist es und wie geht es?"
 slug: "flutter-dart-null-safety" 
 date: 2021-10-26T10:00:25+02:00
 draft: false
@@ -11,11 +11,11 @@ categories: Anfänger * Flutter * Dart * Architecture
 authors: ["marcel-ploch"]
 link: 20211026-null-safety-to-the-rescue/nullSafetyToTheRescue.md
 ---
-Mit dem Update auf Dart 2.12 wurde das null-safe type System eingeführt.
+Mit dem Update auf Dart 2.12 wurde das null-safe type System in Flutter eingeführt.
 Aber was ist das überhaupt? 
-Wie verwende ich es? Und überhaupt welche Vorteile bringt mir das Ganze.
+Wie verwende ich es? Und überhaupt, welche Vorteile bringt mir das Ganze?
 
-Null safety in Dart bedeute, dass jede Variable, die ich definiere, nicht Null sein kann, außer ich sage explizit, dass sie Null sein darf.
+Null safety in Dart bedeutet, dass jede Variable, die ich definiere, nicht Null sein kann, außer ich sage explizit, dass sie Null sein darf.
 
 Damit sichere ich meinen Code ab, da nicht nur zu Compile Zeiten keine Null Fehler entstehen können, nein sogar zur Runtime können keine Null Pointer Exceptions entstehen.
 
@@ -54,7 +54,7 @@ main() {
   );
 }
 {{</highlight>}}
-Dieser Code wirf eine NoSuchMethodError Exception bei dem Aufruf von `.length` da der Compiler denkt, dass man `.length`auf ein NULL Objekt aufruft.
+Dieser Code wirft eine NoSuchMethodError Exception bei dem Aufruf von `.length`, da der Compiler denkt, dass man `.length` auf ein NULL Objekt aufruft.
 
 Wie können wir den Fehler beheben? Indem wir vorher abfragen, ob der String null ist!
 
@@ -100,6 +100,6 @@ main() {
 
 Was haben wir geändert?
 
-Wir haben an dem Typ der Variable ein `?`hinzugefügt. Dies weist den Compiler darauf hin, dass der Wert `null`sein kann.
+Wir haben an dem Typ der Variable ein `?` hinzugefügt. Dies weist den Compiler darauf hin, dass der Wert `null` sein kann.
 
-Für das Aufrufen der Werte müssen wir nun den Assertion Operator benutzten, damit wir dem Compiler mitteilen, dass der Inhalt der Variable sicher ist.
+Für das Aufrufen der Werte müssen wir nun den Assertion Operator benutzten, damit wir dem Compiler mitteilen, dass der Inhalt der Variable sicher ist. Und so bindet man Null Safety in sein Flutter Projekt ein.

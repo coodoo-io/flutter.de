@@ -1,5 +1,5 @@
 ---
 name: Florian Schmitz
-bio: Flutter-Anfänger, aber schon jetzt Fan.
-image: /authors/tobias-mautes/tobias.png
+bio: Flutter-Entwickler bei coodoo mit Spezialisierung auf Apps.
+image: /authors/florian-schmitz/Flo-Q.jpg
 ---
