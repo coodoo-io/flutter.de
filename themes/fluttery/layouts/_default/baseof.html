@@ -5,15 +5,16 @@
 {{ $bootstrapDarkTheme := .Param "light_mode" }}
 
 <body {{ with $bootstrapDarkTheme }} class="theme-light" {{end}}>
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGW287J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div class="page-container">
         {{- partial "header.html" . -}}
         {{- block "content" . }}{{- end }}
         {{- partial "footer.html" . -}}
     </div>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGW287J"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 </body>
 
 </html>

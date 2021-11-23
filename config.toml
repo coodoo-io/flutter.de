@@ -36,10 +36,15 @@ uglyurls = true
   URL = "artikel.html"
   weight = 2
   
+ [[menu.main]]
+   name = "Schulung"
+   URL = "schulung/flutter-schulung.html"
+   weight = 3
+
   [[menu.main]]
   name = "Community"
   URL = "community"
-  weight = 3
+  weight = 4
   
     [[menu.main]]
     parent = "Community"
@@ -62,12 +67,9 @@ uglyurls = true
   [[menu.main]]
   name = "Consulting"
   URL = "app-entwicklung-mit-flutter.html"
-  weight = 4
+  weight = 5
   
-   [[menu.main]]
-   name = "Schulung"
-   URL = "schulung/flutter-schulung.html"
-   weight = 5
+  
     
     ##[[menu.main]]
     ##parent = "Schulung"
