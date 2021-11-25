@@ -2,7 +2,7 @@
 title: "Layout Cheat Sheet für Flutter auf deutsch"
 slug: "layout-cheat-sheet-flutter-deutsch" 
 date: 2019-08-18T07:23:32+02:00
-draft: true
+draft: false
 header_image: "/artikel/20190718-layout-cheat-sheet/images/layout.png"
 images: ["/artikel/20190718-layout-cheat-sheet/images/layout.png"]
 description: "Perfekte Layouts in Flutter gestalten mit dem Layout Cheat Sheet auf deutsch."
@@ -286,4 +286,3 @@ Scaffold(
 {{< figure src="20190718-layout-cheat-sheet/images/15.png" width="300" >}}
 
 Ich werde den Cheat Sheet Artikel noch erweitern, aber erst einmal sind die Grundlagen gedeckt.
-
