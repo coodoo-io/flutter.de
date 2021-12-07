@@ -18,7 +18,8 @@ stages:
 .build: &build
   stage: build
   before_script:
-    - apk add --update nodejs npm
+    - apk upgrade
+    - apk add --update nghttp2 nodejs npm
     - npm install
     - npm --prefix ./themes/fluttery install ./themes/fluttery
     - PATH=$(npm bin):$PATH
