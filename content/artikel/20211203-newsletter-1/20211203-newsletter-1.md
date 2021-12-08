@@ -16,22 +16,24 @@ Willkommen zum ersten Flutter Newsletter auf deutsch. Wir haben für euch die wi
 ### Flutter Chips
 Kennst du schon Flutter Chips?
 Du kannst diese als Action Button nutzen, Auswahl Chip, Filter und Eingabe für Daten.
-<a href="https://medium.flutterdevs.com/chip-widgets-in-flutter-7a2d3d34597c" target="_blank" rel="noopener">Flutter Chips</a>
+<a href="https://medium.flutterdevs.com/chip-widgets-in-flutter-7a2d3d34597c" target="_blank" rel="noopener">Flutter Chips <br>
+<img src="/artikel/20211203-newsletter-1/chips.png" style="width:600px" class="img-fluid"></a>
 
 
 ### Package der Woche
 Wenn du es verpasst hast, wir haben eine Auswahl an Packages zusammengestellt, die jede/r Flutter Anfänger/in kennen sollte.
-<a href="https://flutter.de/artikel/top-5-flutter-packages-die-jeder-kennen-sollte.html" target="_blank" rel="noopener">Package der Woche</a>
+<a href="https://flutter.de/artikel/top-5-flutter-packages-die-jeder-kennen-sollte.html" target="_blank" rel="noopener">Package der Woche <br>
+<img style="width:600px" class="img-fluid" src="/artikel/20211124-flutter-packages/images/header.jpg"></a>
 
 
 ### Linting in Flutter
 Zeit deinen Dart Code zu professionalisieren. So nutzt du Linting in Flutter richtig.
-<a href="https://rydmike.com/blog_flutter_linting" target="_blank" rel="noopener">Linting in Flutter</a>
+<a href="https://rydmike.com/blog_flutter_linting" style="width:600px" target="_blank" rel="noopener">Linting in Flutter <img src="/artikel/20211203-newsletter-1/rydmike.png" class="img-fluid"></a>
 
 
 ### Video der Woche
 Decoding in Flutter: ShrinkWrap vs Slivers oder warum es sich lohnt sich Slivers anzuschauen um eine bessere Performance bei Listen zu erhalten.
-<a href="https://youtu.be/LUqDNnv_dh0" target="_blank" rel="noopener">Video</a>
+<a href="https://youtu.be/LUqDNnv_dh0" target="_blank" rel="noopener">Video <br><img style="width:600px" src="/artikel/20211203-newsletter-1/decoding.png" class="img-fluid"></a>
 
 
 
