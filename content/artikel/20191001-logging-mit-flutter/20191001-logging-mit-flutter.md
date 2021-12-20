@@ -18,7 +18,7 @@ Einen Logger zu nutzen ist praktisch — auch bei Flutter. Für alle, die Flutte
 
 ## Den Logger in Flutter einbauen
 
-<div class="alert alert-info">Hinweis: Das Flutter Tutorial bezieht sich auf das <a href="https://pub.dev/packages/logger#-readme-tab-" target="_blank" rel="noopener">logger</a> Dart Package. Wir verwenden ein neu erstelltes Projekt, wie man es auch auf <a href="" target="_blank" rel="noopener">flutter.dev/docs/get-started/test-drive</a> findet. Das Hinzufügen des Loggers in bestehende Projekte verhält sich allerdings gleich.</div>
+<div class="alert alert-info" style="line-height:2.2rem" >Hinweis: Das Flutter Tutorial bezieht sich auf das <a href="https://pub.dev/packages/logger#-readme-tab-" target="_blank" rel="noopener">logger</a> Dart Package. Wir verwenden ein neu erstelltes Projekt, wie man es auch auf <a href="" target="_blank" rel="noopener">flutter.dev/docs/get-started/test-drive</a> findet. Das Hinzufügen des Loggers in bestehende Projekte verhält sich allerdings gleich.</div>
 
 ##### Unsere `main.dart` sieht zu Beginn so aus:
 
@@ -187,7 +187,7 @@ Hier sieht man in welcher *Klasse* und in welcher *Methode*, sowie in welcher *D
 
 `logger.util.dart`
 
-{{< highlight dart >}}
+{{<highlight dart>}}
 import 'package:logger/logger.dart';
 
 Logger getLogger() {
@@ -200,7 +200,7 @@ Logger getLogger() {
     ),
   );
 }
-{{< /highlight >}}
+{{</highlight>}}
 <br/>
 `main.dart`
 
