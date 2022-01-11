@@ -34,7 +34,7 @@ Man kann nicht nur Mobile Apps mit Flutter bauen. Auch Roboter lassen sich mit d
 
 
 ### News der  Woche
-React Native und Flutter sind die beiden beliebtesten Cross-Platform-Frameworks. Lange sah es so aus, dass Flutter die Nase vorn hat. Aber React Native holt langsam auf. Hier ein Artikel, der beide Frameworks einander gegenüber stellt.
+React Native und Flutter sind die beiden beliebtesten Cross-Platform-Frameworks. Lange sah es so aus, dass React Native die Nase vorn hat, aber Flutter holt langsam auf. Hier ein Artikel, der beide Frameworks einander gegenüber stellt und aufzeigt, warum Flutter so langsam aber sicher die Führung übernimmt.
 <a href="https://betterprogramming.pub/you-dont-have-to-compare-flutter-and-react-native-anymore-15ddc4c1342a" target="_blank" rel="noopener">Zum Artikel <br><img style="width:600px" src="/artikel/20220111-newsletter-3/react.png" class="img-fluid"></a>
 
 
