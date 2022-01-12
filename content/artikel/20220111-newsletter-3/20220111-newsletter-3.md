@@ -30,7 +30,7 @@ Ein visuell sehr schön aufbereitetes Beispielprojekt, das einen echten Anwendun
 
 ### Entdeckung der Woche
 Man kann nicht nur Mobile Apps mit Flutter bauen. Auch Roboter lassen sich mit dem Cross-Platform-Framework bedienen. Dieses Projekt zeigt schön, wie man den Joy-IT-Grab-it robot02 mit Flutter kontrollieren kann. 
-<a href="https://blog.prototypr.io/dark-mode-ui-best-practices-8101782de93f" target="_blank" rel="noopener">Zum Artikel <br><img style="width:600px" src="/artikel/20220111-newsletter-3/robot.png" class="img-fluid" alt="Robotics mit Flutter"></a>
+<a href="https://github.com/floodoo/Joy-it-Grab-it-robot02-frontend" target="_blank" rel="noopener">Zum Artikel <br><img style="width:600px" src="/artikel/20220111-newsletter-3/robot.png" class="img-fluid" alt="Robotics mit Flutter"></a>
 
 
 ### News der  Woche
