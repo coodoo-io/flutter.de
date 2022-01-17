@@ -1,7 +1,7 @@
 ---
 title: "Mit Packagemanagern Flutter schnell und einfach installieren"
 slug: "flutter-installieren-mit-packages" 
-date: 2022-01-14T08:00:25+02:00
+date: 2022-01-17T08:00:25+02:00
 draft: false
 header_image: "/artikel/20220117-flutter-download/homebrew.png"
 images: ["/artikel/20220117-flutter-download/homebrew.png"]
@@ -26,7 +26,7 @@ Wenn das erledigt ist, kannst du ganz einfach mit folgendem Befehl Flutter insta
 brew install --cask flutter
 {{</highlight>}}
 
-Und schon ist Flutter installiert und du kannst direkt loslegen. Um zu überprüfen, ob es wirklich geklappt hat, gib in die Konsole flutter doctor ein. Dann solltest du angezeigt bekommen, was du für die Entwicklung mit Flutter noch alles brauchst. Sollte er den Befehl nicht erkennen, ist wohl etwas schief gelaufen.
+Und schon ist Flutter installiert und du kannst direkt loslegen. 
 
 ### Installation von Flutter für Windows 
 Für Windows brauchen wir den Packagemanager von Chocolately. Diesen kann man hier herunterladen: <a href="https://chocolatey.org/install" target="_blank" rel="noopener">Chocolately herunterladen</a>. Einfach durch die Installationsanleitung hangeln.
@@ -49,6 +49,12 @@ Sobald dies erledigt ist, gib einfach in der Konsole
 sudo snap install flutter --classic 
 {{</highlight>}}
 ein. Und ta-da! Flutter ist installiert. Auch hier kannst du den Befehl flutter doctor eingeben, um zu überprüfen, ob alles geklappt und zu checken, was dir für die Entwicklung noch fehlt. 
+
+### Checken, ob die Flutter Installation funktioniert hat
+
+Um zu überprüfen, ob die Installation wirklich geklappt hat, gib in der Konsole {{<highlight yaml>}}flutter doctor{{</highlight>}} ein. Wenn Flutter erfolgreich installiert wurde, sollte bei Flutter ein grünes Häkchen sein. Wenn er den Befehl 'Flutter' nicht erkennt, ist wohl etwas schief gelaufen. 'Flutter Doctor' zeigt dir auch an, was du noch alles für die Entwicklungsumgebung brauchst. Installiere alles, um richtig mit Flutter arbeiten zu können.
+
+<img src="/artikel/20220117-flutter-download/flutter-doctor.png">
 
 ### Komplette Entwicklungsumgebung einrichten
 Um zu erfahren, wie man die Simulatoren von Flutter herunterlädt, kannst du dir diesen Flutter Artikel auf deutsch anschauen: <a href="https://flutter.de/artikel/flutter-entwicklungsumgebung-einrichten.html" target="_blank" rel="noopener">Entwicklungsumgebung einrichten.</a>
