@@ -1,18 +1,22 @@
 ---
-title: "Listen in Flutter erstellen"
-slug: "flutter-list-erstellen" 
+title: "Liste mit Assets in Flutter erstellen"
+slug: "flutter-assets-list-erstellen" 
 date: 2022-01-17T08:00:25+02:00
 draft: false
-header_image: "/artikel/20220120-flutter-list/cover-liste.png"
-images: ["/artikel/20220120-flutter-list/cover-liste.png"]
-description: "In Flutter eine Liste mit Text und Bildern erstellen und anzeigen."
+header_image: "/artikel/20220120-flutter-list/coverbild.png"
+images: ["/artikel/20220120-flutter-list/coverbild.png"]
+description: "In Flutter eine Liste mit Assets (Text und Bildern) erstellen und anzeigen."
 tags: ["flutter", "list", "assets"]
-categories: Flutter * Anfänger * Listen
+categories: Anfänger * Listen * Assets
 authors: ["Nadia-Micheilis"]
 link: 20220120-flutter-list/flutter-listen.md
 ---
 
-Ein guter Startpunkt für alle, die Flutter lernen wollen, ist es, eine Liste in einer Flutter App anzulegen. Listen bilden das Kernstück vieler Apps, ob es nun das Inventar eines Shops ist oder eine einfache To-Do-Liste. Hier zeige ich dir wie du eine Liste in Flutter erstellen und bearbeiten kannst. In diesem Fall machen wir eine Blumenliste mit Beschreibungstext und Bild.
+Ein guter Startpunkt für alle, die Flutter lernen wollen, ist es, eine Liste in einer Flutter App anzulegen und mit Assets, in diesem Fall Bildern. Listen bilden das Kernstück vieler Apps, ob es nun das Inventar eines Shops ist oder eine einfache To-Do-Liste. Hier zeige ich dir wie du eine Liste in Flutter erstellen und bearbeiten kannst. In diesem Fall machen wir eine Blumenliste mit Beschreibungstext und Bild. 
+
+<div style="background-color: lightgrey" class="p-3 m-3">
+Tipp: Lege dir schon einmal ein paar Bilder zurecht, die du für diese Übung verwenden möchtest.
+</div>
 
 ### Listen-Klasse erstellen
 Es erscheint kontraintuitiv, aber bevor wir die Liste bauen, erstellen wir zuerst deren Inhalt. Für eine bessere Übersicht, ziehen wir den Inhalt in eine eigene Datei heraus. Gehe dazu in deine ``lib`` und erstelle dort eine neue Dart-Datei, zum Beispiel `flower.dart`. 
@@ -32,14 +36,17 @@ class Flower {
 {{</highlight>}}
 
 ### Liste mit Daten füllen
-In einer normalen App würden wir die Daten jetzt von irgendeiner Api laden. Um es an dieser Stelle einfacher zu machen, schreiben wir die Daten direkt in die App herein. Hinterlege zuerst in deinem Assets-Ordner die Bilder, die du anzeigen möchtest. Wie man Assets in eine Flutter-App einfügt, erfährst du in diesem Artikel: <a href="https://flutter.de/artikel/flutter-assets-bilder-sound-verwenden.html">Assets einfügen</a>.
-<br>
-Wenn das erledigt ist, füge die folgende Methode ein und hinterlege dort deine Dateien.
+Um es an dieser Stelle einfacher zu machen, schreiben wir die Daten direkt in die App herein. Hinterlege zuerst in deinem Assets-Ordner die Bilder, die du anzeigen möchtest. 
+
+<div style="background-color: lightgrey" class="p-3 m-3">
+Wie man Assets in eine Flutter-App einfügt, erfährst du in diesem Artikel: <a href="https://flutter.de/artikel/flutter-assets-bilder-sound-verwenden.html">Assets einfügen</a>.
+</div>
+
+Wenn das erledigt ist, füge die folgende Methode ein und hinterlege dort deine Dateien. 
 {{<highlight dart>}}
 class Flower {
   String label;
   String imageUrl;
-  // TODO: Add servings and ingredients here
 
   Flower(
     this.label,
@@ -58,6 +65,7 @@ class Flower {
       'Narzisse',
       'assets/narzisse.png',
     ),
+
   ];
 }
 {{</highlight>}}
