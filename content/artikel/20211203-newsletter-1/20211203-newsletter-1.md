@@ -1,5 +1,5 @@
 ---
-title: "#1 Newsletter"
+title: "#1 Flutter Newsletter"
 slug: "flutter-newsletter-deutsch-1" 
 date: 2021-12-07T08:00:25+02:00
 draft: false
