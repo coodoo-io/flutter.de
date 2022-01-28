@@ -81,7 +81,7 @@ Deploy Stage:
     - main
     - master
   tags:
-    - k8s-dev
+    - coodoo-stage
   variables:
     KUBERNETES_NAMESPACE_OVERWRITE: "flutter-de"
     KUBERNETES_POD_ANNOTATIONS_1: "labels=flutter"
