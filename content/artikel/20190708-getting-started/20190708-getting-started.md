@@ -13,9 +13,13 @@ link: 20190613-gettings-started/20190613-gettings-started.md
 author: Markus Kühle
 ---
 
+## Update
+Dieser Artikel ist nicht mehr aktuell. Wenn du eine Anleitung für eine schnelle und sehr einfache Installation haben möchtest dann schau gerne hier:
+
+<a href="https://www.flutter.de/artikel/flutter-einfach-installieren-auf-windows-mac-linux.html#installtion-von-flutter-prüfen">Flutter auf Windows, Mac oder Linux schnell und einfach installieren</a>
 ## Flutter First Steps
 
-Flutter ist ein sehr schönes Framework, das dir den schnellen Einstieg in die Appentwicklung ermöglicht. In diesem Artikel zeige ich allen, die Flutter lernen wollen, wie sie die Entwicklungsumgebung schnell einrichten können, um direkt mit dem Programmieren loslegen zu können. Dazu müssen für Android und iOS unterschiedliche Tools installiert werden. 
+Flutter ist ein Cross-Plattform Framework, das dir den schnellen Einstieg in die Appentwicklung ermöglicht. In diesem Artikel zeige ich allen, die Flutter lernen wollen, wie sie die Entwicklungsumgebung schnell einrichten können, um direkt mit dem Programmieren loslegen zu können. Dazu müssen für Android und iOS unterschiedliche Tools installiert werden. 
 Ziel ist es, dass du nach dieser Anleitung dein Flutter "Hello World" Programm in einem Simulator bzw. Emulator ansehen kannst.
 
 ## Ablauf der Installationsanleitung
