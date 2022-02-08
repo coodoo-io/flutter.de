@@ -163,9 +163,9 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           1 Tag</div>
   <div class="col-4 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
-          24. Januar 2022</div> <div class="col-1 text-center"> 
+          auf Anfrage variabel</div> <div class="col-1 text-center"> 
           € 600</div>
-  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/2ZxxfL1VTHwmwh2e9" target="_blank" rel="noopener">Jetzt anfragen</a></div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/8b4mghRHbHcRRkBR7" target="_blank" rel="noopener">Jetzt anfragen</a></div>
   
 </div>
 
@@ -182,10 +182,10 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           2 Tage</div>
           <div class="col-4 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
-         24. - 25. Januar 2022</div>
+         auf Anfrage variabel</div>
            <div class="col-1 text-center"> 
           € 1.000</div>
-  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/FevFW4WyS23kaev2A" target="_blank" rel="noopener">Jetzt anfragen</a></div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/8b4mghRHbHcRRkBR7" target="_blank" rel="noopener">Jetzt anfragen</a></div>
 </div>
 
 <!-- <div class="row zeile">
@@ -230,7 +230,7 @@ images = ["/schulung/flutter-schulung.png"]
     <h3 class="pt-3 pb-2"><b>Schreib uns oder ruf uns an!</b></h3>
        <p> E-Mail: <a href="mailto:mail@flutter.de">mail@coodoo.de</a></p>
       <hr>
-      <p>Telefon: +49 6131 46402 74</p>
+      <p>Telefon: +49 6131 46402 88</p>
     </div>
     </div>
     </div>
