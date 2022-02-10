@@ -1,6 +1,6 @@
 ---
 name: Nadia Micheilis
-bio: Blutige Flutter Anfängerin, aber schon jetzt begeistert.
+bio: Passionierte Flutter Entwicklerin. 
 image: /authors/nadia-micheilis/nadia.png
 twitter: coodoo_io
 github: coodoo-io
