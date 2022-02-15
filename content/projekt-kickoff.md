@@ -12,7 +12,7 @@ images = ["/schulung/flutter-schulung.png"]
       <h1 class="schulung-h1">
      App Entwicklung mit <br>Expertise und Innovation</h1>
     <p>Wir setzen dein Mobile App Projekt um - <br>effizient und schnell</p>
-     <div class="blue-button"> <a class="btn btn-primary  pr-4 pl-4 pt-2 pb-2" style="background-color:#F6A300; border-color:#F6A300"  href="https://coodoo.de/mobile-app-entwicklung" target="_blank" rel="noopener">Mehr erfahren</a></div> 
+     <div class="blue-button"> <a class="btn btn-primary  pr-4 pl-4 pt-2 pb-2" style="background-color:#F6A300; border-color:#F6A300"  href="https://coodoo.de/mobile-app-entwicklung" target="_blank" rel="noopener">Jetzt kontaktieren</a></div> 
     </div>
   </div>
 </div>
@@ -102,77 +102,77 @@ images = ["/schulung/flutter-schulung.png"]
 
 <!-- Prozess -->
 
-<div class="container projekt">
+<div class="container process">
   <div class="row">
     <div class="col-12">
       <h1 class="schulung-h1">Unser App-Entwicklungsprozess</h1>
       <p>Von der Konzeption bis zum Release</p>
     </div>
-    <div class="col-12 text-center">
+    <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
-        <div class="card-body pr-5 pl-5">
+        <div class="card-body">
         <h5><b>Workshop</b></h5>
         <p>
-          In einem kurzen und effizienten Workshop setzen wir den Umfang deines App-Projekts fest und setzen erste Meilensteine für die Umsetzung.</p>
+          In einem Workshop ermitteln wir den Umfang des App-Projekts und setzen erste Meilensteine für die Umsetzung.</p>
         </div>
       </div>
     </div>  
-    <div class="col-12 text-center">
+    <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
-        <div class="card-body pr-5 pl-5">
+        <div class="card-body">
         <h5><b>Wireframes</b></h5>
         <p>
           Unsere erfahrenen UI/UX Designer erstellen erste Wireframes deiner App für iOS und Android.</p>
         </div>
       </div>
     </div>  
-    <div class="col-12 text-center">
+    <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
-        <div class="card-body pr-5 pl-5">
+        <div class="card-body">
         <h5><b>Erste Demo-Version</b></h5>
         <p>
-        Nach nur einer Woche bekommst du deine erste Demo-Version.</p>
+        Dank unserer agilen Arbeitsweise, bekommst du nach nur einer Woche deine erste Demo-Version.</p>
         </div>
       </div>
     </div>  
-    <div class="col-12 text-center">
+    <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
-        <div class="card-body pr-5 pl-5">
+        <div class="card-body">
         <h5><b>Projekt-Kickoff</b></h5>
         <p>
         Wir starten dein App-Projekt und setzen die Prozesse mit dir und deinem Team auf.</p>
         </div>
       </div>
     </div>
- <div class="col-12 text-center">
+ <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
-        <div class="card-body pr-5 pl-5">
+        <div class="card-body">
         <h5><b>Finales Design</b></h5>
         <p>
-       Unsere Entwickler verfeinern und finalisieren das Design.</p>
+       Unsere Entwickler verfeinern und finalisieren das Design nach Ihren Vorgaben.</p>
         </div>
       </div>
     </div>
-     <div class="col-12 text-center">
+     <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
-        <div class="card-body pr-5 pl-5">
+        <div class="card-body">
         <h5><b>Entwicklung und Testing</b></h5>
         <p>
        In übersichtlichen und vorher gesteckten Iterationen setzen wir deine Applikation um.</p>
         </div>
       </div>
     </div>
-    <div class="col-12 text-center">
+    <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
-        <div class="card-body pr-5 pl-5">
+        <div class="card-body">
         <h5><b>Release und Qualitätsmanagement</b></h5>
         <p>Wir bringen deine App in die Stores und sorgen für die Pflege des Codes.</p>
         </div>
       </div>
     </div>
-        <div class="col-12 text-center">
+        <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
-        <div class="card-body pr-5 pl-5">
+        <div class="card-body">
         <h5><b>Wissenstransfer</b></h5>
         <p>Auf Wunsch schulen wir dein Team in Flutter, damit diese den Code selbst pflegen können.</p>
         </div>
@@ -272,7 +272,7 @@ Backend Entwickler</p>
     <div class="col-12 pb-5 text-center">
      <h1 class="schulung-h1 pb-3 ">Starte jetzt dein App Projekt!</h1>
       <p>Schätze jetzt dein App Projekt oder stelle eine unverbindliche Anfrage!</p>
-     <div class="blue-button mt-5"> <a class="btn btn-primary pr-4 pl-4 pt-2 pb-2" style="background-color:#F6A300; border-color:#F6A300" href="https://coodoo.de/mobile-app-entwicklung" target="_blank" rel="noopener">Mehr erfahren</a></div> 
+     <div class="blue-button mt-5"> <a class="btn btn-primary pr-4 pl-4 pt-2 pb-2" style="background-color:#F6A300; border-color:#F6A300" href="https://coodoo.de/mobile-app-entwicklung" target="_blank" rel="noopener">Jetzt kontaktieren</a></div> 
 </div>
 </div>
 </div>
