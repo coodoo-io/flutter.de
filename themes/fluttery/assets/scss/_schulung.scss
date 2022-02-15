@@ -144,6 +144,33 @@ b {
   }
 }
 
+
+  .process {
+    .card {
+      border-radius: 15px !important;
+      margin-bottom: 2rem;
+      min-height: 175px;
+    }
+
+    .card-body {
+      background: white;
+      border-radius: 15px ;
+      border: 2px solid #01579B; 
+
+    // background-color: #209dd7;
+      h5 {
+        color: #01579B 0%;
+        font-weight: 400 !important;
+        margin: 1rem;
+    }
+      p {
+        color: #01579B 0%;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+  }
+}
+
   .projekt {
     .card {
       border-radius: 15px !important;
