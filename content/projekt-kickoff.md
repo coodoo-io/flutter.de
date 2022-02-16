@@ -111,9 +111,18 @@ images = ["/schulung/flutter-schulung.png"]
     <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
         <div class="card-body">
+        <h5><b>Projekt Kickoff</b></h5>
+        <p> In einem ersten Gespräch besprechen wir die Rahmenbedingungen des Projekts und geben eine Einschätzung zu Dauer und Umfang. 
+          </p>
+        </div>
+      </div>
+    </div>  
+    <div class="col-sm-6 col-md-4 text-center">
+      <div class="card">
+        <div class="card-body">
         <h5><b>Workshop</b></h5>
         <p>
-          In einem Workshop ermitteln wir den Umfang des App-Projekts und setzen erste Meilensteine für die Umsetzung.</p>
+          In einem ausführlichen Workshop ermitteln wir den Umfang des App-Projekts und setzen erste Meilensteine für die Umsetzung.</p>
         </div>
       </div>
     </div>  
@@ -135,21 +144,21 @@ images = ["/schulung/flutter-schulung.png"]
         </div>
       </div>
     </div>  
-    <div class="col-sm-6 col-md-4 text-center">
-      <div class="card">
-        <div class="card-body">
-        <h5><b>Projekt-Kickoff</b></h5>
-        <p>
-        Wir starten dein App-Projekt und setzen die Prozesse mit dir und deinem Team auf.</p>
-        </div>
-      </div>
-    </div>
- <div class="col-sm-6 col-md-4 text-center">
+     <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
         <div class="card-body">
         <h5><b>Finales Design</b></h5>
         <p>
        Unsere Entwickler verfeinern und finalisieren das Design nach Ihren Vorgaben.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 text-center">
+      <div class="card">
+        <div class="card-body">
+        <h5><b>Developement Kickoff</b></h5>
+        <p>
+        Wir starten dein App-Projekt und setzen die Prozesse mit dir und deinem Team auf.</p>
         </div>
       </div>
     </div>
@@ -256,7 +265,8 @@ Backend Entwickler</p>
 </div>
 <div class="col-6 pr-5">
 <h5>Eingespieltes Remote-Team</h5>
-<p>Alle unsere Mitarbeiter - vom Projektmanager zum App Entwickler - arbeiten exklusiv für dich in unserem Büro in Mainz.</p>
+<p>Alle unsere Mitarbeiter - vom Projektmanager zum App Entwickler - arbeiten exklusiv für dich in unserem Büro in Mainz. <br><a rel="noopener" target="blank" href="/ueber-uns-das-team-hinter-flutter_de.html">Jetzt Team kennenlernen</a></p>
+
 </div>
 <div class="col-6">
 <h5>Effizient und schnell</h5>
