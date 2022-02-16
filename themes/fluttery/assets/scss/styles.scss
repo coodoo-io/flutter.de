@@ -521,6 +521,11 @@ footer {
     .flutter_logo {
         max-width: 450px;
     }
+    .flutteraner {
+    p {
+        font-size: 1.1rem;
+    }
+   }
 }
 
 @media (min-width: 1440px) {
@@ -566,4 +571,21 @@ img[src$='#floatright']
     float:right;
     margin: 0.7rem;      /* this margin is totally up to you */
     /* whatever else styles you fancy here */
+}
+
+.flutteraner {
+    padding: 1.1rem;
+    text-align: center;
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .flutteraner {
+    p {
+        font-size: 1.1rem;
+    }
+   }
 }
