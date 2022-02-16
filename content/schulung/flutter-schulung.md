@@ -22,7 +22,7 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="row text-center pb-5">
     <div class="col-md-8">
       <h2 class="schulung-h2 text-center">Lerne Flutter von den <b>Profis<b></h2>
-      <p class="schulung-p">Lieber einmal richtig gelernt, als tausend mal nebenbei.<br>Hole dir die wichtigsten Grundlagen für einen erfolgreichen Start in Flutter. Lerne effizient und zielgerichtet mit Experten vor Ort.</p>
+      <p class="schulung-p">Lieber einmal richtig gelernt, als tausend mal nebenbei.<br>Hole dir die wichtigsten Grundlagen für einen erfolgreichen Start in Flutter. Lerne effizient und zielgerichtet mit Experten vor Ort. <a rel="noopener" href="/ueber-uns-das-team-hinter-flutter_de.html">Lerne unsere Experten kennen!</a></p>
     </div>
   </div>
 <div class="row pb-5">
