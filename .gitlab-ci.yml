@@ -36,7 +36,6 @@ Build Stage:
   only:
     - main
     - master
-    - pipeline-debug
   script:
     - npm run build:stage
 
@@ -67,7 +66,6 @@ Dockerize Stage:
   only:
     - main
     - master
-    - pipeline-debug
 
 Deploy Stage:
   stage: release
@@ -82,7 +80,6 @@ Deploy Stage:
   only:
     - main
     - master
-    - pipeline-debug
   tags:
     - coodoo-stage
   variables:
