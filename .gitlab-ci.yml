@@ -36,6 +36,7 @@ Build Stage:
   only:
     - main
     - master
+    - pipeline-debug
   script:
     - npm run build:stage
 
