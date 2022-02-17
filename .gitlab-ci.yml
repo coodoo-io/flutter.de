@@ -66,6 +66,7 @@ Dockerize Stage:
   only:
     - main
     - master
+    - pipeline-debug
 
 Deploy Stage:
   stage: release
