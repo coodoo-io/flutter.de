@@ -89,9 +89,9 @@ Deploy Stage:
     KUBERNETES_POD_ANNOTATIONS_1: "labels=flutter"
   script:
     - REGISTRY_IMAGE=${REPOSITORY_URL}:latest
-    - kubectl set image deployment/${K8S_DEPLOYMENT_NAME} ${K8S_DEPLOYMENT_NAME}=$REGISTRY_IMAGE -n flutter-de
-    - kubectl patch deployment ${K8S_DEPLOYMENT_NAME} -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"ci-last-updated\":\"$(date +'%s')\"}}}}}"  -n flutter-de
-    - kubectl rollout status deployment/${K8S_DEPLOYMENT_NAME} -n flutter-de
+    - kubectl set image deployment/${K8S_DEPLOYMENT_NAME} ${K8S_DEPLOYMENT_NAME}=$REGISTRY_IMAGE
+    - kubectl patch deployment ${K8S_DEPLOYMENT_NAME} -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"ci-last-updated\":\"$(date +'%s')\"}}}}}" 
+    - kubectl rollout status deployment/${K8S_DEPLOYMENT_NAME}
   environment:
     name: Stage
     url: https://stage.flutter.de
