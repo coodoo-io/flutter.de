@@ -218,6 +218,49 @@ images = ["/schulung/flutter-schulung.png"]
       </div>
 </div>  -->
 
+<!-- Schulungsinhalt -->
+
+<div class="inhalt container pt-1 pb-5 pl-0 pr-0">
+  <div class="row pb-3">
+    <div class="col">
+     <h2 class="schulung-h2 pt-5 pb-4">Schulungsinhalt</h2>
+     <p><b>Schulungsvorbereitung</b></p>
+     <p class="schulung-p pt-2">
+        Vor der Schulung erhältst du alle Materialien, um perfekt vorbereitet in die Schulung gehen zu können. Auch bei der Installation von Flutter und dem Einrichten der Entwicklungsumgebung unterstützen wir dich bei Bedarf.
+      </p>
+       <p><b>Inhalt der Flutter Schulung</b></p>
+     <p class="schulung-p pt-2">
+       Wir haben einen nach dem neuesten Entwicklungsstand ausgerichtete Schulungsinhalte. Gerne gehen wir aber auch auf einzelne Bedürfnisse und Anforderungen unserer Schulungsteilnehmer ein. Die Standardschulung umfasst:</p>
+       <ul>
+       <li>Allgemeine Übersicht: Was ist Flutter?</li>
+       <li>IDE, Android Studio Code und IOS Simulator</li>
+      <li>Flutter Packages</li>
+      <li>Dart Basics: Typsystem, Funktionen, Klassen, Variablen, Null Safety</li>
+      <li>Flutter Widgets => Widget Katalog</li>
+      <li>Layout Design</li>
+      <li>Widget Lifecycle: Stateful und Stateless Widget</li>
+      <li>Flutter Projekt erstellen und starten</li>
+      <li>Bottom Navigation Bar</li>
+      <li>Listen erstellen mit der ListView </li>
+      <li>Datenmodellierung und Services in Flutter</li>
+      <li>Navigation und Routing</li>
+       <li>Master und Detail in Flutter</li>
+        <li>Mobile UI und UX für Developer</li>
+         <li>Back Button, Gesture Detector</li>
+          <li>Datenlayout</li>
+           <li>Modale Dialoge und Formulare</li>
+            <li>CRUD: Daten erstellen, hinzufügen, auslesen, bearbeiten, löschen</li>
+            <li>Unit Testing</li>
+      </ul>
+      </p>
+          <p><b>Ziel der Flutter Schulung</b></p>
+     <p class="schulung-p pt-2">
+        Wir wollen dich befähigen, selbstständig native mobile Apps mit Flutter zu entwickeln. An einem konkreten App Beispiel verdeutlichen wir dir die wichtigsten Besonderheiten und Funktionen von Flutter. In einem dynamischen Wechsel zwischen Vortrag und eigenständigem Programmieren geben dir alle Materialien an die Hand, damit du eigenständig weiterentwickeln kannst. 
+      </p>
+    </div>
+  </div>
+  </div>
+
 <!-- Kontakt -->
 
 <div class="container contact pt-5 pb-5" id="kontakt">
@@ -246,5 +289,30 @@ images = ["/schulung/flutter-schulung.png"]
     <div class="col-md-3">
     </div>
   </div>
-  <div class="container pb-5"></div>
+</div>
+
  
+<div class="inhalt container pt-1 pb-5 pl-0 pr-0">
+  <div class="row pb-3">
+    <div class="col">
+     <h2 class="schulung-h2 pt-5 pb-4">FAQ zu unserer Flutterschulung</h2>
+     <p><b>Wo findet die Flutter Schulung statt?</b></p>
+     <p class="schulung-p ">
+        Die Schulung kann entweder bei Ihnen vor Ort stattfinden, in unseren Büros in Mainz oder Online (Mindestteilnehmeranzahl sind 4 Personen).
+      </p>
+    <p><b>Wie lange dauert die Schulung?</b></p>
+     <p class="schulung-p ">
+      Die Schulung beginnt um 9 Uhr und endet um 17 Uhr - mit genügend Pausen dazwischen.
+     </p>
+    <p><b>Bekommen Teilnehmer ein Flutter Zertifikat?</b></p>
+     <p class="schulung-p ">
+       Ja. Am Ende bekommt jeder Teilnehmer:in ein Teilnahmezertifikat.
+      </p>
+       <p><b>Welche Corona-Bedingungen herrschen bei der Schulung?</b></p>
+     <p class="schulung-p ">
+       Es gelten zu jedem Zeitpunkt die Corona-Regeln des Landes Rheinland-Pfalz. Da diese sich kontinuierlich ändern, können wir keine definitive Aussage treffen. Aber alle unsere Kursleiter und Mitarbeiter sind vollständig geimpft und wir sind vor Ort mit Corona-Tests, Masken und Desinfektionsmittel voll ausgestattet.
+      </p>
+      </div>
+      </div>
+      </div>
+      <div class="container pb-5"></div>
