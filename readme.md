@@ -1,6 +1,7 @@
 # Flutter.de - Die Deutsche Community-Webseite
 
 ## Wie starte ich das Projekt?
+
 1. Run NPM
 ```
 npm i && npm --prefix ./themes/fluttery install ./themes/fluttery

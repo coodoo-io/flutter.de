@@ -52,7 +52,49 @@ Wenn das erledigt ist, kannst du ganz einfach mit folgendem Befehl Flutter insta
 brew install --cask flutter
 {{</highlight>}}
 
-Und schon ist Flutter installiert und du kannst direkt loslegen. 
+Und schon ist Flutter installiert. 
+
+Als nächstes benötigst du Xcode, welches du einfach aus dem App Store herunterladen kannst. 
+Dieser Vorgang wird einige Zeit in Anspruch nehmen.
+Wenn du die Installation abgeschlossen hast, musst du noch Cocoapods installieren. Gib hierfür einfach folgenden Befehl in die Konsole ein:
+
+{{<highlight yaml>}}
+brew install cocoapods
+{{</highlight>}}
+
+Die Xcode Installation ist hiermit vollständig.
+
+
+
+Hinweis: Du kannst mithilfe des Befehls 
+
+{{<highlight yaml>}}
+flutter doctor
+{{</highlight>}}
+
+jeden Teil der Installation überprüfen. Ist ein grüner Haken zu sehen, hat alles funktioniert. Ist ein gelbes Ausrufezeichen zu sehen, so fehlt noch etwas. Ist ein rotes X zu sehen, ist wohl etwas schief gelaufen.
+
+
+Anschließend benötigst du <a href="https://developer.android.com/studio?hl=de&gclid=Cj0KCQiA64GRBhCZARIsAHOLriJO1yA2A5gYSyO-nEVOzJi0hYIimgw1GZOhLuuKZpv741HHUvu7UsQaAgY9EALw_wcB&gclsrc=aw.ds" target="_blank" rel="noopener">Android Studio</a>. Nach der Installation musst du in Android Studio über 'More Actions' in den 'SDK Manager'.
+
+<img src="/artikel/20220117-flutter-einfach-installieren/android-studio-MoreActions.png" width="600px">
+
+Unter dem Reiter 'SDK Platforms' kannst du verschiedene Android Versionen installieren.
+
+<img src="/artikel/20220117-flutter-einfach-installieren/android-studio-SDK_Platforms.png" width="600px">
+
+Unter dem Reiter 'SDK Tools' musst du zusätzlich 'Android SDK Command-line Tools' installieren.
+
+<img src="/artikel/20220117-flutter-einfach-installieren/android-studio-SDK_Tools.png" width="600px">
+
+Die Installation von Android Studio ist hiermit abgeschlossen.
+Du kannst jetzt mit dem Befehl `flutter doctor` überprüfen, ob die Installation gelungen ist.
+
+
+Abschließend musst du jetzt nur noch <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> und <a href="https://www.google.com/intl/de/chrome/" target="_blank" rel="noopener">Google Chrome</a> installieren.
+
+Und schon bist du startklar. 
+Viel Spaß beim Entwickeln!
 
 ### Installation von Flutter für Linux
 Für Linux brauchen wir den Packagemanager von Snapcraft. Dieser kann hier heruntergeladen werden: <a href="https://snapcraft.io" target="_blank" rel="noopener">Snapcraft herunterladen</a>.
