@@ -31,13 +31,13 @@ Wenn das erledigt ist, gibst du in der Konsole folgenden Befehl ein:
 choco install flutter
 {{</highlight>}}
 
-Nach wenigen Minuten ist Flutter vollständig installiert. Es kann jedoch sein, dass nicht die aktuellste Version installiert wurde. Um dies zu beheben, gib einfach den Befehl 
+Nach wenigen Minuten ist Flutter vollständig installiert. Es kann jedoch sein, dass nicht die aktuellste Version installiert wurde. Um dies zu beheben, gib einfach folgende Befehl ein: 
 
 {{<highlight yaml>}}
 flutter update
 {{</highlight>}}
 
-ein.
+
 
 ### Installation von Flutter für Mac
 Der erste Schritt ist hier den Packagemanager <a href="https://brew.sh" target="_blank" rel="noopener">Homebrew</a> zu installieren. Gib hierfür einfach folgenden Befehl in deine Konsole ein: 
@@ -54,8 +54,49 @@ brew install --cask flutter
 
 Und schon ist Flutter installiert. 
 
-Als nächstes benötigst du Xcode, welches du einfach aus dem App Store herunterladen kannst. 
-Dieser Vorgang wird einige Zeit in Anspruch nehmen.
+
+### Installation von Flutter für Linux
+Für Linux brauchen wir den Packagemanager von Snapcraft. Dieser kann hier heruntergeladen werden: <a href="https://snapcraft.io" target="_blank" rel="noopener">Snapcraft herunterladen</a>.
+Sobald dies erledigt ist, gib einfach in der Konsole 
+{{<highlight yaml>}}
+sudo snap install flutter --classic 
+{{</highlight>}}
+ein. Und ta-da! Flutter ist installiert. Auch hier kannst du den Befehl flutter doctor eingeben, um zu überprüfen, ob alles geklappt und zu checken, was dir für die Entwicklung noch fehlt. 
+
+## Installtion von Flutter prüfen
+
+Der schnellste Weg zu prüfen, ob Flutter korrekt installiert und alle Pfad-Variablen korrekt gesetzt wurden, ist der Befehl:
+
+{{<highlight yaml>}}
+flutter --version
+{{</highlight>}}
+Wenn dieser Befehl aufgerufen werden kann, ist der erste Erfolg zu sehen:
+<img src="/artikel/20220117-flutter-einfach-installieren/flutter-version.png" width="600px">
+
+Wenn er den Befehl `flutter` nicht erkennt, ist wohl etwas schief gelaufen. Zumindest wird die Flutter Runtime nicht gefunden.
+Falls die Meldung "A new version of Flutter is available!" zu sehen ist, dann direkt den Befehl für das Update hinterherschieben:
+{{<highlight yaml>}}
+flutter update
+{{</highlight>}}
+
+### Flutter Doctor
+Um zu überprüfen, ob die Installation wirklich vollständig funktioniert hat, bringt Flutter seinen eigenen Doctor mit. Dazu folgenden Befehl ausführen:
+{{<highlight yaml>}}
+flutter doctor
+{{</highlight>}}
+
+Wenn Flutter erfolgreich installiert wurde, sollte bei Flutter ein grünes Häkchen sein. Flutter Doctor zeigt dir auch an, was du noch alles für die Entwicklungsumgebung brauchst. Installiere alles, um richtig mit Flutter arbeiten zu können.
+
+## Flutter Entwicklungsumgebung herunterladen
+
+* Xcode und Cocoapods
+* Android Studio
+* Visual Studio Code und Chrome
+
+#### Xcode und Cocoapods
+
+Als nächstes benötigst du <a href="https://apps.apple.com/de/app/xcode/id497799835?mt=12" target="blank" rel="noopener">Xcode</a>, welches du einfach aus dem App Store herunterladen kannst. 
+Dieser Vorgang wird einige Zeit in Anspruch nehmen.<br>
 Wenn du die Installation abgeschlossen hast, musst du noch Cocoapods installieren. Gib hierfür einfach folgenden Befehl in die Konsole ein:
 
 {{<highlight yaml>}}
@@ -64,16 +105,15 @@ brew install cocoapods
 
 Die Xcode Installation ist hiermit vollständig.
 
-
-
-Hinweis: Du kannst mithilfe des Befehls 
+<div style="background-color: lightgrey" class="p-3 m-3">
+Hinweis: Du kannst mithilfe des folgenden Befehls jeden Teil der Installation überprüfen. Ist ein grüner Haken zu sehen, hat alles funktioniert. Ist ein gelbes Ausrufezeichen zu sehen, so fehlt noch etwas. Ist ein rotes X zu sehen, ist wohl etwas schief gelaufen.
 
 {{<highlight yaml>}}
 flutter doctor
 {{</highlight>}}
+</div>
 
-jeden Teil der Installation überprüfen. Ist ein grüner Haken zu sehen, hat alles funktioniert. Ist ein gelbes Ausrufezeichen zu sehen, so fehlt noch etwas. Ist ein rotes X zu sehen, ist wohl etwas schief gelaufen.
-
+#### Android Studio herunterladen
 
 Anschließend benötigst du <a href="https://developer.android.com/studio?hl=de&gclid=Cj0KCQiA64GRBhCZARIsAHOLriJO1yA2A5gYSyO-nEVOzJi0hYIimgw1GZOhLuuKZpv741HHUvu7UsQaAgY9EALw_wcB&gclsrc=aw.ds" target="_blank" rel="noopener">Android Studio</a>. Nach der Installation musst du in Android Studio über 'More Actions' in den 'SDK Manager'.
 
@@ -90,44 +130,10 @@ Unter dem Reiter 'SDK Tools' musst du zusätzlich 'Android SDK Command-line Tool
 Die Installation von Android Studio ist hiermit abgeschlossen.
 Du kannst jetzt mit dem Befehl `flutter doctor` überprüfen, ob die Installation gelungen ist.
 
-
-Abschließend musst du jetzt nur noch <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> und <a href="https://www.google.com/intl/de/chrome/" target="_blank" rel="noopener">Google Chrome</a> installieren.
+#### Visual Studio Code und Chrome
+Abschließend musst du nur noch <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> und <a href="https://www.google.com/intl/de/chrome/" target="_blank" rel="noopener">Google Chrome</a> installieren.
 
 Und schon bist du startklar. 
 Viel Spaß beim Entwickeln!
 
-### Installation von Flutter für Linux
-Für Linux brauchen wir den Packagemanager von Snapcraft. Dieser kann hier heruntergeladen werden: <a href="https://snapcraft.io" target="_blank" rel="noopener">Snapcraft herunterladen</a>.
-Sobald dies erledigt ist, gib einfach in der Konsole 
-{{<highlight yaml>}}
-sudo snap install flutter --classic 
-{{</highlight>}}
-ein. Und ta-da! Flutter ist installiert. Auch hier kannst du den Befehl flutter doctor eingeben, um zu überprüfen, ob alles geklappt und zu checken, was dir für die Entwicklung noch fehlt. 
-
-## Installtion von Flutter prüfen
-
-Der schnellste Weg zu prüfen ob Flutter korrekt installiert und alle Pfad-Variablen korrekt gesetzt wurden ist der Befehl:
-
-{{<highlight yaml>}}
-flutter --version
-{{</highlight>}}
-Wenn dieser Befehl aufgerufen werden kann ist der erste Erfolg zu sehen:
-<img src="/artikel/20220117-flutter-einfach-installieren/flutter-version.png" width="600px">
-
-Wenn er den Befehl `flutter` nicht erkennt, ist wohl etwas schief gelaufen. Zumindest wird die Flutter Runtime nicht gefunden.
-Falls die Meldung "A new version of Flutter is available!" zu sehen ist, dann direkt den Befehl für das Update hinerher schieben:
-{{<highlight yaml>}}
-flutter update
-{{</highlight>}}
-
-### Flutter Doctor
-Um zu überprüfen, ob die Installation wirklich vollständig funktioniert hat, bringt Flutter seinen eigenen Doctor mit. Dazu folgenden Befehl ausführen:
-{{<highlight yaml>}}
-flutter doctor
-{{</highlight>}}
-
-Wenn Flutter erfolgreich installiert wurde, sollte bei Flutter ein grünes Häkchen sein. Flutter Doctor zeigt dir auch an, was du noch alles für die Entwicklungsumgebung brauchst. Installiere alles, um richtig mit Flutter arbeiten zu können.
-
 <img src="/artikel/20220117-flutter-einfach-installieren/flutter-doctor.png">
-
-Als letztes solltest du noch Visual Studio Code installieren und für Flutter konfigurieren.
