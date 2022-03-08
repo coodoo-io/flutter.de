@@ -161,9 +161,9 @@ images = ["/schulung/flutter-schulung.png"]
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          2 Tage</div>
-  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Getting Started mit Flutter</div> <div class="col-1 text-center"> 
-          € 1200</div>
+          3 Tage</div>
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Einstieg in Flutter</div> <div class="col-1 text-center"> 
+          € 1.500</div>
   <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
   
 </div>
@@ -179,10 +179,10 @@ images = ["/schulung/flutter-schulung.png"]
 <div class="row zeile mb-5">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          1 Tag</div>
+          2 Tage</div>
           <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Flutter Architektur für große Apps</div>
            <div class="col-1 text-center"> 
-          € 600</div>
+          € 1.200</div>
   <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/qpPswxqUjZYZ8MSn7" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
 </div>
 
