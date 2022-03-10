@@ -14,13 +14,16 @@ link: 20220117-flutter-einfach-installieren/flutter-einfach-installieren.md
 
 Ich zeige dir, wie man Flutter und seine Entwicklungsumgebung auf Windows, MacOS oder Linux ohne viel Aufwand sehr schnell und vor allem sehr einfach installieren kann. Diese Anleitung besteht aus drei Teilen:
 
-1. Installation von Flutter über Community Packages
-2. Installation der Entwicklungsumgebung
-3. Überprüfung, ob alle Installationen vollständig sind und funktionieren
+<a href="#flutter-community-packages">1. Installation von Flutter über Community Packages</a>
+
+<a href="#flutter-ide">2. Installation der Entwicklungsumgebung</a>
+
+<a href="#flutter-doctor">3. Überprüfung, ob alle Installationen vollständig sind und funktionieren</a>
 
 
 
-## Flutter über das Community Package installieren
+## Flutter über das Community Package installieren 
+
 Wer sich schon einmal durch das <a href="https://docs.flutter.dev/get-started/install" target="_blank">Getting Started auf flutter.dev</a> gekämpft hat, weiß, dass das Installieren von Flutter und seinen Abhängigkeiten alles andere als einfach ist. 
 Zum Glück war die Flutter Community fleißig und hat sich für die komplexe Installtaion etwas ausgedacht. Drei Packages - für jedes Betriebssystem eines - die das Installieren von Flutter zu einem Kinderspiel machen.
 
@@ -28,7 +31,6 @@ Zum Glück war die Flutter Community fleißig und hat sich für die komplexe Ins
 * <a href="#installation-von-flutter-für-mac">MacOS</a>
 * <a href="#installation-von-flutter-für-linux">Linux</a>
 
-<a href="#installtion-von-flutter-prüfen">Flutter Setup prüfen.</a>
 
 ### Installation von Flutter für Windows 
 Für Windows brauchen wir den Packagemanager von <a href="https://chocolatey.org/install" target="_blank" rel="noopener">Chocolately</a>. Für die Installation von Chocolately einfach durch die Installationsanleitung hangeln.
@@ -69,6 +71,8 @@ sudo snap install flutter --classic
 {{</highlight>}}
 ein. Und ta-da! Flutter ist installiert. Auch hier kannst du den Befehl flutter doctor eingeben, um zu überprüfen, ob alles geklappt und zu checken, was dir für die Entwicklung noch fehlt. 
 
+<div id="flutter-ide"></div>
+
 ## Flutter Entwicklungsumgebung installieren
 
 Jetzt da Flutter installiert ist, brauchen wir noch die Entwicklungsumgebung, um live auf verschiedenen Devices die Entwicklung verfolgen zu können. Wenn du es dir sehr einfach machen willst, kannst du nur Chrome herunterladen. Da siehst du deine App zwar nur im Web, aber es geht am schnellsten. Wenn du die Entwicklung auf einer richtigen App-Simulation sehen willst, brauchst du Folgendes: 
@@ -93,7 +97,7 @@ Unter dem Reiter 'SDK Tools' musst du zusätzlich 'Android SDK Command-line Tool
 <img src="/artikel/20220117-flutter-einfach-installieren/android-studio-SDK_Tools.png" width="600px">
 
 Die Installation von Android Studio ist hiermit abgeschlossen.
-Du kannst jetzt mit dem Befehl `flutter doctor` überprüfen, ob die Installation gelungen ist.
+
 
 ### Visual Studio Code
 Visual Studio Code hat den Nachteil, dass es diesen nur für Mac gibt. Wenn du also für iOS entwickeln möchtest, benötigst du ein MacBook. Dafür musst du <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> einfach nur installieren. 
@@ -110,8 +114,9 @@ brew install cocoapods
 
 Die Xcode Installation ist hiermit vollständig.
 
+<div id="flutter-doctor"></div>
 
-## Installtion von Flutter und der Entwicklungsumgebung prüfen
+## Installation von Flutter und der Entwicklungsumgebung prüfen
 
 Der schnellste Weg zu prüfen, ob Flutter korrekt installiert und alle Pfad-Variablen korrekt gesetzt wurden, ist der Befehl:
 
