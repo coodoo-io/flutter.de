@@ -115,7 +115,7 @@ images = ["/schulung/flutter-schulung.png"]
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Testing</p>
-      <div class="blue-button text-center"> <a id="schulung_mainz" class="btn btn-schulung" href="https://forms.gle/BzMHv9ELzYHCKdYy6" target="_blank" rel="noopener">€600 – €1.000 pro Person</a></div> 
+      <div class="blue-button text-center"> <a id="schulung_mainz" class="btn btn-schulung" href="https://forms.gle/BzMHv9ELzYHCKdYy6" target="_blank" rel="noopener">€1.200 – €1.500 pro Person</a></div> 
     <p class="text-center"><b></b></p>
     </div>
     </div>
