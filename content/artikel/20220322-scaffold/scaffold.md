@@ -1,6 +1,6 @@
 ---
 title: "Was du über das Flutter Scaffold Widget wissen solltest"
-slug: "flutter-how-to-write-files" 
+slug: "flutter-scaffold-widget" 
 date: 2022-03-22T08:00:25+02:00
 draft: false
 header_image: "/artikel/20220322-scaffold/flutter_scaffold.png"
