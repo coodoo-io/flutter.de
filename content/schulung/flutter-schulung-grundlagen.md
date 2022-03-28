@@ -2,6 +2,7 @@
 slug = "flutter-grundlagen-schulung-getting-started"
 description = "Vollständiger Einstieg in Flutter auf deutsch: Lernen mit unseren Experten vor Ort mit garantierten Terminen."
 images = ["/schulung/flutter-schulung.png"]
+
 +++
 
 <div class="container schulung-header pt-5 pb-5">
