@@ -2,7 +2,7 @@
 slug = "app-entwicklung-mit-flutter"
 draft = false
 description = "Wir setzen dein App Projekt für dich um - schnell und effektiv."
-images = ["/schulung/flutter-schulung.png"]
+images = ["/schulung/share_app.png"]
 +++
 
 <div class="container schulung-header pt-5 pb-5">
