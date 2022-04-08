@@ -162,7 +162,7 @@ images = ["/schulung/flutter-schulung.png"]
           3 Tage</div>
   <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Einstieg in Flutter</div> <div class="col-1 text-center"> 
           € 1.500</div>
-           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   27.04.22  –  30.04.22   </a></div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   27.04.22  –  29.04.22   </a></div>
   <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
   
 </div>
