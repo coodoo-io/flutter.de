@@ -97,13 +97,13 @@ images = ["/schulung/flutter-schulung.png"]
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Individuelle Kursgestaltung</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Variable Länge der Kurse (2-3 Tage)</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Arbeiten mit Riverpod</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Animations für Fortgeschrittene</p>
+        <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Einführung in MVC+S, MVVM und State Architectures</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Arbeiten mit Provider und Riverpod</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Plattformübergreifendes Routing</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Vertiefung von Stateful Widgets</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Arbeiten mit Apis und HTTP Requests</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter for Web</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Performance Optiomierung und Refactoring</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Best Practices</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Performance Optimierung</p>
        <div class="blue-button text-center mb-4"> <a id="schulung_vor_ort" class="btn btn-schulung" href="/schulung/advanced-flutter-schulung-fortgeschrittene.html" target="_blank" rel="noopener">Mehr erfahren</a></div>
     </div>
     </div>
