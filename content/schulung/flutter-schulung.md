@@ -65,56 +65,24 @@ images = ["/schulung/flutter-schulung.png"]
       <p class="schulung-p pt-5">Baue eine vollwertige Flutter App in nur einem Tag. Unsere Flutter Kurse sind sowohl auf deutsch, als auf englisch und haben eine begrenzte Teilnehmerzahl. So können wir jeden die Aufmerksamkeit geben, die er oder sie braucht.</p>
     </div>
   </div>
-  <div class="row pb-1">
-    <!-- <div class="col-md-4 text-center">
-     <div class="card">
-      <div class="card-body">
-    <h3><b>Ein-Tages</b>-Kurs</h3>
-    <div class="text-left">
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Initialisierung von Flutter</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Einführung in Dart</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Einführung in Flutter</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Wichtigste Widgets</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Architektur</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
-     <p class="text-center"><b>500 €</b></p>
-    </div>
-    </div>
-    </div>
-  </div>
-  <div class="col-md-4 text-center">
-   <div class="card">
-      <div class="card-body">
-    <h3><b>Zwei-Tages</b>-Kurs</h3>
-    <div class="text-left">
-  <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Initialisierung von Flutter</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Einführung in Dart</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Einführung in Flutter</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Widget Einführung</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Architektur</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Testing</p>
-    <p class="text-center"><b>900 €</b></p>
-    </div>
-    </div>
-    </div>
-  </div> -->
 
-  <div class="col-md-6 text-center">
+  <div class="row pb-1">
+   <div class="col-md-6 text-center">
    <div class="card">
       <div class="card-body">
-    <h3><b>Kurse </b>in Mainz</h3>
+    <h3>Flutter Schulung <b> für Anfänger </b></h3>
     <div class="text-left">
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Individuelle Kursgestaltung</p>
-        <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" />Verpflegung vor Ort</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Variable Länge der Kurse (2-3 Tage)</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Einführung in Dart</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Einführung in Flutter</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Einführung in Dart und Flutter</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Mobile UI und UX</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Master und Detail in Flutter</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Navigation und Routing</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Widget Einführung</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Datenmodellierung und Services</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Testing</p>
-      <div class="blue-button text-center"> <a id="schulung_mainz" class="btn btn-schulung" href="https://forms.gle/BzMHv9ELzYHCKdYy6" target="_blank" rel="noopener">€1.200 – €1.500 pro Person</a></div> 
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Unit Testing</p>
+      <div class="blue-button text-center mb-4"> <a id="schulung_mainz" class="btn btn-schulung" href="/schulung/flutter-grundlagen-schulung-getting-started.html" target="_blank" rel="noopener">Mehr erfahren</a></div> 
     <p class="text-center"><b></b></p>
     </div>
     </div>
@@ -124,18 +92,19 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-md-6 text-center">
    <div class="card">
       <div class="card-body">
-    <h3><b>Kurse </b>bei euch vor Ort</h3>
+  <h3>Flutter Schulung <b> für Fortgeschrittene</b></h3>
     <div class="text-left">
-         <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Kurse bei dir vor Ort</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Individuelle Kursgestaltung</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Variable Länge der Kurse (ab 2 Tagen)</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Einführung in Dart</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Einführung in Flutter</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Widget Einführung</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Variable Länge der Kurse (2-3 Tage)</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
-    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> App Testing</p>
-       <div class="blue-button text-center mb-4"> <a id="schulung_vor_ort" class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Preis nach Vereinbarung</a></div>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Arbeiten mit Riverpod</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Animations für Fortgeschrittene</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Vertiefung von Stateful Widgets</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Arbeiten mit Apis und HTTP Requests</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter for Web</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Performance Optiomierung und Refactoring</p>
+    <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Best Practices</p>
+       <div class="blue-button text-center mb-4"> <a id="schulung_vor_ort" class="btn btn-schulung" href="/schulung/advanced-flutter-schulung-fortgeschrittene.html" target="_blank" rel="noopener">Mehr erfahren</a></div>
     </div>
     </div>
     </div>
@@ -178,53 +147,17 @@ images = ["/schulung/flutter-schulung.png"]
 </div>
 
 
-<!-- <div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" /> 1 Tag</div>        
-  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
-          Dienstag, 24. März 2020</div>
-  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/Jn5yCsDbuK4mEjrb6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div> -->
+
 
 <div class="row zeile mb-5">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           2 Tage</div>
-          <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Flutter Architektur für große Apps</div>
+          <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Flutter für Fortgeschrittene</div>
            <div class="col-1 text-center"> 
           € 1.200</div>
-  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/qpPswxqUjZYZ8MSn7" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/wHwqAABPf2tfp1Ct8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
 </div>
-
-<!-- <div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          2 Tage</div>
-  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
-         26. März 2020 - 27. März 2020</div>
-  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/GtbLiAWkFXx6xkLj9" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div> -->
-
-
-<!-- 
-<div class="row zeile">
-  <div class="col-3 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Ort flexibel</div>
-  <div class="col-3 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          Ab 2 Tagen</div>
-  <div class="col-3 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
-         Termin flexibel</div>
-  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/D15C12W9pgsqob1S8" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div> -->
-
-
-<!-- 
-<p class="schulung-p p-3 text-center">Erfahren Sie mehr über den Ablauf unserer Flutter Schulungen.</p>
-    </div>
-       <div class="text-center pt-2 pb-3">
-                <a href="/community/meetups.html">
-        <a href="/schulung/flutter-schulung-ablauf.html" target="_blank" rel="noopener" class="btn btn-primary">Schulungsablauf</a>
-      </div>
-</div>  -->
 
 <!-- Schulungsinhalt -->
 

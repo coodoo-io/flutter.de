@@ -1,7 +1,7 @@
 +++
 slug = "flutter-grundlagen-schulung-getting-started"
 description = "Vollständiger Einstieg in Flutter auf deutsch: Lernen mit unseren Experten vor Ort mit garantierten Terminen."
-images = ["/schulung/flutter-schulung.png"]
+images = ["/schulung/basic_share.png"]
 
 +++
 
@@ -10,7 +10,7 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="row pb-5">
     <div class="col-md-6 text-left">
       <h1 class="schulung-h1">
-     Schulung <br>Flutter Grundlagen</h1>
+     Starte durch mit unserer  <br><b>Flutter Grundlagen</b>  <br>Schulung</h1>
       <!-- <a class="btn btn-schulung pl-4 pr-4 pt-2 pb-2" href="/schulung/flutter-schulung.html#termine">Neueste Termine</a> -->
     </div>
   </div>
@@ -57,89 +57,28 @@ images = ["/schulung/flutter-schulung.png"]
   </div>
   </div>
 
-  <div class="container pt-5 pb-5 projekt">
+  <div class="container inhalt pb-5">
     <h1 class="schulung-h2 pb-3">Frei wählbare Module für den 3. Tag</h1>
     <p>Teile uns vorher mit, welche Module dich am meisten interessieren und wir behandeln diese ausführlich am dritten Tag.
   <div class="row pb-5">     
-     <div class="col-md-6 col-lg-3 text-center">
-      <div class="card">
-        <div class="card-body">
-          <h5>Architektur</h5>
-        </div>
-      </div>
-    </div>  
-    <div class="col-md-6 col-lg-3 text-center">
-      <div class="card">
-        <div class="card-body">
-          <h5>Unit Testing</h5>
-        </div>
-      </div>
-    </div>  
-    <div class="col-md-6 col-lg-3 text-center">
-      <div class="card">
-        <div class="card-body">
-          <h5>Shared Preferences</h5>
-        </div>
-      </div>
-    </div> 
-    <div class="col-md-6 col-lg-3 text-center">
-      <div class="card">
-        <div class="card-body">
-          <h5>UI und UX</h5>
-        </div>
-      </div>
-    </div> 
-      </div>
-      </div>
-    <p><b>Ziel der Flutter Schulung</b></p>
+     <div class="col-md-6 col-lg-3 text-left">
+    <ul>
+    <li>Architektur</li>
+        <li>Unit Testing</li>
+            <li>Shared Preferences</li>
+              <li>UI und UX</li>
+    </ul>
+  </div>
+  <div class="container">
+     <h2 class="schulung-h2 pt-5 ">Ziel der Flutter Schulung</h2>
      <p class="schulung-p pt-2">
         Wir wollen dich befähigen, selbstständig native mobile Apps mit Flutter zu entwickeln. An einem konkreten App Beispiel verdeutlichen wir dir die wichtigsten Besonderheiten und Funktionen von Flutter. In einem dynamischen Wechsel zwischen Vortrag und eigenständigem Programmieren geben dir alle Materialien an die Hand, damit du eigenständig weiterentwickeln kannst. 
       </p>
-
-
-<!-- Warum wir toll sind -->
-
-<div class="container pt-5 pb-1 text-center schulung">
-  <div class="row text-center pb-5">
-    <div class="col-md-8">
-      <h2 class="schulung-h2 text-center">Lerne Flutter von den <b>Profis<b></h2>
-      <p class="schulung-p">Lieber einmal richtig gelernt, als tausend mal nebenbei.<br>Hole dir die wichtigsten Grundlagen für einen erfolgreichen Start in Flutter. Lerne effizient und zielgerichtet mit Experten vor Ort. <a rel="noopener" href="/ueber-uns-das-team-hinter-flutter_de.html">Lerne unsere Experten kennen!</a></p>
-    </div>
-  </div>
-<div class="row pb-5">
-  <div class="col-lg-4 text-center">
-    <div class="card">
-      <div class="card-body">
-        <h5>Direktes Feedback</h5>
-        <p>Du kommst nicht weiter? Spar dir das Googlen und Warten auf Github Antworten. Bekomme sofort Rat und Hilfe auf deine Fragen und Herausforderungen. Unsere erfahrenen Flutter Experten helfen gerne. </p>
-      </div>
-         <img src="/images/workshop_1.svg" class="m-2" height="320" />
-    </div>
-  </div>  
-  <div class="col-lg-4 text-center">
-    <div class="card">
-      <div class="card-body">
-        <h5>Zielgerichtetes Lernen</h5>
-           <p>Verschwende keine Zeit mit der mühsamen Suche nach dem richtigen Online Tutorial. Du willst etwas Bestimmtes bauen oder lernen? Wir stehen dir zur Seite und richten uns ganz nach dir. </p>
-      </div>
-           <img src="/images/workshop_3.svg" class="m-2" height="320" />
-    </div>
-  </div> 
-  <div class="col-lg-4 text-center">
-    <div class="card">
-      <div class="card-body">
-        <h5>Erreiche deine Lernziele</h5>
-        <p>Bestimme dein eigenes Flutter Ziel, wir kümmern uns um den Rest. Wir stellen sicher, dass du nach unserer Flutter Schulung selbstständig in Flutter programmieren und deine Vorhaben umsetzen kannst.</p>
-      </div>
-       <img src="/images/workshop_2.svg" class="m-2" height="320" />
-    </div>
-  </div> 
- </div>
 </div>
 
 <!-- Termine -->
 
-<div id="termine" class="container pt-1 pb-5 pl-0 pr-0">
+<div id="termine" class="container pt-1 pb-5 mb-5">
   <div class="row pb-3">
     <div class="col">
      <h2 class="schulung-h2 pt-5 ">Termine</h2>
@@ -147,43 +86,31 @@ images = ["/schulung/flutter-schulung.png"]
     </div>
   </div>
 
-
-
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           3 Tage</div>
   <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Einstieg in Flutter</div> <div class="col-1 text-center"> 
           € 1.500</div>
-  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   27.04.22  –  29.04.22   </a></div>
+
   
 </div>
-
-<!-- <div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" /> 1 Tag</div>        
-  <div class="col-5 text-center"><img src="/images/calendar-page-empty.svg" class="icon mr-1" height="20" />
-          Dienstag, 24. März 2020</div>
-  <div class="col-3 blue-button text-center"> <a class="btn btn-schulung" href="https://forms.gle/Jn5yCsDbuK4mEjrb6" target="_blank" rel="noopener">Jetzt anfragen</a></div>
-</div> -->
-
-<div class="row zeile mb-5">
+<div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          2 Tage</div>
-          <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Flutter Architektur für große Apps</div>
-           <div class="col-1 text-center"> 
-          € 1.200</div>
-  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/qpPswxqUjZYZ8MSn7" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
+          3 Tage</div>
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Einstieg in Flutter</div> <div class="col-1 text-center"> 
+          € 1.500</div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  03.06.22   </a></div>
+
+  
 </div>
-
-
-
 
 
 <!-- Kontakt -->
 
-<div class="container contact pt-5 pb-5" id="kontakt">
+<div class="container contact pt-5 mt-5 pb-5">
  
   <div class="row pb-5">
     <div class="col-md-6 pb-5">
@@ -198,9 +125,6 @@ images = ["/schulung/flutter-schulung.png"]
     </div>
     </div>
     <div class="adresse col-md-3 text-center pt-5">
-      <!-- <p> <img src="/images/team.svg" class="icon-weiss mr-2" height="42" /> Your Flutter Team</p>
-      <img src="/images/envelope.svg" class="icon mr-2" height="22" />
-      <p> <img src="/images/envelope.svg" class="icon-weiss mr-2" height="42" /> mail@flutter.de</p> -->
       <img src="/images/placeholder-2.png" class="icon-weiss2" height="82" />
       <p>coodoo GmbH
       <br>Wilhelm-Theodor-Römheld-Str. 20
@@ -232,7 +156,7 @@ images = ["/schulung/flutter-schulung.png"]
      <p class="schulung-p ">
        Es gelten zu jedem Zeitpunkt die Corona-Regeln des Landes Rheinland-Pfalz. Da diese sich kontinuierlich ändern, können wir keine definitive Aussage treffen. Aber alle unsere Kursleiter und Mitarbeiter sind vollständig geimpft und wir sind vor Ort mit Corona-Tests, Masken und Desinfektionsmittel voll ausgestattet.
       </p>
-      </div>
-      </div>
-      </div>
-      <div class="container pb-5"></div>
+    </div>
+  </div>
+</div>
+<div class="container pb-5"></div>
