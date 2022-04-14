@@ -30,20 +30,21 @@ images = ["/schulung/advanced_share.png"]
       </p>
     <h2 class="schulung-h2 pt-5 pb-4">Inhalt der Flutter Schulung für Fortgeschrittene</h2>
     <p class="schulung-p pt-2">
-       Wir haben einen nach dem neuesten Entwicklungsstand ausgerichtete Schulungsinhalte. Gerne gehen wir aber auch auf einzelne Bedürfnisse und Anforderungen unserer Schulungsteilnehmer ein. Die Standardschulung umfasst:</p>
-       <ul>
-       <li>Flutter App Architektur</li>
-       <li>IDE, Android Studio Code und IOS Simulator</li>
-      <li>Flutter und Riverpod</li>
+    Wir haben einen nach dem neuesten Entwicklungsstand ausgerichtete Schulungsinhalte. Gerne gehen wir aber auch auf einzelne Bedürfnisse und Anforderungen unserer Schulungsteilnehmer ein. Die Standardschulung umfasst:</p>
+    <ul>
+      <li>Entwicklung einer skalierbaren Architektur auf Basis von Provider und Riverpod</li>
+      <li>Einführung in MVC+S, MVVM und State Architekturen</li>
+      <li>Plattformübergreifendes Routing (Parameter, Deep-Linking, Übersichtliche Verwaltung)</li>
+      <li>Widget-Tests, Unit-Test und Integrationstest</li>
       <li>Animations für Fortgeschrittene</li>
       <li>Vertiefung von Stateful Widgets</li>
       <li>Arbeiten mit Apis und HTTP Requests</li>
       <li>Flutter for Web</li>
       <li>Performance Optimierung</li>
-      <li>App Refactoring</li>
+      <li>Deployment und Store Publishing</li>
       <li>Best Practices</li>
-      </ul>
-      </p>
+    </ul>
+    </p>
     </div>
   </div>
  
