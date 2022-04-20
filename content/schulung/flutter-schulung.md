@@ -56,6 +56,19 @@ images = ["/schulung/flutter-schulung.png"]
  </div>
 </div>
 
+<!-- Feedback -->
+
+<div class="container pt-5 pb-5">
+<div class="row pb-3">
+<div class="col-md-8 text-center">
+<img src="/schulung/star.png" class="img-fluid pb-4" style="width:200px">
+<p class="schulung-h2"><i>"Die Inhalte waren sehr gut. Vieles gesehen und kennengelernt, was im Nachgang je nach Bedarf intensiviert werden kann. Alle Fragen beantwortet und Wünsche berücksichtigt."</i><br><br>
+- Beurer GmbH
+</p>
+</div>
+</div>
+</div>
+
 <!-- Workshops -->
 
 <div class="container workshops pt-5">
@@ -82,7 +95,7 @@ images = ["/schulung/flutter-schulung.png"]
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Datenmodellierung und Services</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umsetzung der eigenen App</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Unit Testing</p>
-      <div class="blue-button text-center mb-4"> <a id="schulung_mainz" class="btn btn-schulung" href="/schulung/flutter-grundlagen-schulung-getting-started.html" target="_blank" rel="noopener">Mehr erfahren</a></div> 
+      <div class="blue-button text-center mb-4"> <a id="schulung_mainz" class="btn btn-schulung" href="/schulung/flutter-grundlagen-schulung-getting-started.html" >Mehr erfahren</a></div> 
     <p class="text-center"><b></b></p>
     </div>
     </div>
@@ -104,7 +117,7 @@ images = ["/schulung/flutter-schulung.png"]
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Arbeiten mit Apis und HTTP Requests</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter for Web</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Performance Optimierung</p>
-       <div class="blue-button text-center mb-4"> <a id="schulung_vor_ort" class="btn btn-schulung" href="/schulung/advanced-flutter-schulung-fortgeschrittene.html" target="_blank" rel="noopener">Mehr erfahren</a></div>
+       <div class="blue-button text-center mb-4"> <a id="schulung_vor_ort" class="btn btn-schulung" href="/schulung/advanced-flutter-schulung-fortgeschrittene.html" >Mehr erfahren</a></div>
     </div>
     </div>
     </div>
