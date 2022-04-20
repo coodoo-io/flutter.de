@@ -140,11 +140,11 @@ images = ["/schulung/flutter-schulung.png"]
 
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          3 Tage</div>
-  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Einstieg in Flutter</div> <div class="col-1 text-center"> 
-          € 1.500</div>
-           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   27.04.22  –  29.04.22   </a></div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" /> 3 Tage</div>
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">
+    <p class="mb-0">Vollständiger Einstieg in Flutter</p><p class="mb-0" style="color: red">Nur noch 1 Platz frei</p></div> 
+  <div class="col-1 text-center"> € 1.500</div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   27.04.22  –  29.04.22   </a></div>
   <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
   
 </div>
