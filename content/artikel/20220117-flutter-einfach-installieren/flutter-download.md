@@ -100,7 +100,7 @@ Die Installation von Android Studio ist hiermit abgeschlossen.
 
 
 ### Visual Studio Code
-Visual Studio Code hat den Nachteil, dass es diesen nur für Mac gibt. Wenn du also für iOS entwickeln möchtest, benötigst du ein MacBook. Dafür musst du <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> einfach nur installieren. 
+Visual Studio Code ist auch für alle Plattformen verfügbar. Dafür musst du <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> einfach nur über die Webseite herunterladen und installieren.
 
 ### Xcode und Cocoapods
 
