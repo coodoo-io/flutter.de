@@ -126,28 +126,34 @@ images = ["/schulung/flutter-schulung.png"]
  </div>
 </div>
 
+<!-- Online -->
+<div id="online" class="container pt-1 pb-3 pl-0 pr-0">
+  <div class="row">
+    <div class="col">
+     <h2 class="schulung-h2 pt-5 ">Online Flutter Schulung</h2>
+     <p class="schulung-p pt-2">Wir bieten alle unsere Flutter Schulungen auch online an. Wir stellen dir hierfür alle notwendigen Materialien im Voraus zur Verfügung und führen die Schulung auf eine Weise durch, die es einfach macht dieser zu folgen. Du bekommst während der Schulung Aufgaben, die du eigenständig ausführen kannst. Bei Bedarf helfen wir dir und beantworten alle Fragen. </p>
+    </div>
+  </div>
+</div>
+
 <!-- Termine -->
 
-<div id="termine" class="container pt-1 pb-5 pl-0 pr-0">
+<div id="termine" class="container pt-1 pb-5 pl-0 pr-0" >
   <div class="row pb-3">
     <div class="col">
      <h2 class="schulung-h2 pt-5 ">Termine</h2>
      <p class="schulung-p pt-2">Schulungen finden unter den aktuellen geltenden Corona-Regeln des Landes Rheinland-Pfalz statt. </p>
     </div>
   </div>
-
-
-
-<div class="row zeile">
+<!-- <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" /> 3 Tage</div>
   <div class="col-4 text-center" style="border-right: 1px solid lightgrey">
     <p class="mb-0">Vollständiger Einstieg in Flutter</p><p class="mb-0" style="color: red">Nur noch 1 Platz frei</p></div> 
   <div class="col-1 text-center"> € 1.500</div>
   <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   27.04.22  –  29.04.22   </a></div>
-  <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
-  
-</div>
+   <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> 
+</div> -->
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
@@ -172,12 +178,47 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/wHwqAABPf2tfp1Ct8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
 </div>
 
+<!-- Unsere Trainer -->
+<div  class="container pt-1 pb-5 pl-0 pr-0">
+  <div class="row pb-3">
+    <div class="col">
+     <h2 class="schulung-h2 pt-5 ">Unsere Flutter Trainer</h2>
+     <p class="schulung-p pt-2">Unsere Flutter Trainer haben 15 Jahre Erfahrung in der Enterprise und App Entwicklung und führen seit über fünf Jahren Schulungen und Fortbildungen an, davon seit über zwei Jahren für Flutter. Sie sind außerdem IHK zertifizierte Ausbilder und Teilnehmer der Schulungen schätzen sie als besonders kompetent und freundlich ein.</p>
+     </div>
+   </div>
+<div class="row">
+ <div class="col-md-6 mt-sm-4">
+   <div class="row pt-4">
+    <div class="col-4">
+      <img src="/authors/markus-kuehle/Markus2.JPG" class="img-fluid" style="border-radius:50%;">
+    </div>
+   <div class="col-7">
+    <h4 class="mt-4"><b>Markus Kühle</b></h4>
+    <p>Flutter Trainer und Speaker<br>IHK Ausbilderschein</p>
+   </div>
+  </div>
+ </div>
+  <div class="col-md-6 mt-sm-4">
+   <div class="row pt-4">
+    <div class="col-4">
+    <img src="/authors/marcel-ploch/Marcel_Q.jpg" class="img-fluid" style="border-radius:50%;">
+ </div>
+ <div class="col-7">
+  <h4 class="mt-4"><b>Marcel Ploch</b></h4>
+  <p>Flutter Trainer und Speaker<br>
+IHK Ausbilderschein</p>
+   </div>
+  </div>
+  </div>
+ </div>
+</div>
+
 <!-- Schulungsinhalt -->
 
 <div class="inhalt container pt-1 pb-5 pl-0 pr-0">
   <div class="row pb-3">
     <div class="col">
-     <h2 class="schulung-h2 pt-5 pb-4">Schulungsinhalt</h2>
+     <h2 class="schulung-h2 pt-5 pb-4">Flutter Schulungsinhalt</h2>
      <p><b>Schulungsvorbereitung</b></p>
      <p class="schulung-p pt-2">
         Vor der Schulung erhältst du alle Materialien, um perfekt vorbereitet in die Schulung gehen zu können. Auch bei der Installation von Flutter und dem Einrichten der Entwicklungsumgebung unterstützen wir dich bei Bedarf.

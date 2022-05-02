@@ -65,7 +65,7 @@ uglyurls = true
   weight = 3
 
   [[menu.main]]
-  name = "Consulting"
+  name = "App Entwicklung"
   URL = "app-entwicklung-mit-flutter.html"
   weight = 5
   
