@@ -77,11 +77,6 @@ uglyurls = true
     ##URL = "schulung/flutter-schulung.html"
     ##weight = 1
     
-    ##[[menu.main]]
-    ##parent = "Schulung"
-    ##name = "Projekt Kickoff"
-    ##URL = "schulung/projekt-kickoff.html"
-    ##weight = 2
 
 [taxonomies]
   author = "authors"

@@ -1,8 +1,8 @@
 +++
 slug = "app-entwicklung-mit-flutter"
 draft = false
-description = "Wir setzen dein App Projekt für dich um - schnell und effektiv."
-images = ["/schulung/share_app.png"]
+description = "Du willst deine Flutter App entwickeln lassen? Wir programmieren deine Flutter App für dich um - schnell und effektiv."
+images = ["/projekt_share.png"]
 +++
 
 <div class="container schulung-header pt-5 pb-5">
@@ -10,9 +10,9 @@ images = ["/schulung/share_app.png"]
   <div class="row pb-5">
     <div class="col-md-6 pl-5 text-left">
       <h1 class="schulung-h1">
-     App Entwicklung mit <br>Expertise und Innovation</h1>
-    <p>Wir setzen dein Mobile App Projekt um - <br>effizient und schnell</p>
-     <div class="blue-button"> <a class="btn btn-primary  pr-4 pl-4 pt-2 pb-2" style="background-color:#F6A300; border-color:#F6A300"  href="https://coodoo.de/mobile-app-entwicklung" target="_blank" rel="noopener">Jetzt kontaktieren</a></div> 
+     App entwickeln lassen –<br>effizient und schnell</h1>
+    <p>Du hast die Idee, wir haben das Handwerk. Vertrau auf<br> unsere Expertise und starte dein App Projekt mit uns.</p>
+     <div class="blue-button"> <a class="btn btn-primary  pr-4 pl-4 pt-2 pb-2" style="background-color:#F6A300; border-color:#F6A300"  href="https://coodoo.de/mobile-app-entwicklung" target="_blank" rel="noopener">App Projekt starten</a></div> 
     </div>
   </div>
 </div>
@@ -66,8 +66,8 @@ images = ["/schulung/share_app.png"]
 <div class="container pt-5 pb-1 text-center projekt">
   <div class="row pb-5">
     <div class="col-12">
-        <h1 class="schulung-h1">Was wir für dich umsetzen</h1>
-        <p>Mobile App Entwicklung genau nach deinen Bedürfnissen</p>
+        <h1 class="schulung-h1">Wir programmieren deine Flutter App</h1>
+        <p>Du willst deine eigene App entwickeln lassen? Vertrau auf deine Mobile App Entwicklung Schmiede in Mainz.<br> Wir programmieren deine App genau nach deinen Bedürfnissen.</p>
     </div>
     <div class="col-md-6 col-lg-3 text-center">
       <div class="card">
@@ -106,7 +106,7 @@ images = ["/schulung/share_app.png"]
   <div class="row">
     <div class="col-12">
       <h1 class="schulung-h1">Unser App-Entwicklungsprozess</h1>
-      <p>Von der Konzeption bis zum Release</p>
+      <p>Von der Konzeption bis zum Release - wir programmieren deine Flutter App nach unserer etablierten Flutter Architektur Methode. Unsere erfahrenen Flutter Developer erstellen schon nach 48 Stunden einen ersten Prototypen deiner App.</p>
     </div>
     <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
@@ -156,7 +156,7 @@ images = ["/schulung/share_app.png"]
     <div class="col-sm-6 col-md-4 text-center">
       <div class="card">
         <div class="card-body">
-        <h5><b>Developement Kickoff</b></h5>
+        <h5><b>Development Kickoff</b></h5>
         <p>
         Wir starten dein App-Projekt und setzen die Prozesse mit dir und deinem Team auf.</p>
         </div>
@@ -251,17 +251,17 @@ Backend Entwickler</p>
 <div class="container pb-5 mb-5">
 <div class="row">
 
-<div class="col-8">
-<h1 class="schulung-h1">Deine mobile App in den besten Händen</h1>
+<div class="col-9">
+<h1 class="schulung-h1">Mobile App Entwicklung in den besten Händen</h1>
 </div>
 
 <div class="col-6 pr-5">
 <h5>Unverbindliche Probephase</h5>
-<p>Arbeite mit uns 2 Wochen zusammen. Wenn es dir dann nicht gefällt, kannst du vom Vertrag zurücktreten.</p>
+<p>Wir starten schnell und unkompliziert dein App Projekt und entwickeln eine erste Demo deiner App. Wenn du nach zwei Wochen mit uns nicht gefällt, kannst du vom Vertrag zurücktreten.</p>
 </div>
 <div class="col-6">
-<h5>Erste Demo nach einer Woche</h5>
-<p>Wir sind Befürworter des Lean Project Managements. Deswegen gibt es den ersten Klickdummy bereits nach einer Woche.</p>
+<h5>Erste App Demo nach einer Woche</h5>
+<p>Wir sind Befürworter des Lean Project Managements. Deswegen programmieren wir einen ersten Klickdummy deiner Flutter App bereits nach einer Woche.</p>
 </div>
 <div class="col-6 pr-5">
 <h5>Eingespieltes Remote-Team</h5>
@@ -270,7 +270,7 @@ Backend Entwickler</p>
 </div>
 <div class="col-6">
 <h5>Effizient und schnell</h5>
-<p>Wir halten uns an dein Budget und deinen Zeitrahmen. Deswegen beraten wir dich von Anfang an zum idealen Projektumfang.</p>
+<p>Wir halten uns an dein Budget und deinen Zeitrahmen. Deswegen beraten wir dich von Anfang an zum idealen Projektumfang. Wir sagen dir vorher, wie viel deine Flutter App kosten wird.</p>
 </div>
 
 </div>
