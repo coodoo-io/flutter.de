@@ -86,6 +86,7 @@ images = ["/schulung/flutter-schulung.png"]
     <h3>Flutter Schulung <b> für Anfänger </b></h3>
     <div class="text-left">
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Individuelle Kursgestaltung</p>
+     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Auch als Online Flutter Schulung</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Variable Länge der Kurse (2-3 Tage)</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Umfangreiche Einführung in Dart und Flutter</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Mobile UI und UX</p>
@@ -108,6 +109,7 @@ images = ["/schulung/flutter-schulung.png"]
   <h3>Flutter Schulung <b> für Fortgeschrittene</b></h3>
     <div class="text-left">
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Individuelle Kursgestaltung</p>
+       <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Auch als Online Flutter Schulung</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Variable Länge der Kurse (2-3 Tage)</p>
     <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Flutter App Architektur</p>
         <p> <img src="/images/tick-inside-circle.svg" class="icon mr-2" height="18" /> Einführung in MVC+S, MVVM und State Architectures</p>
@@ -132,6 +134,7 @@ images = ["/schulung/flutter-schulung.png"]
     <div class="col">
      <h2 class="schulung-h2 pt-5 ">Online Flutter Schulung</h2>
      <p class="schulung-p pt-2">Wir bieten alle unsere Flutter Schulungen auch online an. Wir stellen dir hierfür alle notwendigen Materialien im Voraus zur Verfügung und führen die Schulung auf eine Weise durch, die es einfach macht dieser zu folgen. Du bekommst während der Schulung Aufgaben, die du eigenständig ausführen kannst. Bei Bedarf helfen wir dir und beantworten alle Fragen. </p>
+     <div class="blue-button text-left mb-4"> <a id="schulung_vor_ort" class="btn btn-schulung" href="/schulung/flutter-online-schulung-anfaenger-oder-fortgeschrittene.html" >Zu den Online Schulungen</a></div>
     </div>
   </div>
 </div>
@@ -145,38 +148,105 @@ images = ["/schulung/flutter-schulung.png"]
      <p class="schulung-p pt-2">Schulungen finden unter den aktuellen geltenden Corona-Regeln des Landes Rheinland-Pfalz statt. </p>
     </div>
   </div>
-<!-- <div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" /> 3 Tage</div>
-  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">
-    <p class="mb-0">Vollständiger Einstieg in Flutter</p><p class="mb-0" style="color: red">Nur noch 1 Platz frei</p></div> 
-  <div class="col-1 text-center"> € 1.500</div>
-  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   27.04.22  –  29.04.22   </a></div>
-   <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> 
-</div> -->
+
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          3 Tage</div>
-  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Einstieg in Flutter</div> <div class="col-1 text-center"> 
-          € 1.500</div>
-           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  03.06.22   </a></div>
+          2 Tage</div>
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Power Einstieg in Flutter</div> <div class="col-1 text-center"> 
+          € 950</div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  02.06.22   </a></div>
   <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
+</div>
+
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Online Einstieg in Flutter</div> <div class="col-1 text-center"> 
+          € 950</div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/y6xarw3muy8cYoDq5" target="_blank" rel="noopener">   01.06.22  –  02.06.22   </a></div>
+  <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
+</div>
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Power Einstieg in Flutter</div> <div class="col-1 text-center"> 
+          € 950</div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/eVbrRWpaYK1j8Y2P7" target="_blank" rel="noopener">   07.07.22  –  08.07.22   </a></div>
+  <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
+</div>
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Online Einstieg in Flutter</div> <div class="col-1 text-center"> 
+          € 950</div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/wpv7ZHvY4MDTozuA9" target="_blank" rel="noopener">   07.07.22  –  08.07.22   </a></div>
+  <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
+</div>
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> In Mainz oder variabel bei dir vor Ort</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Power Einstieg in Flutter</div> <div class="col-1 text-center"> 
+          € 950</div>
+           <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  02.06.22   </a></div> -->
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
+  
+</div>
+
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Online Schulung – Einstieg in Flutter</div> <div class="col-1 text-center"> 
+          € 950</div>
+           <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  02.06.22   </a></div> -->
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
   
 </div>
 
 
-
-
-<div class="row zeile mb-5">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />In Mainz oder variabel bei dir vor Ort</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           2 Tage</div>
           <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Flutter für Fortgeschrittene</div>
            <div class="col-1 text-center"> 
-          € 1.200</div>
+          € 950</div>
   <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/wHwqAABPf2tfp1Ct8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
 </div>
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />In Mainz oder variabel bei dir vor Ort</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+          <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Flutter für Fortgeschrittene – individuelle Themenauswahl</div>
+           <div class="col-1 text-center"> 
+          € 950</div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/wHwqAABPf2tfp1Ct8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
+</div>
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />Online</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+          <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Online Schulung – Flutter für Fortgeschrittene</div>
+           <div class="col-1 text-center"> 
+          € 950</div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/wHwqAABPf2tfp1Ct8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
+</div>
+<div class="row zeile mb-5">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />Online</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          1 Tag</div>
+          <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Einführung Flutter State Architektur</div>
+           <div class="col-1 text-center"> 
+          € 500</div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/yAqSjWz9tKNizR5m9" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
+</div>
+
+<p>*Wenn du Flutter Themen hast, die dich besonders interessieren oder die du speziell behandelt haben möchtest, dann können wir alle Termine auch um einen Tag verlängern. </p>
 
 <!-- Unsere Trainer -->
 <div  class="container pt-1 pb-5 pl-0 pr-0">
@@ -194,7 +264,9 @@ images = ["/schulung/flutter-schulung.png"]
     </div>
    <div class="col-7">
     <h4 class="mt-4"><b>Markus Kühle</b></h4>
-    <p>Flutter Trainer und Speaker<br>IHK Ausbilderschein</p>
+    Flutter Trainer und Speaker<br>
+    Seit über 15 Jahren als Software-Entwickler und Architekt tätig. <br>Betreiber von HALBZEIT.app und Entwickler der dazugehörigen Flutter-App
+    <div style="color:blue">Twitter: @mkueh</div>
    </div>
   </div>
  </div>
@@ -205,8 +277,8 @@ images = ["/schulung/flutter-schulung.png"]
  </div>
  <div class="col-7">
   <h4 class="mt-4"><b>Marcel Ploch</b></h4>
-  <p>Flutter Trainer und Speaker<br>
-IHK Ausbilderschein</p>
+Flutter Trainer und Speaker<br>
+Seit über 15 Jahren als Fullstack-Software-Entwickler und Architekt tätig
    </div>
   </div>
   </div>
@@ -293,7 +365,7 @@ IHK Ausbilderschein</p>
      <h2 class="schulung-h2 pt-5 pb-4">FAQ zu unserer Flutterschulung</h2>
      <p><b>Wo findet die Flutter Schulung statt?</b></p>
      <p class="schulung-p ">
-        Die Schulung kann entweder bei Ihnen vor Ort stattfinden, in unseren Büros in Mainz oder Online (Mindestteilnehmeranzahl sind 4 Personen).
+        Die Schulung kann entweder bei dir vor Ort stattfinden, in unseren Büros in Mainz oder Online (Mindestteilnehmeranzahl sind 4 Personen).
       </p>
     <p><b>Wie lange dauert die Schulung?</b></p>
      <p class="schulung-p ">

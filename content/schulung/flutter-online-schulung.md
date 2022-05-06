@@ -1,6 +1,6 @@
 +++
-slug = "advanced-flutter-schulung-fortgeschrittene"
-description = "Die umfangreiche Flutter Schulung für Fortgeschrittene: Werde Flutter Experte und bringe deine App aufs nächste Level. Lernen mit unseren Experten vor Ort mit garantierten Terminen."
+slug = "flutter-online-schulung-anfaenger-oder-fortgeschrittene"
+description = "Die umfangreiche Online Flutter Schulung für Anfänger oder Fortgeschrittene: Werde Flutter Experte und bringe deine App aufs nächste Level. Lernen mit unseren Experten vor Ort mit garantierten Terminen."
 images = ["/schulung/advanced_share.png"]
 
 +++
@@ -10,7 +10,7 @@ images = ["/schulung/advanced_share.png"]
   <div class="row pb-5">
     <div class="col-md-6 text-left">
       <h1 class="schulung-h1">
-     Flutter Schulung <br>für Fortgeschrittene</h1>
+     Flutter Online Schulung <br>für Anfänger oder Fortgeschrittene</h1>
       <!-- <a class="btn btn-schulung pl-4 pr-4 pt-2 pb-2" href="/schulung/flutter-schulung.html#termine">Neueste Termine</a> -->
     </div>
   </div>
@@ -21,17 +21,43 @@ images = ["/schulung/advanced_share.png"]
 <div class="inhalt container pt-1 pb-5 pl-0 pr-0">
   <div class="row pb-3">
     <div class="col">
-        <h2 class="schulung-h2 pt-5 pb-4">Für wen ist diese Schulung?</h2>
-    <p class="schulung-p pt-2">Diese Schulung richtet sich an Entwickler, die bereits erste Erfahrungen mit Flutter gesammelt haben und nun ihre Kenntnisse weiter vertiefen wollen, um ihre App hochzuskalieren. Wenn diese Kenntnisse nur rudimentär vorhanden sind, empfehlen wir unsere Einführungsschulung. </p>
+        <h2 class="schulung-h2 pt-5 pb-4">Alle unsere Flutter Schulungen gibt es auch Online</h2>
+    <p class="schulung-p pt-2">Du willst geballt Flutter lernen oder vertiefen, ohne das Haus oder Büro verlassen zu müssen? Wir geben dir den vollen Einstieg in Flutter oder erweitern deine Kenntnisse mit unserer frei gestaltbaren Flutter Online Schulung. Suche dir einen Lerninhalt aus und kontaktiere uns bezüglich eines Termins.</p>
      <h2 class="schulung-h2 pt-5 pb-4">Schulungsvorbereitung</h2>
      <p><b></b></p>
      <p class="schulung-p pt-2">
   Vor der Schulung erhältst du alle Materialien, um perfekt vorbereitet in die Schulung gehen zu können. Auch bei der Installation von Flutter und dem Einrichten der Entwicklungsumgebung unterstützen wir dich bei Bedarf.
       </p>
-    <h2 class="schulung-h2 pt-5 pb-4">Inhalt der Flutter Schulung für Fortgeschrittene</h2>
+           <h2 class="schulung-h2 pt-5 pb-4">Ablauf der Flutter Online Schulung</h2>
+     <p><b></b></p>
+     <p class="schulung-p pt-2">
+ Die Schulung geht pünktlich um 9 Uhr los und endet um 17 Uhr, mit ausreichend Pausen dazwischen. Zwei Trainer begleiten die Schulung parallel. So referiert ein Trainer den Inhalt und der andere beantwortet in einem separaten Online Room Fragen.
+      </p>
+    <h2 class="schulung-h2 pt-5 pb-4">Inhalt der Flutter Online Schulung </h2>
     <p class="schulung-p pt-2">
     Wir haben einen nach dem neuesten Entwicklungsstand ausgerichtete Schulungsinhalte. Gerne gehen wir aber auch auf einzelne Bedürfnisse und Anforderungen unserer Schulungsteilnehmer ein. Die Standardschulung umfasst:</p>
-    <ul>
+    <ul><b>Für Anfänger</b>
+       <li>Allgemeine Übersicht: Was ist Flutter?</li>
+       <li>IDE, Android Studio Code und IOS Simulator</li>
+      <li>Flutter Packages</li>
+      <li>Dart Basics: Typsystem, Funktionen, Klassen, Variablen, Null Safety</li>
+      <li>Flutter Widgets => Widget Katalog</li>
+      <li>Layout Design</li>
+      <li>Widget Lifecycle: Stateful und Stateless Widget</li>
+      <li>Flutter Projekt erstellen und starten</li>
+      <li>Bottom Navigation Bar</li>
+      <li>Listen erstellen mit der ListView </li>
+      <li>Datenmodellierung und Services in Flutter</li>
+      <li>Navigation und Routing</li>
+       <li>Master und Detail in Flutter</li>
+        <li>Mobile UI und UX für Developer</li>
+         <li>Back Button, Gesture Detector</li>
+          <li>Datenlayout</li>
+           <li>Modale Dialoge und Formulare</li>
+            <li>CRUD: Daten erstellen, hinzufügen, auslesen, bearbeiten, löschen</li>
+            <li>Unit Testing</li>
+      </ul>
+    <ul><b>Für Fortgeschrittene</b>
       <li>Entwicklung einer skalierbaren Architektur auf Basis von Provider und Riverpod</li>
       <li>Einführung in MVC+S, MVVM und State Architekturen</li>
       <li>Plattformübergreifendes Routing (Parameter, Deep-Linking, Übersichtliche Verwaltung)</li>
@@ -47,18 +73,12 @@ images = ["/schulung/advanced_share.png"]
     </p>
     </div>
   </div>
- 
-  <h2 class="schulung-h2 pt-2">Ziel der Flutter Schulung</h2>
-     <p class="schulung-p pt-2">
-        Wir wollen dich befähigen, selbstständig native mobile Apps mit Flutter zu entwickeln oder deine bestehende App auf das nächste Level zu bringen. An einem konkreten App Beispiel verdeutlichen wir dir die wichtigsten Besonderheiten und Funktionen von Flutter. In einem dynamischen Wechsel zwischen Vortrag und eigenständigem Programmieren geben dir alle Materialien an die Hand, damit du eigenständig weiterentwickeln kannst. 
-      </p>
 
- </div>
 
 
 <!-- Termine -->
 
-<div id="termine" class="container pb-5 pl-0 pr-0">
+<div id="termine" class="container pt-5 pb-5 pl-0 pr-0">
   <div class="row pb-3">
     <div class="col">
      <h2 class="schulung-h2 pb-3">Termine</h2>
@@ -66,24 +86,33 @@ images = ["/schulung/advanced_share.png"]
 <p>*Wenn du Flutter Themen hast, die dich besonders interessieren oder die du speziell behandelt haben möchtest, dann können wir alle Termine auch um einen Tag verlängern. </p>
     </div>
   </div>
-
 <div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />In Mainz oder variabel bei dir vor Ort</div>
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           2 Tage</div>
-          <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Flutter für Fortgeschrittene</div>
-           <div class="col-1 text-center"> 
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Online Einstieg in Flutter</div> <div class="col-1 text-center"> 
           € 950</div>
-  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/wHwqAABPf2tfp1Ct8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  02.06.22   </a></div>
+  <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
 </div>
 <div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />In Mainz oder variabel bei dir vor Ort</div>
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           2 Tage</div>
-          <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Flutter für Fortgeschrittene – individuelle Themenauswahl</div>
-           <div class="col-1 text-center"> 
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Online Einstieg in Flutter</div> <div class="col-1 text-center"> 
           € 950</div>
-  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/wHwqAABPf2tfp1Ct8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/wpv7ZHvY4MDTozuA9" target="_blank" rel="noopener">   07.07.22  –  08.07.22   </a></div>
+  <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
+</div>
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Online Schulung – Einstieg in Flutter</div> <div class="col-1 text-center"> 
+          € 950</div>
+           <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  02.06.22   </a></div> -->
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
+  
 </div>
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />Online</div>
