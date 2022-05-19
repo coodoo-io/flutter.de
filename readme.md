@@ -7,12 +7,26 @@
 npm i && npm --prefix ./themes/fluttery install ./themes/fluttery
 ```
 
-2. Run the project
+2. install nvm
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+
+3. node version auf v12.22.12 setzen
+```
+nvm install v12.22.12
+```
+
+4. Run the project
 ```
 npm run start
 ```
 
-3. Anschließend http://localhost:1313 aufrufen.
+5. Anschließend http://localhost:1313 aufrufen.
 
 ## Einen neuen Artikel anlegen
 
