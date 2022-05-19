@@ -1,128 +1,200 @@
 ---
 title: "Bottom Navigation Bar in Flutter"
-date: 2021-06-14T14:15:59+02:00
+date: 2021-06-14T19:15:59+02:00
+dateOfUpdate: 2022-05-17T19:15:59+02:00
 draft: false
-header_image: "/artikel/20210614-bottom-navigation-bar/images/compass.png"
-images: ["/artikel/20210614-bottom-navigation-bar/images/compass.png"]
-authors: ["andreas-mayer"]
+header_image: "/artikel/20210614-bottom-navigation-bar/images/bottom_nav_bar.png"
+images: ["/artikel/20210614-bottom-navigation-bar/images/bottom_nav_bar.png"]
+authors: ["andreas-mayer","oualid-boutakhrit"]
 description: "Bottom Navigation Bar in Flutter"
-tags: ["flutter",]
+tags: ["flutter","bottomnavigationbar", "flutter navigation bar"]
 categories: Anfänger * Flutter
 link: 20210614-bottom-navigation-bar/20210614-bottom-navigation-bar.md
 ---
 
-Wenn man in Flutter schnell und oft zwischen wenigen verschiedenen Ansichten wechseln will oder muss, ist eine Möglichkeit dies leicht zu realisieren eine Bottom Navigation Bar. Diese befindet sich, wie der Name schon sagt, unten in der Anwendung in Fingernähe und somit leicht erreichbar.
+In diesem Artikel werden wir lernen, wie die Bottom Navigation Bar in Flutter verwendet wird.\
+Eine Bottom Navigation Bar ist ein materielles Widget, das sich am unteren Rand einer App befindet 
+und zur Navigation zu verschiedenen Seiten der App dient.
 
-Eine Bottom Navigation Bar kann leicht ins Projekt eingebaut werden, indem das entsprechende Attribut, also bottomNavigationBar, beim Scaffold gefüttert wird.
+Hier ist eine Beispiel App mit BottomNavigationBar zu sehen, die während diesen Artikels entwickelt 
+wird:\
+<img width="350" height="450" src="/artikel/20210614-bottom-navigation-bar/images/bottom_nav_bar_gif.gif">
+
+
+---
+
+### 1. Einbinden der BottomNavigationBar
+Eine Bottom Navigation Bar kann leicht ins Projekt eingebaut werden, indem das entsprechende 
+Attribut, also bottomNavigationBar, beim Scaffold hinzugefügt wird.
+
+Als erstes wird das `material.dart` Package importiert.
+{{<highlight dart>}}
+import 'package:flutter/material.dart';
+{{</highlight>}}
+
+Danach wird die Scaffold mit `bottomNavigationBar` ergänzt.
+
 {{<highlight dart>}}
 bottomNavigationBar: BottomNavigationBar(
-items: [
+items: const <BottomNavigationBarItem>[
     BottomNavigationBarItem(
-    icon: Icon(Icons.home),
-    label: "Home",
+        icon: Icon(Icons.settings),
+        label: 'Settings',
     ),
     BottomNavigationBarItem(
-    icon: Icon(Icons.hot_tub),
-    label: "Seite 1",
+        icon: Icon(Icons.home),
+        label: 'Home',
     ),
     BottomNavigationBarItem(
-    icon: Icon(Icons.play_arrow),
-    label: "Seite 2",
+        icon: Icon(Icons.message),
+        label: 'Messages',
     ),
 ],
 currentIndex: _selectedIndex,
 onTap: _onItemTapped,
-), 
+),
 {{</highlight>}}
 
-Das Attribut currentIndex zeigt an, welches Feld der Bottom Navigation Box gerade aktiv ist. 
-Das Attribut onTap ist die Methode, die durch einen Tap auf die Navigation Bar ausgeführt wird. Dabei gibt es die Besonderheit, dass diese mit einem Index mit Typ int aufgerufen wird, der den Index des aufgerufenen Elements angibt.
+> **Hinweis:**
+>
+> * Es müssen __mindestens zwei__ BottomNavigationBarItems in items aufgelistet werden.
+> * Für iOS Geräte __muss__ ein Label angegeben werden.\
 
-Die einfachst mögliche onTap Methode sollte dabei mindestens die dem currentIndex zugewiesene Variable aktualisieren, um eine Änderung zu signalisieren
+Hier beschreibt ein `BottomNavigationBarItem` eine klickbare Option der unteren Navigationsleiste.\
+Mit dem Attribut `currentIndex` wird die aktive Option der Navigationsleiste angegeben. Dieser ist 
+an dieser Stelle mit der Variable `_selectedIndex` belegt, sodass die aktive Option der 
+Navigationsleiste angepasst werden kann. Wie das funktioniert wird in diesem Artikel weiter unten
+beschrieben. Das Attribut `onTap` ist die Methode, die durch einen Tap auf die Navigationsleiste ausgeführt wird.
+Diesem kann eine Methode übergeben werden, sodass ein Tap die `_selectedIndex` einen neuen Wert 
+übergibt.
+
+___
+
+### 2. Die onTap Methode
+
+Hier wird die `_onItemTapped` Methode definiert. Der Parameter `index` wird von dem 
+`BottomNavigationBar` Widget bereit gestellt. Der `index` nimmt den korrespondierenden Wert zum
+geklickten Tab an. Durch `setState` wird das neue Bauen der Seite inszeniert und zuvor die 
+`_selectedIndex` Variable mit `index` überschrieben. Damit wird
 {{<highlight dart>}}
 void _onItemTapped(int index) {
     setState(
         () {
-        _selectedIndex = index;
+            _selectedIndex = index;
         },
     );
 }
 {{</highlight>}}
 
-Jetzt, da die Bottom Navigation Bar den Status aktualisiert, sollte die Seite selbst sich natürlich auch verändern. Dazu ist es am leichtesten eine Liste mit passenden Widgets zu erstellen und auf diese über den currentIndex zuzugreifen. Diese könnte beispielsweise so aussehen:
+---
+
+### 3. Definition der einzelnen Seiten der Navigationsoptionen
+
+Nachdem die Verbindung zwischen der `BottomNavigationBar` und der `onTap` Methode hergestellt ist, 
+fehlt jetzt noch die entsprechende Seite anzuzeigen. Nachfolgend wird eine Liste definiert mit 
+Beispiel-Widgets für die jeweilige Seite.
+
 {{<highlight dart>}}
-static List<Widget> _pages = <Widget>[
+final List<Widget> _pages = <Widget>[
     Center(
-      child: Column(
+        child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text("Home"),
-          Icon(Icons.home),
-        ],
-      ),
+        children: const [
+                Text("Settings"),
+                Icon(Icons.settings),
+            ],
+        ),
     ),
     Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text("Seite 1"),
-          Icon(Icons.hot_tub),
-        ],
-      ),
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+                Text("Home"),
+                Icon(Icons.home),
+            ],
+        ),
     ),
-    Center(
-      child: Column(
+Center(
+    child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text("Seite 2"),
-          Icon(Icons.play_arrow),
-        ],
-      ),
+        children: const [
+                Text("Messages"),
+                Icon(Icons.message),
+            ],
+        ),
     ),
-  ];
+];
 {{</highlight>}}
 
-Nun fehlt nur noch der Zugriff, der dem Attribut body beim Scaffold hinzugefügt wird und wir sind fertig.
+> **Hinweis:**\
+> An dieser Stelle können auch `Scaffolds` um die `Center` bei den 
+> `_pages` angegeben werden. Diese `Scaffolds` können dann auch mit individuellen appBars definiert
+> werden. Dann ist es sinnvoll bei dem `Scaffold` bei dem die `bottomNavigationBar` definiert wird, 
+> die `appBar` zu entfernen.
+
+---
+
+### 4. Verbindung der Seiten mit der BottomNavigationBar
+Nun fehlt nur noch der Zugriff, der dem Attribut `body` beim `Scaffold` hinzugefügt wird und wir 
+sind fertig. An dieser Stelle wird das `Scaffold` immer mit dem Widget aus der `_pages` an der 
+`_selectedIndex` Stelle gebaut.
+
 {{<highlight dart>}}
-body: _pages[_selectedIndex],
+body: Center(
+    child: _pages.elementAt(_selectedIndex),
+)
 {{</highlight>}}
 
-Insgesamt sieht der Code dann so aus:
+Schon wurde eine BottomNavigationBar zur App hinzugefügt.\
+
+---
+
+### 5. Zusammenfassung
+Es wurde eine BottomNavigationBar zum Scaffold hinzugefügt, der Auslösemechanismus implementiert und
+die anzuzeigenen Widgets auf der Seite definiert.\
+Insgesamt sieht der Code wie folgt aus:
 {{<highlight dart>}}
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  static const String _title = 'Flutter BottomNavigationBar Demo';
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter BottomNavigationBar Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter BottomNavigationBar Demo Home Page'),
+    return const MaterialApp(
+      title: _title,
+      home: MyStatefulWidget(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
-  final String title;
+class MyStatefulWidget extends StatefulWidget {
+  const MyStatefulWidget({Key? key}) : super(key: key);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  var _selectedIndex = 0;
-  static List<Widget> _pages = <Widget>[
+class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+  int _selectedIndex = 1;
+  final List<Widget> _pages = <Widget>[
     Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+        children: const [
+          Text("Settings"),
+          Icon(Icons.settings),
+        ],
+      ),
+    ),
+    Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: const [
           Text("Home"),
           Icon(Icons.home),
         ],
@@ -131,54 +203,46 @@ class _MyHomePageState extends State<MyHomePage> {
     Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text("Seite 1"),
-          Icon(Icons.hot_tub),
-        ],
-      ),
-    ),
-    Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text("Seite 2"),
-          Icon(Icons.play_arrow),
+        children: const [
+          Text("Messages"),
+          Icon(Icons.message),
         ],
       ),
     ),
   ];
 
   void _onItemTapped(int index) {
-    setState(
-      () {
-        _selectedIndex = index;
-      },
-    );
+    setState(() {
+      _selectedIndex = index;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: const Text('BottomNavigationBar Sample'),
       ),
-      body: _pages[_selectedIndex],
+      body: Center(
+        child: _pages.elementAt(_selectedIndex),
+      ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: "Home",
+            label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.hot_tub),
-            label: "Seite 1",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.play_arrow),
-            label: "Seite 2",
+            icon: Icon(Icons.message),
+            label: 'Messages',
           ),
         ],
         currentIndex: _selectedIndex,
+        selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
       ),
     );
@@ -186,8 +250,8 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 {{</highlight>}}
 
-Und das Endprodukt sieht dann so aus:
-{{< figure src="/artikel/20210614-bottom-navigation-bar/images/beispiel.png" width="250" >}}
-
-
-
+Wie bereits weiter oben im Artikel drauf hingewiesen kann es auch sinnvoll sein weitere Scaffolds je
+Seite zu nutzen. Ein interessanter Artikel zu Scaffolds und was zu beachten gilt findet sich hier:
+<br> 
+[Was du über das Flutter Scaffold Widget wissen solltest]
+(https://flutter.de/artikel/flutter-statusbar-farbe-%C3%A4ndern.html)
