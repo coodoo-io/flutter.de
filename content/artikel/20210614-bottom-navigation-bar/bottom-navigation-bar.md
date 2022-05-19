@@ -5,7 +5,7 @@ dateOfUpdate: 2022-05-17T19:15:59+02:00
 draft: false
 header_image: "/artikel/20210614-bottom-navigation-bar/images/bottom_nav_bar.png"
 images: ["/artikel/20210614-bottom-navigation-bar/images/bottom_nav_bar.png"]
-authors: ["andreas-mayer","oualid-boutakhrit"]
+authors: ["oualid-boutakhrit"]
 description: "Bottom Navigation Bar in Flutter"
 tags: ["flutter","bottomnavigationbar", "flutter navigation bar"]
 categories: Anfänger * Flutter
@@ -23,7 +23,14 @@ wird:\
 
 ---
 
-### 1. Einbinden der BottomNavigationBar
+# Inhaltsverzeichnis
+1. [Einbinden der BottomNavigationBar](#first)
+2. [Die onTap Methode](#second)
+3. [Definition der einzelnen Seiten der Navigationsoptionen](#third)
+4. [Verbindung der Seiten mit der BottomNavigationBar](#fourth)
+5. [Zusammenfassung](#fifth)
+
+### 1. Einbinden der BottomNavigationBar <a name="first"></a>
 Eine Bottom Navigation Bar kann leicht ins Projekt eingebaut werden, indem das entsprechende 
 Attribut, also bottomNavigationBar, beim Scaffold hinzugefügt wird.
 
@@ -70,7 +77,7 @@ Diesem kann eine Methode übergeben werden, sodass ein Tap die `_selectedIndex` 
 
 ___
 
-### 2. Die onTap Methode
+### 2. Die onTap Methode <a name="second"></a>
 
 Hier wird die `_onItemTapped` Methode definiert. Der Parameter `index` wird von dem 
 `BottomNavigationBar` Widget bereit gestellt. Der `index` nimmt den korrespondierenden Wert zum
@@ -88,7 +95,7 @@ void _onItemTapped(int index) {
 
 ---
 
-### 3. Definition der einzelnen Seiten der Navigationsoptionen
+### 3. Definition der einzelnen Seiten der Navigationsoptionen <a name="third"></a>
 
 Nachdem die Verbindung zwischen der `BottomNavigationBar` und der `onTap` Methode hergestellt ist, 
 fehlt jetzt noch die entsprechende Seite anzuzeigen. Nachfolgend wird eine Liste definiert mit 
@@ -134,7 +141,7 @@ Center(
 
 ---
 
-### 4. Verbindung der Seiten mit der BottomNavigationBar
+### 4. Verbindung der Seiten mit der BottomNavigationBar <a name="fourth"></a>
 Nun fehlt nur noch der Zugriff, der dem Attribut `body` beim `Scaffold` hinzugefügt wird und wir 
 sind fertig. An dieser Stelle wird das `Scaffold` immer mit dem Widget aus der `_pages` an der 
 `_selectedIndex` Stelle gebaut.
@@ -149,7 +156,7 @@ Schon wurde eine BottomNavigationBar zur App hinzugefügt.\
 
 ---
 
-### 5. Zusammenfassung
+### 5. Zusammenfassung <a name="fifth"></a>
 Es wurde eine BottomNavigationBar zum Scaffold hinzugefügt, der Auslösemechanismus implementiert und
 die anzuzeigenen Widgets auf der Seite definiert.\
 Insgesamt sieht der Code wie folgt aus:
