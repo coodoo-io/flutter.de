@@ -1,7 +1,7 @@
 ---
 title: "Bottom Navigation Bar in Flutter"
 date: 2021-06-14T19:15:59+02:00
-dateOfUpdate: 2022-05-17T19:15:59+02:00
+dateOfUpdate: 2022-05-23T19:15:59+02:00
 draft: false
 header_image: "/artikel/20210614-bottom-navigation-bar/images/bottom_nav_bar.png"
 images: ["/artikel/20210614-bottom-navigation-bar/images/bottom_nav_bar.png"]
