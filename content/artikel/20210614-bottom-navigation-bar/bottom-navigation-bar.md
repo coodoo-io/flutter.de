@@ -29,6 +29,7 @@ wird:\
 3. [Definition der einzelnen Seiten der Navigationsoptionen](#third)
 4. [Verbindung der Seiten mit der BottomNavigationBar](#fourth)
 5. [Zusammenfassung](#fifth)
+5. [Wie geht es weiter?](#sixth)
 
 ### 1. Einbinden der BottomNavigationBar <a name="first"></a>
 Eine Bottom Navigation Bar kann leicht ins Projekt eingebaut werden, indem das entsprechende 
@@ -256,6 +257,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   }
 }
 {{</highlight>}}
+
+### 6. Wie geht es weiter? <a name="sixth"/>
+
+Wie eine BottomNavigationBar aus Design-Sicht realisiert werden sollte und welche "Do" and "Don't"
+es zu beachten gilt lässt sich hier finden:
+[Material IO - BottomNavigationBar]
+(https://www.material.io/components/bottom-navigation)
+
 
 Wie bereits weiter oben im Artikel drauf hingewiesen kann es auch sinnvoll sein weitere Scaffolds je
 Seite zu nutzen. Ein interessanter Artikel zu Scaffolds und was zu beachten gilt findet sich hier:
