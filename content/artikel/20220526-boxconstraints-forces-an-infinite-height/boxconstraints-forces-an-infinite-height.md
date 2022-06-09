@@ -1,5 +1,5 @@
 ---
-title: "Wo sind meine Widgets hin verschwunden und was bedeutet \"BoxConstraints forces an infinite height\"?"
+title: "Flutter Bug Fixing: Verschwundene Widgets und BoxConstraints"
 date: 2022-05-26T11:00:59+02:00
 draft: false
 header_image: "/artikel/20220526-boxconstraints-forces-an-infinite-height/images/header.png"
