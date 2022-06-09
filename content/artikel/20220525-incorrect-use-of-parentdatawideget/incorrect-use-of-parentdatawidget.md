@@ -1,5 +1,5 @@
 ---
-title: "Was tun bei \"Incorrect use of ParentDataWidget\""
+title: "Flutter Bux Fixing: Incorrect use of ParentDataWidget"
 date: 2022-05-25T20:14:59+02:00
 draft: false
 header_image: "/artikel/20220525-incorrect-use-of-parentdatawideget/images/header_top_part.png"
