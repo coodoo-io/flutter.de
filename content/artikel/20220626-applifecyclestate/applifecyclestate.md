@@ -1,22 +1,22 @@
 ---
-title: "AppLifecycle - Erkennen, wenn sich die App in den Hintergrund bzw. Vordergrund bewegt"
+title: "AppLifecycle - Erkenne, wenn sich die Flutter App in den Hintergrund bzw. Vordergrund bewegt"
 date: 2022-06-26T11:00:59+02:00
 draft: false
 header_image: "/artikel/20220626-applifecyclestate/images/header.png"
 images: ["/artikel/20220626-applifecyclestate/images/header.png"]
 authors: ["oualid-boutakhrit"]
-description: "Erkennen, wenn sich die App in den Hintergrund bzw. Vordergrund bewegt"
+description: "Erkenne, wenn sich deine Flutter App in den Hintergrund bzw. Vordergrund bewegt"
 tags: ["flutter", "applifecycle", "widgetsbindingobserver", "hintergrund", "background", "vodergrund",
 "foreground"]
 categories: Anfänger * Flutter
 link: 20220626-applifecyclestate/boxconstraints-forces-an-infinite-height.md
 ---
 
-In diesem Artikel implementieren wir einen Beobachter um zu erkennen, wenn sich die App in den 
+In diesem Artikel implementieren wir einen Beobachter, um zu erkennen, wenn sich die App in den 
 Hintergrund bzw. wieder in den Vordergrund bewegt.
 
 
-Am Ende diesen Artikels werden wir folgendes Ergebnis erzielen:\
+Am Ende dieses Artikels werden wir folgendes Ergebnis erzielen:\
 
 <img width="350" height="550" src="/artikel/20220626-applifecyclestate/images/applifecyclestate_preview.gif">
 
@@ -30,8 +30,8 @@ Am Ende diesen Artikels werden wir folgendes Ergebnis erzielen:\
 ---
 
 ### 1. Beschreibung der Situation <a name="first"></a>
-In manchen Situationen ist es notwendig einen bestimmten Zustand zu sichern oder eine Meldung 
-anzuzeigen bevor der User / die Userin die App verlässt. Hierzu bietet uns Flutter ein Mechanismus,
+In manchen Situationen ist es notwendig, einen bestimmten Zustand zu sichern oder eine Meldung 
+anzuzeigen, bevor der User / die Userin die App verlässt. Hierzu bietet uns Flutter einen Mechanismus,
 um diesen Moment zu erkennen und entsprechend  darauf zu reagieren. Im nächsten Abschnitt werden die 
 Schritte beschrieben, um diesen Mechanisumus auch in deiner App einzusetzen.
 
@@ -211,7 +211,7 @@ class _MyCustomFormState extends State<MyCustomForm> with WidgetsBindingObserver
 ---
 
 ### 3. Wie geht es weiter? <a name="third"/>
-Bevor die App in den Hintergrund wandert sollen Daten persistent gespeichert werden? Im folgenden 
-Artikel wird beschrieben, wie das peristente Speichern der Daten mittels Dateien funktioniert:
-[Daten auf einem Smartphone speichern mit Flutter](https://https://flutter.de/artikel/flutter-how-to-write-files.html)
+Bevor die App in den Hintergrund wandert, sollen Daten persistent gespeichert werden. Im folgenden 
+Artikel wird beschrieben, wie das peristente Speichern der Daten mittels Dateien funktioniert:  <a rel="noopener" target="blank" href="https://flutter.de/artikel/flutter-how-to-write-files.html">
+Daten auf einem Smartphone speichern mit Flutter</a>.
 
