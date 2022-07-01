@@ -16,6 +16,19 @@ images = ["/schulung/flutter-schulung.png"]
   </div>
 </div>
 
+<!-- Feedback -->
+
+<div class="container pt-5 pb-2">
+<div class="row pb-3">
+<div class="col-md-8 text-center">
+<img src="/schulung/star.png" class="img-fluid pb-4" style="width:200px">
+<p class="schulung-p" style="font-size:21px"><i>"Die Inhalte waren sehr gut. Vieles gesehen und kennengelernt, was im Nachgang je nach Bedarf intensiviert werden kann. Alle Fragen beantwortet und Wünsche berücksichtigt."</i><br><br>
+- Beurer GmbH
+</p>
+</div>
+</div>
+</div>
+
 <!-- Warum wir toll sind -->
 
 <div class="container pt-5 pb-1 text-center schulung">
@@ -56,18 +69,7 @@ images = ["/schulung/flutter-schulung.png"]
  </div>
 </div>
 
-<!-- Feedback -->
 
-<div class="container pt-5 pb-5">
-<div class="row pb-3">
-<div class="col-md-8 text-center">
-<img src="/schulung/star.png" class="img-fluid pb-4" style="width:200px">
-<p class="schulung-h2"><i>"Die Inhalte waren sehr gut. Vieles gesehen und kennengelernt, was im Nachgang je nach Bedarf intensiviert werden kann. Alle Fragen beantwortet und Wünsche berücksichtigt."</i><br><br>
-- Beurer GmbH
-</p>
-</div>
-</div>
-</div>
 
 <!-- Workshops -->
 
@@ -291,6 +293,38 @@ Seit über 15 Jahren als Fullstack-Software-Entwickler und Architekt tätig
   </div>
   </div>
  </div>
+</div>
+
+<!-- Heise Feedback -->
+<div class="inhalt container pt-1 pb-5 pl-0 pr-0">
+  <div class="row pb-3">
+    <div class="col-12 text-center">
+     <h2 class="schulung-h2 pt-5 pb-5">Feedback* zu unseren Vorträgen und Flutter Workshops</h2>
+     </div>
+<div class="col-md-4 text-center">
+<img src="/images/4_5_Sterne.png" class="img-fluid" style="max-width:200px">
+    <p class="schulung-p pt-2">
+   Didaktische Aufbereitung
+      </p>
+</div> 
+<div class="col-md-4 text-center">
+<img src="/images/sterne.png" class="img-fluid" style="max-width:200px">
+   <p class="schulung-p pt-2">
+    Kompetenz der Speaker
+      </p>
+</div>
+<div class="col-md-4 text-center">
+<img src="/images/4_sterne.png" class="img-fluid" style="max-width:200px">
+ <p class="schulung-p pt-2">Hilfreich für Projekteinsatz
+    </div>
+</div>
+  <div class="col-12"> 
+   <p class="schulung-p pt-2">Teilnehmer unserer Flutter Workshops und Zuhörer unserer Vorträge haben uns durchweg positiv bewertet. Besonders die Expertise unserer Speaker ist hervorzuheben, denn hier konnten wir beweisen, dass wir, was Flutter angeht, die führenden Experten in Deutschland sind. Wenn auch du Speaker für deine Konferenz suchst oder eine Schulung haben möchtest, dann kontaktiere uns!</p>
+   <small>*Aus einer Umfrage unter Teilnehmer_innen unserer Flutter Workshops bei der <a href="https://flutter.bettercode.eu/veranstaltung-14164-se-0-skalierbare-architektur-fuer-grosse-mobile-apps.html">bettercode Konferenz</a> von heise.</small>
+  </div>
+   
+      
+  </div>
 </div>
 
 <!-- Schulungsinhalt -->
