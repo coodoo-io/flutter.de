@@ -66,7 +66,15 @@ images = ["/schulung/advanced_share.png"]
 <p>*Wenn du Flutter Themen hast, die dich besonders interessieren oder die du speziell behandelt haben möchtest, dann können wir alle Termine auch um einen Tag verlängern. </p>
     </div>
   </div>
-
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />Online</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
+          2 Tage</div>
+          <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Online Schulung – Flutter für Fortgeschrittene</div>
+           <div class="col-1 text-center"> 
+          € 950</div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/8LiDrxtBXpDAQ39q7" target="_blank" rel="noopener">12.09.22-13.09.22</a></div>
+</div>
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />In Mainz oder variabel bei dir vor Ort</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
