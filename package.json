@@ -19,8 +19,8 @@
         "buildTags": "extended"
     },
     "devDependencies": {
-        "bootstrap-scss": "^5.1.0",
-        "hugo-bin": "^0.43.6",
-        "ws": "3.3.2"
+        "bootstrap-scss": "^4.6.1",
+        "hugo-bin": "^0.89.0",
+        "ws": "8.8.1"
     }
 }

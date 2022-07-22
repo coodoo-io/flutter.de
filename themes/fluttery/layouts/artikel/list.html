@@ -23,9 +23,9 @@
                             </a>
                         </div>
                         <div class="col-md-9 pr-5">
-                            <a href='{{ .Permalink }}' title='{{ .Title }}'>
-                            <h3 class="card-title mt-0">{{ .Title }}</h3>
-                            </a>
+                            <h3 class="card-title mt-0">
+                                <a href='{{ .Permalink }}' title='{{ .Title }}'>{{ .Title }}</a>
+                            </h3>
                          
                             {{if gt (len .Summary) 0}}
                             <p class="card-text mb-2">{{ slicestr .Summary 0 225 }}... <a class='btn-link' href='{{ .Permalink }}'

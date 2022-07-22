@@ -6,7 +6,7 @@
 @import 'pagination.scss';
 @import 'schulung.scss';
 @import'cto.scss';
-@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-scss/bootstrap.scss';
 // @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 // @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 // @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
@@ -36,18 +36,37 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 3rem;
 }
 
+h3 a {
+    font-weight: 700;
+    color: #343a40;
+    line-height: 1.3em;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+h3 a:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
 // Buttons
+a {
+    text-decoration: none;
+}
+
 .btn-primary {
-    border-radius: 3px !important;
+    border-radius: 7px !important;
     font-weight: 600;
     font-size: 1.2rem;
     background-color: rgb(8, 94, 160);
+    border-color: rgb(8, 94, 160);
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .btn-secondary {
-    border-radius: 3px !important;
+    border-radius: 7px !important;
     background-color: #859099;
+    border-color: #859099;
 }
 
 

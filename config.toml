@@ -11,6 +11,11 @@ enableEmoji = true
 disqusShortname = "localhost"
 uglyurls = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [privacy]
   [privacy.googleAnalytics]
     anonymizeIP = true
