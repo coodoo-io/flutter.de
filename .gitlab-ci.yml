@@ -19,7 +19,7 @@ stages:
   stage: build
   before_script:
     - apk upgrade
-    - apk add --update nghttp2 nodejs npm
+    - apk add --update --no-cache -UvX http://dl-4.alpinelinux.org/alpine/edge/main nghttp2 nodejs npm --purge --allow-untrusted
     - npm install
     - npm --prefix ./themes/fluttery install ./themes/fluttery
     - PATH=$(npm bin):$PATH

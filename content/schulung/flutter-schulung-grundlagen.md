@@ -86,50 +86,13 @@ images = ["/schulung/basic_share.png"]
     </div>
   </div>
 
-
-<div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          2 Tage</div>
-  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Power Einstieg in Flutter</div> <div class="col-1 text-center"> 
-          € 950</div>
-           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  02.06.22   </a></div>
-  <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
-</div>
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           2 Tage</div>
   <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Online Einstieg in Flutter</div> <div class="col-1 text-center"> 
           € 950</div>
-           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  02.06.22   </a></div>
-  <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
-</div>
-<div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Mainz</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          2 Tage</div>
-  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Power Einstieg in Flutter</div> <div class="col-1 text-center"> 
-          € 950</div>
-           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/eVbrRWpaYK1j8Y2P7" target="_blank" rel="noopener">   07.07.22  –  08.07.22   </a></div>
-  <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
-</div>
-<div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          2 Tage</div>
-  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Online Einstieg in Flutter</div> <div class="col-1 text-center"> 
-          € 950</div>
-           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/wpv7ZHvY4MDTozuA9" target="_blank" rel="noopener">   07.07.22  –  08.07.22   </a></div>
-  <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div> -->
-</div>
-<div class="row zeile">
-  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          2 Tage</div>
-  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Online Einstieg in Flutter</div> <div class="col-1 text-center"> 
-          € 950</div>
-           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/rZM84C2NPPY6x4x57" target="_blank" rel="noopener">   18.07.22  –  19.07.22   </a></div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/rZM84C2NPPY6x4x57" target="_blank" rel="noopener">   05.09.22  –  06.09.22   </a></div>
 </div>
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> In Mainz oder variabel bei dir vor Ort</div>
