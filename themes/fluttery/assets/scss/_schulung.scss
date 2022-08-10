@@ -1,4 +1,5 @@
-.schulung-h1, .schulung-h2 {
+.schulung-h1,
+.schulung-h2 {
   font-family: 'merriweather', 'Open Sans', Roboto;
   font-weight: 500;
   color: #05385F;
@@ -11,7 +12,7 @@
 
 .schulung-h2 {
   margin: 0;
- font-size: 27px;
+  font-size: 27px;
 }
 
 b {
@@ -44,13 +45,13 @@ b {
 }
 
 .schulung-header {
-    position: relative;
-    background-image: url(/images/schulung.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 15%;
-    text-align: center;
-  }
+  position: relative;
+  background-image: url(/images/schulung.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 15%;
+  text-align: center;
+}
 
 
 .cto-header {
@@ -62,137 +63,144 @@ b {
   text-align: center;
 }
 
-  .overlay {
-    background-position: 100% 100%;
-    background: linear-gradient(0deg, rgba(227, 240, 252, 0.95) 100% ) !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    background: rgba(227, 240, 252, 0.95);
+.overlay {
+  background-position: 100% 100%;
+  background: linear-gradient(0deg, rgba(227, 240, 252, 0.95) 100%) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background: rgba(227, 240, 252, 0.95);
+}
+
+.workshops {
+  position: relative;
+  background-image: url(/images/Vector.png);
+  background-repeat: no-repeat;
+  background-position: 60% -5%;
+  text-align: center;
+
+  h3 {
+    font-family: 'Open Sans', Roboto;
+    font-size: 20Px;
+    font-weight: 500;
+    color: #05385F;
+    margin: 0;
   }
 
-  .workshops {
-    position: relative;
-    background-image: url(/images/Vector.png);
-    background-repeat: no-repeat;
-    background-position: 60% -5%;
-    text-align: center;
- 
-    h3 {
-      font-family: 'Open Sans', Roboto;
-      font-size: 20Px;
-      font-weight: 500;
-      color: #05385F;
-      margin: 0;
+  .icon {
+    color: #1879a5;
+    margin-right: 1rem;
+    position: initial;
+  }
+
+  p {
+    font-weight: 300;
+    color: #05385F;
+    margin-top: 2rem;
+  }
+
+  .card {
+    border: 0;
+    box-shadow: 0 8px 27px -5px rgba(124, 124, 175, 0.25), 0 -6px 16px -6px hsla(0, 0%, 29%, 0.03);
+    margin-bottom: 2rem;
+  }
+}
+
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background: rgba(242, 245, 248, 0.95);
+}
+
+.schulung {
+  .card {
+    border-radius: 15px !important;
+    margin-bottom: 2rem;
+  }
+
+  .card-body {
+    background: linear-gradient(100deg, #01579B 0%, #53C5F7 100%);
+    border-radius: 15px 15px 0 0;
+
+    // background-color: #209dd7;
+    h5 {
+      color: white;
+      font-weight: 600 !important;
+      margin: 1rem;
     }
-    .icon {
-      color:  #1879a5;
-      margin-right: 1rem;
-      position: initial;
-    }
+
     p {
-      font-weight: 300;
-      color: #05385F;
-      margin-top: 2rem;
-    }
-    .card {
-      border: 0;
-      box-shadow: 0 8px 27px -5px rgba(124, 124, 175, 0.25), 0 -6px 16px -6px hsla(0, 0%, 29%, 0.03);
-      margin-bottom: 2rem;
-    }
-  }
-
-
-  .overlay2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    background: rgba(242, 245, 248, 0.95);
-  }
-
-  .schulung {
-    .card {
-      border-radius: 15px !important;
-      margin-bottom: 2rem;
-    }
-
-    .card-body {
-      background: linear-gradient(100deg, #01579B 0%,  #53C5F7 100% );
-      border-radius: 15px 15px 0 0;
-    // background-color: #209dd7;
-      h5 {
-        color: white;
-        font-weight: 600 !important;
-        margin: 1rem;
-    }
-      p {
-        color: white;
-        font-weight: 500;
-        font-size: 1rem;
+      color: white;
+      font-weight: 500;
+      font-size: 1rem;
     }
   }
 }
 
 
-  .process {
-    .card {
-      border-radius: 15px !important;
-      margin-bottom: 2rem;
-      min-height: 175px;
-    }
+.process {
+  .card {
+    border-radius: 15px !important;
+    margin-bottom: 2rem;
+    min-height: 175px;
+  }
 
-    .card-body {
-      background: white;
-      border-radius: 15px ;
-      border: 1px solid #01579B; 
+  .card-body {
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #01579B;
 
     // background-color: #209dd7;
-      h5 {
-        color: #01579B 0%;
-        font-weight: 400 !important;
-        margin: 1rem;
+    h5 {
+      color: #01579B 0%;
+      font-weight: 400 !important;
+      margin: 1rem;
     }
-      p {
-        color: #01579B 0%;
-        font-weight: 500;
-        font-size: 1.2rem;
+
+    p {
+      color: #01579B 0%;
+      font-weight: 500;
+      font-size: 1.2rem;
     }
   }
 }
 
-  .projekt {
-    .card {
-      border-radius: 15px !important;
-      margin-bottom: 2rem;
-      min-height: 175px;
-    }
+.projekt {
+  .card {
+    border-radius: 15px !important;
+    margin-bottom: 2rem;
+    min-height: 175px;
+  }
 
-    .card-body {
-      background: linear-gradient(100deg, #01579B 0%,  #53C5F7 100% );
-      border-radius: 15px ;
+  .card-body {
+    background: linear-gradient(100deg, #01579B 0%, #53C5F7 100%);
+    border-radius: 15px;
 
     // background-color: #209dd7;
-      h5 {
-        color: white;
-        font-weight: 400 !important;
-        margin: 1rem;
+    h5 {
+      color: white;
+      font-weight: 400 !important;
+      margin: 1rem;
     }
-      p {
-        color: white;
-        font-weight: 500;
-        font-size: 1.2rem;
+
+    p {
+      color: white;
+      font-weight: 500;
+      font-size: 1.2rem;
     }
   }
 }
@@ -204,18 +212,20 @@ b {
   padding: 1rem;
 }
 
-#termine .col-2, #termine .col-5 {
+#termine .col-2,
+#termine .col-5 {
   border-right: 1px solid lightgrey;
 }
+
 .blue-button {
- padding-left: 0px !important;
- padding-right: 10px !important;
+  padding-left: 0px !important;
+  padding-right: 10px !important;
 }
 
 .contact {
-  background-color:#FAFAFA;
+  background-color: #FAFAFA;
   position: relative;
-  
+
   background-repeat: no-repeat;
   background-position: 100% 10%;
   text-align: center;
@@ -238,11 +248,13 @@ b {
     color: #05385F;
     margin: 0;
   }
+
   p {
     font-weight: 300;
     color: #05385F;
     margin-top: 2rem;
   }
+
   .adresse {
     margin: auto 0;
   }
@@ -250,6 +262,14 @@ b {
 
 .btn-schulung {
   background-color: #53C5F7 !important;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  color: white !important;
+  font-size: 0.7rem !important;
+  padding: 3rem 3rem 1rem 1rem;
+}
+
+.yellow-button {
+  background-color: orange !important;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   color: white !important;
   font-size: 0.7rem !important;
@@ -280,7 +300,7 @@ b {
   align-items: center;
 }
 
-  
+
 .call {
   color: rgb(89, 154, 211);
 }
@@ -289,15 +309,25 @@ b {
 @media(min-width: 768px) {
   .overlay {
     background-position: 50% 15%;
-    background: linear-gradient(-70deg,   rgba(227, 240, 252, 0) 0%, rgba(227, 240, 252, 0) 55%,  rgba(227, 240, 252, 0.95) 55.1%,  rgba(227, 240, 252, 0.95) 100% ) !important;
+    background: linear-gradient(-70deg, rgba(227, 240, 252, 0) 0%, rgba(227, 240, 252, 0) 55%, rgba(227, 240, 252, 0.95) 55.1%, rgba(227, 240, 252, 0.95) 100%) !important;
   }
+
   .workshops {
     .card {
       padding-bottom: 0;
     }
   }
+
   .btn-schulung {
     background-color: #53C5F7 !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    color: white !important;
+    font-size: 1.1rem !important;
+    padding: 4rem 4rem 2rem 2rem;
+  }
+
+  .yellow-button {
+    background-color: orange !important;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
     color: white !important;
     font-size: 1.1rem !important;
@@ -307,11 +337,13 @@ b {
   .zeile {
     font-size: 1.1rem
   }
+
   .icon {
     display: inline-flex;
   }
+
   .contact {
-    background-color:#FAFAFA;
+    background-color: #FAFAFA;
     position: relative;
     background-image: url(/images/contact_1.png);
     background-repeat: no-repeat;
@@ -326,16 +358,20 @@ b {
       margin: 0;
     }
   }
+
   .contact {
     background-position: 110% 30%;
+
     .card-body {
       padding: 1.5rem 3rem 1.5rem 3rem;
     }
   }
+
   .schulung-h1 {
     font-size: 38px;
     line-height: 55px;
   }
+
   .workshops {
     position: relative;
     background-image: url(/images/Vector.png);
@@ -347,12 +383,13 @@ b {
 
 .inhalt {
   b {
-border-bottom: none;
-    color:  #01579B;
+    border-bottom: none;
+    color: #01579B;
   }
+
   li {
     font-weight: normal;
     line-height: 170%;
-    color:  #01579B;
+    color: #01579B;
   }
 }
