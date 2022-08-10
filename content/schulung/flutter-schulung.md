@@ -177,7 +177,7 @@ images = ["/schulung/flutter-schulung.png"]
           2 Tage</div>
   <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Online Einstieg in Flutter</div> <div class="col-1 text-center"> 
           € 950</div>
-           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/rZM84C2NPPY6x4x57" target="_blank" rel="noopener">   05.09.22  –  06.09.22   </a></div>
+           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://forms.gle/rZM84C2NPPY6x4x57" target="_blank" rel="noopener">   05.09.22  –  06.09.22   </a></div>
 </div>
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />Online</div>
@@ -186,7 +186,14 @@ images = ["/schulung/flutter-schulung.png"]
           <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Online Schulung – Flutter für Fortgeschrittene</div>
            <div class="col-1 text-center"> 
           € 950</div>
-  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/8LiDrxtBXpDAQ39q7" target="_blank" rel="noopener">12.09.22-13.09.22</a></div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn yellow-button" href="https://forms.gle/8LiDrxtBXpDAQ39q7" target="_blank" rel="noopener">12.09.22 - 13.09.22</a></div>
+</div>
+<div class="row zeile">
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" />Online</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" /> 2 Tage</div>
+          <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Online Schulung – Flutter für Fortgeschrittene</div>
+          <div class="col-1 text-center">€ 950</div>
+  <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn yellow-button" href="https://forms.gle/3HFo4ywbUyaS2GWi7" target="_blank" rel="noopener">06.10.22 – 07.10.22</a></div>
 </div>
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> In Mainz oder variabel bei dir vor Ort</div>
