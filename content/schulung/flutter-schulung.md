@@ -265,7 +265,7 @@ images = ["/schulung/flutter-schulung.png"]
     <h4 class="mt-4"><b>Markus Kühle</b></h4>
     Flutter Trainer und Speaker<br>
     Seit über 15 Jahren als Software-Entwickler und Architekt tätig. <br>Betreiber von HALBZEIT.app und Entwickler der dazugehörigen Flutter-App
-    <div style="color:blue">Twitter: @mkueh</div>
+    <div><a href="https://twitter.com/makueh" rel="noopener" target="blank">Twitter: @makueh</a></div>
    </div>
   </div>
  </div>
@@ -371,7 +371,7 @@ Seit über 15 Jahren als Fullstack-Software-Entwickler und Architekt tätig
     <h3 class="pt-3 pb-2"><b>Schreib uns oder ruf uns an!</b></h3>
        <p> E-Mail: <a href="mailto:mail@flutter.de">mail@coodoo.de</a></p>
       <hr>
-      <p>Telefon: +49 6131 46402 88</p>
+      <p>Telefon: +49 6131 30 290 45</p>
     </div>
     </div>
     </div>
