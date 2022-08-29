@@ -165,7 +165,7 @@ images = ["/schulung/advanced_share.png"]
     <h3 class="pt-3 pb-2"><b>Schreib uns oder ruf uns an!</b></h3>
        <p> E-Mail: <a href="mailto:mail@flutter.de">mail@coodoo.de</a></p>
       <hr>
-      <p>Telefon: +49 6131 46402 88</p>
+      <p>Telefon: +49 6131 30 290 45</p>
     </div>
     </div>
     </div>
