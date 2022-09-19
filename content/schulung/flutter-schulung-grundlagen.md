@@ -86,14 +86,14 @@ images = ["/schulung/basic_share.png"]
     </div>
   </div>
 
-<div class="row zeile">
+<!-- <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
           2 Tage</div>
   <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Online Einstieg in Flutter</div> <div class="col-1 text-center"> 
           € 950</div>
            <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://forms.gle/rZM84C2NPPY6x4x57" target="_blank" rel="noopener">   05.09.22  –  06.09.22   </a></div>
-</div>
+</div> -->
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> In Mainz oder variabel bei dir vor Ort</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />

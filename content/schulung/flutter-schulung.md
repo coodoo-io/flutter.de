@@ -151,7 +151,7 @@ images = ["/schulung/flutter-schulung.png"]
     </div>
   </div>
 
-
+<!-- 
 <div class="row zeile">
  <div class="col-2 text-center"> <b>05.09. – 06.09.22</b></div>
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
@@ -167,7 +167,7 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-3 text-center" style="border-right: 1px solid lightgrey">Flutter für Fortgeschrittene</div> 
   <div class="col-1 text-center">€ 950</div>
   <div class="col-2 blue-button text-center"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://forms.gle/8LiDrxtBXpDAQ39q7" target="_blank" rel="noopener">   Anmelden</a></div>
-</div>
+</div> -->
 <div class="row zeile">
  <div class="col-2 text-center"> <b>06.10. – 07.10.22</b></div>
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
