@@ -47,7 +47,7 @@ choco install flutter
 Nach wenigen Minuten ist Flutter vollständig installiert. Es kann jedoch sein, dass nicht die aktuellste Version installiert wurde. Um dies zu beheben, gib einfach folgenden Befehl ein: 
 
 {{<highlight yaml>}}
-flutter update
+flutter upgrade
 {{</highlight>}}
 
 
@@ -67,7 +67,7 @@ brew install --cask flutter
 Und schon ist Flutter installiert und kann verwendet werden. Falls du direkt prüfen möchtest, ob die Version aktuell ist, einfach noch folgenden Befehl absetzen:
 
 {{<highlight yaml>}}
-flutter update
+flutter upgrade
 {{</highlight>}}
 
 
@@ -127,7 +127,13 @@ Wenn du die Installation abgeschlossen hast, musst du noch <a href="https://coco
 brew install cocoapods
 {{</highlight>}}
 
-Die Xcode Installation ist hiermit vollständig.
+Nach der installation nur noch diese beiden Befehle eingeben und Xcode ist damit startklar:
+
+{{<highlight yaml>}}
+sudo xcode-select --switch /Applications/Xcode.app/Contents/
+sudo xcodebuild -runFirstLaunch
+{{</highlight>}}
+
 
 <div id="flutter-doctor"></div>
 
@@ -148,7 +154,7 @@ Falls du eine ältere Version von Flutter installiert hast, wirst du Folgendes i
 Wenn er den Befehl `flutter` nicht erkennt, ist wohl etwas schief gelaufen. Zumindest wird die Flutter Runtime nicht gefunden.
 Falls die Meldung "A new version of Flutter is available!" zu sehen ist, dann direkt den Befehl für das Update hinterherschieben:
 {{<highlight yaml>}}
-flutter update
+flutter upgrade
 {{</highlight>}}
 
 ### Flutter Doctor
@@ -161,7 +167,7 @@ Wenn Flutter und die IDE erfolgreich installiert wurde, sollte überall ein grü
 
 <img src="/artikel/20220117-flutter-einfach-installieren/flutter-doctor.png">
 
-Und schon bist du startklar. 
+Und schon bist du startklar.
 
 <div id="flutter-helloworld"></div>
 
