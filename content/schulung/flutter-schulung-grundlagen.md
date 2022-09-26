@@ -85,15 +85,14 @@ images = ["/schulung/basic_share.png"]
      <p class="schulung-p pt-2">Schulungen finden unter den aktuellen geltenden Corona-Regeln des Landes Rheinland-Pfalz statt. </p>
     </div>
   </div>
-
-<!-- <div class="row zeile">
+<div class="row zeile">
+ <div class="col-2 text-center"> <b>07.11. – 08.11.22</b></div>
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
-  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
-          2 Tage</div>
-  <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Online Einstieg in Flutter</div> <div class="col-1 text-center"> 
-          € 950</div>
-           <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://forms.gle/rZM84C2NPPY6x4x57" target="_blank" rel="noopener">   05.09.22  –  06.09.22   </a></div>
-</div> -->
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon" /><span>  </span>2  Tage</div>
+  <div class="col-3 text-center" style="border-right: 1px solid lightgrey">Vollständiger Einstieg in Flutter</div> 
+  <div class="col-1 text-center">€ 950</div>
+  <div class="col-2 blue-button text-center"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://forms.gle/zBc6j45ezPHknzZx8" target="_blank" rel="noopener">   Anmelden</a></div>
+</div>
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> In Mainz oder variabel bei dir vor Ort</div>
   <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon mr-2" height="21" />
