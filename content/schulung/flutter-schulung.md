@@ -177,6 +177,14 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-1 text-center">€ 950</div>
   <div class="col-2 blue-button text-center"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://forms.gle/zBc6j45ezPHknzZx8" target="_blank" rel="noopener">   Anmelden</a></div>
 </div>
+<div class="row zeile">
+ <div class="col-2 text-center"> <b>24.11. – 25.11.22</b></div>
+  <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
+  <div class="col-2 text-center"> <img src="/images/tag.svg" class="icon" /><span>  </span>2  Tage</div>
+  <div class="col-3 text-center" style="border-right: 1px solid lightgrey">Flutter für Fortgeschrittene</div> 
+  <div class="col-1 text-center">€ 950</div>
+  <div class="col-2 blue-button text-center"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://forms.gle/TbkHotcwykanou4w5" target="_blank" rel="noopener">   Anmelden</a></div>
+</div>
 
 <div id="termine" class="container pt-1 pb-5 pl-0 pr-0" >
   <div class="row pb-3">
@@ -204,7 +212,6 @@ images = ["/schulung/flutter-schulung.png"]
           € 950</div>
     
   <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
-  
 </div>
 
 
