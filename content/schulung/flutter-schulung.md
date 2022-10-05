@@ -130,26 +130,9 @@ images = ["/schulung/flutter-schulung.png"]
  </div>
 </div>
 
-<!-- Online -->
-<div id="online" class="container pt-1 pb-3 pl-0 pr-0">
-  <div class="row">
-    <div class="col">
-     <h2 class="schulung-h2 pt-5 ">Online Flutter Schulung</h2>
-     <p class="schulung-p pt-2">Wir bieten alle unsere Flutter Schulungen auch online an. Wir stellen dir hierfür alle notwendigen Materialien im Voraus zur Verfügung und führen die Schulung auf eine Weise durch, die es einfach macht dieser zu folgen. Du bekommst während der Schulung Aufgaben, die du eigenständig ausführen kannst. Bei Bedarf helfen wir dir und beantworten alle Fragen. </p>
-     <div class="blue-button text-left mb-4"> <a id="schulung_vor_ort" class="btn btn-schulung" href="/schulung/flutter-online-schulung-anfaenger-oder-fortgeschrittene.html" >Zu den Online Schulungen</a></div>
-    </div>
-  </div>
-</div>
 
-<!-- Termine -->
 
-<div id="termine" class="container pt-1 pb-5 pl-0 pr-0" >
-  <div class="row pb-3">
-    <div class="col">
-     <h2 class="schulung-h2 pt-5 ">Feste Termine</h2>
-     <p class="schulung-p pt-2">Wir aktualisieren Termine regelmäßig. Wenn einer der Schulungstermine für dich nicht passen, schicke uns einfach einen Vorschlag für deine Wunsch-Flutterschulung. </p>
-    </div>
-  </div>
+
 
 <!-- 
 <div class="row zeile">
@@ -160,7 +143,7 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-1 text-center">€ 950</div>
   <div class="col-2 blue-button text-center"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://forms.gle/8LiDrxtBXpDAQ39q7" target="_blank" rel="noopener">   Anmelden</a></div>
 </div>
- -->
+ 
 <div class="row zeile">
  <div class="col-2 text-center"> <b>06.10. – 07.10.22</b></div>
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
@@ -199,10 +182,10 @@ images = ["/schulung/flutter-schulung.png"]
           2 Tage</div>
   <div class="col-4 text-center" style="border-right: 1px solid lightgrey">Vollständiger Power Einstieg in Flutter</div> <div class="col-1 text-center"> 
           € 950</div>
-           <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  02.06.22   </a></div> -->
+           <!-- <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/qmWCdKkfqaSYibrz7" target="_blank" rel="noopener">   01.06.22  –  02.06.22   </a></div> 
   <div class="col-3 blue-button text-center"> <a id="schulung_mainz_tag" class="btn btn-schulung" href="https://forms.gle/KaJB4T3rzTJq4Xke8" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
   
-</div>
+</div> 
 
 <div class="row zeile">
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
@@ -253,14 +236,14 @@ images = ["/schulung/flutter-schulung.png"]
   <div class="col-3 blue-button text-center"> <a id="schulung_mainz_2tage" class="btn btn-schulung" href="https://forms.gle/yAqSjWz9tKNizR5m9" target="_blank" rel="noopener">Jetzt Termin anfragen</a></div>
 </div>
 
-<p>*Wenn du Flutter Themen hast, die dich besonders interessieren oder die du speziell behandelt haben möchtest, dann können wir alle Termine auch um einen Tag verlängern. </p>
+<p>*Wenn du Flutter Themen hast, die dich besonders interessieren oder die du speziell behandelt haben möchtest, dann können wir alle Termine auch um einen Tag verlängern. </p>-->
 
 <!-- Unsere Trainer -->
-<div  class="container pt-1 pb-5 pl-0 pr-0">
+<div  class="pb-5 pl-0 pr-0">
   <div class="row pb-3">
     <div class="col">
-     <h2 class="schulung-h2 pt-5 ">Unsere Flutter Trainer</h2>
-     <p class="schulung-p pt-2">Unsere Flutter Trainer haben 15 Jahre Erfahrung in der Enterprise und App Entwicklung und führen seit über fünf Jahren Schulungen und Fortbildungen an, davon seit über zwei Jahren für Flutter. Sie sind außerdem IHK zertifizierte Ausbilder und Teilnehmer der Schulungen schätzen sie als besonders kompetent und freundlich ein.</p>
+     <h2 class="schulung-h2 pt-2">Unsere Flutter Trainer – die coodoo Experten</h2>
+     <p class="schulung-p pt-2">Unsere Flutter Trainer von coodoo haben 15 Jahre Erfahrung in der Enterprise und App Entwicklung und führen seit über fünf Jahren Schulungen und Fortbildungen an. Sie sind außerdem IHK zertifizierte Ausbilder und Teilnehmer der Schulungen schätzen sie als besonders kompetent und freundlich ein. Seit zwei Jahren haben wir von <a href="https://www.coodoo.de/" target="blank" rel="noopener">coodoo die Flutter Agency </a>gegründet, die alle Services rundum Flutter abdeckt – von der App Entwicklung bis zu Schulungen und Consulting.</p>
      </div>
    </div>
 <div class="row">
@@ -292,6 +275,18 @@ Seit über 15 Jahren als Fullstack-Software-Entwickler und Architekt tätig
  </div>
 </div>
 
+<!-- Termine -->
+
+<div id="termine" class="container pt-1 pb-5 pl-0 pr-0" >
+  <div class="row pb-3">
+    <div class="col-12">
+     <h2 class="schulung-h2 pt-5 ">Feste Termine</h2>
+     <p class="schulung-p pt-2">Alle Termine findest du auf der Schulungsseite von coodoo – der Flutter Agency. Hier kannst du dich direkt für eine Schulung für Anfänger oder Fortgeschrittene anmelden oder einen eigenen Termin vorschlagen.</p>
+      <div class="pl-0 blue-button text-left"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://www.coodoo.de/flutter-schulungen" target="_blank" rel="noopener"><b>   Zu den Schulungsterminen</b></a></div>
+    </div>
+       
+  </div>
+
 <!-- Heise Feedback -->
 <div class="inhalt container pt-1 pb-5 pl-0 pr-0">
   <div class="row pb-3">
@@ -321,6 +316,17 @@ Seit über 15 Jahren als Fullstack-Software-Entwickler und Architekt tätig
   </div>
    
       
+  </div>
+</div>
+
+<!-- Online -->
+<div id="online" class="container pb-3 pl-0 pr-0">
+  <div class="row">
+    <div class="col">
+     <h2 class="schulung-h2 pt-5 ">Online Flutter Schulung</h2>
+     <p class="schulung-p pt-2">Wir bieten alle unsere Flutter Schulungen auch online an. Wir stellen dir hierfür alle notwendigen Materialien im Voraus zur Verfügung und führen die Schulung auf eine Weise durch, die es einfach macht dieser zu folgen. Du bekommst während der Schulung Aufgaben, die du eigenständig ausführen kannst. Bei Bedarf helfen wir dir und beantworten alle Fragen. </p>
+     <div class="blue-button text-left mb-4"> <a id="schulung_vor_ort" class="btn btn-schulung" href="/schulung/flutter-online-schulung-anfaenger-oder-fortgeschrittene.html" >Zu den Online Schulungen</a></div>
+    </div>
   </div>
 </div>
 
