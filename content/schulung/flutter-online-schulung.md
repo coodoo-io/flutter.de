@@ -78,13 +78,16 @@ images = ["/schulung/advanced_share.png"]
 
 <!-- Termine -->
 
-<div id="termine" class="container pt-5 pb-5 pl-0 pr-0">
-  <div class="row pb-3">
-    <div class="col">
-     <h2 class="schulung-h2 pb-3">Feste Termine</h2>
+<!-- Termine -->
 
-<p>Wenn du Flutter Themen hast, die dich besonders interessieren oder die du speziell behandelt haben möchtest, dann können wir alle Termine auch um einen Tag verlängern. </p>
+<div id="termine" class="container pt-1 pb-5 pl-0 pr-0" >
+  <div class="row pb-3">
+    <div class="col-12">
+     <h2 class="schulung-h2 pt-5 ">Feste Termine</h2>
+     <p class="schulung-p pt-2">Alle Termine findest du auf der Schulungsseite von coodoo – der Flutter Agency. Hier kannst du dich direkt für eine Schulung für Anfänger oder Fortgeschrittene anmelden oder einen eigenen Termin vorschlagen.</p>
+      <div class="pl-0 blue-button text-left"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://www.coodoo.de/flutter-schulungen" target="_blank" rel="noopener"><b>   Zu den Schulungsterminen</b></a></div>
     </div>
+       
   </div>
 
 <!-- <div class="row zeile">
@@ -103,6 +106,7 @@ images = ["/schulung/advanced_share.png"]
   <div class="col-1 text-center">€ 950</div>
   <div class="col-2 blue-button text-center"> <a id="schulung_mainz_tag" class="btn yellow-button" href="https://forms.gle/8LiDrxtBXpDAQ39q7" target="_blank" rel="noopener">   Anmelden</a></div>
 </div> -->
+<!--
 <div class="row zeile">
  <div class="col-2 text-center"> <b>06.10. – 07.10.22</b></div>
   <div class="col-2 text-center"><img src="/images/placeholder-2.png" class="icon mr-2" height="28" /> Online</div>
@@ -167,7 +171,7 @@ images = ["/schulung/advanced_share.png"]
 </div>
 
 </div>
-
+ -->
 <!-- Unsere Trainer -->
 <div  class="container pt-1 pb-5 pl-0 pr-0">
   <div class="row pb-3">
