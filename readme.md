@@ -30,7 +30,7 @@ npm run start
 
 ## Einen neuen Artikel anlegen
 
-Jeder Artikel wird in einem neuen Ordner abgelegt nach dem Muster (Datum + Artikelname). Bilder werden im gleichen Artikelordner in dem Unterordner images abgelegt. Der Artikel endet mit Die .md muss den gleichen Namen haben wie der Ordner.
+Jeder Artikel wird in einem neuen Ordner abgelegt nach dem Muster (Datum + Artikelname). Bilder werden im gleichen Artikelordner in dem Unterordner images abgelegt. Der Artikel muss auf .md enden und den gleichen Namen wie der Ordner haben.
 Zum Beispiel so: **"artikel/20190617-group-work/20190617-group-work.md"**
 
 ```
