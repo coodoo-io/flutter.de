@@ -20,7 +20,7 @@
     },
     "devDependencies": {
         "bootstrap-scss": "^4.6.1",
-        "hugo-bin": "^0.89.0",
+        "hugo-bin": "^0.102.0",
         "ws": "8.8.1"
     }
 }
